@@ -1,0 +1,101 @@
+$def with (user, graphdata, graphID)
+
+$var user = user 
+
+<section class="row articleBox">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+	<section class="col-md-7">
+		$for k, v in graphdata.iteritems():
+			$if k.startswith('S_KEEPER_1'):
+				$for id, label in v.iteritems():
+				<h2 class="articleTitle" id="entity">$label.lstrip()</h2>
+		
+		<p class="info-item">
+			$if 'S_KEEPER_2' in graphdata:
+				<span class="info-label">Address: </span><span id="address">$graphdata['S_KEEPER_2'].lstrip().</span>
+			$for k, v in graphdata.iteritems():
+				$if k.startswith('S_KEEPER_3-'):
+					$for id, label in v.iteritems(): 
+						<span id="city">$label.lstrip().</span>
+			$for k, v in graphdata.iteritems():
+				$if k.startswith('S_KEEPER_4-'):
+					$for id, label in v.iteritems(): 
+						<span id="district">$label.lstrip().</span>
+			$for k, v in graphdata.iteritems():
+				$if k.startswith('S_KEEPER_5-'):
+					$for id, label in v.iteritems(): 
+						<span id="country">$label.lstrip().</span>
+		</p>
+		<p class="info-item">
+			$if 'S_KEEPER_8' in graphdata:
+				<span class="info-label">Website: </span><span><a href="$graphdata['S_KEEPER_8'].lstrip()">$graphdata['S_KEEPER_8'].lstrip()</a></span>
+		</p>
+		<p class="info-item">
+			$if 'S_KEEPER_8' in graphdata:
+				<span class="info-label">Email: </span><span>$graphdata['S_KEEPER_7'].lstrip()</span>
+		</p>
+		<p class="info-item">
+			$if 'S_KEEPER_6' in graphdata:
+				<span class="info-label">Phone: </span><span>$graphdata['S_KEEPER_6'].lstrip()</span>
+		</p>
+	</section>
+	<section class="col-md-5">
+		<div id="mapid"></div>
+		<section class="biblio">
+			<h3 class="biblio-label">Collections</h3>
+				$for k, v in graphdata.iteritems():
+					$if k.startswith('S_COLL_2-'):
+						$for id, label in v.iteritems(): 
+						<!-- TODO add link to graph - change query getKeeper -->
+						<p><a class='blue' target='_blank' href='/collection-$id'>
+								<i class='fas fa-external-link-alt'></i></a> $label.lstrip()</p>
+						
+		</section>
+	</section>
+	<script type="text/javascript">
+		// ajax call to nominatim
+		
+		
+		var encoded = $$("#address").text().replace(/\s/g, '+')+','+$$("#city").text().replace(/\s/g, '+');
+		$$.ajax({
+		    type: 'GET',
+		    url: 'https://nominatim.openstreetmap.org/search?q=' + encoded + '&format=json&polygon=1&addressdetails=1',
+		    headers: {
+		 		Accept: 'application/json'
+		    	},
+		    success: function(returnedJson) {
+		    	// get coordinates of polygon
+		    	for (i = 0; i < returnedJson.length; i++) {
+		    		console.log(returnedJson);
+			    	console.log(returnedJson[i].polygonpoints);
+			    	var mymap = L.map('mapid').setView([returnedJson[i].lat, returnedJson[i].lon], 13);
+			    	var polygon = L.polygon(returnedJson[i].polygonpoints).addTo(mymap);
+			    	var marker = L.marker([returnedJson[i].lat, returnedJson[i].lon]).addTo(mymap);
+			    	marker.bindPopup("<b>"+$$('#entity').text()+"</b><br>"+returnedJson[i].display_name+".").openPopup();
+			    	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+					    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+					    maxZoom: 18,
+					    id: 'mapbox.streets',
+					    accessToken: 'pk.eyJ1IjoibWFyaWxlbmFkYXF1aW5vIiwiYSI6ImNpeWx6MjZ3dTAwMjkzMmpyZGR2ejVqZHoifQ.AjYdPJPgptZiqrLSrrHSxQ'
+					}).addTo(mymap);
+					
+
+
+		    	};
+		    	
+
+		        }
+
+		    // handle if no results - show only city
+		    });
+		// change to polygon
+		
+		
+	</script>
+	
+</section>

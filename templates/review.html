@@ -1,0 +1,538 @@
+$def with (graphdata, pageID, record_form, graph, user)
+$var user = user
+
+<header class="row needDoc">
+	<button id="showRight">&gt; help</button>
+	<script type="text/javascript">
+		$$('#cbp-spmenu-s2').load( "./documentation #documentation", function() {
+			$$(".documentation").removeClass('col-md-7').addClass('col-md-12');
+			$$("h2").css('font-size','2em');
+		} );
+	</script>
+	<h3>Review record</h3>
+</header>
+<section class="row">
+	<section class="col-md-10">
+		
+		<form id="modifyForm" class="col-md-12" action="" method="POST">
+			<input type='hidden' name='recordID' value=$:pageID>
+			<p class="sectionTitle">Keeper</p>
+			<section class="col-md-12">
+				<section class="label col-md-10">Full name</section>
+				<section class="row col-md-10">
+					$:record_form.S_KEEPER_1.pre
+					$:record_form.S_KEEPER_1.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_KEEPER_1'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Address</section>
+				<section class="row col-md-10">
+					$if 'S_KEEPER_2' in graphdata:
+						$:record_form.S_KEEPER_2.pre
+						<input class="freeText col-md-11" type='text' id='S_KEEPER_2' name='S_KEEPER_2' value="$graphdata['S_KEEPER_2']"/>
+					$else:
+						$:record_form.S_KEEPER_2.pre
+						$:record_form.S_KEEPER_2.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">City</section>
+				<section class="row col-md-10">
+					$:record_form.S_KEEPER_3.pre
+					$:record_form.S_KEEPER_3.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_KEEPER_3'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+						
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">District</section>
+				<section class="row col-md-10">
+					$:record_form.S_KEEPER_4.pre
+					$:record_form.S_KEEPER_4.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_KEEPER_4'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+						
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Country</section>
+				<section class="row col-md-10">
+					$:record_form.S_KEEPER_5.pre
+					$:record_form.S_KEEPER_5.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_KEEPER_5'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+						
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Phone</section>
+				<section class="row col-md-10">
+					$if 'S_KEEPER_6' in graphdata:
+						$:record_form.S_KEEPER_6.pre
+						<input class="freeText col-md-11" type='text' id='S_KEEPER_6' name='S_KEEPER_6' value="$graphdata['S_KEEPER_6']"/>
+					$else:
+						$:record_form.S_KEEPER_6.pre
+						$:record_form.S_KEEPER_6.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Email</section>
+				<section class="row col-md-10">
+					$if 'S_KEEPER_7' in graphdata:
+						$:record_form.S_KEEPER_7.pre
+						<input class="freeText col-md-11" type='text' id='S_KEEPER_7' name='S_KEEPER_7' value="$graphdata['S_KEEPER_7']"/>
+					$else:
+						$:record_form.S_KEEPER_7.pre
+						$:record_form.S_KEEPER_7.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Website</section>
+				<section class="row col-md-10">
+					$if 'S_KEEPER_8' in graphdata:
+						$:record_form.S_KEEPER_8.pre
+						<input class="freeText col-md-11" type='text' id='S_KEEPER_8' name='S_KEEPER_8' value="$graphdata['S_KEEPER_8']"/>
+					$else:
+						$:record_form.S_KEEPER_8.pre
+						$:record_form.S_KEEPER_8.render()
+				</section>
+			</section>
+			<!-- creator -->
+			<p class="sectionTitle">Art Historian</p>
+			<section class="col-md-12">
+				<section class="label col-md-10">Full name</section>
+				<section class="row col-md-10">
+					$:record_form.S_CREATOR_1.pre
+					$:record_form.S_CREATOR_1.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_1'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Dates</section>
+				<section class="row col-md-10">
+					$if 'S_CREATOR_2' in graphdata:
+						$:record_form.S_CREATOR_2.pre
+						<input class="freeText col-md-11" type='text' id='S_CREATOR_2' name='S_CREATOR_2' value="$graphdata['S_CREATOR_2']"/>
+					$else:
+						$:record_form.S_CREATOR_2.pre
+						$:record_form.S_CREATOR_2.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Profession</section>
+				<section class="row col-md-10">
+					$:record_form.S_CREATOR_3.pre
+					$:record_form.S_CREATOR_3.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_3'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Country</section>
+				<section class="row col-md-10">
+					$:record_form.S_CREATOR_4.pre
+					$:record_form.S_CREATOR_4.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_4'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+				<section class="label col-md-10">Biography</section>
+				<section class="row col-md-10">
+					$if 'S_CREATOR_5' in graphdata:
+						$:record_form.S_CREATOR_5.pre
+						<textarea placeholder="" id="S_CREATOR_5" name="S_CREATOR_5" class="freeText col-md-11 col-md-11">$graphdata['S_CREATOR_5']</textarea>
+						$:record_form.S_CREATOR_5.post
+					$else:
+						$:record_form.S_CREATOR_5.pre
+						$:record_form.S_CREATOR_5.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_5-'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Art historian's bibliography</section>
+				<section class="row col-md-10">
+					$:record_form.S_CREATOR_6.pre
+					$:record_form.S_CREATOR_6.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_6'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Bibliography on the art historian</section>
+				<section class="row col-md-10">
+					$:record_form.S_CREATOR_7.pre
+					$:record_form.S_CREATOR_7.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_CREATOR_7'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<!-- Collection -->
+			<p class="sectionTitle">Collection</p>
+			<section class="col-md-12">
+				<section class="label col-md-10">Reference code</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_1' in graphdata:
+						$:record_form.S_COLL_1.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_1' name='S_COLL_1' value="$graphdata['S_COLL_1']"/>
+					$else:
+						$:record_form.S_COLL_1.pre
+						$:record_form.S_COLL_1.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Collection name</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_2' in graphdata:
+						$:record_form.S_COLL_2.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_2' name='S_COLL_2' value="$graphdata['S_COLL_2']"/>
+					$else:
+						$:record_form.S_COLL_2.pre
+						$:record_form.S_COLL_2.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Dates</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_3' in graphdata:
+						$:record_form.S_COLL_3.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_3' name='S_COLL_3' value="$graphdata['S_COLL_3']"/>
+					$else:
+						$:record_form.S_COLL_3.pre
+						$:record_form.S_COLL_3.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Extent and medium</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_4' in graphdata:
+						$:record_form.S_COLL_4.pre
+						<textarea placeholder="" id="S_COLL_4" name="S_COLL_4" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_4']</textarea>
+					$else:
+						$:record_form.S_COLL_4.pre
+						$:record_form.S_COLL_4.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">System of arrangement</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_5' in graphdata:
+						$:record_form.S_COLL_5.pre
+						<textarea placeholder="" id="S_COLL_5" name="S_COLL_5" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_5']</textarea>
+					$else:
+						$:record_form.S_COLL_5.pre
+						$:record_form.S_COLL_5.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Main type of objects</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_6.pre
+					$:record_form.S_COLL_6.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_6'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Other types of objects</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_7.pre
+					$:record_form.S_COLL_7.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_7'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Scope and content</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_8' in graphdata:
+						$:record_form.S_COLL_8.pre
+						<textarea placeholder="" id="S_COLL_8" name="S_COLL_8" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_8']</textarea>
+					$else:
+						$:record_form.S_COLL_8.pre
+						$:record_form.S_COLL_8.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_8-'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">History of the collection</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_9' in graphdata:
+						$:record_form.S_COLL_9.pre
+						<textarea placeholder="" id="S_COLL_9" name="S_COLL_9" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_9']</textarea>
+					$else:
+						$:record_form.S_COLL_9.pre
+						$:record_form.S_COLL_9.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Type of acquisition</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_10.pre
+					$:record_form.S_COLL_10.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_10'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Year of acquisition</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_11' in graphdata:
+						$:record_form.S_COLL_11.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_11' name='S_COLL_11' value="$graphdata['S_COLL_11']"/>
+					$else:
+						$:record_form.S_COLL_11.pre
+						$:record_form.S_COLL_11.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Repository</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_12.pre
+					$:record_form.S_COLL_12.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_12'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Access</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_13' in graphdata:
+						$:record_form.S_COLL_13.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_13' name='S_COLL_13' value="$graphdata['S_COLL_13']"/>
+					$else:
+						$:record_form.S_COLL_13.pre
+						$:record_form.S_COLL_13.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Reproduction</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_14.pre
+					$:record_form.S_COLL_14.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_14'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Finding aids</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_15' in graphdata:
+						$:record_form.S_COLL_15.pre
+						<textarea placeholder="" id="S_COLL_15" name="S_COLL_15" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_15']</textarea>
+					$else:
+						$:record_form.S_COLL_15.pre
+						$:record_form.S_COLL_15.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Cataloguing standard</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_16.pre
+					$:record_form.S_COLL_16.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_16'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Bibliography</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_17.pre
+					$:record_form.S_COLL_17.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_17'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Website</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_18' in graphdata:
+						$:record_form.S_COLL_18.pre
+						<input class="freeText col-md-11" type='text' id='S_COLL_18' name='S_COLL_18' value="$graphdata['S_COLL_18']"/>
+					$else:
+						$:record_form.S_COLL_18.pre
+						$:record_form.S_COLL_18.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Aggregators</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_19.pre
+					$:record_form.S_COLL_19.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_19'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Events</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_20.pre
+					$:record_form.S_COLL_20.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_COLL_20'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Notes</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_21' in graphdata:
+						$:record_form.S_COLL_21.pre
+						<textarea placeholder="" id="S_COLL_21" name="S_COLL_21" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_21']</textarea>
+					$else:
+						$:record_form.S_COLL_21.pre
+						$:record_form.S_COLL_21.render()
+				</section>
+			</section>
+			<!-- Subjects -->
+			<p class="sectionTitle">Subjects of the collection</p>
+			<section class="col-md-12">
+				<section class="label col-md-10">Periods</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_1.pre
+					$:record_form.S_SUBJ_1.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_1'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Genres and themes</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_2.pre
+					$:record_form.S_SUBJ_2.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_2'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			
+			<section class="col-md-12">
+				<section class="label col-md-10">Artists and schools</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_4.pre
+					$:record_form.S_SUBJ_4.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_4'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Types of artwork</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_5.pre
+					$:record_form.S_SUBJ_5.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_5'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Artworks</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_6.pre
+					$:record_form.S_SUBJ_6.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_6'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">People and organizations</section>
+				<section class="row col-md-10">
+					$:record_form.S_SUBJ_7.pre
+					$:record_form.S_SUBJ_7.render()
+					$for k, v in graphdata.iteritems():
+						$if k.startswith('S_SUBJ_7'):
+							$for id, label in v.iteritems():
+								<span class='tag $id' data-input='$k' id='$id'>$label</span>
+								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>					
+				</section>
+			</section>
+
+			<section class="buttonsSection">
+				<button class="btn btn-dark" name="action" value="saveRecord$:graph" type="submit">Save</button>
+                <button class="btn btn-dark" name="action" value="publishRecord$:graph" type="submit">Publish</button>
+			</section>
+		</form>
+	</section>
+	<section id="searchresult">
+	</section>
+
+</section>

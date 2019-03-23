@@ -1,0 +1,144 @@
+$def with (user)
+
+$var user = user 
+
+<section class="row articleBox">
+	<section class="col-md-7 documentation" id="documentation">
+		<h2 class="articleTitle">Documentation</h2>
+		<h3 class="articleSubtitle">Publication policies</h3>
+		<p>Archival records comply with ISAD(G) specifications and include a subset of 40 fields. The level of description is currently limited to Fonds.</p>
+		<p>Records include 4 Sections, namely: Keeper, Creator, Collection, Subjects (art historical data). The latter is meant to provide detailed insights on the scope of collections, such as:</p>
+		<ul>
+			<li>Periodization (centuries, periods, styles)</li>
+			<li>Genres and themes</li>
+			<li>Artists and artistic schools</li>
+			<li>Relevant persons (scholars, patrons, collectors…)</li>
+			<li>Artworks</li>
+		</ul>
+		<p>An agile cataloguing process supported by Semantic Web technologies and Linked Open Data sources allows to produce high quality data.</p>
+		<ul>
+			<li><strong>REUSE</strong> terms belonging to selected data sources (suggested while filling the form) facilitate data reconciliation and data consistency across systems. Reused sources include <a href="https://www.wikidata.org">Wikidata</a>, <a href="https://openlibrary.org/">Open Library</a> (Internet Archive), <a href="http://www.getty.edu/research/tools/vocabularies/ulan/">Getty ULAN</a>, and <a href="http://www.getty.edu/research/tools/vocabularies/aat/">Getty Art and Architecture Thesaurus</a>. Only missing terms in existing sources are here given of a bespoke identifier, and are included in Wikidata, so as to enrich existing sources and avoid duplicate terms.</li>
+			<li><strong>ENHANCEMENT</strong> long free text descriptions are parsed by means of two concurrent NLP tools (namely <a href="https://www.dbpedia-spotlight.org/api">DBpedia spotlight API</a> and <a href="https://github.com/spencermountain/compromise">compromise.js</a>) so as to suggest archivists resources (e.g. people, subject) that are immediately reconciled to Wikidata.</li>
+			<li><strong>ACCURACY</strong> cataloguers can accept/reject automatic suggestions while filling the form, so as to ensure curated data are produced.</li>
+			<li><strong>COLLABORATIVE</strong> cataloguers part of the editorial board can access all records, including the ones created by other institutions, make changes, and add new information.</li>
+			<li><strong>CONSISTENCY</strong> members of the ARTchives editorial board review records for data cleansing purposes and consistency-checks before publishing.</li>
+			<li><strong>VISIBILITY</strong> a subset of data created by cataloguers is accurately annotated and published on Wikidata so as to foster its reuse in a broader context than ARTchives.</li>
+		</ul>
+		<p>Be aware that cataloguers are meant to describe <u>only collections that are owned or preserved by the institutions they work for</u>. Whether a cataloguer is willing to record the existence of a collection owned by another institution, s/he is strongly encouraged to follow the following instructions:</p>
+		<ul>
+			<li>add detailed information about the keeper (if not already available in other records);</li>
+			<li>add all the available information on the historian (if not already available in other records);</li>
+			<li>include <u>only</u> an attributed name to the collection.</li>
+		</ul>
+		<p>The editorial board will contact responsibles of the institution and will ask for the permission to publish information on the collection at hand.</p>
+		<p><i class="fas fa-exclamation-circle"></i> Do not confuse archival collections with nuclei of documents. While the first type requires a cataloguer to create a bespoke record, nuclei, i.e. documents that are part of miscellaneous collections, can be annotated in the optional section <em>Other materials linked to the collection</em>.</p>
+		<hr/>
+		
+		<h3 class="articleSubtitle">Guidelines for creating new records</h3>
+		
+		<h4>Before you start...</h4>
+		<p>Users and institutions that want to contribute must request an account (see the <a href="/contribute">contribute page</a>) to access ARTchives backend.</p>
+		<p>The ARTchives web application is tested to work properly on Chrome and Safari (latest versions are highly recommended). <em style="color: red;">Internet Explorer and older browsers are discouraged</em>.</p>
+		<p>A number of fields offer autocomplete suggestions when typing. Terms are retrieved on-the-fly from external data sources. Therefore, having a good WIFI connection is highly recommended. </p>
+		
+		<h4>Tips: Autocompletion</h4>
+		<p>Fields with autocomplete functionalities are identified by a plaholder in the text area, which shows what data source is going to be used. </p> 
+		<p>A dropdown pops up while typing, including best candidate matches.</p>
+		<img src="/static/imgs/autocomplete.png" alt="screenshot entry form autocomplete"/>
+		<img src="/static/imgs/orangeList.png" alt="screenshot entry form autocomplete"/>
+		
+		<p><i class="fas fa-exclamation-circle"></i> <em>Suggestions are retrieved on-the-fly. The search starts on keyup (after few milliseconds) and can take few seconds if the connection is unstable (so be patient!). Secondly, if the connection is unstable, results may reload slowly, meaning that refinements of the search might take time. If no relevant results are found at the first attempt, please try to remove the last character and re-type it. Lastly, when looking for two or more words (e.g. people names, place names, types of objects) be aware that you may have to try several combinations of words (e.g. <code>firstname+lastname</code> rather than <code>lastname+firstname</code>)</em>.</p>
+
+		<p>In dropdowns will appear blue items, which are terms belonging to the external data sources, and orange items, which are terms created by other users in ARTchives in prior records. The latter appear <em>only if no results in external sources are found</em>. Blue links include: an external link redirecting to the definition of the term (click on the icon), the label of the term (mainly in english) and a brief descripton for disambiguation purposes.</p>
+		<p>If a match is found, the user clicks on the blue underlined item in the list and a blue tag appears below the text line in the form of a coloured button (see image below).</p>
+		<img src="/static/imgs/tag.png" alt="tag selected from the dropdown"/>
+		<p>Otherwise, if no significative matches are found, the user can type the desired word/sentence and press enter to create a new tag. This will appear as an orange button below the text area.</p>
+		<img src="/static/imgs/newtag.png" alt="tag created by user"/>
+		<p><i class="fas fa-exclamation-circle"></i> <em>Terms created by users will be available to other users too when creating new records. Be aware that this choice is suggested only if no existing terms are available.</em></p>
+		<p>Colors respect the same principle above described. To remove wrong tags simply click on them.</p>
+		<p><strong>Fields without autocomplete functionalities</strong> do not show any placeholder, and no tags will appear after the text area (see image below).</p>
+		<img src="/static/imgs/noautocomplete.png" alt="screenshot entry form without autocomplete"/>
+
+		<h4>Editorial Standards</h4>	
+		<p>For each field in the entry form there are examples on how to fill the field at hand (see the icon <i class="fas fa-info-circle"></i> before the text area). Here below there are additional rules and standards that archivists/volunteers should comply with in order to ensure resulting data quality.</p>
+		<p><strong>KEEPER</strong> Includes information on the current keeper of the archive described. This may correspond to the institution cataloguing the fond in ARTchives, or may be another institution.</p>
+		<p>Fields in this section include the following:</p>
+		<ul>
+			<li><strong>Full Name</strong> The complete name of the institution responsible for the collection. If possible, select a term from Wikidata. This may or may not correspond with the physical repository of the collection (see <a href="#repository">Repository</a>). If a keeper has already been described in another record, a pop up will notice the user, who can skip the section.</li>
+			<li><strong>Address</strong> The address of the responsible institution of the collection. Record street addresses in the form <code>[house number],[street name]</code> so as to make easier geolocalization.</li>
+			<li><strong>City</strong> The city of the keeper. Select a city from the list of Wikidata terms so as to make easier geolocalization.</li>
+			<li><strong>District</strong> The district of the keeper. Select a city from the list of Wikidata terms so as to make easier geolocalization. If difficult, try searching for "province of ..."</li>
+			<li><strong>Country</strong> The country of the keeper. Select a city from the list of Wikidata terms so as to make easier geolocalization.</li>
+			<li><strong>Phone</strong> The phone number, including prefix, of the keeper. Only digits (and eventually white spaces) must be typed here.</li>
+			<li><strong>Email</strong> The email of the keeper. It must be in the form <code>[firstpart][@][secondpart][.][domain]</code></li>
+			<li><strong>Website</strong> The website of the keeper. Include here the home page of the institution is available. It must start with the prefix <code>http://</code>.</li>
+		</ul>
+		<p><i class="fas fa-exclamation-circle"></i> <em>If an institution has already been recorded as a keeper of an archive in a prior record, and all the contact information were provided, there is no need to input the same information in a new record (check <a href="/institutions">here</a> whether an institution has already been described in ARTchives). In such cases, only the name of the keeper is requested.</em></p>
+
+
+		<p><strong>CREATOR</strong> This section is meant to provide basic information on the art historian that created the collection. </p>
+		<p>Fields in this section include the following:</p>
+		<ul>
+			<li><strong>Full name</strong> The complete name of the historian that created the collection. If possible, select a term from Wikidata by looking for strings in the form <code>firstname lastname</code>. If a creator has already been described in another record, a pop up will notice the user, who can skip the section.</li>
+			<li><strong>Dates</strong> The birth date and death date (if applicable). Record dates in one of the three following forms: (1) <code>1945-2018</code> (2) <code>1945-</code> (3) <code>-2018</code>. If dates are unknown, do no enter data. Only digits must be typed here, please do not include prepositions on the vagueness of the date (e.g. circa).</li>
+			<li><strong>Profession</strong> The roles / professions of the art historian other than art historian (e.g. <code>museum director</code>; <code>curator</code>; <code>collector</code>; <code>advisor</code>). Select one or multiple terms from Wikidata if possible.</li>
+			<li><strong>Country</strong> The country of the creator's citizenship. If relevant, more than one countries can be included here. Select countries from the list of Wikidata terms so as to make easier geolocalization.</li>
+			<li><strong>Biography</strong> A short biography of the art historian referencing key aspects of her career, main topics and relevant relations with institutions, patrons, and art historians. Users are kindly requested to use official sources for recording biographies (if applicable), such as the <a href="http://arthistorians.info/">Dictionary of Art Historians</a>. When providing such a long description use a formal language, i.e. record appropriately proper names and avoid acronyms. When finished to type, press enter and wait few seconds. A number of tags will appear after the text area including topics extracted from the text and immediately reconciled to Wikidata. While you cannot add more tags here, you can remove the incorrect ones. Do not be disppointed if there are some mistakes, technology is not (yet) perfect! However, more tags can be added in the next section <em>SUBJECTS</em>. Please, discard obvious tags, such as <em>Art history</em> or the name of the art historian.</li>
+			<li><strong>Art historian's bibliography</strong> Reference here the art historian's main works. When including bibliographic references, rather than copy-and-paste the whole list of references, type each reference and look for autocomplete suggestions found in Open Library (Internet Archive), which includes more than 40.000 volumes on Art History topics.</li>
+			<li><strong>Bibliography on the art historian</strong> Reference here main works providing information on the art historian. When including bibliographic references, rather than copy-and-paste the whole list of references, type each reference and look for autocomplete suggestions found in Open Library (Internet Archive), which includes more than 40.000 volumes on Art History topics.</li>
+		</ul>
+		<p><i class="fas fa-exclamation-circle"></i> <em>NB! When copy-pasting references please avoid to use double quotes and replace single apexes (delete and type again). Unfortunately, some characters are not properly read due to encoding issues.</em></p>
+
+		<p><strong>COLLECTION</strong> In this section extensive information on the catalogued information on the fond are provided.</p>
+		<p>Fields in this section include the following:</p>
+		<ul>
+			<li><strong>Reference code</strong> If known, the code identifying the collection as provided by the keeper should be recorded.</li>
+			<li><strong>Collection name</strong> The name of the collection as provided by the keeper or attributed by the cataloguer.</li>
+			<li><strong>Dates</strong> The time span of the collection, which may correspond to the floruit of the historian. Record dates in one of the three following forms: (1) <code>1965-2018</code> (2) <code>1965-</code> (3) <code>-2018</code>. If dates are unknown, do no enter data. Only digits must be typed here, please do not include prepositions on the vagueness of the date (e.g. circa).</li>
+			<li><strong>Extent and medium</strong> Brief description of items that compose the collection.</li>
+			<li><strong>System of arrangement</strong> Describe the internal structure, order and/or the system of classification of the collection. </li>
+			<li><strong>Main type of objects</strong> Identify the main type of objects included in the described collection. For instance, <code>photograph</code> may identify photographic collections (which can however include other types of objects, see below). If possible, select a term from Wikidata by looking for strings in the <em>singular form</em>.</li>
+			<li><strong>Other types of objects</strong> Identify the other types of objects included in the described collection. For instance, <code>archive document</code> may be included in a photographic collection. If possible, select a term from Wikidata by looking for strings in the <em>singular form</em>.</li>
+			<li><strong>Scope and content</strong> List relevant themes, materials and archival series. When providing such a long description use a formal language, i.e. record appropriately proper names and avoid acronyms. When finished to type, press enter and wait few seconds. A number of tags will appear after the text area including topics extracted from the text and immediately reconciled to Wikidata. While you cannot add more tags here, you can remove the incorrect ones. Do not be disppointed if there are some mistakes, technology is not (yet) perfect! However, more tags can be added in the next section <em>SUBJECTS</em>. Please, avoid duplicates between this section and the section <em>SUBJECTS</em> if possible, and discard obvious tags, such as <em>Art history</em> or the name of the art historian that created the collection.</li>
+			<li><strong>History of the collection</strong> Historical notes on the collection.</li>
+			<li><strong>Type of acquisition</strong> Provide a term identifying how the keeper acquired the collection, e.g. <code>bequest</code>, <code>loan</code>. If possible, select a term from Wikidata by looking for strings in the <em>singular form</em>.</li>
+			<li><strong>Year of acquisition</strong> Record the date of acquisition in the YYYY form, e.g. <code>2018</code>. If the date is unknown, do no enter data. Only digits must be typed here, please do not include prepositions on the vagueness of the date (e.g. circa).</li>
+			<li id="repository"><strong>Repository</strong> The physical location of the collection. It may or may not correspond to the keeper, e.g. <code>Fondazione Zeri</code>. If not corresponding to the keeper, please record the address of the repository in the following form: <code>repository name.hose number, street name. city. country.</code></li>
+			<li><strong>Access</strong> Specify whether the access to the collection is <code>restricted</code> or <code>unrestricted</code>. </li>
+			<li><strong>Reproduction</strong> Restrictions on reproduction. Specify a license by selecting a term from Wikidata, e.g. <code>Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International</code>.</li>
+			<li><strong>Finding Aids</strong> Provide information on finding aids that the repository or records creator may have created.</li>
+			<li><strong>Cataloguing standards</strong> Identify the cataloguing standards used by the keeper to describe contents of the collection, e.g. <code>ISAD(G)</code>, <code>ICCD-F</code>. If possible, select a term from Wikidata by looking for strings in the <em>singular form</em>.</li>
+			<li><strong>bibliography</strong> Main works on the collection at hand. When including bibliographic references, rather than copy-and-paste the whole list of references, type each reference and look for autocomplete suggestions found in Open Library (Internet Archive), which includes more than 40.000 volumes on Art History topics.</li>
+			<li><strong>Website</strong> The website describing the collection or providing access to digital records. It must start with the prefix <code>http://</code>.</li>
+			<li><strong>Aggregators</strong> Aggregators including the data collection (if applicable). If possible, select a term from Wikidata, e.g. <code>Europeana</code>, <code>CulturaItalia</code>.</li>
+			<li><strong>Events</strong>Events related to the collection, e.g. exhibitions. Record information in the form: <code>Event name / YYYY / Place</code>.</li>
+			<li><strong>Notes</strong> In this free text field cataloguers can specify why the collection is relevant in their opinion, and can suggest potential benefits in research inquiries.</li>
+		</ul>
+		<p><i class="fas fa-exclamation-circle"></i> <em>Despite there are no mandatory fields in this section, users are kindly recommended to fill in a minimum set of fields, and postponing refinements to future modifications. Suggested fields are: Collection name, Dates, Main types of objects, Scope and Content, Repository.</em></p>
+		<p><strong>SUBJECTS</strong> In this section keywords characterising contents and scope of the collection can be added by users. Completeness is not expected here, while <em>representativeness</em> of contents should be covered, meaning the most relevant topics should be listed.</p>
+		<p>Fields in this section include the following:</p>
+		<ul>
+			<li><strong>Periods</strong> Identify centuries or artistic movements associated to a period that are in scope, e.g. <code>14th century</code>, <code>Renaissance</code>. If possible, select terms from Getty AAT thesaurus.</li>
+			<li><strong>Genres and themes</strong> List main artistic genres or iconographic themes that are in scope in the collection. Characterise a genre by using one of the following patterns: place (city, region, or country) and century (or part of century), iconographic element (e.g. <code>portrait</code>, <code>still life</code>, <code>landscape</code>, <code>reliogious scene</code>), type of artwork, or other (e.g. <code>mithology</code>). If possible, select terms from Wikidata. </li>
+			<li><strong>Artists and schools</strong> List main artists or artistic schools that are in scope in the collection. If possible, select a term from Getty ULAN thesaurus.</li>
+			<li><strong>Types of artworks</strong> If possible, select terms from Getty AAT thesaurus.</li>
+			<li><strong>Artworks</strong> List relevant artworks that are in scope. If possible, select terms from Wikidata. </li>
+			<li><strong>People and organizations</strong> List relevant people, such as other historians that collaborated in creating the collection, or organization that are in scope. If possible, select terms from Wikidata. </li>
+		</ul>
+
+		<h4>When you finish...</h4>
+		<p><strong>REVIEW</strong> When a record is ready to be published press the button <code>Start Review</code> in the backend homepage. A member of the editorial board will review it for consistency checks. A record in review can be modified at any time. To send it in review again, press the button <code>Start Review</code>. </p>
+		<p><strong>PUBLICATION</strong> A member of the editorial board will publish the record after checks. When published, data will appear automatically in the sections of the website (e.g. Historians, Collections, Institutions, Bibliography). A published record can be modified at any time by any of the ARTchives users. In that case all data there recorded are unpublished and the review process starts again.</p>
+		
+		<hr/>
+		<h3 class="articleSubtitle">Resources and documentation</h3>
+		<p>Data produced by ARTchives are released under the CC0 license  <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"> <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none; width: 70px;" alt="CC0" /> </a>.</p>
+
+		<p><strong>DATA ACCESS</strong> Data can be accessed by means of the  <a href="./sparql">ARTchives SPARQL endpoint query interface</a> and API. Alternatively, <a href="https://query.wikidata.org">Wikidata</a> can be queried to retrieve ARTchives information.</p>
+		
+		<p><strong>SOURCE CODE</strong> The application source code is available in a <a href="https://github.com/marilenadaquino/artchives">gitHub repository</a> [coming soon].</p>
+		<p><strong>DATA MODEL</strong> ARTchives mainly reuses the Wikidata Model to facilitate the data export to Wikidata. Few new properties are added to characterise the nature of subjects of a collection (subproperties of <code>wdp:P921</code>), and to distinguish different types of archival notes (e.g. <code>art:hasNotesOnScopeAndContent</code>, <code>art:hasHistoricalNotes</code>).</p>
+		<p>Data examples will be added soon.</p>
+		<p><strong>URI DESIGN PATTERN</strong> When available, external URIs are reused directly, such as Wikidata, Open Library and Getty vocabularies IRIs. New entities created by cataloguers are in form <code>https://w3id.org/artchives/</code>+<code>[persistent ID]</code>.</p>
+	</section>
+</section>

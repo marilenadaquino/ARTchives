@@ -1,0 +1,51 @@
+$def with (form, user, data, title)
+
+$var user = user 
+
+<section class="row searchBox">
+	<form action="" method='GET' class="col-md-6">
+		$:form.render()
+	</form>	
+	<section id="searchresult"></section>
+</section>
+
+<section class="row articleBox">
+	<section class="col-md-7">
+		<h2 class="articleTitle">$title</h2>
+		<section class="row">
+			$for record in data:
+				$if 'artchives' in record[0]:
+					<section class="col-md-3 entryBox">
+						<a href="historian-$:record[0].replace('/','').split("artchives",1)[1]">
+							$if record[2] == 'no image available':
+								<section class="imageBox noImage">
+									<p>no image available</p>
+								</section>
+							$else:
+								<section class="imageBox withImage">
+									<img src="$:record[2]">
+								</section>
+							<section class="entryTitle">
+								$:record[1]
+							</section>
+						</a>
+					</section>
+				$else:
+					<section class="col-md-3 entryBox">
+						<a href="historian-$:record[0].replace('/','').split("entity",1)[1]">
+							$if record[2] == 'no image available':
+								<section class="imageBox noImage">
+									<p>no image available</p>
+								</section>
+							$else:
+								<section class="imageBox withImage">
+									<img src="$:record[2]">
+								</section>
+							<section class="entryTitle">
+								$:record[1]
+							</section>
+						</a>
+					</section>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,40 @@
+$def with (form, user, data, title)
+
+$var user = user 
+
+<section class="row searchBox">
+	<form action="" method='GET' class="col-md-6">
+		$:form.render()
+	</form>	
+	<section id="searchresult"></section>
+</section>
+
+<section class="row articleBox">
+	<section class="col-md-7">
+		<h2 class="articleTitle">$title</h2>
+		<section class="row">
+			<!-- TODO add cards-->
+			$for record in data:
+				<section class="col-md-3 entryBox">
+					$if 'artchives' in record[0]:
+						<a href="keeper-$:record[0].replace('/','').split("artchives",1)[1]">
+							<section class="imageBox noImage">
+								<p></p>
+							</section>
+							<section class="entryTitle">
+								$:record[1]
+							</section>
+						</a>
+					$else:
+						<a href="keeper-$:record[0].replace('/','').split("entity",1)[1]">
+							<section class="imageBox noImage">
+								<p></p>
+							</section>
+							<section class="entryTitle">
+								$:record[1]
+							</section>
+						</a>
+				</section>
+		</section>
+	</section>
+</section>

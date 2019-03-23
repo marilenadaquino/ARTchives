@@ -1,0 +1,188 @@
+@prefix ns1: <http://www.wikidata.org/wiki/Property:> .
+@prefix ns2: <https://w3id.org/artchives/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/artchives/1547822402-45/> {
+    <https://w3id.org/artchives/1547822402-45/> rdfs:label "Everett Fahy" ;
+        ns4:generatedAtTime "2019-02-24T22:28:45.381973"^^xsd:dateTime ;
+        ns4:wasGeneratedBy ns2:marilena-dot-daquino2-at-unibo-dot-it ;
+        ns2:publicationStage "published"^^xsd:string .
+
+    ns2:MD1550827433556 rdfs:label "Shirey, David L. \"Everett Fahy of the Met Is Named Frick Director.\" New York Times May 20, 1973, p. 63."^^xsd:string ;
+        ns1:P921 <http://www.wikidata.org/wiki/Q19997512> .
+
+    ns2:MD1550827440934 rdfs:label "Russell, John. \"New Head of European Art at Met.\" New York Times July 31, 1986, p. C16"^^xsd:string ;
+        ns1:P921 <http://www.wikidata.org/wiki/Q19997512> .
+
+    ns2:MD1551043711822 rdfs:label "De Marchi, Andrea. Ricordo di Everett Fahy: vivere e godere le opere d'arte giorno per giorno. Storie dell'Arte (online blog), April 27th 2018 [ http://www.storiedellarte.com/2018/04/ricordo-di-everett-fahy-vivere-e-godere-le-opere-darte-giorno-per-giorno.html ]"^^xsd:string ;
+        ns1:P921 ns2:collectionfototeca-fahy .
+
+    <http://openlibrary.org/works/OL5256695W> rdfs:label "Everett Fahy. Metropolitan Flowers. March 1983"^^xsd:string .
+
+    <http://openlibrary.org/works/OL5256696W> rdfs:label "Everett Fahy. Some followers of Domenico Ghirlandajo. 1976"^^xsd:string .
+
+    <http://openlibrary.org/works/OL5256698W> rdfs:label "Everett Fahy. The legacy of Leonardo. 1979"^^xsd:string .
+
+    <http://openlibrary.org/works/OL7990719W> rdfs:label "Metropolitan Museum of Art (New York, N.Y.). The Wrightsman Pictures. September 2005"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q1089074> rdfs:label "Federico Zeri"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q125191> rdfs:label "                   photograph"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q160236> rdfs:label "Metropolitan Museum of Art"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q16139> rdfs:label "                                   Province of Bologna" .
+
+    <http://www.wikidata.org/wiki/Q1891> rdfs:label "                                       Bologna" ;
+        ns1:P131 <http://www.wikidata.org/wiki/Q16139> .
+
+    <http://www.wikidata.org/wiki/Q189539> rdfs:label "                   loan"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q191423> rdfs:label "Domenico Ghirlandaio"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q19858649> rdfs:label "                   CulturaItalia"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q22132694> rdfs:label "                   museum director" .
+
+    <http://www.wikidata.org/wiki/Q234110> rdfs:label "                   Europeana"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q24082749> rdfs:label "                   Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q2607815> rdfs:label "John Pope Hennessy"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q30> rdfs:label "                   United States of America" .
+
+    <http://www.wikidata.org/wiki/Q3494271> rdfs:label "                   archive document"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q38> rdfs:label "                   Italy" .
+
+    <http://www.wikidata.org/wiki/Q674426> rdfs:label "                   curator" .
+
+    <http://www.wikidata.org/wiki/Q7787> rdfs:label "History of Europe"^^xsd:string .
+
+    ns2:MD1550827408114 rdfs:label "Everett Fahy. L"^^xsd:string .
+
+    ns2:MD1550827657583 rdfs:label "                   ICCD-F"^^xsd:string .
+
+    ns2:MD1550827664251 rdfs:label "                   ICCD-FF"^^xsd:string .
+
+    ns2:MD1550827671562 rdfs:label "                   ICCD-OA"^^xsd:string .
+
+    ns2:marilena-dot-daquino2-at-unibo-dot-it rdfs:label "marilena.daquino2@unibo.it" .
+
+    ns2:restricted rdfs:label "restricted"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q1273> rdfs:label "                   Tuscany"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q1332178> rdfs:label "                   Sienese School"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q13373> rdfs:label "                   Lucca"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q13378> rdfs:label "                   Arezzo"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q166118> rdfs:label "                   archive"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q179254> rdfs:label "                   gelatin"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q2044> rdfs:label "                   Florence"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q23687322> a <http://www.wikidata.org/wiki/Q31855> ;
+        rdfs:label "                   Fondazione Zeri"^^xsd:string,
+            "Fondazione Zeri"^^xsd:string ;
+        rdfs:comment "Cultural institution"^^xsd:string ;
+        ns1:P131 <http://www.wikidata.org/wiki/Q1891> ;
+        ns1:P1329 "051 2097471"^^xsd:string ;
+        ns1:P17 <http://www.wikidata.org/wiki/Q38> ;
+        ns1:P1830 ns2:collectionfototeca-fahy ;
+        ns1:P856 <http://www.fondazionezeri.unibo.it/en> ;
+        ns1:P968 "fondazionezeri.info@unibo.it"^^xsd:string ;
+        ns1:P969 "2, piazzetta giorgio morandi"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q50641> rdfs:label "                   History of art"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q555132> rdfs:label "                   Handwritten Notes"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q580807> rdfs:label "                   albumen print"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q610687> rdfs:label "                   Venetian school"^^xsd:string .
+
+    ns2:collectionfototeca-fahy a <http://www.wikidata.org/wiki/Q9388534> ;
+        rdfs:label "Fototeca Fahy"^^xsd:string ;
+        ns1:P127 <http://www.wikidata.org/wiki/Q23687322> ;
+        ns1:P1319 "1965-01-01"^^xsd:gYear ;
+        ns1:P1326 "2018-01-01"^^xsd:gYear ;
+        ns1:P1436 "451 boxes"^^xsd:string ;
+        ns1:P170 <http://www.wikidata.org/wiki/Q19997512> ;
+        ns1:P217 "FZ.2017.Fahy"^^xsd:string ;
+        ns1:P275 <http://www.wikidata.org/wiki/Q24082749> ;
+        ns1:P485 <http://www.wikidata.org/wiki/Q23687322> ;
+        ns1:P571 "2017-01-01"^^xsd:gYear ;
+        ns1:P921 <http://www.wikidata.org/wiki/Q1273>,
+            <http://www.wikidata.org/wiki/Q1332178>,
+            <http://www.wikidata.org/wiki/Q13373>,
+            <http://www.wikidata.org/wiki/Q13378>,
+            <http://www.wikidata.org/wiki/Q166118>,
+            <http://www.wikidata.org/wiki/Q179254>,
+            <http://www.wikidata.org/wiki/Q19997512>,
+            <http://www.wikidata.org/wiki/Q2044>,
+            <http://www.wikidata.org/wiki/Q50641>,
+            <http://www.wikidata.org/wiki/Q555132>,
+            <http://www.wikidata.org/wiki/Q580807>,
+            <http://www.wikidata.org/wiki/Q610687> ;
+        ns1:P973 <http://www.fondazionezeri.unibo.it/it/fototeca/donazioni/la-fototeca-fahy> ;
+        ns2:hasAccessConditions ns2:restricted ;
+        ns2:hasAcquisitionType <http://www.wikidata.org/wiki/Q189539> ;
+        ns2:hasAggregator <http://www.wikidata.org/wiki/Q19858649>,
+            <http://www.wikidata.org/wiki/Q234110> ;
+        ns2:hasCataloguingStandard ns2:MD1550827657583,
+            ns2:MD1550827664251,
+            ns2:MD1550827671562 ;
+        ns2:hasHistoricalNotes "The origins of the archive apparently date back to the years of Fahy's university studies. The oldest documents are linked to his contributions on Ghirlandaio's school and followers (his Ph.D. dissertation on the topic dates from 1968). Fahy continued to order and use the materials he collected till the very last years of his life, even after his retirement. In 2017 he decided to donate the main part of his archive (376 boxes) to the King Baudouin Foundation United States. The KBFUS undersigned a loan agreement with the Federico Zeri Foundation, whose scientific committee Fahy joined in 2004, to keep, manage and enhance the collection. After his death, the remaining materials were also received by the Zeri Foundation who, according to Fahy's will, is to become the final owner in 2022."^^xsd:string ;
+        ns2:hasMainObjectType <http://www.wikidata.org/wiki/Q3494271> ;
+        ns2:hasNotesOnFindingAid "The Federico Zeri Foundation has drawn up an inventory of the collection contents. It follows Fahy's criteria and provides an immediate hierarchical map of the archive as a whole. All the iconographic material has been counted and inventoried with a univocal, progressive number fixing Fahy's original ordering of documents and photographs inside folders. A description of all the levels of the archival system will soon be made available to users in a new database that the Foundation is preparing, specifically tailored so as to give access and enhance the newly acquired collections and archives. Parallel with this, the Foundation has started cataloguing the Florentine 15th century boxes item by item. Data on artworks and photos will be incorporated in the Fototeca Zeri's online catalogue (http://catalogo.fondazionezeri.unibo.it)."^^xsd:string ;
+        ns2:hasNotesOnScopeAndContent """The archive consists of some 85,000 items of which about 45,000 are paper documents (including letters, typewritten lists, photocopies of articles, postcards, drafts and handwritten notes) and 39,800 photographs (especially gelatine silver prints, diacolors and few albumen prints). Photographic and non-photographic materials are divided into 4 archival series: "Italian art" (414 boxes); "Non-Italian art" (5 boxes); "Fakes" (7 boxes); "Various" (25 boxes). Inside each series, documents and photos are kept inside folders bearing the artists' names, sometimes sub-divided according to repositories of artworks and/or iconographic themes. The versos of photos are richly annotated by Everett Fahy with information regarding locations, attributive and collective history, bibliography, etc. The archive provides an extraordinary documentation on Italian Art and, especially, on the research field Fahy favoured: Florentine 15th century painting. About 151 boxes out of the 451 are devoted to this topic, to which are added 59 boxes bearing the names of Florentine artists of different centuries. Other well illustrated cultural areas are: Tuscan schools (Sienese, Pisan, school of Lucca and Arezzo), the Roman school and Venetian school. The value of the collection is gains greatly from the original order given by the art historian, which reflects Fahy's attributions, and also from the presence of his correspondence and notes, especially the famous "Lists" that he compiled and frequently updated, in which he used to itemize all the artworks to be attributed to each artist.\r
+"""^^xsd:string ;
+        ns2:hasNotesOnSystemOfArrangement "Inside the boxes, documents and photos are grouped in folders, in topographical / chronological / alphabetical order. The arrangement given by the art historian has been maintained."^^xsd:string ;
+        ns2:hasOtherNotes "The collection is a must for all researchers interested in Florentine painting and offers an outstanding overview on all medieval, Renaissance and Baroque Italian art."^^xsd:string ;
+        ns2:hasOtherObjectType <http://www.wikidata.org/wiki/Q125191> ;
+        ns2:hasScopeAndContentSubject <http://www.wikidata.org/wiki/Q1273>,
+            <http://www.wikidata.org/wiki/Q1332178>,
+            <http://www.wikidata.org/wiki/Q13373>,
+            <http://www.wikidata.org/wiki/Q13378>,
+            <http://www.wikidata.org/wiki/Q166118>,
+            <http://www.wikidata.org/wiki/Q179254>,
+            <http://www.wikidata.org/wiki/Q19997512>,
+            <http://www.wikidata.org/wiki/Q2044>,
+            <http://www.wikidata.org/wiki/Q50641>,
+            <http://www.wikidata.org/wiki/Q555132>,
+            <http://www.wikidata.org/wiki/Q580807>,
+            <http://www.wikidata.org/wiki/Q610687> .
+
+    <http://www.wikidata.org/wiki/Q19997512> a <http://www.wikidata.org/wiki/Q5> ;
+        rdfs:label "                                           Everett Fahy"^^xsd:string,
+            "Everett Fahy"^^xsd:string ;
+        ns3:description """Fahy was raised in Philadelphia, PA where he graduated at the University of Virginia in 1962. After graduation, he traveled to Europe and begin to study Ghirlandaio, following the suggestion of John Pope-Hennessy. Fahy entered Harvard studying under Sydney J. Freedberg and Federico Zeri. He received the National Gallery of Art's David H. Finley fellowship in 1964 allowing him to travel in Europe, especially in Italy. In Florence he was able to study at the Biblioteca Berenson, thanks to a Villa I Tatti Fellowship. He received his Ph.D. from Harvard University in 1968 with a thesis on Ghirlandaio's followers under James Ackerman. Fahy was appointed by the Metropolitan Museumn of Art as a consultant to the Department of European Paintings in 1968, and taught in New York University's Institute of Fine Arts from 1969 until 1976. He joined the Met Museum as curator-in-charge in 1970. In 1973 Fahy resigned in order to head the Frick Collection, where he oversaw the expansion of the institution and incentivated the Museum's policy of organizing small but highly scholarly exhibitions. In 1986 he returned to the Metropolitan as the Chair of European Paintings, succeeding Pope-Hennessy. He remained at the Met as Chair until his retirement in 2009. From 2004 until his death (2018) he was a member of the Federico Zeri Foundation Scientific Committee.\r
+"""^^xsd:string ;
+        rdfs:comment "Art historian"^^xsd:string ;
+        ns1:P106 <http://www.wikidata.org/wiki/Q22132694>,
+            <http://www.wikidata.org/wiki/Q674426> ;
+        ns1:P27 <http://www.wikidata.org/wiki/Q30> ;
+        ns1:P569 "1945-01-01"^^xsd:gYear ;
+        ns1:P570 "2018-01-01"^^xsd:gYear ;
+        ns1:P800 <http://openlibrary.org/works/OL5256695W>,
+            <http://openlibrary.org/works/OL5256696W>,
+            <http://openlibrary.org/works/OL5256698W>,
+            <http://openlibrary.org/works/OL7990719W>,
+            ns2:MD1550827408114 ;
+        ns1:P921 <http://www.wikidata.org/wiki/Q1089074>,
+            <http://www.wikidata.org/wiki/Q160236>,
+            <http://www.wikidata.org/wiki/Q191423>,
+            <http://www.wikidata.org/wiki/Q2607815>,
+            <http://www.wikidata.org/wiki/Q7787> .
+}
+

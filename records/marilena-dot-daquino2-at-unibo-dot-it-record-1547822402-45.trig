@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.w3.org/ns/prov#> .
+@prefix ns2: <http://www.wikidata.org/wiki/Property:> .
+@prefix ns3: <https://w3id.org/artchives/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/artchives/1547822402-45/> {
+    <https://w3id.org/artchives/1547822402-45/> rdfs:label "Everett Fahy" ;
+        ns1:generatedAtTime "2019-01-18T15:40:26.100690"^^xsd:dateTime ;
+        ns1:wasGeneratedBy ns3:marilena-dot-daquino2-at-unibo-dot-it ;
+        ns3:publicationStage "not modified"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q19997512> a <http://www.wikidata.org/wiki/Q5> ;
+        rdfs:label "Everett Fahy"^^xsd:string ;
+        rdfs:comment "Art historian"^^xsd:string .
+
+    <http://www.wikidata.org/wiki/Q23687322> a <http://www.wikidata.org/wiki/Q31855> ;
+        rdfs:label "Fondazione Zeri"^^xsd:string ;
+        rdfs:comment "Cultural institution"^^xsd:string ;
+        ns2:P1830 ns3:collectionfototeca-fahy .
+
+    ns3:collectionfototeca-fahy a <http://www.wikidata.org/wiki/Q9388534> ;
+        rdfs:label "Fototeca Fahy"^^xsd:string ;
+        ns2:P127 <http://www.wikidata.org/wiki/Q23687322> ;
+        ns2:P170 <http://www.wikidata.org/wiki/Q19997512> .
+
+    ns3:marilena-dot-daquino2-at-unibo-dot-it rdfs:label "marilena.daquino2@unibo.it" .
+}
+

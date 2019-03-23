@@ -1,0 +1,36 @@
+$def with (form, user, data, title)
+
+$var user = user 
+
+<section class="row searchBox">
+	<form action="" method='GET' class="col-md-6">
+		$:form.render()
+	</form>	
+	<section id="searchresult"></section>
+</section>
+
+<section class="row articleBox">
+	<section class="col-md-7">
+		<h2 class="articleTitle">$title</h2>
+		<section class="row">
+			<!-- TODO add cards-->
+			$for record in data:
+				$if record[4] == 'published':
+					<section class="col-md-3 entryBox">
+						<a href="collection-$:record[0].replace('/','').split("artchives",1)[1]">
+							$if record[3] == 'no image available':
+								<section class="imageBox noImage">
+									<p>no image available</p>
+								</section>
+							$else:
+								<section class="imageBox withImage">
+									<img src="$:record[3]">
+								</section>
+							<section class="entryTitle">
+								$:record[2]
+							</section>
+						</a>
+					</section>
+		</section>
+	</section>
+</section>
