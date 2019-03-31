@@ -14,7 +14,7 @@ $var user = user
 			$for k, v in graphdata.iteritems():
 				$if k.startswith('S_CREATOR_1'):
 					$for id, label in v.iteritems():
-						<span class="info-label">Creator: </span><span><a href="/historian-$id">$label.lstrip()</a>.</span>
+						<span class="info-label">Creator: </span><span><a href="historian-$id">$label.lstrip()</a>.</span>
 		</p>
 		<p class="info-item">
 			$for k, v in graphdata.iteritems():
@@ -24,7 +24,7 @@ $var user = user
 			$for k, v in graphdata.iteritems():
 				$if k.startswith('S_KEEPER_1'):
 					$for id, label in v.iteritems():
-						<span>(<a href="/keeper-$id">$label.lstrip()</a>).</span>
+						<span>(<a href="keeper-$id">$label.lstrip()</a>).</span>
 		</p>
 		<p class="info-item">
 			$if 'S_COLL_3' in graphdata:
@@ -32,7 +32,7 @@ $var user = user
 		</p>
 		<p class="info-item">
 			$if 'S_COLL_18' in graphdata:
-				<span class="info-label">Website: </span><a href="$graphdata['S_COLL_18']">$graphdata['S_COLL_18']</a>.
+				<span class="info-label">Online resources: </span><span id='info-url'>$graphdata['S_COLL_18']</span>.
 		</p>
 		$if 'S_COLL_4' in graphdata:
 			<section class="columns">
@@ -123,7 +123,7 @@ $var user = user
 							<p><a class='blue' target='_blank' href='http://openlibrary.org/works/$id'>
 									<i class='fas fa-external-link-alt'></i></a> $label</p>
 						$else:
-							<p>$label</p>
+							<p class='info-url'>$label</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Also in</h3>
@@ -148,6 +148,15 @@ $var user = user
 					<section class="info-icon col-md-4"><i class="fas fa-quote-left"></i><p>archivists say</p></section>
 					<section class="info-note col-md-8">
 						<p>$graphdata['S_COLL_21']</p>
+					</section>
+				</section>	
+			</section>
+		$if 'S_COLL_22' in graphdata:
+			<section class="notes">
+				<section class="row">
+					<section class="info-icon col-md-4"><i class="fas fa-asterisk"></i><p>other nuclei</p></section>
+					<section class="info-note col-md-8">
+						<p>$graphdata['S_COLL_22']</p>
 					</section>
 				</section>	
 			</section>

@@ -21,12 +21,12 @@ $def with (content)
 			<section class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 			</section>
 			<nav>
-				<span class="logo"><a href="/"><img src="./static/imgs/logo.png"></a></span>
-				<a href="/about">about</a>
+				<span class="logo"><a href="/artchives/"><img src="./static/imgs/logo.png"></a></span>
+				<a href="about">about</a>
 				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">login</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					$if content.user == 'anonymous':
-						<form action="/" method="post">
+						<form action="" method="post">
 						    <div class="field-wrap">
 						      <label>Email</label><input name="login" type="email" required autocomplete="on"/>
 						    </div>
@@ -37,15 +37,15 @@ $def with (content)
 						  </form>
 					$else:
 						<p>You are logged in.</p>
-						<p><a href="/logout">Logout</a></p> 
+						<p><a href="logout">Logout</a></p> 
 				</div>
 			</nav>
 			$:content
 			<footer>
-				<a href="/credits">credits</a>
-				<a href="/contribute">contribute</a>
-				<a href="/documentation">documentation</a>
-				<a href="/sparql">query</a>
+				<a href="credits">credits</a>
+				<a href="contribute">contribute</a>
+				<a href="documentation">documentation</a>
+				<a href="sparql">query</a>
 			</footer>
 		</section>
 	</body>

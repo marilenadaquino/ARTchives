@@ -76,9 +76,23 @@ $(document).ready(function() {
 			classie.toggle( menuRight, 'cbp-spmenu-open' );
 		};
 	};
+
+	// URL detection
+	$('#info-url').each(function(element) {
+	    element.innerHTML = urlify(element.innerHTML);
+	});
+
+	//validateForm();
 	
 });
 
+// urlify URLs found in the page
+function urlify(textt) {
+    var urlRegex = /(https?:\/\/[^\s]+)/g;
+    return textt.replace(urlRegex, function(url) {
+        return '<a href="' + url + '">' + url + '</a>';
+    });
+};
 
 // delay a function
 function throttle(f, delay){
@@ -91,7 +105,7 @@ function throttle(f, delay){
         },
         delay || 300);
     };
-}
+};
 
 // wikidata search
 function searchWD(searchterm) {
@@ -139,7 +153,7 @@ function searchWD(searchterm) {
 
 			$.ajax({
 				    type: 'GET',
-				    url: 'http://localhost:8888/sparql?query=' + encoded,
+				    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 				    headers: { Accept: 'application/sparql-results+json'},
 				    success: function(returnedJson) {
 				    	$("#searchresult").empty();
@@ -259,7 +273,7 @@ function searchOL(searchterm) {
 
 			$.ajax({
 				    type: 'GET',
-				    url: 'http://localhost:8888/sparql?query=' + encoded,
+				    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 				    headers: { Accept: 'application/sparql-results+json'},
 				    success: function(returnedJson) {
 				    	$("#searchresult").empty();
@@ -390,7 +404,7 @@ function searchAAT(searchterm) {
 
 				$.ajax({
 					    type: 'GET',
-					    url: 'http://localhost:8888/sparql?query=' + encoded,
+					    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 					    headers: { Accept: 'application/sparql-results+json'},
 					    success: function(returnedJson) {
 					    	$("#searchresult").empty();
@@ -487,7 +501,7 @@ function searchULAN(searchterm) {
 
 				$.ajax({
 					    type: 'GET',
-					    url: 'http://localhost:8888/sparql?query=' + encoded,
+					    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 					    headers: { Accept: 'application/sparql-results+json'},
 					    success: function(returnedJson) {
 					    	$("#searchresult").empty();
@@ -585,7 +599,7 @@ function searchARTchives(searchterm) {
 
 	  	$.ajax({
 		    type: 'GET',
-		    url: 'http://localhost:8888/sparql?query=' + encoded,
+		    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 		    headers: {
 		 		Accept: 'application/sparql-results+json'
 		    	},
@@ -618,7 +632,7 @@ function searchARTchives(searchterm) {
 						var qID = uri.substr(uri.lastIndexOf('/') + 1);
 					};
 					
-					$("#searchresult").append("<div class='wditem'><a class='blue' href='/"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
+					$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 			    };
 		        },
 		        error: function() {
@@ -633,8 +647,8 @@ function searchARTchives(searchterm) {
 function nlpText(searchterm) {
 	$('textarea#'+searchterm).keypress( throttle(function(e) {
 	  	if(e.which == 13) {
-	  		$('textarea#'+searchterm).parent().parent().append('<div class="tags-nlp col-md-9"></div>');
-			$(this).parent().next('.tags-nlp').empty();
+	  		//$('textarea#'+searchterm).parent().parent().append('<div class="tags-nlp col-md-9"></div>');
+			$(this).next('.tags-nlp').empty();
 			var textNLP = $('#'+searchterm).val();
 			var encoded = encodeURIComponent(textNLP)
 			
@@ -654,7 +668,7 @@ function nlpText(searchterm) {
 			    },
 			    function(data) { 
 			    	$.each(data.search, function(i, item) {   	
-				        $('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+item.title+'" data-input="'+searchterm+'" data-id="'+item.title+'">'+item.label+'</span><input type="hidden" class="hiddenInput '+item.title+'" name="'+searchterm+'-'+item.title+'" value="'+item.title+','+escape(item.label)+'"/>');
+				        $('textarea#'+searchterm).next('.tags-nlp').append('<span class="tag nlp '+item.title+'" data-input="'+searchterm+'" data-id="'+item.title+'">'+item.label+'</span><input type="hidden" class="hiddenInput '+item.title+'" name="'+searchterm+'-'+item.title+'" value="'+item.title+','+escape(item.label)+'"/>');
 			    	});	    			
 			    });
 			};
@@ -683,6 +697,7 @@ function nlpText(searchterm) {
 							    	var myRegexp = /<http:\/\/www.w3.org\/2002\/07\/owl#sameAs> <http:\/\/wikidata.org\/entity\/(.*)>/;
 									var match = myRegexp.exec(data);
 									var res = match[1];
+									console.log(data);
 									if (res && !$('textarea#'+searchterm).parent().next('.tags-nlp').children("span[data-id="+match[1]+"]").length ) {
 										// get Wikidata label
 										$.ajax({
@@ -765,7 +780,7 @@ function popUpInfo(className) {
 		var encoded = "PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT distinct ?g ?obj ?label ?type WHERE { GRAPH ?g { ?obj wdp:P921 <"+entity+"> ; a ?type ; rdfs:label ?label . } }"
 		$.ajax({
 		    type: 'GET',
-		    url: 'http://localhost:8888/sparql?query=' + encoded,
+		    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 		    headers: {
 		 		Accept: 'application/sparql-results+json'
 		    	},
@@ -848,7 +863,7 @@ function checkPriorRecords(term, prefix) {
 
 	$.ajax({
 	    type: 'GET',
-	    url: 'http://localhost:8888/sparql?query=' + encoded,
+	    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
 	    headers: { Accept: 'application/sparql-results+json'},
 	    success: function(returnedJson) {
 	    	console.log(returnedJson);
@@ -861,3 +876,12 @@ function checkPriorRecords(term, prefix) {
 
 };
 
+// function validateForm() {
+//   var x = document.querySelectorAll('[name^="S_KEEPER_1-"]');
+//   if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   } else {
+//   	console.log(x);
+//   };
+// }

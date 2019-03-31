@@ -1,7 +1,7 @@
 var yasqe = YASQE(document.getElementById("yasqe"), {
 	sparql: {
 		showQueryButton: true,
-		endpoint: "http://localhost:8888/sparql",
+		endpoint: "http://data.fondazionezeri.unibo.it/artchives/sparql",
 		requestMethod: "GET"
 	}
 });

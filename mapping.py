@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import web , datetime , os, time, re, cgi, rdflib, conf , urllib
+import web , datetime , os, time, re, cgi, rdflib, conf , urllib 
 from rdflib import URIRef , XSD, Namespace , Literal
 from rdflib.namespace import OWL, DC , DCTERMS, RDF , RDFS
 from rdflib.plugins.sparql import prepareQuery
@@ -39,35 +39,51 @@ def getValuesFromFields(fieldPrefix, recordData):
 	for key, value in recordData.iteritems():
 		if key.startswith(fieldPrefix):
 			values = value.split(',', 1)
-			results.add(( values[0], urllib.unquote(values[1]) )) # (field, id, label)
+			results.add(( values[0], urllib.unquote(values[1]) )) # (id, label)
 	return results
 
+def getURLsFromField(myString):
+	"regex to extract URLs and description. Returns a list of tuples (uri, desc)"
+	uriList = []
+	if ';' in myString:
+		uris = myString.split(';')
+		for uri in uris:
+			if uri != '' and uri !=' ':
+				desc = re.sub( re.compile(r'(https?://[^\s]+)'), '', uri ).rstrip().lstrip()
+				uriList.append( (re.search(r'(https?://[^\s]+)', uri).group(0), desc) )
+	else:
+		desc = re.sub( re.compile(r'(https?://[^\s]+)'), '', myString ).rstrip().lstrip()
+		uriList.append( (re.search(r'(https?://[^\s]+)', myString).group(0), desc) )
+	return uriList
 
 def getRightURIbase(value):
-		if value.startswith('Q'):
-			return WD
-		elif value.startswith('OL'):
-			return OL
-		else:
-			return base
+	"dispatcher URIs"
+	if value.startswith('Q'):
+		return WD
+	elif value.startswith('OL'):
+		return OL
+	else:
+		return base
 
 
 def gettyAATbase(value):
-		if value.startswith('MD'):
-			return base
-		else:
-			return AAT
+	"dispatcher URIs"
+	if value.startswith('MD'):
+		return base
+	else:
+		return AAT
 
 
 def gettyULANbase(value):
-		if value.startswith('MD'):
-			return base
-		else:
-			return ULAN
+	"dispatcher URIs"
+	if value.startswith('MD'):
+		return base
+	else:
+		return ULAN
 
 
 def artchivesToWD(recordData, userID, stage):
-	""" given input data creates a named graph and a rdf file"""
+	""" given input data creates a named graph and a rdf file according to wikidata and artchives models"""
 	recordID = recordData.recordID
 	graph_name = recordID.split("record-",1)[1]
 	wd = rdflib.Graph(identifier=URIRef(base+graph_name+'/'))
@@ -89,7 +105,7 @@ def artchivesToWD(recordData, userID, stage):
 		wd.add(( URIRef( keeperURI ), RDFS.label, Literal(keeper[1].lstrip().rstrip(), datatype="http://www.w3.org/2001/XMLSchema#string") ))
 		if keeper[0].startswith('MD'):
 			wd.add(( URIRef( keeperURI ), RDFS.comment, Literal('Cultural institution', datatype="http://www.w3.org/2001/XMLSchema#string") ))
-		
+	
 		# S_KEEPER_2
 		address = recordData.S_KEEPER_2
 		if address:
@@ -145,9 +161,10 @@ def artchivesToWD(recordData, userID, stage):
 		wd.add(( URIRef( creatorURI ), RDF.type, URIRef(WD.Q5) ))
 		wd.add(( URIRef( creatorURI ), RDFS.label, Literal(creator[1].lstrip().rstrip(), datatype="http://www.w3.org/2001/XMLSchema#string") ))
 		wd.add(( URIRef(base+graph_name+'/'), RDFS.label, Literal(creator[1].lstrip()) ))
+		# label for wikidata
 		if creator[0].startswith('MD') :
 			wd.add(( URIRef( creatorURI ), RDFS.comment, Literal( 'Art historian', datatype="http://www.w3.org/2001/XMLSchema#string") ))
-		
+
 		# S_CREATOR_2
 		datesCreator = recordData.S_CREATOR_2
 		if datesCreator:
@@ -356,7 +373,10 @@ def artchivesToWD(recordData, userID, stage):
 		# S_COLL_18
 		linkColl = recordData.S_COLL_18
 		if linkColl:
-			wd.add(( URIRef( collectionURI ), WDP.P973, URIRef( linkColl ) ))
+			urlList = getURLsFromField(linkColl)
+			for url, desc in urlList:
+				wd.add(( URIRef( collectionURI ), WDP.P973, URIRef( url ) ))
+				wd.add(( URIRef( url ), RDFS.label, Literal( desc ) ))
 		
 		# S_COLL_19
 		aggregators = getValuesFromFields("S_COLL_19-", recordData)
@@ -382,6 +402,11 @@ def artchivesToWD(recordData, userID, stage):
 		otherNotes = recordData.S_COLL_21
 		if otherNotes:
 			wd.add(( URIRef( collectionURI ), URIRef( base+'hasOtherNotes'), Literal( otherNotes, datatype="http://www.w3.org/2001/XMLSchema#string" ) ))
+		
+		# S_COLL_22
+		otherNotesNuclei = recordData.S_COLL_22
+		if otherNotesNuclei:
+			wd.add(( URIRef( collectionURI ), URIRef( base+'hasNotesOnOtherNuclei'), Literal( otherNotesNuclei, datatype="http://www.w3.org/2001/XMLSchema#string" ) ))
 		
 		# S_SUBJ_1
 		periods = getValuesFromFields("S_SUBJ_1-", recordData)

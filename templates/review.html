@@ -14,7 +14,7 @@ $var user = user
 <section class="row">
 	<section class="col-md-10">
 		
-		<form id="modifyForm" class="col-md-12" action="" method="POST">
+		<form id="modifyForm" name="review" class="col-md-12" action="" method="POST">
 			<input type='hidden' name='recordID' value=$:pageID>
 			<p class="sectionTitle">Keeper</p>
 			<section class="col-md-12">
@@ -172,12 +172,14 @@ $var user = user
 					$else:
 						$:record_form.S_CREATOR_5.pre
 						$:record_form.S_CREATOR_5.render()
+				</section>
+				<div class="tags-nlp col-md-9">
 					$for k, v in graphdata.iteritems():
 						$if k.startswith('S_CREATOR_5-'):
 							$for id, label in v.iteritems():
 								<span class='tag $id' data-input='$k' id='$id'>$label</span>
 								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
-				</section>
+				</div>
 			</section>
 			<section class="col-md-12">
 				<section class="label col-md-10">Art historian's bibliography</section>
@@ -293,12 +295,14 @@ $var user = user
 					$else:
 						$:record_form.S_COLL_8.pre
 						$:record_form.S_COLL_8.render()
+				</section>
+				<div class="tags-nlp col-md-9">
 					$for k, v in graphdata.iteritems():
 						$if k.startswith('S_COLL_8-'):
 							$for id, label in v.iteritems():
 								<span class='tag $id' data-input='$k' id='$id'>$label</span>
 								<input type='hidden' class='hiddenInput $id' name='$k' value='$id, $label'/>
-				</section>
+				</div>
 			</section>
 			<section class="col-md-12">
 				<section class="label col-md-10">History of the collection</section>
@@ -405,7 +409,7 @@ $var user = user
 				</section>
 			</section>
 			<section class="col-md-12">
-				<section class="label col-md-10">Website</section>
+				<section class="label col-md-10">Online resources</section>
 				<section class="row col-md-10">
 					$if 'S_COLL_18' in graphdata:
 						$:record_form.S_COLL_18.pre
@@ -448,6 +452,17 @@ $var user = user
 					$else:
 						$:record_form.S_COLL_21.pre
 						$:record_form.S_COLL_21.render()
+				</section>
+			</section>
+			<section class="col-md-12">
+				<section class="label col-md-10">Notes on related nuclei</section>
+				<section class="row col-md-10">
+					$if 'S_COLL_22' in graphdata:
+						$:record_form.S_COLL_22.pre
+						<textarea placeholder="" id="S_COLL_22" name="S_COLL_22" class="freeText col-md-11 col-md-11">$graphdata['S_COLL_22']</textarea>
+					$else:
+						$:record_form.S_COLL_22.pre
+						$:record_form.S_COLL_22.render()
 				</section>
 			</section>
 			<!-- Subjects -->

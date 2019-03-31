@@ -263,10 +263,10 @@ art_historian = form.Form(
     	),
     form.Textbox("S_COLL_18", 
     	class_="freeText col-md-11", 
-    	description="Website", 
+    	description="Online resources", 
     	id="S_COLL_18", 
     	placeholder="",
-    	pre='<span class="tip" data-toggle="tooltip" data-placement="bottom" title="URL of web pages including the description of the fond or catalogues, records, etc."><i class="fas fa-info-circle"></i></span>'
+    	pre='<span class="tip" data-toggle="tooltip" data-placement="bottom" title="URL of web pages including the description of the fond or catalogues, records, etc. Please include a brief description and separate URLs with a semicolon. E.g. http://example.com online catalogue; http://anotherex.it inventory;"><i class="fas fa-info-circle"></i></span>'
     	),
     form.Textbox("S_COLL_19", 
     	class_="searchWikidata searchARTchives col-md-11", 
@@ -289,8 +289,15 @@ art_historian = form.Form(
     	description="Notes", 
     	id="S_COLL_21", 
     	placeholder="",
-    	pre='<span class="tip" data-toggle="tooltip" data-placement="bottom" title="Other notes"><i class="fas fa-info-circle"></i></span>'
+    	pre='<span class="tip" data-toggle="tooltip" data-placement="bottom" title="Notes on the scope or relevance of the collection, e.g. archivsts\' advise for researchers"><i class="fas fa-info-circle"></i></span>'
     	),
+    form.Textarea("S_COLL_22", 
+        class_="freeText col-md-11", 
+        description="Notes on related nuclei", 
+        id="S_COLL_22", 
+        placeholder="",
+        pre='<span class="tip" data-toggle="tooltip" data-placement="bottom" title="Notes on related nuclei of documents that are available in other collections. Please specify the name of the institution, the name of the collection, and the main type of objects available."><i class="fas fa-info-circle"></i></span>'
+        ),
     form.Textbox("S_SUBJECT_title",  
     	description="Subjects of the collection", 
     	disabled="disabled", 

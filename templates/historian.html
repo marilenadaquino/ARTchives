@@ -53,7 +53,7 @@ $var user = user
 							<p><a class='blue' target='_blank' href='http://openlibrary.org/works/$id'>
 									<i class='fas fa-external-link-alt'></i></a> $label</p>
 						$else:
-							<p>$label</p>
+							<p class='info-url'>$label</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Bibliography</h3>
@@ -64,7 +64,7 @@ $var user = user
 							<p><a class='blue' target='_blank' href='http://openlibrary.org/works/$id'>
 									<i class='fas fa-external-link-alt'></i></a> $label</p>
 						$else:
-							<p>$label</p>
+							<p class='info-url'>$label</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Collections</h3>
@@ -72,7 +72,7 @@ $var user = user
 			$for k, v in graphdata.iteritems():
 				$if k.startswith('S_COLL_2'):
 					$for id, label in v.iteritems():
-						<p><a class='blue' target='_blank' href="/collection-$id"><i class='fas fa-external-link-alt'></i></a> $label</p>
+						<p><a class='blue' target='_blank' href="collection-$id"><i class='fas fa-external-link-alt'></i></a> $label</p>
 		</section>
 	</section>
 </section>

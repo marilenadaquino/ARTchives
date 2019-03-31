@@ -352,10 +352,11 @@ def getData(graph):
 			OPTIONAL {	?collection art:hasNotesOnFindingAid ?findingAid . }
 			OPTIONAL {	?collection art:hasCataloguingStandard ?standard . ?standard rdfs:label ?standardLabel . }
 			OPTIONAL {	?biblioColl wdp:P921 ?collection ; rdfs:label ?biblioCollLabel . }
-			OPTIONAL {	?collection wdp:P973 ?collWebsite .}
+			OPTIONAL {	?collection wdp:P973 ?collWebsite . ?collWebsite rdfs:label ?collWebsiteLabel.}
 			OPTIONAL {	?collection art:hasAggregator ?aggregator . ?aggregator rdfs:label ?aggregatorLabel . }
 			OPTIONAL {	?collection wdp:P793 ?event . ?event rdfs:label ?eventLabel . }
 			OPTIONAL {	?collection art:hasOtherNotes ?otherNotes .}
+			OPTIONAL {	?collection art:hasNotesOnOtherNuclei ?otherNuclei .}
 			OPTIONAL {	?collection art:hasSubjectPeriod ?period . ?period rdfs:label ?periodLabel . }
 			OPTIONAL {	?collection art:hasSubjectGenre ?genre . ?genre rdfs:label ?genreLabel . }
 			OPTIONAL {	?collection art:hasSubjectArtist ?artist . ?artist rdfs:label ?artistLabel . }
@@ -466,6 +467,7 @@ def getData(graph):
 			data[S_CREATOR_7] = defaultdict(dict)
 			data[S_CREATOR_7][result["otherbiblioRef"]["value"].rsplit('/', 1)[-1]] = result["otherbiblioRefLabel"]["value"]
 
+	websites = ''
 	for result in results2["results"]["bindings"]:
 		# S_COLL_1
 		if result.has_key('refCode'):
@@ -559,8 +561,9 @@ def getData(graph):
 			data[S_COLL_17][result["biblioColl"]["value"].rsplit('/', 1)[-1]] = result["biblioCollLabel"]["value"]
 
 		# S_COLL_18
-		if result.has_key('collWebsite'):
-			data['S_COLL_18'] = result["collWebsite"]["value"]
+		if result.has_key('collWebsiteLabel'):
+			websites += ''+result["collWebsite"]["value"]+' '+result["collWebsiteLabel"]["value"]+'; '
+			data['S_COLL_18'] = websites
 
 		# S_COLL_19
 		if result.has_key('aggregatorLabel'):
@@ -577,6 +580,10 @@ def getData(graph):
 		# S_COLL_21
 		if result.has_key('otherNotes'):
 			data['S_COLL_21'] = result["otherNotes"]["value"]
+
+		# S_COLL_22
+		if result.has_key('otherNuclei'):
+			data['S_COLL_22'] = result["otherNuclei"]["value"]
 
 		# S_SUBJ_1
 		if result.has_key('periodLabel'):

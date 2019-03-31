@@ -4,13 +4,14 @@ import forms, mapping, conf, queries
 from web import form
 web.config.debug = False
 prefix = ''
+prefix2 = ''
 
 # TODO add documentation page
 # TODO browse results in a public page
 urls = (
 	prefix + '/', 'Login',
 	prefix + '/logout', 'Logout',
-	prefix + '/welcome','Index',
+	prefix2 + '/welcome','Index',
 	prefix + '/record-(.+)', 'Record',
 	prefix + '/modify-(.+)', 'Modify',
 	prefix + '/review-(.+)', 'Review',
@@ -44,15 +45,14 @@ render2 = web.template.render('templates/', globals={'session':session})
 
 # TODO Hash passw
 allowed = (
-	('marilena.daquino2@unibo.it','admin'),
-	('francesca.mambelli@unibo.it','prova'),
+	('hello','spank'),
 )
 
 class Login:
 	def GET(self):
 		if(session.username,session.password) in allowed:
 			session.logged_in = True
-			raise web.seeother('/welcome')
+			raise web.seeother('/artchives/welcome')
 		else:
 			return render.login(user='anonymous')
 
@@ -65,7 +65,7 @@ class Login:
 			session['username'] = login
 			session['password'] = passwd
 			print datetime.datetime.now(),'LOGIN:', session['username']
-			raise web.seeother('/welcome')
+			raise web.seeother('/artchives/welcome')
 		else:
 			return render.login(user='anonymous')
 
@@ -102,7 +102,7 @@ class Index:
 		if actions.action.startswith('createRecord'):
 			record = 'record-'+actions.action.split("createRecord",1)[1] 
 			print datetime.datetime.now(),'START NEW RECORD:', actions.action.split("createRecord",1)[1], session['username']
-			raise web.seeother('/'+record)
+			raise web.seeother('/artchives/'+record)
 		# delete a record (but not the dump in /records folder)
 		elif actions.action.startswith('deleteRecord'):
 			record = actions.action.split("deleteRecord",1)[1]
@@ -115,15 +115,15 @@ class Index:
 		elif actions.action.startswith('modify'):
 			record = 'record-'+actions.action.split("artchives/",1)[1].replace('/','')
 			print datetime.datetime.now(),'MODIFY RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username']
-			raise web.seeother('/modify-'+record)
+			raise web.seeother('/artchives/'+'modify-'+record)
 		# start review
 		elif actions.action.startswith('review'):
 			record = 'record-'+actions.action.split("artchives/",1)[1].replace('/','')
 			if session['username'] == "marilena.daquino2@unibo.it":
 				print datetime.datetime.now(),'START REVIEW RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username']
-				raise web.seeother('/review-'+record)		
+				raise web.seeother('/artchives/'+'review-'+record)		
 			else:
-				raise web.seeother('/welcome')
+				raise web.seeother('/artchives/welcome')
 
 
 class Record(object):
@@ -153,7 +153,7 @@ class Record(object):
 
 			# TODO quick statement to wd 
 			print datetime.datetime.now(),'CREATED RECORD:', recordID, session['username']
-			raise web.seeother('/welcome')
+			raise web.seeother('/artchives/welcome')
 
 
 class Modify(object):
@@ -185,7 +185,7 @@ class Modify(object):
 		queries.clearGraph(graphToClear)
 		mapping.artchivesToWD(recordData, userID, 'modified')
 		print datetime.datetime.now(),'MODIFIED RECORD:', recordID, session['username']
-		raise web.seeother('/welcome')
+		raise web.seeother('/artchives/welcome')
 
 
 class Review(object):
@@ -200,7 +200,7 @@ class Review(object):
 			data = queries.getData(graphToRebuild)
 			return render.review(graphdata=data, pageID=recordID, record_form=forms.art_historian, graph=graphToRebuild, user=session['username']) # render the form filled
 		else:
-			raise web.seeother('/welcome')	
+			raise web.seeother('/artchives/welcome')	
 
 	def POST(self, name):
 		web.header("Content-Type","text/html; charset=utf-8")
@@ -216,7 +216,7 @@ class Review(object):
 			queries.clearGraph(graphToClear)
 			mapping.artchivesToWD(recordData, userID, 'in review')
 			print datetime.datetime.now(),'REVIEWED RECORD (NOT PUBLISHED YET):', recordID, session['username']
-			raise web.seeother('/welcome')
+			raise web.seeother('/artchives/welcome')
 
 		# publish
 		if actions.action.startswith('publish'):
@@ -228,7 +228,7 @@ class Review(object):
 			queries.clearGraph(graphToClear)
 			mapping.artchivesToWD(recordData, userID, 'published')
 			print datetime.datetime.now(),'PUBLISHED RECORD:', recordID, session['username']
-			raise web.seeother('/welcome')
+			raise web.seeother('/artchives/welcome')
 
 
 class About:
@@ -307,10 +307,10 @@ class sparql:
 
         cur_data = web.data()
         if "application/x-www-form-urlencoded" in content_type:
-        	print "QUERY TO ENDPOINT:", cur_data
+            print "QUERY TO ENDPOINT:", cur_data
             return self.__run_query_string(active, cur_data, True, content_type)
         elif "application/sparql-query" in content_type:
-        	print "QUERY TO ENDPOINT:", cur_data
+            print "QUERY TO ENDPOINT:", cur_data
             return self.__contact_tp(cur_data, True, content_type)
         else:
             raise web.redirect("/sparql")
@@ -320,10 +320,10 @@ class sparql:
         if accept is None or accept == "*/*" or accept == "":
             accept = "application/sparql-results+xml"
         if is_post:
-            req = requests.post('http://localhost:9999/blazegraph/sparql', data=data,
+            req = requests.post('http://localhost:19999/blazegraph/sparql', data=data,
                                 headers={'content-type': content_type, "accept": accept})
         else:
-            req = requests.get("%s?%s" % ('http://localhost:9999/blazegraph/sparql', data),
+            req = requests.get("%s?%s" % ('http://localhost:19999/blazegraph/sparql', data),
                                headers={'content-type': content_type, "accept": accept})
 
         if req.status_code == 200:
@@ -345,7 +345,7 @@ class sparql:
             if "query" in parsed_query:
                 return self.__contact_tp(query_string, is_post, content_type)
             else:
-                raise web.redirect("/sparql")
+                raise web.redirect("http://data.fondazionezeri.unibo.it/artchives/sparql")
         else:
             raise web.HTTPError(
                 "403", {"Content-Type": "text/plain"}, "SPARQL Update queries are not permitted.")

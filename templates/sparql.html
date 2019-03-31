@@ -13,12 +13,12 @@ $def with (active, user)
     </head>
     <body>      
         <nav>
-            <span class="logo"><a href="/"><img src="./static/imgs/logo.png"></a></span>
-            <a href="/about">about</a>
+            <span class="logo"><a href="/artchives/"><img src="./static/imgs/logo.png"></a></span>
+            <a href="about">about</a>
             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">login</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 $if user == 'anonymous':
-                    <form action="/" method="post">
+                    <form action="" method="POST">
                         <div class="field-wrap">
                           <label>Email</label><input name="login" type="email" required autocomplete="on"/>
                         </div>
@@ -29,7 +29,7 @@ $def with (active, user)
                       </form>
                 $else:
                     <p>You are logged in.</p>
-                    <p><a href="/logout">Logout</a></p> 
+                    <p><a href="logout">Logout</a></p> 
             </div>
         </nav>
 
@@ -44,9 +44,9 @@ $def with (active, user)
         
         <!-- SPARQL GUI -->
         <footer>
-            <a href="/credits">credits</a>
-            <a href="/documentation">documentation</a>
-            <a href="/sparql">query</a>
+            <a href="credits">credits</a>
+            <a href="documentation">documentation</a>
+            <a href="sparql">query</a>
         </footer>
         <link rel="stylesheet" type="text/css" href="./static/css/yasgui.css">
         <script src='./static/js/yasr.bundled.min.js'></script>
