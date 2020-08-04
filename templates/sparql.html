@@ -11,9 +11,9 @@ $def with (active, user)
         <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     </head>
-    <body>      
+    <body>
         <nav>
-            <span class="logo"><a href="/artchives/"><img src="./static/imgs/logo.png"></a></span>
+            <span class="logo"><a href="/"><img src="./static/imgs/logo.png"></a></span>
             <a href="about">about</a>
             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">login</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -25,11 +25,11 @@ $def with (active, user)
                         <div class="field-wrap">
                           <label>Password</label><input name="passwd" type="password" required autocomplete="on"/>
                         </div>
-                        <button class="btn btn-dark"/>Login</button>    
+                        <button class="btn btn-dark"/>Login</button>
                       </form>
                 $else:
                     <p>You are logged in.</p>
-                    <p><a href="logout">Logout</a></p> 
+                    <p><a href="logout">Logout</a></p>
             </div>
         </nav>
 
@@ -41,7 +41,7 @@ $def with (active, user)
             </div>
         </div>
 
-        
+
         <!-- SPARQL GUI -->
         <footer>
             <a href="credits">credits</a>

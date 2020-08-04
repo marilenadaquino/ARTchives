@@ -16,6 +16,10 @@ article {padding: 5em;}
 article:nth-child(even), .articleBox, #yasr {background-color: #F5F6FA;}
 article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 
+/* messages */
+.messageError {padding: 18%;}
+#delConfirm {z-index: 100000;}
+
 /* login */
 .dropdown-menu {padding: 2em !important;}
 .field-wrap label {width: 100%; margin-top: 0.5em;}
@@ -70,28 +74,36 @@ label[for='S_KEEPER_title'], label[for='S_CREATOR_title'], label[for='S_COLLECTI
 .tip {width: 35px;}
 .wditem{padding: 5px; border-bottom: solid 0.5px grey;}
 .blue{color: #23daa2 !important; cursor: pointer;}
-.orange {background-color: #FF8C00 !important; cursor: pointer;}
+sub {display: block; margin: 25px;}
+/*.orange {background-color: #FF8C00 !important; cursor: pointer;}
 .orange:hover {background-color: #cc7000 !important;}
-.orangeText {color: #FF8C00 !important;}
-.tag {display: inline-block; cursor: pointer; color: white; background-color: #23daa2; border-radius: 2px; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
+.orangeText {color: #FF8C00 !important;}*/
+/*.tag {display: inline-block; cursor: pointer; color: white; background-color: #23daa2; border-radius: 2px; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
+*/
+.tag {display: inline-block; cursor: pointer; color: black; background-color: white; border-radius: 3px; border: solid 1px black; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
 .tag ~ .tag{clear: left !important; margin-left: 0.2em;}
 .tag::after{content:' x';}
-.tag:hover {background-color: #1cae81;}
+span[class^='tag MD']:hover {border-color: #FF8C00 !important; color: #FF8C00 !important;}
+span[class^='tag Q']:hover {border-color: #1cae81 !important; color: #1cae81 !important;}
 .tags-nlp {margin: 25px;}
-input[type='text'], input[type='textarea'] {padding-left: 0.2em !important; border: none; border-bottom: solid 2px rgb(192,192,192); width: 100%;}
-input[type='text']:focus, input[type='textarea']:focus {outline: none !important; border-bottom: solid 2px #23daa2; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; padding-left: 0.5em !important;}
+input[type='text'], input[type='textarea'], textarea {padding-left: 0.2em !important; border: none; border-bottom: solid 2px rgb(192,192,192); width: 100%;}
+input[type='text']:focus, input[type='textarea']:focus, textarea:focus {outline: none !important; border-bottom: solid 2px #23daa2; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; padding-left: 0.5em !important;}
 input[value="Save"], input[value="Start review process"] {margin: 2em auto; width: 15em;}
 input[value="Publish"] {background-color: #23daa2 !important; border-color: #23daa2;}
 input[value="Publish"]:hover {background-color: #1cae81 !important; border-color: #1cae81;}
 i.fa-info-circle{color: #23daa2;}
 i.fa-info-circle:hover{ color: #1cae81;}
 
+::placeholder {color: lightgrey !important;}
+.bkg_hover {border-color: black !important; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; opacity: 1;}
+.color_hover {color: black !important; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; opacity: 1;}
+
 #searchresult {max-width: 600px;}
 
 /* about */
 .articleBox {padding: 2em;}
 .articleTitle {font-size: 5em; text-transform: none !important; text-align: left;}
-.articleSubtitle {color: #1cae81; font-size: 1.3em !important; display: inline !important;}
+.articleSubtitle, .info-label {color: #1cae81; font-size: 1.3em !important; display: inline !important;}
 .columns {
   padding: 1em 0.2em;
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -113,7 +125,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .entryTitle {background-color: white; font-size: 1.2em; padding: 0.3em;}
 
 /* historian/collection template */
-.info-item {font-style: italic;}
+/*.info-item {font-style: italic;}*/
 .info-bio {margin-top: 2em;}
 .biblio:first-of-type {background-color: silver; color: white;}
 .biblio {background-color: gray; color: white; padding: 1em 3em 3em 3em;}

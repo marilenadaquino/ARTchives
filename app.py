@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
-import web , datetime , os, time, re, cgi, urlparse, requests
+import web , datetime , os, time, re, cgi, requests
+from urllib.parse import parse_qs
 import forms, mapping, conf, queries
 from web import form
 web.config.debug = False
 prefix = ''
-prefix2 = ''
+#prefixLocal = '/artchives/'
+prefixLocal = ''
 
-# TODO add documentation page
-# TODO browse results in a public page
 urls = (
 	prefix + '/', 'Login',
 	prefix + '/logout', 'Logout',
-	prefix2 + '/welcome','Index',
+	prefix + '/welcome','Index',
 	prefix + '/record-(.+)', 'Record',
 	prefix + '/modify-(.+)', 'Modify',
 	prefix + '/review-(.+)', 'Review',
@@ -34,25 +34,54 @@ app = web.application(urls, globals())
 if web.config.get('_session') is None:
 	store = web.session.DiskStore('sessions')
 	session = web.session.Session(app, store, initializer={'logged_in': 'False', 'username': 'anonymous', 'password': 'None'})
-	web.config._session = session 
+	web.config._session = session
 	session_data = session._initializer
 else:
 	session = web.config._session
 	session_data = session._initializer
 
-render = web.template.render('templates/', base="layout", globals={'session':session, 'clean':mapping.clean_to_uri})
+render = web.template.render('templates/', base="layout", cache=False, globals={'session':session, 'clean':mapping.clean_to_uri})
 render2 = web.template.render('templates/', globals={'session':session})
 
 # TODO Hash passw
 allowed = (
-	('hello','spank'),
+
 )
+
+def notfound():
+    return web.notfound(render.notfound(user='anonymous'))
+
+def internalerror():
+    return web.internalerror(render.internalerror(user='anonymous'))
+
+app.notfound = notfound
+app.internalerror = internalerror
+
+class Notfound:
+    def GET(self):
+        raise web.notfound()
+
+def logout(page):
+	"""default beahviour for logout"""
+	data = web.input()
+	login = data.login
+	passwd = data.passwd
+	if(login,passwd) in allowed:
+		session['logged_in'] = True
+		session['username'] = login
+		session['password'] = passwd
+		print(datetime.datetime.now(),'LOGIN:', session['username'])
+		raise web.seeother(prefixLocal+'welcome')
+	else:
+		return render.page(user='anonymous')
+
+
 
 class Login:
 	def GET(self):
 		if(session.username,session.password) in allowed:
 			session.logged_in = True
-			raise web.seeother('/artchives/welcome')
+			raise web.seeother(prefixLocal+'welcome')
 		else:
 			return render.login(user='anonymous')
 
@@ -64,19 +93,22 @@ class Login:
 			session['logged_in'] = True
 			session['username'] = login
 			session['password'] = passwd
-			print datetime.datetime.now(),'LOGIN:', session['username']
-			raise web.seeother('/artchives/welcome')
+			print(datetime.datetime.now(),'LOGIN:', session['username'])
+			raise web.seeother(prefixLocal+'welcome')
 		else:
 			return render.login(user='anonymous')
 
 wikidir = os.path.realpath('./records/')
 
 class Logout:
-    def GET(self):
-    	session['logged_in'] = 'False'
-    	session['username'] = 'anonymous'
-    	print datetime.datetime.now(),'LOGOUT:', session['username']
-        return render.login(user='anonymous')
+	def GET(self):
+		session['logged_in'] = 'False'
+		session['username'] = 'anonymous'
+		print(datetime.datetime.now(),'LOGOUT:', session['username'])
+		return render.login(user='anonymous')
+
+	def POST(self):
+		logout(prefixLocal)
 
 
 class Index:
@@ -87,12 +119,13 @@ class Index:
 		if (session['username'],session['password']) in allowed:
 			session['logged_in'] = 'True'
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
-			records = queries.getRecords() # get all the records
-			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )            
+			records = reversed(sorted(queries.getRecords(), key=lambda tup: tup[3]))
+			#records = queries.getRecords() # get all the records
+			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )
 		else:
 			session['logged_in'] = 'False'
 			return render.login(user='anonymous')
-	
+
 	def POST(self):
 		actions = web.input()
 		web.header("Content-Type","text/html; charset=utf-8")
@@ -100,77 +133,83 @@ class Index:
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
 		# create a new record
 		if actions.action.startswith('createRecord'):
-			record = 'record-'+actions.action.split("createRecord",1)[1] 
-			print datetime.datetime.now(),'START NEW RECORD:', actions.action.split("createRecord",1)[1], session['username']
-			raise web.seeother('/artchives/'+record)
+			record = 'record-'+actions.action.split("createRecord",1)[1]
+			print(datetime.datetime.now(),'START NEW RECORD:', actions.action.split("createRecord",1)[1], session['username'])
+			raise web.seeother(prefixLocal+record)
 		# delete a record (but not the dump in /records folder)
 		elif actions.action.startswith('deleteRecord'):
 			record = actions.action.split("deleteRecord",1)[1]
-			queries.deleteRecord(record) 
+			queries.deleteRecord(record)
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
 			records = queries.getRecords() # get all the records
-			print datetime.datetime.now(),'DELETED RECORD:', record, session['username']
-			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )            	
+			print(datetime.datetime.now(),'DELETED RECORD:', record, session['username'])
+			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )
 		# modify a record
 		elif actions.action.startswith('modify'):
 			record = 'record-'+actions.action.split("artchives/",1)[1].replace('/','')
-			print datetime.datetime.now(),'MODIFY RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username']
-			raise web.seeother('/artchives/'+'modify-'+record)
+			print(datetime.datetime.now(),'MODIFY RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username'])
+			raise web.seeother(prefixLocal+'modify-'+record)
 		# start review
 		elif actions.action.startswith('review'):
 			record = 'record-'+actions.action.split("artchives/",1)[1].replace('/','')
 			if session['username'] == "marilena.daquino2@unibo.it":
-				print datetime.datetime.now(),'START REVIEW RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username']
-				raise web.seeother('/artchives/'+'review-'+record)		
+				print(datetime.datetime.now(),'START REVIEW RECORD:', actions.action.split("artchives/",1)[1].replace('/',''), session['username'])
+				raise web.seeother(prefixLocal+'review-'+record)
 			else:
-				raise web.seeother('/artchives/welcome')
+				raise web.seeother(prefixLocal+'welcome')
 
 
 class Record(object):
- 	def GET(self, name):
- 		web.header("Content-Type","text/html; charset=utf-8")
+	def GET(self, name):
+		web.header("Cache-Control", "no-cache, max-age=0, must-revalidate, no-store")
+		web.header("Content-Type","text/html; charset=utf-8")
 		web.header('Access-Control-Allow-Origin', '*')
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
- 		if (session['username'],session['password']) in allowed:
+		if (session['username'],session['password']) in allowed:
 			session['logged_in'] = 'True'
-			return render.record(record_form=forms.art_historian, pageID=name, user=session['username'])
+			f = forms.art_historian()
+			print(session_data,'\n',session['username'],f.S_COLL_2.render())
+			return render.record(record_form=f, pageID=name, user=session['username'])
 		else:
-			session['logged_in'] = 'False'	
+			session['logged_in'] = 'False'
 			return render.login(user=session['username'])
 
 	def POST(self, name):
 		web.header("Content-Type","text/html; charset=utf-8")
 		web.header('Access-Control-Allow-Origin', '*')
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-		if not forms.art_historian.validates():
-			return render.record(record_form=forms.art_historian, pageID=name, user=session['username'])
+		f = forms.art_historian()
+		if not f.validates():
+			return render.record(record_form=f, pageID=name, user=session['username'])
 		else:
 			recordData = web.input()
 			recordID = recordData.recordID
-			#userID = recordID.split("-record-",1)[0] 
+			#userID = recordID.split("-record-",1)[0]
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
 			mapping.artchivesToWD(recordData, userID, 'not modified')
-
-			# TODO quick statement to wd 
-			print datetime.datetime.now(),'CREATED RECORD:', recordID, session['username']
-			raise web.seeother('/artchives/welcome')
+			# TODO empty recordData
+			# TODO quick statement to wd
+			print(datetime.datetime.now(),'CREATED RECORD:', recordID, session['username'])
+			raise web.seeother(prefixLocal+'welcome')
 
 
 class Modify(object):
 	def GET(self, name):
+		web.header("Cache-Control", "no-cache, max-age=0, must-revalidate, no-store")
 		web.header("Content-Type","text/html; charset=utf-8")
 		web.header('Access-Control-Allow-Origin', '*')
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
- 		if (session['username'],session['password']) in allowed:
-			session['logged_in'] = 'True'
+		if (session['username'],session['password']) in allowed:
+			session_data['logged_in'] = 'True'
 			graphToRebuild = mapping.base+name.split("record-",1)[1]+'/'
-
 			recordID = name
 			data = queries.getData(graphToRebuild)
-			return render.modify(graphdata=data, pageID=recordID, record_form=forms.art_historian, user=session['username']) # render the form filled
+			print(session_data,'\n',session['username'])
+			f = forms.art_historian()
+			return render.modify(graphdata=data, pageID=recordID, record_form=f, user=session['username']) # render the form filled
 		else:
 			session['logged_in'] = 'False'
-			return render.login(user='anonymous')	
+			return render.login(user='anonymous')
 
 	# TODO validate form!
 	def POST(self, name):
@@ -179,28 +218,31 @@ class Modify(object):
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
 		recordData = web.input()
 		recordID = recordData.recordID
-		# userID = recordID.rsplit("-record-",2)[1] 
+		# userID = recordID.rsplit("-record-",2)[1]
 		userID = session['username'].replace('@','-at-').replace('.','-dot-')
 		graphToClear = mapping.base+recordID.split("record-",1)[1]+'/'
 		queries.clearGraph(graphToClear)
 		mapping.artchivesToWD(recordData, userID, 'modified')
-		print datetime.datetime.now(),'MODIFIED RECORD:', recordID, session['username']
-		raise web.seeother('/artchives/welcome')
+		print(datetime.datetime.now(),'MODIFIED RECORD:', recordID, session['username'])
+		raise web.seeother(prefixLocal+'welcome')
 
 
 class Review(object):
 	def GET(self, name):
+		web.header("Cache-Control", "no-cache, max-age=0, must-revalidate, no-store")
 		web.header("Content-Type","text/html; charset=utf-8")
 		web.header('Access-Control-Allow-Origin', '*')
 		web.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-		if session['username'] == "marilena.daquino2@unibo.it" or session['username'] == 'francesca.mambelli@unibo.it':
+		if session['username'] == "marilena.daquino2@unibo.it" or session['username'] == 'francesca.mambelli6@unibo.it':
 			session['logged_in'] = 'True'
 			graphToRebuild = mapping.base+name.split("record-",1)[1]+'/'
 			recordID = name
 			data = queries.getData(graphToRebuild)
-			return render.review(graphdata=data, pageID=recordID, record_form=forms.art_historian, graph=graphToRebuild, user=session['username']) # render the form filled
+			print(session_data,'\n',session['username'])
+			f = forms.art_historian()
+			return render.review(graphdata=data, pageID=recordID, record_form=f, graph=graphToRebuild, user=session['username']) # render the form filled
 		else:
-			raise web.seeother('/artchives/welcome')	
+			raise web.seeother(prefixLocal+'welcome')
 
 	def POST(self, name):
 		web.header("Content-Type","text/html; charset=utf-8")
@@ -215,61 +257,81 @@ class Review(object):
 			graphToClear = mapping.base+name.split("record-",1)[1]+'/'
 			queries.clearGraph(graphToClear)
 			mapping.artchivesToWD(recordData, userID, 'in review')
-			print datetime.datetime.now(),'REVIEWED RECORD (NOT PUBLISHED YET):', recordID, session['username']
-			raise web.seeother('/artchives/welcome')
+			print(datetime.datetime.now(),'REVIEWED RECORD (NOT PUBLISHED YET):', recordID, session['username'])
+			raise web.seeother(prefixLocal+'welcome')
 
 		# publish
 		if actions.action.startswith('publish'):
-			record = 'record-'+actions.action.split("publishRecord",1)[1] 
+			record = 'record-'+actions.action.split("publishRecord",1)[1]
 			recordData = web.input()
 			recordID = recordData.recordID
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
 			graphToClear = mapping.base+name.split("record-",1)[1]+'/'
 			queries.clearGraph(graphToClear)
 			mapping.artchivesToWD(recordData, userID, 'published')
-			print datetime.datetime.now(),'PUBLISHED RECORD:', recordID, session['username']
-			raise web.seeother('/artchives/welcome')
+			print(datetime.datetime.now(),'PUBLISHED RECORD:', recordID, session['username'])
+			raise web.seeother(prefixLocal+'welcome')
 
 
 class About:
 	def GET(self):
 		return render.about(user='anonymous')
 
+	def POST(self):
+		logout('about')
 
 class Credits:
 	def GET(self):
 		return render.credits(user='anonymous')
 
+	def POST(self):
+		logout('credits')
 
 class Contribute:
 	def GET(self):
 		return render.contribute(user='anonymous')
 
+	def POST(self):
+		logout('contribute')
+
 class Documentation:
 	def GET(self):
 		return render.documentation(user='anonymous')
 
+	def POST(self):
+		logout('documentation')
+
 class Historians:
 	def GET(self):
 		records = queries.getHistorians()
-		return render.historians(form=forms.searchHistorian, user='anonymous', data=records, title='Art historians')
+		fh = forms.searchHistorian()
+		return render.historians(form=fh, user='anonymous', data=records, title='Art historians')
 
+	def POST(self):
+		logout('historians')
 
 class Historian(object):
 	def GET(self, name):
 		# TO BE CHANGED
 		historianID = name
+		print(name)
 		historianURI = mapping.getRightURIbase(historianID)+historianID
 		dataHistorian = queries.getHistorian(historianURI)
+		print(historianURI)
 		# TODO add other properties/links pIn and pOut
-		return render.historian(user='anonymous', graphdata=dataHistorian, graphID=historianID)		
+		return render.historian(user='anonymous', graphdata=dataHistorian, graphID=historianID)
 
+	def POST(self):
+		logout('historian')
 
 class Collections:
 	def GET(self):
 		records = queries.getCollections()
-		return render.collections(form=forms.searchCollection, user='anonymous', data=records, title='Collections')
+		fc = forms.searchCollection()
+		return render.collections(form=fc, user='anonymous', data=records, title='Collections')
 
+	def POST(self):
+		logout('collections')
 
 class Collection(object):
 	def GET(self, name):
@@ -277,14 +339,19 @@ class Collection(object):
 		graph = mapping.base+graphID+'/'
 		dataCollection = queries.getData(graph)
 		# TODO add other properties/links pIn and pOut
-		return render.collection(user='anonymous', graphdata=dataCollection, graphID=graphID)	
+		return render.collection(user='anonymous', graphdata=dataCollection, graphID=graphID)
 
+	def POST(self):
+		logout('collection')
 
 class Keepers:
 	def GET(self):
 		records = queries.getKeepers()
-		return render.keepers(form=forms.searchKeeper, user='anonymous', data=records, title='Institutions')
+		fk = forms.searchKeeper()
+		return render.keepers(form=fk, user='anonymous', data=records, title='Institutions')
 
+	def POST(self):
+		logout('keepers')
 
 class Keeper(object):
 	def GET(self, name):
@@ -294,6 +361,9 @@ class Keeper(object):
 		dataKeeper = queries.getKeeper(keeperURI)
 		# TODO add other properties/links pIn and pOut
 		return render.keeper(user='anonymous', graphdata=dataKeeper, graphID=keeperID)
+
+	def POST(self):
+		logout('keeper')
 
 class sparql:
     def GET(self, active):
@@ -307,10 +377,10 @@ class sparql:
 
         cur_data = web.data()
         if "application/x-www-form-urlencoded" in content_type:
-            print "QUERY TO ENDPOINT:", cur_data
+            print ("QUERY TO ENDPOINT:", cur_data)
             return self.__run_query_string(active, cur_data, True, content_type)
         elif "application/sparql-query" in content_type:
-            print "QUERY TO ENDPOINT:", cur_data
+            print("QUERY TO ENDPOINT:", cur_data)
             return self.__contact_tp(cur_data, True, content_type)
         else:
             raise web.redirect("/sparql")
@@ -320,17 +390,17 @@ class sparql:
         if accept is None or accept == "*/*" or accept == "":
             accept = "application/sparql-results+xml"
         if is_post:
-            req = requests.post('http://localhost:19999/blazegraph/sparql', data=data,
+            req = requests.post('http://artchives.fondazionezeri.unibo.it:19999/sparql', data=data,
                                 headers={'content-type': content_type, "accept": accept})
         else:
-            req = requests.get("%s?%s" % ('http://localhost:19999/blazegraph/sparql', data),
+            req = requests.get("%s?%s" % ('http://artchives.fondazionezeri.unibo.it:19999/sparql', data),
                                headers={'content-type': content_type, "accept": accept})
 
         if req.status_code == 200:
             web.header('Access-Control-Allow-Origin', '*')
             web.header('Access-Control-Allow-Credentials', 'true')
             web.header('Content-Type', req.headers["content-type"])
-       
+
             return req.text
         else:
             raise web.HTTPError(
@@ -338,14 +408,14 @@ class sparql:
 
     def __run_query_string(self, active, query_string, is_post=False,
                            content_type="application/x-www-form-urlencoded"):
-        parsed_query = urlparse.parse_qs(query_string)
+        parsed_query = parse_qs(query_string)
         if query_string is None or query_string.strip() == "":
             return render2.sparql(active, user='anonymous')
         if re.search("updates?", query_string, re.IGNORECASE) is None:
             if "query" in parsed_query:
                 return self.__contact_tp(query_string, is_post, content_type)
             else:
-                raise web.redirect("http://data.fondazionezeri.unibo.it/artchives/sparql")
+                raise web.redirect(conf.artchivesPublicEndpoint)
         else:
             raise web.HTTPError(
                 "403", {"Content-Type": "text/plain"}, "SPARQL Update queries are not permitted.")

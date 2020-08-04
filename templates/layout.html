@@ -11,6 +11,7 @@ $def with (content)
 		<script type="text/javascript" src="./static/js/wikidata-sdk.min.js"></script>
 		<script type="text/javascript" src="./static/js/artchives.js"></script>
 		<script type="text/javascript" src="./static/js/classie.js"></script>
+		<link rel="icon" type="image/png" href="/static/imgs/favicon.png">
 		<link rel="stylesheet" type="text/css" href="./static/css/artchives.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -21,7 +22,7 @@ $def with (content)
 			<section class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
 			</section>
 			<nav>
-				<span class="logo"><a href="/artchives/"><img src="./static/imgs/logo.png"></a></span>
+				<span class="logo"><a href="/"><img src="./static/imgs/logo.png"></a></span>
 				<a href="about">about</a>
 				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">login</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -33,11 +34,11 @@ $def with (content)
 						    <div class="field-wrap">
 						      <label>Password</label><input name="passwd" type="password" required autocomplete="on"/>
 						    </div>
-						    <button class="btn btn-dark"/>Login</button>    
+						    <button class="btn btn-dark"/>Login</button>
 						  </form>
 					$else:
 						<p>You are logged in.</p>
-						<p><a href="logout">Logout</a></p> 
+						<p><a href="logout">Logout</a></p>
 				</div>
 			</nav>
 			$:content
@@ -45,9 +46,9 @@ $def with (content)
 				<a href="credits">credits</a>
 				<a href="contribute">contribute</a>
 				<a href="documentation">documentation</a>
-				<a href="sparql">query</a>
+				<!-- <a href="sparql">query</a> -->
 			</footer>
 		</section>
 	</body>
-	
+
 </html>

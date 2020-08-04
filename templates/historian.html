@@ -1,25 +1,25 @@
 $def with (user, graphdata, graphID)
 
-$var user = user 
+$var user = user
 
 <section class="row articleBox">
 	<section class="col-md-7">
-		$for k, v in graphdata.iteritems():
+		$for k, v in graphdata.items():
 			$if k.startswith('S_CREATOR_1'):
-				$for id, label in v.iteritems():
+				$for id, label in v.items():
 					<h2 class="articleTitle">$label</h2>
 		<p class="info-item">
 			$if 'S_CREATOR_2' in graphdata:
 				<span class="info-label"></span><span>$graphdata['S_CREATOR_2'].</span>
-			$for k, v in graphdata.iteritems():
+			$for k, v in graphdata.items():
 				$if k.startswith('S_CREATOR_4'):
-					$for id, label in v.iteritems():
+					$for id, label in v.items():
 						<span>$label.</span>
 		</p>
 		<p class="info-item">
-			$for k, v in graphdata.iteritems():
+			$for k, v in graphdata.items():
 				$if k.startswith('S_CREATOR_3'):
-					$for id, label in v.iteritems():
+					$for id, label in v.items():
 						<span>$label.</span>
 		</p>
 		$if 'S_CREATOR_5' in graphdata:
@@ -31,47 +31,35 @@ $var user = user
 		<section class="circles row">
 			<section class="info-graphic col-md-4"><i class="fas fa-quote-left"></i><p>historian's relations</p></section>
 			<section class="info-graphic-items col-md-8">
-				$for k, v in graphdata.iteritems():
+				$for k, v in graphdata.items():
 					$if k.startswith('S_CREATOR_5-'):
-						$for id, label in v.iteritems():
+						$for id, label in v.items():
 							<span class="box-small" data-id="$id">$label</span>
-				$for k, v in graphdata.iteritems():
+				$for k, v in graphdata.items():
 					$if k.startswith('S_COLL_8-'):
-						$for id, label in v.iteritems():
+						$for id, label in v.items():
 							<span class="box-small" data-id="$id">$label</span>
-			</section>	
+			</section>
 		</section>
 	</section>
 	<section class="col-md-5">
 		<!-- TODO add image here -->
 		<section class="biblio">
 			<h3 class="biblio-label">Main works</h3>
-			$for k, v in graphdata.iteritems():
-				$if k.startswith('S_CREATOR_6'):
-					$for id, label in v.iteritems():
-						$if id.startswith('OL'):
-							<p><a class='blue' target='_blank' href='http://openlibrary.org/works/$id'>
-									<i class='fas fa-external-link-alt'></i></a> $label</p>
-						$else:
-							<p class='info-url'>$label</p>
+			$if 'S_CREATOR_6' in graphdata:
+				<p>$graphdata['S_CREATOR_6']</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Bibliography</h3>
-			$for k, v in graphdata.iteritems():
-				$if k.startswith('S_CREATOR_7'):
-					$for id, label in v.iteritems():
-						$if id.startswith('OL'):
-							<p><a class='blue' target='_blank' href='http://openlibrary.org/works/$id'>
-									<i class='fas fa-external-link-alt'></i></a> $label</p>
-						$else:
-							<p class='info-url'>$label</p>
+			$if 'S_CREATOR_7' in graphdata:
+				<p>$graphdata['S_CREATOR_7']</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Collections</h3>
-			<!-- TODO add other collections where the historian is mentioned in -->	
-			$for k, v in graphdata.iteritems():
+			<!-- TODO add other collections where the historian is mentioned in -->
+			$for k, v in graphdata.items():
 				$if k.startswith('S_COLL_2'):
-					$for id, label in v.iteritems():
+					$for id, label in v.items():
 						<p><a class='blue' target='_blank' href="collection-$id"><i class='fas fa-external-link-alt'></i></a> $label</p>
 		</section>
 	</section>

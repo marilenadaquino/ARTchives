@@ -8,6 +8,7 @@ $var user = user
 			$$(".documentation").removeClass('col-md-7').addClass('col-md-12');
 			$$("h2").css('font-size','2em');
 		} );
+		setTimeout( function(){ document.getElementById( "recordForm" ).reset(); }, 5 );
 	</script>
 	<h3>Create record</h3>
 </header>
@@ -109,7 +110,9 @@ $var user = user
 					$:record_form.S_CREATOR_5.pre
 					$:record_form.S_CREATOR_5.render()
 				</section>
-				<div class="tags-nlp col-md-9"></div>
+				<div class="tags-nlp col-md-9">
+					<sub>After typing...press enter to extract entities. Remove the ones that are not in scope</sub>
+				</div>
 			</section>
 			<section class="col-md-12">
 				<section class="label col-md-10">$:record_form.S_CREATOR_6.description</section>
@@ -182,7 +185,9 @@ $var user = user
 					$:record_form.S_COLL_8.pre
 					$:record_form.S_COLL_8.render()
 				</section>
-				<div class="tags-nlp col-md-9"></div>
+				<div class="tags-nlp col-md-9">
+					<sub>After typing...press enter to extract entities. Remove the ones that are not in scope</sub>
+				</div>
 			</section>
 			<section class="col-md-12">
 				<section class="label col-md-10">$:record_form.S_COLL_9.description</section>
@@ -248,10 +253,24 @@ $var user = user
 				</section>
 			</section>
 			<section class="col-md-12">
-				<section class="label col-md-10">$:record_form.S_COLL_18.description</section>
+				<section class="label col-md-10">$:record_form.S_COLL_18_1.description</section>
 				<section class="row col-md-10">
-					$:record_form.S_COLL_18.pre
-					$:record_form.S_COLL_18.render()
+					$:record_form.S_COLL_18_1.pre
+					$:record_form.S_COLL_18_1.render()
+					$:record_form.S_COLL_18_1_desc.pre
+					$:record_form.S_COLL_18_1_desc.render()
+				</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_18_2.pre
+					$:record_form.S_COLL_18_2.render()
+					$:record_form.S_COLL_18_2_desc.pre
+					$:record_form.S_COLL_18_2_desc.render()
+				</section>
+				<section class="row col-md-10">
+					$:record_form.S_COLL_18_3.pre
+					$:record_form.S_COLL_18_3.render()
+					$:record_form.S_COLL_18_3_desc.pre
+					$:record_form.S_COLL_18_3_desc.render()
 				</section>
 			</section>
 			<section class="col-md-12">
@@ -283,7 +302,7 @@ $var user = user
 				</section>
 			</section>
 			<!-- Subjects -->
-			<p class="sectionTitle">Subjects</p>
+			<p class="sectionTitle">Main subjects of the collection</p>
 			<section class="col-md-12">
 				<section class="label col-md-10">$:record_form.S_SUBJ_1.description</section>
 				<section class="row col-md-10">

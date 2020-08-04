@@ -27,20 +27,20 @@ $var user = user
           <td>$result[4]</td>
           <td>
             $if result[4] == 'not modified' or result[4] == 'modified':
-              <form action="" method='POST'>
-                <button class="btn btn-dark" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
+              <form id="modified" action="" method='POST'>
+                <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
                 <button class="btn btn-dark" name="action" value="reviewRecord$:result[0]" type="submit">Start review</button>
               </form>
             $if result[4] == 'in review':
-              <form action="" method='POST'>
-                <button class="btn btn-dark" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
+              <form id="review" action="" method='POST'>
+                <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
                 <button class="btn btn-dark" name="action" value="reviewRecord$:result[0]" type="submit">Review</button>
               </form>
             $if result[4] == 'published':
-              <form action="" method='POST'>
-                <button class="btn btn-dark" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
+              <form id="published" action="" method='POST'>
+                <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
               </form>
           </td>
@@ -48,13 +48,23 @@ $var user = user
     </table>
   </article>
   <!-- <h2>Search</h2>
-    
-    <div class="input-group">
-	     <input type="text" class="form-control searchterm" placeholder="Search term in Wikidata" id="searchterm"/>
+  
+  <div class="input-group">
+     <input type="text" class="form-control searchterm" placeholder="Search term in Wikidata" id="searchterm"/>
+  </div>
+
+  <div id="searchresult"></div> -->
+<!--  <div id="popup" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-body">
+        <label for="confirm">Do you really want to delete the record?</label>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="delConfirm">Delete</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
     </div>
-
-    <div id="searchresult"></div> -->
-
+  </div> -->
 </section>
 
 

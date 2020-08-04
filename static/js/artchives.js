@@ -2,7 +2,7 @@ $(document).ready(function() {
 	// disable submit form on enter press
 	$("input[type='text'], input[type='textarea']").on('keyup keypress', function(e) {
 	  var keyCode = e.keyCode || e.which;
-	  if (keyCode === 13) { 
+	  if (keyCode === 13) {
 	    e.preventDefault();
 	    return false;
 	  }
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	nlpText('S_COLL_8');
 
 	// popups crosscollections info
-	popUpInfo('box-small');
+	//popUpInfo('box-small');
 
 	// search WD, Getty and OL
 	$("input[type='text']").click(function () {
@@ -54,13 +54,13 @@ $(document).ready(function() {
 	// remove tag onclick
 	$(document).on('click', '.tag', function () {
 		$(this).next().remove();
-		// TODO remove also prev if nlp
 		$(this).remove();
+		colorForm();
 	});
 
 	// autoresize textarea
 	$('textarea').each(function () {
-		this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
+		this.setAttribute('style', 'height:' + (this.scrollHeight)/2 + 'px;overflow-y:hidden;');
 	}).on('input', function () {
 		this.style.height = 'auto';
 		this.style.height = (this.scrollHeight) + 'px';
@@ -79,19 +79,70 @@ $(document).ready(function() {
 
 	// URL detection
 	$('#info-url').each(function(element) {
-	    element.innerHTML = urlify(element.innerHTML);
+	    var str = $(this).html();
+	    // Set the regex string
+	    var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
+	    // Replace plain text links by hyperlinks
+	    var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
+	    // Echo link
+	    $(this).html(replaced_text);
 	});
 
-	//validateForm();
-	
+	// append WD icon to input fields
+	$('.searchWikidata').parent().prev('.label').append(' <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Wikidata-logo-without-paddings.svg" style="width:20px ; padding-bottom: 5px;"/>');
+
+	// hide placeholder if filled
+	//colorForm();
+
+	// prevent POST when deleting records
+	$('.delete').click(function(e) {
+		var result = confirm("Are you sure you want to delete this record?");
+		if (result) { } else { e.preventDefault(); return false; };
+	});
+
 });
 
-// urlify URLs found in the page
-function urlify(textt) {
-    var urlRegex = /(https?:\/\/[^\s]+)/g;
-    return textt.replace(urlRegex, function(url) {
-        return '<a href="' + url + '">' + url + '</a>';
-    });
+function colorForm() {
+	$('.searchWikidata').each( function() {
+		if ($(this).next('span').length > 0) {
+			$(this).removeAttr('placeholder');
+			$(this).parent().prev('.label').css('color','lightgrey');
+			$(this).parent().prev('.label').children('img').css('opacity','0.5');
+			$(this).nextAll('span').css('color','lightgrey').css('border-color','lightgrey');
+
+			$($(this).parent().parent()).hover(function(){
+				$(this).children().addClass('color_hover');
+				$(this).children().children('span').addClass('color_hover').addClass('bkg_hover');
+			}, function() {
+				$(this).children().removeClass('color_hover');
+				$(this).children().children('span').removeClass('color_hover').removeClass('bkg_hover');
+			});
+
+		} else {
+			$(this).parent().prev('.label').css('color','black');
+			$(this).parent().prev('.label').children('img').css('opacity','1');
+			$(this).nextAll('span').css('color','black').css('border-color','black');
+		};
+	});
+
+	$('.freeText').each( function() {
+		if ($(this).val().length > 0) {
+			$(this).parent().prev('.label').css('color','lightgrey');
+			$(this).parent().prev('.label').children('img').css('opacity','0.5');
+			$(this).css('color','lightgrey');
+			$($(this).parent().parent()).hover(function(){
+				$(this).children().addClass('color_hover');
+				$(this).children().children().addClass('color_hover');
+				}, function() {
+					$(this).children().removeClass('color_hover');
+					$(this).children().children().removeClass('color_hover');
+				});
+		} else {
+			$(this).parent().prev('.label').css('color','black');
+			$(this).parent().prev('.label').children('img').css('opacity','1');
+			$(this.value).css('color','black');
+		};
+	});
 };
 
 // delay a function
@@ -113,7 +164,7 @@ function searchWD(searchterm) {
 	$('#'+searchterm).keyup(function(e) {
 	  $("#searchresult").show();
 	  var q = $('#'+searchterm).val();
-	  
+
 	  $.getJSON("https://www.wikidata.org/w/api.php?callback=?", {
 	      search: q,
 	      action: "wbsearchentities",
@@ -143,29 +194,36 @@ function searchWD(searchterm) {
 			    'border-radius': '4px'
 			});
 	      $("#searchresult").empty();
-	      
+
 	      // artchives autocomplete in case nothing is found
 	      if(!data.search.length){
-	      	$("#searchresult").append("<div class='wditem'>No matches in Wikidata...looking into ARTchives</div>");
-	      	
+	      	$("#searchresult").append("<div class='wditem noresults'>No matches in Wikidata...looking into ARTchives</div>");
+	      	// remove messages after 3 seconds
+			setTimeout(function(){
+			  if ($('.noresults').length > 0) {
+			    $('.noresults').remove();
+			  }
+			}, 3000);
 			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> select distinct ?s ?o where { GRAPH ?g { ?s rdfs:label ?o . ?o bds:search '"+q+"*' . FILTER(regex(str(?s), 'https://w3id.org/artchives/' ) )} }"
 			var encoded = encodeURIComponent(query)
 
 			$.ajax({
 				    type: 'GET',
-				    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+				    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 				    headers: { Accept: 'application/sparql-results+json'},
 				    success: function(returnedJson) {
 				    	$("#searchresult").empty();
 						if (!returnedJson.length) {
 		      					$("#searchresult").empty();
-					    		$("#searchresult").append("<div class='wditem'>No results in Wikidata and ARTchives</div>");
+					    		$("#searchresult").append("<div class='wditem noresults'>No results in Wikidata and ARTchives</div>");
+		      					// remove messages after 3 seconds
+								setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		      				};
 						for (i = 0; i < returnedJson.results.bindings.length; i++) {
 							var myUrl = returnedJson.results.bindings[i].s.value;
 							// exclude named graphs from results
 							if ( myUrl.substring(myUrl.length-1) != "/") {
-								$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");					    
+								$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 							    };
 							};
 
@@ -175,48 +233,49 @@ function searchWD(searchterm) {
 					        	e.preventDefault();
 					        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 					        	var oldLabel = $(this).text();
-					        	$('#'+searchterm).after("<span class='tag orange "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");			
+					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
 					        	$("#searchresult").hide();
-					        	$('#'+searchterm).val('');	
-					        	// check prior records 
+					        	$('#'+searchterm).val('');
+					        	// check prior records and avoid the section to be filled
 					        	if (searchterm == 'S_KEEPER_1') {
 					        		checkPriorRecords('S_KEEPER_1', 'artchives');
 					        	};
 					        	if (searchterm == 'S_CREATOR_1') {
 					        		checkPriorRecords('S_CREATOR_1', 'artchives');
 					        	};
-					        }); 
-					        
+					        });
+
 					    });
-									
+
 				        }
 				    });
 			// end artchives
 	      };
 
 	      // fill the dropdown
-	      $.each(data.search, function(i, item) {     	
+	      $.each(data.search, function(i, item) {
 	        $("#searchresult").append("<div class='wditem'><a class='blue' target='_blank' href='http://www.wikidata.org/entity/"+item.title+"'><i class='fas fa-external-link-alt'></i></a> <a class='blue' data-id='" + item.title + "'>" + item.label + "</a> - " + item.description + "</div>");
 	      	// add tag if the user chooses an item from wd
 	      	$('a[data-id="'+ item.title+'"]').each( function() {
 		        $(this).bind('click', function(e) {
 		        	e.preventDefault();
-		        	$('#'+searchterm).after("<span class='tag "+item.title+"' data-input='"+searchterm+"' data-id='"+item.title+"'>"+item.label+"</span><input type='hidden' class='hiddenInput "+item.title+"' name='"+searchterm+"-"+item.title+"' value='"+item.title+","+escape(item.label)+"'/>");			
+		        	$('#'+searchterm).after("<span class='tag "+item.title+"' data-input='"+searchterm+"' data-id='"+item.title+"'>"+item.label+"</span><input type='hidden' class='hiddenInput "+item.title+"' name='"+searchterm+"-"+item.title+"' value='"+item.title+","+escape(item.label)+"'/>");
 		        	$("#searchresult").hide();
-		        	$('#'+searchterm).val('');	
-		        	// check prior records 
+		        	$('#'+searchterm).val('');
+		        	// check prior records
 		        	if (searchterm == 'S_KEEPER_1') {
 		        		checkPriorRecords('S_KEEPER_1', 'wikidata');
 		        	};
 		        	if (searchterm == 'S_CREATOR_1') {
 		        		checkPriorRecords('S_CREATOR_1', 'wikidata');
 		        	};
-		        }); 
+		        	//colorForm();
+		        });
 
-		        
+
 
 		    });
-	      });  
+	      });
 	  	}
 	  );
 	});
@@ -225,15 +284,16 @@ function searchWD(searchterm) {
 	$('#'+searchterm).keypress(function(e) {
 	    if(e.which == 13) {
 	    	e.preventDefault();
-	    	var now = new Date().valueOf(); 
+	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag orange "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");			
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
 			};
 			$("#searchresult").hide();
 	    	$('#'+searchterm).val('');
+	    	//colorForm();
 	    };
-	});	
+	});
 };
 
 // Open Library search
@@ -266,26 +326,30 @@ function searchOL(searchterm) {
 	      $("#searchresult").empty();
 
 	      if(!data['docs'].length){
-	      	$("#searchresult").append("<div class='wditem'>No matches in Open Library...looking into ARTchives</div>");
+	      	$("#searchresult").append("<div class='wditem noresults'>No matches in Open Library...looking into ARTchives</div>");
+	      	// remove messages after 3 seconds
+			setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 	      	// artchives autocomplete
 			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> select distinct ?s ?o where { GRAPH ?g { ?s rdfs:label ?o . ?o bds:search '"+$('#'+searchterm).val()+"*' . FILTER(regex(str(?s), 'https://w3id.org/artchives/' ) )} }"
 			var encoded = encodeURIComponent(query)
 
 			$.ajax({
 				    type: 'GET',
-				    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+				    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 				    headers: { Accept: 'application/sparql-results+json'},
 				    success: function(returnedJson) {
 				    	$("#searchresult").empty();
 						if (!returnedJson.length) {
 		      					$("#searchresult").empty();
-					    		$("#searchresult").append("<div class='wditem'>No results in Open Library and ARTchives</div>");
+					    		$("#searchresult").append("<div class='wditem noresults'>No results in Open Library and ARTchives</div>");
+		      					// remove messages after 3 seconds
+								setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		      				};
 						for (i = 0; i < returnedJson.results.bindings.length; i++) {
 							var myUrl = returnedJson.results.bindings[i].s.value;
 							// exclude named graphs from results
 							if ( myUrl.substring(myUrl.length-1) != "/") {
-								$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");					    
+								$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 							    };
 							};
 
@@ -295,12 +359,12 @@ function searchOL(searchterm) {
 					        	e.preventDefault();
 					        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 					        	var oldLabel = $(this).text();
-					        	$('#'+searchterm).after("<span class='tag orange "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");			
+					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
 					        	$("#searchresult").hide();
-					        	$('#'+searchterm).val('');	
-					        }); 
+					        	$('#'+searchterm).val('');
+					        });
 					    });
-									
+
 				        }
 				    });
 			// end artchives
@@ -316,14 +380,14 @@ function searchOL(searchterm) {
 		        $('a[data-id="'+ key+'"]').on('click', function(e) {
 		        	e.preventDefault();
 		        	$('#'+searchterm).after("<span class='tag "+key+"' data-input='"+searchterm+"' data-id='"+key+"'>"+ item['author_name'] + '. ' +item.title_suggest+ '. ' + item['publish_date'][0] + "</span><input type='hidden' class='hiddenInput "+key+"' data-id='"+key+"' name='"+searchterm+"-"+key+"' value='"+key+","+escape(item['author_name'] + '. '+item.title_suggest+ '. ' + item['publish_date'][0])+"'/>" );
-		        	$('#'+searchterm).after("");			
+		        	$('#'+searchterm).after("");
 		        	$("#searchresult").hide();
-		        	$('#'+searchterm).val('');	
-		               	
-		        }); 
-				
+		        	$('#'+searchterm).val('');
 
-	      });  
+		        });
+
+
+	      });
 
 
 	  	}
@@ -334,10 +398,10 @@ function searchOL(searchterm) {
 	$('#'+searchterm).keypress(function(e) {
 	    if(e.which == 13) {
 	    	e.preventDefault();
-	    	var now = new Date().valueOf(); 
+	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag orange "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
 
 			};
 			$("#searchresult").hide();
@@ -345,7 +409,7 @@ function searchOL(searchterm) {
 
 
 	    };
-	});	
+	});
 };
 
 // AAT (Getty) search
@@ -381,18 +445,18 @@ function searchAAT(searchterm) {
 		      $("#searchresult").empty();
 
 		      $(data).find('Vocabulary').each(function(){
-		      		
+
                     $(this).find("Subject").each(function(){
                     	var idAAT = $(this).find("Subject_ID").text();
                         var nameAAT = $(this).find('Preferred_Term').text();
                         $("#searchresult").append("<div class='wditem'><a class='blue' target='_blank' href='http://www.getty.edu/vow/AATFullDisplay?find=&logic=AND&note=&subjectid="+idAAT+"'><i class='fas fa-external-link-alt'></i></a> <a class='blue' data-id='" + idAAT + "'>" + nameAAT + "</a></div>");
-                        
+
                         // add tag if the user chooses an item from wd
 				        $('a[data-id="'+ idAAT+'"]').on('click', function(e) {
 				        	e.preventDefault();
-				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");		
+				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");
 				        	$("#searchresult").hide();
-				        	$('#'+searchterm).val('');					      
+				        	$('#'+searchterm).val('');
 				        });
                     });
                 });
@@ -404,20 +468,24 @@ function searchAAT(searchterm) {
 
 				$.ajax({
 					    type: 'GET',
-					    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+					    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 					    headers: { Accept: 'application/sparql-results+json'},
 					    success: function(returnedJson) {
 					    	$("#searchresult").empty();
-					    	$("#searchresult").append("<div class='wditem'>No results in AAT...looking into ARTchives</div>");
+					    	$("#searchresult").append("<div class='wditem noresults'>No results in AAT...looking into ARTchives</div>");
+		      				// remove messages after 3 seconds
+							setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		      				if (!returnedJson.length) {
 		      					$("#searchresult").empty();
-					    		$("#searchresult").append("<div class='wditem'>No results in AAT and ARTchives</div>");
+					    		$("#searchresult").append("<div class='wditem noresults'>No results in AAT and ARTchives</div>");
+		      					// remove messages after 3 seconds
+								setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		      				};
 							for (i = 0; i < returnedJson.results.bindings.length; i++) {
 								var myUrl = returnedJson.results.bindings[i].s.value;
 								// exclude named graphs from results
 								if ( myUrl.substring(myUrl.length-1) != "/") {
-									$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");					    
+									$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 								    };
 								};
 
@@ -427,18 +495,18 @@ function searchAAT(searchterm) {
 						        	e.preventDefault();
 						        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 						        	var oldLabel = $(this).text();
-						        	$('#'+searchterm).after("<span class='tag orange "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");			
+						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
 						        	$("#searchresult").hide();
-						        	$('#'+searchterm).val('');	
-						        }); 
-						    });  
-										
+						        	$('#'+searchterm).val('');
+						        });
+						    });
+
 					        }
 					    });
 				// end artchives
 		    };
 
-		      
+
 	  		}
 	  	});
 	}) );
@@ -448,18 +516,18 @@ function searchAAT(searchterm) {
 	$('#'+searchterm).keypress(function(e) {
 	    if(e.which == 13) {
 	    	e.preventDefault();
-	    	var now = new Date().valueOf(); 
+	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag orange "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
-			
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+
 			};
 			$("#searchresult").hide();
 	    	$('#'+searchterm).val('');
 
 
 	    };
-	});	
+	});
 };
 
 // ULAN (Getty) search
@@ -501,20 +569,24 @@ function searchULAN(searchterm) {
 
 				$.ajax({
 					    type: 'GET',
-					    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+					    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 					    headers: { Accept: 'application/sparql-results+json'},
 					    success: function(returnedJson) {
 					    	$("#searchresult").empty();
-					    	$("#searchresult").append("<div class='wditem'>No matches in Getty ULAN...looking into ARTchives</div>");
+					    	$("#searchresult").append("<div class='wditem noresults'>No matches in Getty ULAN...looking into ARTchives</div>");
+					    	// remove messages after 3 seconds
+							setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 					    	if (!returnedJson.length) {
 		      					$("#searchresult").empty();
-					    		$("#searchresult").append("<div class='wditem'>No results in ULAN and ARTchives</div>");
+					    		$("#searchresult").append("<div class='wditem noresults'>No results in ULAN and ARTchives</div>");
+		      					// remove messages after 3 seconds
+								setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		      				};
 							for (i = 0; i < returnedJson.results.bindings.length; i++) {
 								var myUrl = returnedJson.results.bindings[i].s.value;
 								// exclude named graphs from results
 								if ( myUrl.substring(myUrl.length-1) != "/") {
-									$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");					    
+									$("#searchresult").append("<div class='wditem'><a class='blue orangeText' data-id='"+returnedJson.results.bindings[i].s.value+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 								    };
 								};
 
@@ -524,12 +596,12 @@ function searchULAN(searchterm) {
 						        	e.preventDefault();
 						        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 						        	var oldLabel = $(this).text();
-						        	$('#'+searchterm).after("<span class='tag orange "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");			
+						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
 						        	$("#searchresult").hide();
-						        	$('#'+searchterm).val('');	
-						        }); 
+						        	$('#'+searchterm).val('');
+						        });
 						    });
-										
+
 					        }
 					    });
 				// end artchives
@@ -537,19 +609,19 @@ function searchULAN(searchterm) {
 
 		      $("#searchresult").empty();
 		      $(data).find('Vocabulary').each(function(){
-		      		
+
                     $(this).find("Subject").each(function(){
                     	var idAAT = $(this).find("Subject_ID").text();
                         var nameAAT = $(this).find('Preferred_Term').text();
                         var descAAT = $(this).find('Preferred_Biography').text();
                         $("#searchresult").append("<div class='wditem'><a class='blue' target='_blank' href='http://vocab.getty.edu/page/ulan/"+idAAT+"'><i class='fas fa-external-link-alt'></i></a> <a class='blue' data-id='" + idAAT + "'>" + nameAAT + "</a> - "+descAAT+"</div>");
-                        
+
                         // add tag if the user chooses an item from wd
 				        $('a[data-id="'+ idAAT+'"]').on('click', function(e) {
 				        	e.preventDefault();
-				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");	
+				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");
 				        	$("#searchresult").hide();
-				        	$('#'+searchterm).val('');				         	
+				        	$('#'+searchterm).val('');
 				        });
 
                     });
@@ -564,17 +636,17 @@ function searchULAN(searchterm) {
 	$('#'+searchterm).keypress(function(e) {
 	    if(e.which == 13) {
 	    	e.preventDefault();
-	    	var now = new Date().valueOf(); 
+	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag orange "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
 			};
 			$("#searchresult").hide();
 	    	$('#'+searchterm).val('');
 
 
 	    };
-	});	
+	});
 };
 
 // ARTchives search historians
@@ -582,24 +654,24 @@ function searchARTchives(searchterm) {
 	//  autocomplete on keyup
 	$('.'+searchterm).keyup( throttle(function(e) {
 		$("#searchresult").show();
-		var queryTerm = $('.'+searchterm).val();  
+		var queryTerm = $('.'+searchterm).val();
 		if (searchterm == 'searchHistorian') {
-			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> select distinct ?subj ?o where { ?collection wdp:P170 ?subj . ?subj rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} "	
+			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> select distinct ?subj ?o where { ?collection wdp:P170 ?subj . ?subj rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} "
 			var type = 'historian-';
-		}; 
+		};
 		if (searchterm == 'searchCollection') {
-			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> select distinct ?subj ?o where { GRAPH ?subj { ?g wdp:P170 ?hist ; rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} } "	
+			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> select distinct ?subj ?o where { GRAPH ?subj { ?g wdp:P170 ?hist ; rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} } "
 			var type = 'collection-';
 		};
 		if (searchterm == 'searchKeeper') {
-			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> select distinct ?subj ?o where { ?subj a wd:Q31855 ; rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} "	
+			var query = "prefix bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> select distinct ?subj ?o where { ?subj a wd:Q31855 ; rdfs:label ?o . ?o bds:search '"+queryTerm+"*' .} "
 			var type = 'keeper-';
 		};
 		var encoded = encodeURIComponent(query)
 
 	  	$.ajax({
 		    type: 'GET',
-		    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+		    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 		    headers: {
 		 		Accept: 'application/sparql-results+json'
 		    	},
@@ -631,15 +703,17 @@ function searchARTchives(searchterm) {
 					} else {
 						var qID = uri.substr(uri.lastIndexOf('/') + 1);
 					};
-					
+
 					$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value + "</a></div>");
 			    };
 		        },
 		        error: function() {
-		        	$("#searchresult").append("<div class='wditem'>No results in ARTchives</div>");
+		        	$("#searchresult").append("<div class='wditem noresults'>No results in ARTchives</div>");
+		        	// remove messages after 3 seconds
+					setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		        }
 		});
-	
+
 	}) );
 };
 
@@ -651,7 +725,7 @@ function nlpText(searchterm) {
 			$(this).next('.tags-nlp').empty();
 			var textNLP = $('#'+searchterm).val();
 			var encoded = encodeURIComponent(textNLP)
-			
+
 			// compromise.js
 			var doc = nlp(textNLP);
 			var listTopics = doc.nouns().toPlural().topics().out('topk');
@@ -666,10 +740,10 @@ function nlpText(searchterm) {
 			      format: "json",
 			      strictlanguage: true,
 			    },
-			    function(data) { 
-			    	$.each(data.search, function(i, item) {   	
+			    function(data) {
+			    	$.each(data.search, function(i, item) {
 				        $('textarea#'+searchterm).next('.tags-nlp').append('<span class="tag nlp '+item.title+'" data-input="'+searchterm+'" data-id="'+item.title+'">'+item.label+'</span><input type="hidden" class="hiddenInput '+item.title+'" name="'+searchterm+'-'+item.title+'" value="'+item.title+','+escape(item.label)+'"/>');
-			    	});	    			
+			    	});
 			    });
 			};
 
@@ -703,14 +777,14 @@ function nlpText(searchterm) {
 										$.ajax({
 											url: "https://cors-anywhere.herokuapp.com/https://www.wikidata.org/w/api.php?action=wbgetentities&ids="+res+'&props=labels&languages=en&languagefallback=en&sitefilter=&formatversion=2&format=json',
 											success: function(data) {
-												$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+res+'" data-input="'+searchterm+'" data-id="'+res+'">'+data.entities[res].labels.en.value+'</span><input type="hidden" class="hiddenInput '+res+'" name="'+searchterm+'-'+res+'" value="'+res+','+escape(data.entities[res].labels.en.value)+'"/>');								        													
-										    	
-													
+												$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+res+'" data-input="'+searchterm+'" data-id="'+res+'">'+data.entities[res].labels.en.value+'</span><input type="hidden" class="hiddenInput '+res+'" name="'+searchterm+'-'+res+'" value="'+res+','+escape(data.entities[res].labels.en.value)+'"/>');
+
+
 											}
 										});
 									} else {
 										// try to match dbpedia > wikipedia > wikidata entities
-							    		var WikiPage = 'https://en.wikipedia.org/wiki/'+ uri.substr(uri.lastIndexOf('/') + 1);	    		
+							    		var WikiPage = 'https://en.wikipedia.org/wiki/'+ uri.substr(uri.lastIndexOf('/') + 1);
 							    		$.ajax({
 										    type: 'GET',
 										    url: 'https://query.wikidata.org/bigdata/ldf',
@@ -733,7 +807,7 @@ function nlpText(searchterm) {
 													    	var myRegexpLabel = /"(.*)"@en/;
 													    	var matchLabel = myRegexpLabel.exec(dataLabel);
 													    	var label = matchLabel[1];
-													    	$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+match[1]+'" data-input="'+searchterm+'" data-id="'+match[1]+'">'+label+'</span><input type="hidden" class="hiddenInput '+match[1]+'" name="'+searchterm+'-'+match[1]+'" value="'+match[1]+','+escape(label)+'"/>');								        													
+													    	$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+match[1]+'" data-input="'+searchterm+'" data-id="'+match[1]+'">'+label+'</span><input type="hidden" class="hiddenInput '+match[1]+'" name="'+searchterm+'-'+match[1]+'" value="'+match[1]+','+escape(label)+'"/>');
 													    }
 													});
 												};
@@ -745,10 +819,10 @@ function nlpText(searchterm) {
 							});
 
 
-				            
-				    	
+
+
 				        };
-				    }; 	
+				    };
 			    }
 		    });
 		};
@@ -760,7 +834,7 @@ function popUpInfo(className) {
 	$('.'+className).each( function() {
 		var dataID = $(this).attr('data-id');
 		thisElem = $(this);
-		
+
 		$(this).attr('data-toggle','tooltip');
 		$(this).attr('data-placement','right');
 		$(this).attr('data-html','true');
@@ -775,22 +849,19 @@ function popUpInfo(className) {
 			base ="http://vocab.getty.edu/ulan/";
 			baseAAT ="http://vocab.getty.edu/aat/";
 		}; // Getty: TODO how to distinguish AAT and ULAN?
-		
+
 		var entity = base+dataID ;
 		var encoded = "PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT distinct ?g ?obj ?label ?type WHERE { GRAPH ?g { ?obj wdp:P921 <"+entity+"> ; a ?type ; rdfs:label ?label . } }"
 		$.ajax({
 		    type: 'GET',
-		    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+		    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 		    headers: {
 		 		Accept: 'application/sparql-results+json'
 		    	},
 		    success: function(returnedJson) {
 		    	historiansArray = new Array() ;
 		    	collectionsArray = new Array() ;
-		    	for (i = 0; i < returnedJson.results.bindings.length; i++) { 
-		    		
-		    		
-
+		    	for (i = 0; i < returnedJson.results.bindings.length; i++) {
 		    		if ( returnedJson.results.bindings[i].type.value == 'http://www.wikidata.org/entity/Q5' ) {
 		    			historianArray = new Array();
 		    			var uri = returnedJson.results.bindings[i].obj.value ;
@@ -809,11 +880,11 @@ function popUpInfo(className) {
 		    			collectionArray.push(returnedJson.results.bindings[i].label.value) ;
 		    			collectionsArray.push( collectionArray );
 		    		};
-		    		
+
 		    		var htmlText = '';
 		    		if (historiansArray.length) {
 		    			htmlText += "<p>Related art historians:</p>" ;
-		    			for (i = 0; i < historiansArray.length; i++) { 
+		    			for (i = 0; i < historiansArray.length; i++) {
 		    				// TODO this has to be changed with the following when using the historian ID and not the graph ID for routing to historians' pages
 		    				// var historianID = historiansArray[i][0].substr(historiansArray[i][0].lastIndexOf('/') + 1)
 		    				var historianID = historiansArray[i][0];
@@ -824,34 +895,33 @@ function popUpInfo(className) {
 
 		    		if (collectionsArray.length) {
 		    			htmlText += "<p>Related collections:</p>" ;
-		    			for (i = 0; i < collectionsArray.length; i++) { 
+		    			for (i = 0; i < collectionsArray.length; i++) {
 		    				// var collectionID = collectionsArray[i][0].substr(collectionsArray[i][0].lastIndexOf('/') + 1);
 		    				var collectionID = collectionsArray[i][0];
 		    				var collectionPage = '/collection-'+collectionID;
 		    				htmlText += "<p><a href='"+collectionPage+"'>"+collectionsArray[i][1]+"</a></p>";
 		    			};
-		    		};		 			
+		    		};
 		    	};
-		    	if (!historiansArray.length && !collectionsArray.length) { var htmlText = "<p>No relations with other collections</p>" ; };
+		    	if (!historiansArray.length && !collectionsArray.length) { htmlText += "<p>No relations to other collections</p>" ; };
 	    		$('span[data-id='+dataID+']').attr('data-original-title', htmlText);
-	    		
+
 		    }
 		});
-		
+
 		$(this).tooltip({'trigger':'click'});
 
 	});
-	
 };
 
 function checkPriorRecords(term, prefix) {
 	if (prefix == 'wikidata') { var base = 'http://www.wikidata.org/entity/'; };
 	if (prefix == 'artchives') { var base = 'https://w3id.org/artchives/'; };
-		
+
 	var entity = base + $('span[data-input="'+term+'"]').attr('data-id');
 	var queryKeeper = "PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?collection WHERE {<"+entity+"> wdp:P1830 ?collection .}"
 	var queryCreator = "PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?collection WHERE {?collection wdp:P170 <"+entity+"> .}"
-	
+
 	if (term == 'S_KEEPER_1') {
 		var encoded = encodeURIComponent(queryKeeper);
 		var what = 'keeper';
@@ -863,25 +933,19 @@ function checkPriorRecords(term, prefix) {
 
 	$.ajax({
 	    type: 'GET',
-	    url: 'http://data.fondazionezeri.unibo.it/artchives/sparql?query=' + encoded,
+	    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
 	    headers: { Accept: 'application/sparql-results+json'},
 	    success: function(returnedJson) {
 	    	console.log(returnedJson);
 			if (!returnedJson.results.bindings.length) {
-  			} else {	
+  			} else {
   				alert("This "+what+" has already been described in another record. Let\'s skip this section!");
+  				var next = $('#'+term).parent().parent().nextAll(".sectionTitle");
+
+		       	console.log(term);
+		       	$('html,body').animate({ scrollTop: next.offset().top }, 600);
+
   			};
 	    }
 	});
-
 };
-
-// function validateForm() {
-//   var x = document.querySelectorAll('[name^="S_KEEPER_1-"]');
-//   if (x == "") {
-//     alert("Name must be filled out");
-//     return false;
-//   } else {
-//   	console.log(x);
-//   };
-// }
