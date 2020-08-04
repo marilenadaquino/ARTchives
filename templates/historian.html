@@ -47,12 +47,15 @@ $var user = user
 		<section class="biblio">
 			<h3 class="biblio-label">Main works</h3>
 			$if 'S_CREATOR_6' in graphdata:
-				<p>$graphdata['S_CREATOR_6']</p>
+				$for item in graphdata['S_CREATOR_6'].split(';'):
+						<p>$item<p/>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Bibliography</h3>
 			$if 'S_CREATOR_7' in graphdata:
-				<p>$graphdata['S_CREATOR_7']</p>
+				$for item in graphdata['S_CREATOR_7'].split(';'):
+						<p>$item<p/>
+				<!-- <p>$graphdata['S_CREATOR_7']</p> -->
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Collections</h3>

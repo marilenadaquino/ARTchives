@@ -9,7 +9,7 @@ $var user = user
 		<p class="info-item">
 			$if 'S_COLL_1' in graphdata:
 				<h3 class="articleSubtitle">Reference code</h3> <span>$graphdata['S_COLL_1'].</span>
-		</p>
+	 </p>
 		<p class="info-item">
 			$for k, v in graphdata.items():
 				$if k.startswith('S_CREATOR_1'):
@@ -33,19 +33,19 @@ $var user = user
 		<p class="info-item">
 			$if 'S_COLL_18_1' in graphdata:
 				<h3 class="articleSubtitle">Online resources </h3>
-				<span class='info-url'>$graphdata['S_COLL_18_1']</span>
+				<span class='info-url'></span>
 				$if 'S_COLL_18_1_desc' in graphdata:
-					<span> $graphdata['S_COLL_18_1_desc']</span>
+					<span> <a href="$graphdata['S_COLL_18_1']">$graphdata['S_COLL_18_1_desc']</a> </span>
 					<br/>
 			$if 'S_COLL_18_2' in graphdata:
 				<span class='info-url'>$graphdata['S_COLL_18_2']</span>
 				$if 'S_COLL_18_2_desc' in graphdata:
-					<span> $graphdata['S_COLL_18_2_desc']</span>
+					<span> <a href="$graphdata['S_COLL_18_2']">$graphdata['S_COLL_18_2_desc']</a> </span>
 					<br/>
 			$if 'S_COLL_18_3' in graphdata:
 				<span class='info-url'>$graphdata['S_COLL_18_3']</span>
 				$if 'S_COLL_18_3_desc' in graphdata:
-					<span> $graphdata['S_COLL_18_3_desc']</span>
+					<span> <a href="$graphdata['S_COLL_18_3']">$graphdata['S_COLL_18_3_desc']</a> </span>
 					<br/>
 		</p>
 		$if 'S_COLL_4' in graphdata:
@@ -131,7 +131,8 @@ $var user = user
 		<section class="biblio">
 			<h3 class="biblio-label">Bibliography</h3>
 			$if 'S_COLL_17' in graphdata:
-				<p>$graphdata['S_COLL_17']</p>
+				$for item in graphdata['S_COLL_17'].split(';'):
+						<p>$item<p/>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Also described in</h3>

@@ -1,21 +1,20 @@
 $def with (wikilist, user, varIDpage)
 $var user = user
 <header class="row">
-  <h3>Welcome $user!</h3>
-</header>
-<section class="col-md-12">
- <article>
-  <form action='' method='POST'>
+  <h3 class="col-md-10">Welcome $user!</h3>
+  <form class="col-md-2" action='' method='POST' id="create_form">
     <button class="btn btn-dark" name="action" value="createRecord$varIDpage" type="submit">Create a new record</button>
   </form>
- </article>
+</header>
+<section class="col-md-12">
   <article>
     <h3>List of records</h3>
     <table id="recordsList">
       <tr>
         <th>Record</th>
-        <th>User</th>
-        <th>Date</th>
+        <th>Created by</th>
+        <th>Modified by</th>
+        <th>Last modified</th>
         <th>Stage</th>
         <th> </th>
       </tr>
@@ -25,20 +24,21 @@ $var user = user
           <td>$result[2]</td>
           <td>$result[3]</td>
           <td>$result[4]</td>
+          <td>$result[5]</td>
           <td>
-            $if result[4] == 'not modified' or result[4] == 'modified':
+            $if result[5] == 'not modified' or result[5] == 'modified':
               <form id="modified" action="" method='POST'>
                 <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
                 <button class="btn btn-dark" name="action" value="reviewRecord$:result[0]" type="submit">Start review</button>
               </form>
-            $if result[4] == 'in review':
+            $if result[5] == 'in review':
               <form id="review" action="" method='POST'>
                 <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
                 <button class="btn btn-dark" name="action" value="reviewRecord$:result[0]" type="submit">Review</button>
               </form>
-            $if result[4] == 'published':
+            $if result[5] == 'published':
               <form id="published" action="" method='POST'>
                 <button class="btn btn-dark delete" data-toggle="modal" data-target="#popup" name="action" value="deleteRecord$:result[0]" type="submit">Delete</button>
                 <button class="btn btn-dark" name="action" value="modifyRecord$:result[0]" type="submit">Modify</button>
@@ -48,7 +48,7 @@ $var user = user
     </table>
   </article>
   <!-- <h2>Search</h2>
-  
+
   <div class="input-group">
      <input type="text" class="form-control searchterm" placeholder="Search term in Wikidata" id="searchterm"/>
   </div>
@@ -66,7 +66,3 @@ $var user = user
     </div>
   </div> -->
 </section>
-
-
-
-

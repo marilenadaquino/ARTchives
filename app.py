@@ -119,7 +119,7 @@ class Index:
 		if (session['username'],session['password']) in allowed:
 			session['logged_in'] = 'True'
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
-			records = reversed(sorted(queries.getRecords(), key=lambda tup: tup[3]))
+			records = reversed(sorted(queries.getRecords(), key=lambda tup: tup[4]))
 			#records = queries.getRecords() # get all the records
 			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )
 		else:
@@ -141,7 +141,8 @@ class Index:
 			record = actions.action.split("deleteRecord",1)[1]
 			queries.deleteRecord(record)
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
-			records = queries.getRecords() # get all the records
+			#records = queries.getRecords() # get all the records
+			records = reversed(sorted(queries.getRecords(), key=lambda tup: tup[4]))
 			print(datetime.datetime.now(),'DELETED RECORD:', record, session['username'])
 			return render.index(wikilist=records, user=session['username'], varIDpage=userID+'-record-'+str(time.time()).replace('.','-') )
 		# modify a record
@@ -221,8 +222,8 @@ class Modify(object):
 		# userID = recordID.rsplit("-record-",2)[1]
 		userID = session['username'].replace('@','-at-').replace('.','-dot-')
 		graphToClear = mapping.base+recordID.split("record-",1)[1]+'/'
-		queries.clearGraph(graphToClear)
-		mapping.artchivesToWD(recordData, userID, 'modified')
+
+		mapping.artchivesToWD(recordData, userID, 'modified', graphToClear)
 		print(datetime.datetime.now(),'MODIFIED RECORD:', recordID, session['username'])
 		raise web.seeother(prefixLocal+'welcome')
 

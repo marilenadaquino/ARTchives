@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import web , datetime , os, time, re, cgi, rdflib, conf , urllib.parse
+import web , datetime , os, time, re, cgi, rdflib, conf , urllib.parse , queries
 from rdflib import URIRef , XSD, Namespace , Literal
 from rdflib.namespace import OWL, DC , DCTERMS, RDF , RDFS
 from rdflib.plugins.sparql import prepareQuery
@@ -20,17 +20,17 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
 def clean_to_uri(stringa):
-    """ given a string return a partial URI"""
-    uri = re.sub('ä', 'a', stringa.strip().lower())
-    uri = re.sub('à', 'a', uri)
-    uri = re.sub('è', 'e', uri)
-    uri = re.sub('é', 'e', uri)
-    uri = re.sub('ì', 'i', uri)
-    uri = re.sub('ò', 'o', uri)
-    uri = re.sub('ù', 'u', uri)
-    uri = re.sub('[^a-zA-Z\s]', '', uri)
-    uri = re.sub('\s', '-', uri)
-    return uri
+	""" given a string return a partial URI"""
+	uri = re.sub('ä', 'a', stringa.strip().lower())
+	uri = re.sub('à', 'a', uri)
+	uri = re.sub('è', 'e', uri)
+	uri = re.sub('é', 'e', uri)
+	uri = re.sub('ì', 'i', uri)
+	uri = re.sub('ò', 'o', uri)
+	uri = re.sub('ù', 'u', uri)
+	uri = re.sub('[^a-zA-Z\s]', '', uri)
+	uri = re.sub('\s', '-', uri)
+	return uri
 
 
 def getValuesFromFields(fieldPrefix, recordData):
@@ -86,14 +86,25 @@ def gettyULANbase(value):
 		return ULAN
 
 
-def artchivesToWD(recordData, userID, stage):
+def artchivesToWD(recordData, userID, stage, graphToClear=None):
 	""" given input data creates a named graph and a rdf file according to wikidata and artchives models"""
 	recordID = recordData.recordID
 	graph_name = recordID.split("record-",1)[1]
 	wd = rdflib.Graph(identifier=URIRef(base+graph_name+'/'))
-	# provenance
-	wd.add(( URIRef(base+graph_name+'/'), PROV.wasGeneratedBy, URIRef(base+userID) ))
-	wd.add(( URIRef(base+userID), RDFS.label , Literal(userID.replace('-dot-','.').replace('-at-', '@') ) ))
+	if stage == 'not modified':
+		wd.add(( URIRef(base+graph_name+'/'), PROV.wasGeneratedBy, URIRef(base+userID) ))
+		wd.add(( URIRef(base+userID), RDFS.label , Literal(userID.replace('-dot-','.').replace('-at-', '@') ) ))
+	else:
+
+		# modifier
+		wd.add(( URIRef(base+graph_name+'/'), PROV.wasInfluencedBy, URIRef(base+userID) ))
+		wd.add(( URIRef(base+userID), RDFS.label , Literal(userID.replace('-dot-','.').replace('-at-', '@') ) ))
+		# creator
+		creatorIRI, creatorLabel = queries.getRecordCreator(graphToClear)
+		if creatorIRI is not None and creatorLabel is not None:
+			wd.add(( URIRef(base+graph_name+'/'), PROV.wasGeneratedBy, URIRef(creatorIRI) ))
+			wd.add(( URIRef(creatorIRI), RDFS.label , Literal(creatorLabel ) ))
+		queries.clearGraph(graphToClear)
 	wd.add(( URIRef(base+graph_name+'/'), PROV.generatedAtTime, Literal(datetime.datetime.now(),datatype=XSD.dateTime)  ))
 	wd.add(( URIRef(base+graph_name+'/'), URIRef(base + 'publicationStage'), Literal(stage, datatype="http://www.w3.org/2001/XMLSchema#string")  ))
 

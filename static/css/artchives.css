@@ -2,16 +2,17 @@
 /* general */
 body {font-family: 'Karla', sans-serif !important;}
 .container-fluid {padding: 0px !important;}
-header {width: 100%; background-color: #23daa2; padding: 3em 2em; margin: 0px 0px 1em 0px !important; text-transform: uppercase; }
+header {width: 100%; background-color: #23daa2; padding: 2em; margin: 0px !important; text-transform: uppercase; text-align: left;}
 header h3 {color: white !important;}
+header .btn {margin-top: 1.4em;}
 a {text-decoration: underline !important; color: black !important;}
 .logo img {width: auto; height: 3em; margin-right: 1em;}
 nav {border-bottom: solid 1px gainsboro;}
 footer {border-top: solid 1px gainsboro;}
-nav, footer {padding: 2em; text-transform: uppercase;}
+nav, footer {padding: 1em 2em; text-transform: uppercase;}
 nav a, footer a {margin-right: 1em; color: black; font-weight: bold;text-decoration: none !important;}
 nav a:hover, footer a:hover {color: #23daa2 !important; text-decoration: none;}
-h2, h3 { color: #1cae81 !important; text-align: center; text-transform: uppercase; font-weight: bold !important; margin: 2em 0px !important;}
+h2, h3 { color: #1cae81 !important; text-align: center; text-transform: uppercase; font-weight: bold !important; margin: 1em 0px !important;}
 article {padding: 5em;}
 article:nth-child(even), .articleBox, #yasr {background-color: #F5F6FA;}
 article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
@@ -28,9 +29,9 @@ article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 /* homepage */
 .homepage {
   background: linear-gradient(
-      rgba(31, 196, 146, 0.65), 
+      rgba(31, 196, 146, 0.65),
       rgba(31, 196, 146, 0.65)
-    ), url(../imgs/fahy.jpg) no-repeat center center fixed; 
+    ), url(../imgs/fahy.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,6 +48,9 @@ article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 .box h2:hover {color: white !important; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
 .highlights a {color: white !important; text-decoration: none !important;}
 .highlights a h2 {color: white !important;}
+
+/* backend homepage */
+.delete {background-color: #8B0000 !important; border-color: #8B0000 !important; }
 /* records table */
 table{width: 100%;}
 tr{text-align: left;}
@@ -54,10 +58,10 @@ form table tbody tr th label {margin: 1rem 0;}
 
 /* create record */
 #recordForm table tbody tr th{ width: 30%;}
-label[for='S_KEEPER_1']:after, 
-label[for='S_CREATOR_1']:after, 
-label[for='S_CREATOR_2']:after, 
-label[for='S_COLL_2']:after, 
+label[for='S_KEEPER_1']:after,
+label[for='S_CREATOR_1']:after,
+label[for='S_CREATOR_2']:after,
+label[for='S_COLL_2']:after,
 label[for='S_COLL_6']:after {content: ' *'; color: #23daa2;}
 
 /* hidden input titles */
@@ -141,9 +145,9 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .info-graphic p {font-size: 0.3em !important;}
 .info-graphic-items {background-color: gainsboro;}
 .notes {background-color: transparent !important; margin: 0 15px;}
-.notes .info-icon {padding: 0.7em; background-color: silver; color: white; font-size: 4em; text-align: center;} 
+.notes .info-icon {padding: 0.7em; background-color: silver; color: white; font-size: 4em; text-align: center;}
 .notes .info-icon p {font-size: 0.3em !important; text-align: center;}
-.notes .info-note {padding: 2em; background-color: gainsboro;} 
+.notes .info-note {padding: 2em; background-color: gainsboro;}
 #mapid { height: 400px; }
 .tooltip-inner p a,.tooltip-inner p a:hover {color: white !important;}
 

@@ -1,6 +1,6 @@
 $def with (user)
 
-$var user = user 
+$var user = user
 
 <section class="row articleBox">
 	<section class="col-md-7 documentation" id="documentation">
@@ -33,20 +33,20 @@ $var user = user
 		<p>The editorial board will contact responsibles of the institution and will ask for the permission to publish information on the collection at hand.</p>
 		<p><i class="fas fa-exclamation-circle"></i> Do not confuse archival collections with nuclei of documents. While the first type requires a cataloguer to create a bespoke record, nuclei, i.e. documents that are part of miscellaneous collections, can be annotated in the optional field <em>Notes</em> related to the collection.</p>
 		<hr/>
-		
+
 		<h3 class="articleSubtitle">Guidelines for creating new records</h3>
-		
+
 		<h4>Before you start...</h4>
 		<p>Users and institutions that want to contribute must request an account (see the <a href="contribute">contribute page</a>) to access ARTchives backend.</p>
 		<p>The ARTchives web application is tested to work properly on Chrome and Safari (latest versions are highly recommended). <em style="color: red;">Internet Explorer and older browsers are discouraged</em>.</p>
 		<p>A number of fields offer autocomplete suggestions when typing. Terms are retrieved on-the-fly from external data sources. Therefore, having a good WIFI connection is highly recommended. </p>
-		
+
 		<h4>Tips: Autocompletion</h4>
-		<p>Fields with autocomplete functionalities are identified by a plaholder in the text area, which shows what data source is going to be used. </p> 
+		<p>Fields with autocomplete functionalities are identified by a plaholder in the text area, which shows what data source is going to be used. </p>
 		<p>A dropdown pops up while typing, including best candidate matches.</p>
 		<img src="./static/imgs/autocomplete.png" alt="screenshot entry form autocomplete"/>
 		<img src="./static/imgs/orangeList.png" alt="screenshot entry form autocomplete"/>
-		
+
 		<p><i class="fas fa-exclamation-circle"></i> <em>Suggestions are retrieved on-the-fly. The search starts on keyup (after few milliseconds) and can take few seconds if the connection is unstable (so be patient!). Secondly, results may reload slowly, meaning that refinements of the search might take time. If no relevant results are found at the first attempt, please try to remove the last character and re-type it. Lastly, when looking for two or more words (e.g. people names, place names, types of objects) be aware that you may have to try several combinations of words (e.g. <code>firstname+lastname</code> rather than <code>lastname+firstname</code>)</em>.</p>
 
 		<p>In dropdowns will appear blue items, which are terms belonging to the external data sources, and orange items, which are terms created by other users in ARTchives in prior records. The latter appear <em>only if no results in external sources are found</em>. Blue links include: an external link redirecting to the definition of the term (click on the icon), the label of the term (mainly in english) and a brief descripton for disambiguation purposes.</p>
@@ -59,7 +59,7 @@ $var user = user
 		<p><strong>Fields without autocomplete functionalities</strong> do not show any placeholder, and no tags will appear after the text area (see image below).</p>
 		<img src="./static/imgs/noautocomplete.png" alt="screenshot entry form without autocomplete"/>
 
-		<h4>Editorial Standards</h4>	
+		<h4>Editorial Standards</h4>
 		<p>For each field in the entry form there are examples on how to fill the field at hand (see the icon <i class="fas fa-info-circle"></i> before the text area). Here below there are additional rules and standards that archivists/volunteers should comply with in order to ensure resulting data quality.</p>
 		<p><strong>KEEPER</strong> Includes information on the current keeper of the archive described. This may correspond to the institution cataloguing the fond in ARTchives, or may be another institution.</p>
 		<p>Fields in this section include the following:</p>
@@ -134,8 +134,8 @@ $var user = user
 		<h3 class="articleSubtitle">Resources and documentation</h3>
 		<p>Data produced by ARTchives are released under the CC0 license  <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"> <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none; width: 70px;" alt="CC0" /> </a>.</p>
 
-		<p><strong>DATA ACCESS</strong> Data can be accessed by means of the  <a href="sparql">ARTchives SPARQL endpoint query interface</a> and API. Alternatively, <a href="https://query.wikidata.org">Wikidata</a> can be queried to retrieve ARTchives information.</p>
-		
+		<p><strong>DATA ACCESS</strong> Data can be accessed by means of the  <a href="http://artchives.fondazionezeri.unibo.it:19999/blazegraph">ARTchives SPARQL endpoint query interface</a> and API. Alternatively, <a href="https://query.wikidata.org">Wikidata</a> can be queried to retrieve ARTchives information.</p>
+
 		<p><strong>SOURCE CODE</strong> The application source code is available in a <a href="https://github.com/marilenadaquino/artchives">gitHub repository</a>.</p>
 		<p><strong>DATA MODEL</strong> ARTchives mainly reuses the Wikidata Model to facilitate the data export to Wikidata. Few new properties are added to characterise the nature of subjects of a collection (subproperties of <code>wdp:P921</code>), and to distinguish different types of archival notes (e.g. <code>art:hasNotesOnScopeAndContent</code>, <code>art:hasHistoricalNotes</code>).</p>
 		<p>Data examples will be added soon.</p>

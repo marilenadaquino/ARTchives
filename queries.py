@@ -6,13 +6,14 @@ from collections import defaultdict
 queryRecords = """
 	PREFIX prov: <http://www.w3.org/ns/prov#>
 	PREFIX art: <https://w3id.org/artchives/>
-	SELECT DISTINCT ?g ?nameHistorian ?userLabel ?date ?stage
+	SELECT DISTINCT ?g ?nameHistorian ?userLabel ?modifierLabel ?date ?stage
 	WHERE
 	{ GRAPH ?g {
 		?s ?p ?o .
 		?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage.
+		OPTIONAL {?g prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel .}
 		?user rdfs:label ?userLabel .
-
+		BIND(COALESCE(?modifierLabel, '-') AS ?modifierLabel ).
 		filter not exists {
 	      ?g prov:generatedAtTime ?date2
 	      filter (?date2 > ?date)
@@ -59,6 +60,25 @@ queryKeepers = """
 	"""
 
 
+
+def getRecordCreator(graph_name):
+	""" get the label of the creator of a record """
+	creatorIRI, creatorLabel = None, None
+	queryRecordCreator = """
+		PREFIX wd: <http://www.wikidata.org/entity/>
+		PREFIX prov: <http://www.w3.org/ns/prov#>
+		SELECT DISTINCT ?creatorIRI ?creatorLabel
+		WHERE { <"""+graph_name+"""> prov:wasGeneratedBy ?creatorIRI .
+		?creatorIRI rdfs:label ?creatorLabel . }"""
+	print(queryRecordCreator)
+	sparql = SPARQLWrapper(conf.artchivesEndpoint)
+	sparql.setQuery(queryRecordCreator)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	for result in results["results"]["bindings"]:
+		creatorIRI, creatorLabel = result["creatorIRI"]["value"],result["creatorLabel"]["value"]
+	return creatorIRI, creatorLabel
+
 def getRecords():
 	""" get all the records created by users to list them in the backend welcome page """
 	records = set()
@@ -67,7 +87,7 @@ def getRecords():
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
 	for result in results["results"]["bindings"]:
-		records.add( (result["g"]["value"], result["nameHistorian"]["value"], result["userLabel"]["value"], result["date"]["value"], result["stage"]["value"] ))
+		records.add( (result["g"]["value"], result["nameHistorian"]["value"], result["userLabel"]["value"], result["modifierLabel"]["value"], result["date"]["value"], result["stage"]["value"] ))
 	return records
 
 
@@ -676,6 +696,7 @@ def getData(graph):
 
 	return data
 
+
 def deleteRecord(graph):
 	""" delete a named graph and related record """
 
@@ -688,6 +709,7 @@ def deleteRecord(graph):
 	sparql.setQuery(deleteGraph)
 	sparql.method = 'POST'
 	sparql.query()
+
 
 def clearGraph(graph):
 	clearGraph = ' CLEAR GRAPH <'+graph+'> '
