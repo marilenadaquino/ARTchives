@@ -95,7 +95,6 @@ def artchivesToWD(recordData, userID, stage, graphToClear=None):
 		wd.add(( URIRef(base+graph_name+'/'), PROV.wasGeneratedBy, URIRef(base+userID) ))
 		wd.add(( URIRef(base+userID), RDFS.label , Literal(userID.replace('-dot-','.').replace('-at-', '@') ) ))
 	else:
-
 		# modifier
 		wd.add(( URIRef(base+graph_name+'/'), PROV.wasInfluencedBy, URIRef(base+userID) ))
 		wd.add(( URIRef(base+userID), RDFS.label , Literal(userID.replace('-dot-','.').replace('-at-', '@') ) ))

@@ -42,6 +42,7 @@ else:
 
 render = web.template.render('templates/', base="layout", cache=False, globals={'session':session, 'clean':mapping.clean_to_uri})
 render2 = web.template.render('templates/', globals={'session':session})
+render_no_login = web.template.render('templates/', base="layout_no_login", globals={'session':session})
 
 # TODO Hash passw
 allowed = (
@@ -62,7 +63,7 @@ class Notfound:
         raise web.notfound()
 
 def logout(page):
-	"""default beahviour for logout"""
+	"""default behaviour for logout"""
 	data = web.input()
 	login = data.login
 	passwd = data.passwd
@@ -256,8 +257,7 @@ class Review(object):
 			recordID = recordData.recordID
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
 			graphToClear = mapping.base+name.split("record-",1)[1]+'/'
-			queries.clearGraph(graphToClear)
-			mapping.artchivesToWD(recordData, userID, 'in review')
+			mapping.artchivesToWD(recordData, userID, 'modified',graphToClear)
 			print(datetime.datetime.now(),'REVIEWED RECORD (NOT PUBLISHED YET):', recordID, session['username'])
 			raise web.seeother(prefixLocal+'welcome')
 
@@ -268,36 +268,35 @@ class Review(object):
 			recordID = recordData.recordID
 			userID = session['username'].replace('@','-at-').replace('.','-dot-')
 			graphToClear = mapping.base+name.split("record-",1)[1]+'/'
-			queries.clearGraph(graphToClear)
-			mapping.artchivesToWD(recordData, userID, 'published')
+			mapping.artchivesToWD(recordData, userID, 'published',graphToClear)
 			print(datetime.datetime.now(),'PUBLISHED RECORD:', recordID, session['username'])
 			raise web.seeother(prefixLocal+'welcome')
 
 
 class About:
 	def GET(self):
-		return render.about(user='anonymous')
+		return render_no_login.about(user='anonymous')
 
 	def POST(self):
 		logout('about')
 
 class Credits:
 	def GET(self):
-		return render.credits(user='anonymous')
+		return render_no_login.credits(user='anonymous')
 
 	def POST(self):
 		logout('credits')
 
 class Contribute:
 	def GET(self):
-		return render.contribute(user='anonymous')
+		return render_no_login.contribute(user='anonymous')
 
 	def POST(self):
 		logout('contribute')
 
 class Documentation:
 	def GET(self):
-		return render.documentation(user='anonymous')
+		return render_no_login.documentation(user='anonymous')
 
 	def POST(self):
 		logout('documentation')
@@ -306,7 +305,7 @@ class Historians:
 	def GET(self):
 		records = queries.getHistorians()
 		fh = forms.searchHistorian()
-		return render.historians(form=fh, user='anonymous', data=records, title='Art historians')
+		return render_no_login.historians(form=fh, user='anonymous', data=records, title='Art historians')
 
 	def POST(self):
 		logout('historians')
@@ -320,7 +319,7 @@ class Historian(object):
 		dataHistorian = queries.getHistorian(historianURI)
 		print(historianURI)
 		# TODO add other properties/links pIn and pOut
-		return render.historian(user='anonymous', graphdata=dataHistorian, graphID=historianID)
+		return render_no_login.historian(user='anonymous', graphdata=dataHistorian, graphID=historianID)
 
 	def POST(self):
 		logout('historian')
@@ -329,7 +328,7 @@ class Collections:
 	def GET(self):
 		records = queries.getCollections()
 		fc = forms.searchCollection()
-		return render.collections(form=fc, user='anonymous', data=records, title='Collections')
+		return render_no_login.collections(form=fc, user='anonymous', data=records, title='Collections')
 
 	def POST(self):
 		logout('collections')
@@ -340,7 +339,7 @@ class Collection(object):
 		graph = mapping.base+graphID+'/'
 		dataCollection = queries.getData(graph)
 		# TODO add other properties/links pIn and pOut
-		return render.collection(user='anonymous', graphdata=dataCollection, graphID=graphID)
+		return render_no_login.collection(user='anonymous', graphdata=dataCollection, graphID=graphID)
 
 	def POST(self):
 		logout('collection')
@@ -349,7 +348,7 @@ class Keepers:
 	def GET(self):
 		records = queries.getKeepers()
 		fk = forms.searchKeeper()
-		return render.keepers(form=fk, user='anonymous', data=records, title='Institutions')
+		return render_no_login.keepers(form=fk, user='anonymous', data=records, title='Institutions')
 
 	def POST(self):
 		logout('keepers')
@@ -361,7 +360,7 @@ class Keeper(object):
 		keeperURI = mapping.getRightURIbase(keeperID)+keeperID
 		dataKeeper = queries.getKeeper(keeperURI)
 		# TODO add other properties/links pIn and pOut
-		return render.keeper(user='anonymous', graphdata=dataKeeper, graphID=keeperID)
+		return render_no_login.keeper(user='anonymous', graphdata=dataKeeper, graphID=keeperID)
 
 	def POST(self):
 		logout('keeper')
@@ -391,10 +390,10 @@ class sparql:
         if accept is None or accept == "*/*" or accept == "":
             accept = "application/sparql-results+xml"
         if is_post:
-            req = requests.post('http://artchives.fondazionezeri.unibo.it:19999/sparql', data=data,
+            req = requests.post('http://artchives.fondazionezeri.unibo.it:3000/sparql', data=data,
                                 headers={'content-type': content_type, "accept": accept})
         else:
-            req = requests.get("%s?%s" % ('http://artchives.fondazionezeri.unibo.it:19999/sparql', data),
+            req = requests.get("%s?%s" % ('http://artchives.fondazionezeri.unibo.it:3000/sparql', data),
                                headers={'content-type': content_type, "accept": accept})
 
         if req.status_code == 200:

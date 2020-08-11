@@ -10,10 +10,14 @@ queryRecords = """
 	WHERE
 	{ GRAPH ?g {
 		?s ?p ?o .
-		?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage.
+		OPTIONAL {?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage. ?user rdfs:label ?userLabel .}
 		OPTIONAL {?g prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel .}
-		?user rdfs:label ?userLabel .
+
+		BIND(COALESCE(?date, '-') AS ?date ).
+		BIND(COALESCE(?stage, '-') AS ?stage ).
+		BIND(COALESCE(?userLabel, '-') AS ?userLabel ).
 		BIND(COALESCE(?modifierLabel, '-') AS ?modifierLabel ).
+		BIND(COALESCE(?nameHistorian, 'none', '-') AS ?nameHistorian ).
 		filter not exists {
 	      ?g prov:generatedAtTime ?date2
 	      filter (?date2 > ?date)
