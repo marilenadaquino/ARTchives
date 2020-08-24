@@ -26,6 +26,7 @@ urls = (
 	prefix + '/institutions', 'Keepers',
 	prefix + '/keeper-(.+)', 'Keeper',
 	prefix + '/(sparql)','sparql',
+	prefix + '/bibliography','Bibliography',
 )
 
 
@@ -99,7 +100,7 @@ class Login:
 		else:
 			return render.login(user='anonymous')
 
-wikidir = os.path.realpath('./records/')
+wikidir = os.path.realpath('./records/') 
 
 class Logout:
 	def GET(self):
@@ -286,6 +287,13 @@ class Credits:
 
 	def POST(self):
 		logout('credits')
+
+class Bibliography:
+	def GET(self):
+		return render_no_login.bibliography(user='anonymous')
+
+	def POST(self):
+		logout('bibliography')
 
 class Contribute:
 	def GET(self):
