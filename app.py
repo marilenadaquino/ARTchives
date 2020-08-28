@@ -27,6 +27,7 @@ urls = (
 	prefix + '/keeper-(.+)', 'Keeper',
 	prefix + '/(sparql)','sparql',
 	prefix + '/bibliography','Bibliography',
+	prefix + '/searchResults', 'SearchResults'
 )
 
 
@@ -294,6 +295,13 @@ class Bibliography:
 
 	def POST(self):
 		logout('bibliography')
+
+class SearchResults:
+	def GET(self):
+		return render_no_login.searchResults(user='anonymous')
+
+	def POST(self):
+		logout('searchResults')
 
 class Contribute:
 	def GET(self):
