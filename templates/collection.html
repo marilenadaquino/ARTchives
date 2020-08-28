@@ -28,7 +28,7 @@ $var user = user
 		</p>
 		<p class="info-item">
 			$if 'S_COLL_3' in graphdata:
-				<h3 class="articleSubtitle">Floruit</h3> <span>$graphdata['S_COLL_3'].</span>
+				<h3 class="articleSubtitle">Dates</h3> <span>$graphdata['S_COLL_3'].</span>
 		</p>
 		<p class="info-item">
 			$if 'S_COLL_18_1' in graphdata:
@@ -54,16 +54,21 @@ $var user = user
 				<p>$graphdata['S_COLL_4']</p>
 			</section>
 		$if 'S_COLL_5' in graphdata:
-			<section class="columns">
-				<h3 class="articleSubtitle">arrangement</h3>
-				<p>$graphdata['S_COLL_5']</p>
-			</section>
+			
 			<section class="circles">
 				$for k, v in graphdata.items():
 					$if k.startswith('S_COLL_6-') or k.startswith('S_COLL_7-'):
 						$for id, label in v.items():
 							<span class="box-small" data-id="$id">$label</span>
 			</section>
+
+		<section class="columns">
+				<h3 class="articleSubtitle">arrangement</h3>
+				<p>$graphdata['S_COLL_5']</p>
+		</section>
+
+
+
 		$if 'S_COLL_8' in graphdata:
 			<section class="columns">
 				<h3 class="articleSubtitle">Scope and content</h3>
@@ -84,19 +89,8 @@ $var user = user
 				<h3 class="articleSubtitle">History of collection</h3>
 				<p>$graphdata['S_COLL_8']</p>
 			</section>
-		$if 'S_COLL_15' in graphdata:
-			<section class="columns">
-				<h3 class="articleSubtitle">Finding Aids</h3>
-				<p>$graphdata['S_COLL_15']</p>
-			</section>
-		<section class="circles">
-			$for k, v in graphdata.items():
-				$if k.startswith('S_COLL_16-'):
-					$for id, label in v.items():
-						<span class="box-small" data-id="$id">$label</span>
-		</section>
-		<section>
-			<p class="info-item">
+
+		<p class="info-item">
 				<h3 class="articleSubtitle">Acquisition </h3>
 				$for k, v in graphdata.items():
 					$if k.startswith('S_COLL_10-'):
@@ -106,7 +100,28 @@ $var user = user
 						<span>$graphdata['S_COLL_11'].</span>
 				$else:
 					<span>-</span>
-			</p>
+		</p>
+
+		
+			
+		
+		<section class="circles"> 
+		<h3 class="articleSubtitle">CATALOGUING STANDARDS</h3>		
+			$for k, v in graphdata.items():
+				$if k.startswith('S_COLL_16-'):
+					$for id, label in v.items():
+						<span class="box-small" data-id="$id">$label</span> 
+		</section>
+
+
+		$if 'S_COLL_15' in graphdata:
+			<section>
+				<h3 class="articleSubtitle">Finding Aids</h3>
+				<p>$graphdata['S_COLL_15']</p>
+			</section>
+			
+		<section>
+			
 			<p class="info-item">
 				<h3 class="articleSubtitle">Access </h3>
 					$if 'S_COLL_13' in graphdata:
@@ -114,7 +129,7 @@ $var user = user
 					$else:
 						<span>-</span>
 			</p>
-			<p class="info-item">
+			<!--- <p class="info-item">
 				<h3 class="articleSubtitle">Reproduction </h3>
 				$for k, v in graphdata.items():
 					$if k.startswith('S_COLL_14-'):
@@ -123,9 +138,10 @@ $var user = user
 								<span><a href="http://www.wikidata.org/entity/$id">$label</a>.</span>
 							$else:
 								<span>$label.</span>
-			</p>
+			</p> --->
 		</section>
 	</section>
+
 	<section class="col-md-5">
 		<!-- TODO add image here -->
 		<section class="biblio">
@@ -166,12 +182,11 @@ $var user = user
 		$if 'S_COLL_22' in graphdata:
 			<section class="notes">
 				<section class="row">
-					<section class="info-icon col-md-4"><i class="fas fa-asterisk"></i><p>other nuclei</p></section>
+					<section class="info-icon col-md-4"><i class="fas fa-asterisk"></i><p>related nuclei and collections</p></section>
 					<section class="info-note col-md-8">
 						<p>$graphdata['S_COLL_22']</p>
 					</section>
 				</section>
 			</section>
-
 	</section>
 </section>

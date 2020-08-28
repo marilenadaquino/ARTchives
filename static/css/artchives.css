@@ -118,15 +118,17 @@ i.fa-info-circle:hover{ color: #1cae81;}
 
 /* other pages */
 .searchBox form {margin-left: 2em;}
-.entryBox {}
+.entryBox {margin-bottom: 20px;}
 .entryBox a {color: black; text-decoration: none !important;}
-.entryBox a:hover {color: #23daa2; text-decoration: none;}
-.imageBox {height: 200px; width: auto; background-color: #23daa2;}
+.entryBox a:hover {color: #1cae81; text-decoration: none;}
+.imageBox {height: 200px; width: auto;}
+.imageBox:hover { filter: brightness(125%); -webkit-transition-duration: 0.4s; transition-duration: 0.4s;} 
 .withImage img {-webkit-filter: grayscale(100%); filter: grayscale(100%); max-width: 100%;}
-.noImage { color: white; text-align: center; font-size: 1.5em;}
-.noImage:hover { background-color: #1cae81; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
+.noImage { background-color: #1cae81; position: relative; z-index: 0;}
+/*.noImage:hover { background-color: yellow; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}*/
 .noImage p {padding-top: 40%;}
-.entryTitle {background-color: white; font-size: 1.2em; padding: 0.3em;}
+.noImage:hover .ImageCHI {background-color: #1cae81; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
+.entryTitle {background-color: white; font-size: 1.0em; padding: 0.3em; position: relative; z-index: 1;}
 
 /* historian/collection template */
 /*.info-item {font-style: italic;}*/
@@ -179,3 +181,4 @@ i.fa-info-circle:hover{ color: #1cae81;}
   .cbp-spmenu-right { right: -190px; }
   .cbp-spmenu-push-toright { left: 190px; }
 }
+

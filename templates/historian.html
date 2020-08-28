@@ -10,18 +10,26 @@ $var user = user
 					<h2 class="articleTitle">$label</h2>
 		<p class="info-item">
 			$if 'S_CREATOR_2' in graphdata:
-				<span class="info-label"></span><span>$graphdata['S_CREATOR_2'].</span>
-			$for k, v in graphdata.items():
-				$if k.startswith('S_CREATOR_4'):
-					$for id, label in v.items():
-						<span>$label.</span>
+					<h3 class="articleSubtitle">Dates</h3><span>$graphdata['S_CREATOR_2'].</span>
+			
 		</p>
 		<p class="info-item">
+			<h3 class="articleSubtitle">Profession</h3>
 			$for k, v in graphdata.items():
 				$if k.startswith('S_CREATOR_3'):
 					$for id, label in v.items():
 						<span>$label.</span>
 		</p>
+
+		<p class="info-item">
+			<h3 class="articleSubtitle">Country of origin</h3>
+			$for k, v in graphdata.items():
+				$if k.startswith('S_CREATOR_4'):
+					$for id, label in v.items():
+						<span>$label.</span>
+		</p>
+
+
 		$if 'S_CREATOR_5' in graphdata:
 			<section class="columns">
 				<h3 class="articleSubtitle">biography</h3>
@@ -47,15 +55,12 @@ $var user = user
 		<section class="biblio">
 			<h3 class="biblio-label">Main works</h3>
 			$if 'S_CREATOR_6' in graphdata:
-				$for item in graphdata['S_CREATOR_6'].split(';'):
-						<p>$item<p/>
+				<p>$graphdata['S_CREATOR_6']</p>
 		</section>
 		<section class="biblio">
-			<h3 class="biblio-label">Bibliography</h3>
+			<h3 class="biblio-label">About the scholar</h3>
 			$if 'S_CREATOR_7' in graphdata:
-				$for item in graphdata['S_CREATOR_7'].split(';'):
-						<p>$item<p/>
-				<!-- <p>$graphdata['S_CREATOR_7']</p> -->
+				<p>$graphdata['S_CREATOR_7']</p>
 		</section>
 		<section class="biblio">
 			<h3 class="biblio-label">Collections</h3>
