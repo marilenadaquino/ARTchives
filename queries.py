@@ -2,6 +2,8 @@
 import conf
 from SPARQLWrapper import SPARQLWrapper, JSON
 from collections import defaultdict
+from fuzzywuzzy import fuzz 
+from fuzzywuzzy import process 
 
 queryRecords = """
 	PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -64,6 +66,24 @@ queryKeepers = """
 	"""
 
 
+
+queryBiblio = """
+	PREFIX wd: <http://www.wikidata.org/entity/>
+	PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
+	SELECT DISTINCT ?artHistorian ?nameHistorian ?artBiblioRefLabel ?otherbiblioRefLabel 
+	WHERE
+	{ GRAPH ?g {
+		?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian .
+		?artHistorian wdp:P800 ?artBiblioRef . ?artBiblioRef rdfs:label ?artBiblioRefLabel . 
+		?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel . 
+		BIND(COALESCE(?otherbiblioRefLabel, "") AS ?otherbiblioRefLabel).
+		BIND(COALESCE(?artBiblioRefLabel, "") AS ?artBiblioRefLabel).
+	  }
+	}
+	"""
+
+"""OPTIONAL {	?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel . }
+"""	
 
 def getRecordCreator(graph_name):
 	""" get the label of the creator of a record """
@@ -721,3 +741,24 @@ def clearGraph(graph):
 	sparql.setQuery(clearGraph)
 	sparql.method = 'POST'
 	sparql.query()
+
+
+
+def getBibliography():
+	records = {}
+	sparql = SPARQLWrapper(conf.artchivesEndpoint)
+	sparql.setQuery(queryBiblio)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	for result in results["results"]["bindings"]:
+ 		records[result["nameHistorian"]["value"].lstrip().rstrip()] = [result["artBiblioRefLabel"]["value"].split(";"),  result["otherbiblioRefLabel"]["value"].split(";")]
+	 	for k, v in records.items():
+	 		for value in v[0]:
+		 		if fuzz.ratio(k, value[0:25]) < 40 and value != "":
+		 			v[0].append(k + ", " + value)
+		 			v[0].remove(value)
+
+	return records
+
+
+

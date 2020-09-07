@@ -137,6 +137,9 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .biblio {background-color: gray; color: white; padding: 1em 3em 3em 3em;}
 .biblio:nth-of-type(3) {background-color:#1cae81}
 .biblio-label {color: white !important; text-align: left;}
+.onlineres {background-color: #23daa2; color: white !important; padding: 1em 3em 3em 3em;}
+.onlineres a {color: white !important;}
+.info-url {word-wrap: break-word !important;}
 .circles {margin: 2em auto;}
 .circles a {color: white !important; text-decoration: none !important;}
 .box-small { cursor: pointer; margin-top: 0.1em; display: inline-block; color: white; text-decoration: none; padding: 0.4em; border-radius: 5px; background-color: #23daa2; text-align: center; vertical-align: middle; }
@@ -181,4 +184,11 @@ i.fa-info-circle:hover{ color: #1cae81;}
   .cbp-spmenu-right { right: -190px; }
   .cbp-spmenu-push-toright { left: 190px; }
 }
+
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #1cae81;
+}
+
+
+/* Searchbox */
 

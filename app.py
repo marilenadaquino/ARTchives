@@ -3,6 +3,7 @@ import web , datetime , os, time, re, cgi, requests
 from urllib.parse import parse_qs
 import forms, mapping, conf, queries
 from web import form
+
 web.config.debug = False
 prefix = ''
 #prefixLocal = '/artchives/'
@@ -289,19 +290,14 @@ class Credits:
 	def POST(self):
 		logout('credits')
 
-class Bibliography:
-	def GET(self):
-		return render_no_login.bibliography(user='anonymous')
-
-	def POST(self):
-		logout('bibliography')
-
 class SearchResults:
 	def GET(self):
+		#fr = forms.searchResults()
 		return render_no_login.searchResults(user='anonymous')
 
 	def POST(self):
-		logout('searchResults')
+		data = web.input()
+		return render.login(user='anonymous')
 
 class Contribute:
 	def GET(self):
@@ -380,6 +376,18 @@ class Keeper(object):
 
 	def POST(self):
 		logout('keeper')
+
+
+class Bibliography():
+	def GET(self):
+		records = queries.getBibliography()
+		return render_no_login.bibliography(user='anonymous', data=records, title='Bibliography')
+
+	def POST(self):
+		logout('bibliography')
+
+
+
 
 class sparql:
     def GET(self, active):
