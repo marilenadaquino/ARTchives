@@ -55,6 +55,7 @@ article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 table{width: 100%;}
 tr{text-align: left;}
 form table tbody tr th label {margin: 1rem 0;}
+th {width: 200px !important;}
 
 /* create record */
 #recordForm table tbody tr th{ width: 30%;}
@@ -137,9 +138,12 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .biblio {background-color: gray; color: white; padding: 1em 3em 3em 3em;}
 .biblio:nth-of-type(3) {background-color:#1cae81}
 .biblio-label {color: white !important; text-align: left;}
+.bibliospace {padding-top: 25px !important; padding-bottom: 10px !important; }
 .onlineres {background-color: #23daa2; color: white !important; padding: 1em 3em 3em 3em;}
 .onlineres a {color: white !important;}
+.onlineres p {padding-top: 30px !important;}
 .info-url {word-wrap: break-word !important;}
+.white a {color: white !important;}
 .circles {margin: 2em auto;}
 .circles a {color: white !important; text-decoration: none !important;}
 .box-small { cursor: pointer; margin-top: 0.1em; display: inline-block; color: white; text-decoration: none; padding: 0.4em; border-radius: 5px; background-color: #23daa2; text-align: center; vertical-align: middle; }
@@ -190,5 +194,5 @@ i.fa-info-circle:hover{ color: #1cae81;}
 }
 
 
-/* Searchbox */
+
 

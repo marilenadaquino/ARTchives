@@ -1,4 +1,4 @@
-$(document).ready(function() {
+ $(document).ready(function() {
 	// disable submit form on enter press
 	$("input[type='text'], input[type='textarea']").on('keyup keypress', function(e) {
 	  var keyCode = e.keyCode || e.which;
@@ -7,9 +7,23 @@ $(document).ready(function() {
 	    return false;
 	  }
 	});
+	// URL detection
+$('.info-url').each(function(element) {
+   var str_text = $(this).html();
+   var first = str_text.substring(0);
+   if (first = "(") {str_text = str_text.substring(1, str_text.length-1);
+   }
+   // Set the regex string
+   //var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
+var regex = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
+   // Replace plain text links by hyperlinks
+   var replaced_text = str_text.replace(regex, "<a href='$1' target='_blank'>$1</a>");
+   // Echo link
+   $(this).html(replaced_text);
+});
 
 	// tooltips
-	$('.tip').tooltip();
+	//$('.tip').tooltip();
 
 	// NLP
 	nlpText('S_CREATOR_5');
@@ -49,6 +63,10 @@ $(document).ready(function() {
 		if ( $(this).hasClass('searchKeeper') ) {
 			searchARTchives('searchKeeper');
 		};
+
+		if ( $(this).hasClass('searchGeneral') ) {
+			//searchARTchivesGeneral('searchGeneral');
+		};
 	});
 
 	// remove tag onclick
@@ -78,15 +96,15 @@ $(document).ready(function() {
 	};
 
 	// URL detection
-	$('#info-url').each(function(element) {
-	    var str = $(this).html();
+	//$('#info-url').each(function(element) {
+	    //var str = $(this).html();
 	    // Set the regex string
-	    var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
+	    //var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
 	    // Replace plain text links by hyperlinks
-	    var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
+	    //var replaced_text = str.replace(regex, "<a href='$1' target='_blank'>$1</a>");
 	    // Echo link
-	    $(this).html(replaced_text);
-	});
+	    //$(this).html(replaced_text);
+	///});
 
 	// append WD icon to input fields
 	$('.searchWikidata').parent().prev('.label').append(' <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Wikidata-logo-without-paddings.svg" style="width:20px ; padding-bottom: 5px;"/>');
@@ -676,7 +694,7 @@ function searchARTchives(searchterm) {
 		 		Accept: 'application/sparql-results+json'
 		    	},
 		    success: function(returnedJson) {
-		    	// autocomplete positioning
+		    	//autocomplete positioning
 		      	var position = $('.'+searchterm).position();
 		      	var leftpos = position.left+15;
 		      	var offset = $('.'+searchterm).offset();
@@ -709,13 +727,77 @@ function searchARTchives(searchterm) {
 		        },
 		        error: function() {
 		        	$("#searchresult").append("<div class='wditem noresults'>No results in ARTchives</div>");
-		        	// remove messages after 3 seconds
+		        	//remove messages after 3 seconds
 					setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
 		        }
 		});
 
 	}) );
+}; //
+
+
+// ARTchives search historians
+function searchARTchivesGeneral(searchterm) {
+	//  autocomplete on keyup
+	$('.'+searchterm).keyup( throttle(function(e) {
+		$("#searchresult").show();
+		var queryTerm = $('.'+searchterm).val();
+		if (searchterm == 'searchGeneral') {
+			var query = "PREFIX bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?subj (SAMPLE(?term) as ?o) ?type WHERE { ?term bds:search '"+queryTerm+"' . { GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?term . BIND('collection-' as ?type) }} UNION { ?collection wdp:P170 ?subj . ?subj rdfs:label ?term . bind('historian-' as ?type) } UNION { ?subj a wd:Q31855 ; rdfs:label ?term . bind('keeper' as ?type) } } GROUP BY ?subj ?type" };
+
+		var encoded = encodeURIComponent(query)
+
+	  	$.ajax({
+		    type: 'GET',
+		    url: 'http://artchives.fondazionezeri.unibo.it/sparql?query=' + encoded,
+		    headers: {
+		 		Accept: 'application/sparql-results+json'
+		    	},
+		    success: function(returnedJson) {
+		    	// autocomplete positioning
+		      	var position = $('.'+searchterm).position();
+		      	var leftpos = position.left+15;
+		      	var offset = $('.'+searchterm).offset();
+				var height = $('.'+searchterm).height();
+				var width = $('.'+searchterm).width();
+				var top = offset.top + height + "px";
+				var right = offset.left + width + "px";
+
+				$('#searchresult').css( {
+				    'position': 'absolute',
+				    'margin-left': leftpos+'px',
+				    'top': top,
+				    'z-index':1000,
+				    'background-color': 'white',
+				    'border':'solid 1px grey',
+			    	'max-width':'600px',
+				    'border-radius': '4px'
+				});
+		      	$("#searchresult").empty();
+				for (i = 0; i < returnedJson.results.bindings.length; i++) {
+					var uri = returnedJson.results.bindings[i].subj.value ;
+					var type = returnedJson.results.bindings[i].type.value ;
+					if (uri.substring(uri.length-1) == "/") {
+						var qID = uri.substr(uri.slice(0,-1).lastIndexOf('/') + 1).slice(0,-1);
+					} else {
+						var qID = uri.substr(uri.lastIndexOf('/') + 1);
+					};
+
+					$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value.trim() + "</a>" +returnedJson.results.bindings[i].type.value.slice(0,-1)+"</div>");
+			    };
+		        },
+		        error: function() {
+		        	$("#searchresult").append("<div class='wditem noresults'>No results in ARTchives</div>");
+		        	// remove messages after 3 seconds
+					setTimeout(function(){ if ($('.noresults').length > 0) { $('.noresults').remove(); } }, 3000);
+		        }
+		});
+
+	} ) );
 };
+
+
+
 
 // NLP
 function nlpText(searchterm) {
@@ -949,3 +1031,20 @@ function checkPriorRecords(term, prefix) {
 	    }
 	});
 };
+
+
+///Activate links///
+
+// http://stackoverflow.com/questions/37684/how-to-replace-plain-urls-with-links
+///function replaceURLWithHTMLLinks(text) {
+    ///var exp = /(\b(https?|ftp|file):\/\/([-A-Z0-9+&@#%?=~_|!:,.;]*)([-A-Z0-9+&@#%?\/=~_|!:,.;]*)[-A-Z0-9+&@#\/%=~_|])/ig;
+    ///return text.replace(exp, "<a href='$1' target='_blank'>$3</a>");
+///}
+
+///window.onload = function(){
+  ///var elm =  document.getElementById("demo");
+  ///var modifiedHtml = replaceURLWithHTMLLinks(elm.innerHTML);
+  ///elm.innerHTML = modifiedHtml ;
+///}
+
+

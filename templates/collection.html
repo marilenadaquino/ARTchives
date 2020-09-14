@@ -3,8 +3,6 @@ $def with (user, graphdata, graphID)
 $var user = user
 
 
-
-
 <section class="row articleBox">
 	<section class="col-md-7">
 		$if 'S_COLL_2' in graphdata:
@@ -98,7 +96,16 @@ $var user = user
 					<span>-</span>
 		</p>
 
-		
+		$if any(key.startswith("S_COLL_20") for key in graphdata):	
+			<section class="biblio">
+				<h3 class="biblio-label">Events</h3>
+				$for k, v in graphdata.items():
+					$if k.startswith('S_COLL_20'):
+						$for id, label in v.items():
+							<p>$label</p>
+			</section>		
+
+
 		$if any(key.startswith("S_COLL_16-") for key in graphdata):
 			<section class="circles"> 
 			<h3 class="articleSubtitle">CATALOGUING STANDARDS  </h3>		
@@ -112,7 +119,7 @@ $var user = user
 		$if 'S_COLL_15' in graphdata:
 			<section >
 				<h3 class="articleSubtitle">Finding Aids</h3>
-				<p>$graphdata['S_COLL_15']</p>
+				<p class="info-url">$graphdata['S_COLL_15']</p>
 			</section>
 
 
@@ -135,6 +142,9 @@ $var user = user
 								<span>$label.</span>
 			</p> --->
 		</section>
+
+
+
 	</section>
 
 	<section class="col-md-5">
@@ -143,7 +153,7 @@ $var user = user
 			<section class="biblio">
 				<h3 class="biblio-label">Bibliography</h3>
 					$for item in graphdata['S_COLL_17'].split(';'):
-							<p>$item<p/>
+							<p class="white info-url">$item<p/>
 			</section>
 			
 
@@ -159,32 +169,25 @@ $var user = user
 							<p>$label</p>
 		</section> --->
 
-		$if any(key.startswith("S_COLL_20") for key in graphdata):	
-			<section class="biblio">
-				<h3 class="biblio-label">Events</h3>
-				$for k, v in graphdata.items():
-					$if k.startswith('S_COLL_20'):
-						$for id, label in v.items():
-							<p>$label</p>
-			</section>
+		
 		$if any(key.startswith("S_COLL_18") for key in graphdata):	
-			<section class="onlineres" id="demo">
+			<section class="onlineres">
 				<h3 class="biblio-label">Online resources </h3>
 				$if 'S_COLL_18_1_desc' in graphdata:
 					<p style="font-weight: bold"> $graphdata['S_COLL_18_1_desc']</p>
 				$if 'S_COLL_18_1' in graphdata:
-					<p class='info-url' onclick='myFunction()'>$graphdata['S_COLL_18_1']</p>
-						<br/>
+					<a class='info-url' href="$graphdata['S_COLL_18_1']">$graphdata['S_COLL_18_1']</a>
+						
 				$if 'S_COLL_18_2_desc' in graphdata:
 					<p style="font-weight: bold"> $graphdata['S_COLL_18_2_desc']</p>
 				$if 'S_COLL_18_2' in graphdata:
-					<p class='info-url' onclick='myFunction()'>$graphdata['S_COLL_18_2']</p>
-						<br/>
+					<a class='info-url' href="$graphdata['S_COLL_18_2']">$graphdata['S_COLL_18_2']</a>
+						
 				$if 'S_COLL_18_3_desc' in graphdata:
 					<p style="font-weight: bold"> $graphdata['S_COLL_18_3_desc']</p>
 				$if 'S_COLL_18_3' in graphdata:
-					<p class='info-url' onclick='myFunction()'>$graphdata['S_COLL_18_3']</p>
-						<br/>
+					<a class='info-url' href="$graphdata['S_COLL_18_3']">$graphdata['S_COLL_18_3']</a>
+						
 			</section>
 
 
@@ -209,4 +212,6 @@ $var user = user
 				</section>
 			</section>
 	</section>
+	
+
 </section>

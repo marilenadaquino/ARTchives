@@ -7,19 +7,18 @@ $var user = user
 		<h2 class="articleTitle">Bibliography</h2>
 		<section>
 			$for k, v in data.items():
-				<hr>
-				<br>
+				<div class="bibliospace">
 				<h3 class="articleSubtitle">$k</h3>
-				<br>
-				<br>
+				<div class="bibliospace">
 				$for value in v[0]:
 					<p>$value</p>
-				<br>
 				$if v[1]:
-				<p style="font-weight: bold">More about the scholar</p>
+				<p style="font-weight: bold; padding-top: 20px;">MORE ABOUT THE SCHOLAR</p>
 					$for value in v[1]:
 						<p>$value</p>
-				<br>
+				</div>
+				</div>
+				<hr>
 		</section>
 	</section>
 </section>
