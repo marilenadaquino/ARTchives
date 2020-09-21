@@ -10,9 +10,9 @@
 	// URL detection
 $('.info-url').each(function(element) {
    var str_text = $(this).html();
-   var first = str_text.substring(0);
-   if (first = "(") {str_text = str_text.substring(1, str_text.length-1);
-   }
+   //var first = str_text.substring(0);
+   //if (first == "(") {str_text = str_text.substring(1, str_text.length-1);
+   //}
    // Set the regex string
    //var regex = /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig
 var regex = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
@@ -65,7 +65,7 @@ var regex = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|]
 		};
 
 		if ( $(this).hasClass('searchGeneral') ) {
-			//searchARTchivesGeneral('searchGeneral');
+			searchARTchivesGeneral('searchGeneral');
 		};
 	});
 
@@ -743,7 +743,7 @@ function searchARTchivesGeneral(searchterm) {
 		$("#searchresult").show();
 		var queryTerm = $('.'+searchterm).val();
 		if (searchterm == 'searchGeneral') {
-			var query = "PREFIX bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?subj (SAMPLE(?term) as ?o) ?type WHERE { ?term bds:search '"+queryTerm+"' . { GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?term . BIND('collection-' as ?type) }} UNION { ?collection wdp:P170 ?subj . ?subj rdfs:label ?term . bind('historian-' as ?type) } UNION { ?subj a wd:Q31855 ; rdfs:label ?term . bind('keeper' as ?type) } } GROUP BY ?subj ?type" };
+			var query = "PREFIX bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?subj ?subj_label ?type ?flag_intermediate ?intermediate (SAMPLE(?term) as ?o) WHERE {?term bds:search '"+queryTerm+"*' .{ GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?term . BIND('collection-' as ?type). BIND('first' as ?flag_intermediate) }} UNION { ?collection wdp:P170 ?subj . ?subj rdfs:label ?term . BIND('historian-' as ?type). BIND('first' as ?flag_intermediate) } UNION { ?subj a wd:Q31855 ; rdfs:label ?term . BIND('keeper-' as ?type). BIND('first' as ?flag_intermediate) } UNION { GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?subj_label . ?intermediate rdfs:label ?term; ?p ?collection. BIND('collection-' as ?type) . BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?collection wdp:P170 ?subj . ?subj rdfs:label ?subj_label . ?intermediate rdfs:label ?term ; ?p ?subj. BIND ('historian-' as ?type) .BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?subj a wd:Q31855 ; rdfs:label ?subj_label .?intermediate rdfs:label ?term; ?p ?subj.BIND('keeper-' as ?type) . BIND('intermediate' as ?flag_intermediate) }} } GROUP BY ?subj ?flag_intermediate ?type  ?intermediate ?subj_label order by  ?flag_intermediate ?type " };
 
 		var encoded = encodeURIComponent(query)
 
@@ -756,7 +756,7 @@ function searchARTchivesGeneral(searchterm) {
 		    success: function(returnedJson) {
 		    	// autocomplete positioning
 		      	var position = $('.'+searchterm).position();
-		      	var leftpos = position.left+15;
+		      	var leftpos = position.left-200;
 		      	var offset = $('.'+searchterm).offset();
 				var height = $('.'+searchterm).height();
 				var width = $('.'+searchterm).width();
@@ -770,21 +770,40 @@ function searchARTchivesGeneral(searchterm) {
 				    'z-index':1000,
 				    'background-color': 'white',
 				    'border':'solid 1px grey',
-			    	'max-width':'600px',
+			    	'max-width':'580px',
 				    'border-radius': '4px'
 				});
+			
 		      	$("#searchresult").empty();
 				for (i = 0; i < returnedJson.results.bindings.length; i++) {
 					var uri = returnedJson.results.bindings[i].subj.value ;
 					var type = returnedJson.results.bindings[i].type.value ;
+					var intermediate = returnedJson.results.bindings[i].flag_intermediate.value ;
+					var obj = returnedJson.results.bindings[i].o.value;
+					var low = obj.toLowerCase();
+					var term = queryTerm.toLowerCase();
+					if (low.includes(term)) {var pos = low.indexOf(term);
+						var pre = low.substring(0, pos);
+						var lenterm = queryTerm.length;
+						var post = low.slice(pos+lenterm, pos+lenterm+70);
+						var postlen = post.length;
+						var lastchar = low.lastIndexOf(" ");
+						if (postlen > 10) {var post = low.slice(pos+lenterm, lastchar);}
+						}
+
+
 					if (uri.substring(uri.length-1) == "/") {
 						var qID = uri.substr(uri.slice(0,-1).lastIndexOf('/') + 1).slice(0,-1);
 					} else {
 						var qID = uri.substr(uri.lastIndexOf('/') + 1);
 					};
-
-					$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value.trim() + "</a>" +returnedJson.results.bindings[i].type.value.slice(0,-1)+"</div>");
+					if (intermediate != "first" && postlen > 25) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> "+  pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + " [...]" + "</span>" + "</p>" + "</div>"); }
+					else if (intermediate != "first" && postlen <= 25) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + "</span>" + "</p>" + "</div>"); }
+					else {
+						$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value.trim() + "</a>" +returnedJson.results.bindings[i].type.value.slice(0,-1)+"</div>"); };
+			    	
 			    };
+
 		        },
 		        error: function() {
 		        	$("#searchresult").append("<div class='wditem noresults'>No results in ARTchives</div>");
@@ -795,6 +814,7 @@ function searchARTchivesGeneral(searchterm) {
 
 	} ) );
 };
+
 
 
 

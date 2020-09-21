@@ -28,7 +28,6 @@ urls = (
 	prefix + '/keeper-(.+)', 'Keeper',
 	prefix + '/(sparql)','sparql',
 	prefix + '/bibliography','Bibliography',
-	prefix + '/searchResults', 'SearchResults'
 )
 
 
@@ -55,7 +54,7 @@ allowed = (
 def notfound():
     return web.notfound(render.notfound(user='anonymous'))
 
-def internalerror():
+def internalerror(): 
     return web.internalerror(render.internalerror(user='anonymous'))
 
 app.notfound = notfound
@@ -113,6 +112,15 @@ class Logout:
 
 	def POST(self):
 		logout(prefixLocal)
+
+
+#class Layout:
+	#def GET(self):
+		#
+		#return render.layout(user='anonymous')
+
+	#def POST(self):
+		#login('login')
 
 
 class Index:
@@ -290,15 +298,6 @@ class Credits:
 	def POST(self):
 		logout('credits')
 
-class SearchResults:
-	def GET(self):
-		#fr = forms.searchResults()
-		return render_no_login.searchResults(user='anonymous')
-
-	def POST(self):
-		data = web.input()
-		return render.login(user='anonymous')
-
 class Contribute:
 	def GET(self):
 		return render_no_login.contribute(user='anonymous')
@@ -382,7 +381,6 @@ class Bibliography():
 	def GET(self):
 		records = queries.getBibliography()
 		return render_no_login.bibliography(user='anonymous', data=records, title='Bibliography')
-
 	def POST(self):
 		logout('bibliography')
 

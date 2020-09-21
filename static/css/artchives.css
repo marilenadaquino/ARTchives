@@ -57,6 +57,7 @@ tr{text-align: left;}
 form table tbody tr th label {margin: 1rem 0;}
 th {width: 200px !important;}
 
+
 /* create record */
 #recordForm table tbody tr th{ width: 30%;}
 label[for='S_KEEPER_1']:after,
@@ -77,14 +78,19 @@ label[for='S_KEEPER_title'], label[for='S_CREATOR_title'], label[for='S_COLLECTI
 
 /* both forms */
 .tip {width: 35px;}
-.wditem{padding: 5px; border-bottom: solid 0.5px grey;}
+.wditem{padding: 8px; border-bottom: solid 0.5px grey;}
 .blue{color: #23daa2 !important; cursor: pointer;}
+.intermediatetext {text-transform: lowercase; padding: 8px; color: gray; font-style: italic; }
 sub {display: block; margin: 25px;}
+.intermediatetext::first-letter {
+    text-transform: uppercase;
+}
 /*.orange {background-color: #FF8C00 !important; cursor: pointer;}
 .orange:hover {background-color: #cc7000 !important;}
 .orangeText {color: #FF8C00 !important;}*/
 /*.tag {display: inline-block; cursor: pointer; color: white; background-color: #23daa2; border-radius: 2px; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
 */
+
 .tag {display: inline-block; cursor: pointer; color: black; background-color: white; border-radius: 3px; border: solid 1px black; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
 .tag ~ .tag{clear: left !important; margin-left: 0.2em;}
 .tag::after{content:' x';}
@@ -118,6 +124,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .columns p {display: inline;}
 
 /* other pages */
+
 .searchBox form {margin-left: 2em;}
 .entryBox {margin-bottom: 20px;}
 .entryBox a {color: black; text-decoration: none !important;}
