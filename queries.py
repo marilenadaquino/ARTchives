@@ -71,16 +71,22 @@ queryKeepers = """
 queryBiblio = """
 	PREFIX wd: <http://www.wikidata.org/entity/>
 	PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
-	SELECT DISTINCT ?artHistorian ?nameHistorian ?artBiblioRefLabel ?otherbiblioRefLabel 
-	WHERE
-	{ GRAPH ?g {
-		?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian .
-		?artHistorian wdp:P800 ?artBiblioRef . ?artBiblioRef rdfs:label ?artBiblioRefLabel . 
+	SELECT DISTINCT ?nameCollection ?otherbiblioRefLabel ?collbiblioLabel
+	WHERE {
+	 {GRAPH ?g{
+       	?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian . 
 		?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel . 
-		BIND(COALESCE(?otherbiblioRefLabel, "") AS ?otherbiblioRefLabel).
-		BIND(COALESCE(?artBiblioRefLabel, "") AS ?artBiblioRefLabel).
-	  }
-	}
+       ?coll wdp:P170 ?artHistorian ; rdfs:label ?nameCollection .
+       BIND(COALESCE(?otherbiblioRefLabel, "") AS ?otherbiblioRefLabel).
+      	optional {
+      	?otherbiblioColl wdp:P921 ?coll ; rdfs:label ?collbiblioLabel . 
+		
+		}
+		BIND(COALESCE(?collbiblioLabel, "") AS ?collbiblioLabel).
+       	
+	  } 
+     }
+}
 	"""
 
 
@@ -751,19 +757,11 @@ def getBibliography():
 	sparql.setQuery(queryBiblio)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
-	newdict = {}
 	for result in results["results"]["bindings"]:
- 		records[result["nameHistorian"]["value"].lstrip().rstrip()] = [result["artBiblioRefLabel"]["value"].split(";"),  result["otherbiblioRefLabel"]["value"].split(";")]
+ 		records[result["nameCollection"]["value"].lstrip().rstrip()] = [result["otherbiblioRefLabel"]["value"].split(";"), result["collbiblioLabel"]["value"].split(";")]
 	 	for k, v in records.items():
-	 		el = k.split(" ")
-	 		el.reverse()
-	 		newk = ", ".join(el)
-	 		newdict[newk] = v
-	 		for value in v[0]:
-		 		if fuzz.ratio(k, value[0:25]) < 40 and value != "":
-		 			v[0].append(k + ", " + value)
-		 			v[0].remove(value)
-	sorted_dict = dict(sorted(newdict.items(), key=operator.itemgetter(0)))
+	 		records[k] = v
+	sorted_dict = dict(sorted(records.items(), key=operator.itemgetter(0)))
 	return sorted_dict
 
 

@@ -13,9 +13,9 @@ $var user = user
 				$for value in v[0]:
 					<p class="info-url">$value</p>
 				$if v[1]:
-				<p style="font-weight: bold; padding-top: 20px;">MORE ABOUT THE SCHOLAR</p>
 					$for value in v[1]:
-						<p class="info-url">$value</p>
+						$if value not in v[0]:
+							<p class="info-url">$value</p>
 				</div>
 				</div>
 				<hr>

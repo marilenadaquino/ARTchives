@@ -13,7 +13,7 @@ nav, footer {padding: 1em 2em; text-transform: uppercase;}
 nav a, footer a {margin-right: 1em; color: black; font-weight: bold;text-decoration: none !important;}
 nav a:hover, footer a:hover {color: #23daa2 !important; text-decoration: none;}
 h2, h3 { color: #1cae81 !important; text-align: center; text-transform: uppercase; font-weight: bold !important; margin: 1em 0px !important;}
-article {padding: 5em;}
+article {padding-bottom: 3em; padding-top: 0.5em; padding-left: 5em; padding-right: 5em;}
 article:nth-child(even), .articleBox, #yasr {background-color: #F5F6FA;}
 article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 
@@ -48,7 +48,7 @@ article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 .box h2:hover {color: white !important; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
 .highlights a {color: white !important; text-decoration: none !important;}
 .highlights a h2 {color: white !important;}
-
+.homedesc {padding-top: 20px !important;}
 /* backend homepage */
 .delete {background-color: #8B0000 !important; border-color: #8B0000 !important; }
 /* records table */
@@ -78,13 +78,12 @@ label[for='S_KEEPER_title'], label[for='S_CREATOR_title'], label[for='S_COLLECTI
 
 /* both forms */
 .tip {width: 35px;}
-.wditem{padding: 8px; border-bottom: solid 0.5px grey;}
+.wditem{padding: 8px; border-bottom: solid 0.5px grey; z-index: 2000;}
 .blue{color: #23daa2 !important; cursor: pointer;}
-.intermediatetext {text-transform: lowercase; padding: 8px; color: gray; font-style: italic; }
+.intermediatetext {padding: 8px; color: gray; font-style: italic; }
 sub {display: block; margin: 25px;}
-.intermediatetext::first-letter {
-    text-transform: uppercase;
-}
+nav .wditem {text-transform: none !important;}
+
 /*.orange {background-color: #FF8C00 !important; cursor: pointer;}
 .orange:hover {background-color: #cc7000 !important;}
 .orangeText {color: #FF8C00 !important;}*/
@@ -112,7 +111,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 #searchresult {max-width: 600px;}
 
 /* about */
-.articleBox {padding: 2em;}
+.articleBox {padding-left: 2em; padding-right:2em;}
 .articleTitle {font-size: 5em; text-transform: none !important; text-align: left;}
 .articleSubtitle, .info-label {color: #1cae81; font-size: 1.3em !important; display: inline !important;}
 .columns {
@@ -196,10 +195,14 @@ i.fa-info-circle:hover{ color: #1cae81;}
   .cbp-spmenu-push-toright { left: 190px; }
 }
 
-.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #1cae81;
-}
 
+/* map */
 
+.leaflet-top {position: absolute;
+z-index: 500 !important;
+pointer-events: none;}
 
+.leaflet-bottom {position: absolute;
+z-index: 500 !important;
+pointer-events: none;}
 

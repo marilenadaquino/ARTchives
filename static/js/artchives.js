@@ -743,7 +743,7 @@ function searchARTchivesGeneral(searchterm) {
 		$("#searchresult").show();
 		var queryTerm = $('.'+searchterm).val();
 		if (searchterm == 'searchGeneral') {
-			var query = "PREFIX bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?subj ?subj_label ?type ?flag_intermediate ?intermediate (SAMPLE(?term) as ?o) WHERE {?term bds:search '"+queryTerm+"*' .{ GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?term . BIND('collection-' as ?type). BIND('first' as ?flag_intermediate) }} UNION { ?collection wdp:P170 ?subj . ?subj rdfs:label ?term . BIND('historian-' as ?type). BIND('first' as ?flag_intermediate) } UNION { ?subj a wd:Q31855 ; rdfs:label ?term . BIND('keeper-' as ?type). BIND('first' as ?flag_intermediate) } UNION { GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?subj_label . ?intermediate rdfs:label ?term; ?p ?collection. BIND('collection-' as ?type) . BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?collection wdp:P170 ?subj . ?subj rdfs:label ?subj_label . ?intermediate rdfs:label ?term ; ?p ?subj. BIND ('historian-' as ?type) .BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?subj a wd:Q31855 ; rdfs:label ?subj_label .?intermediate rdfs:label ?term; ?p ?subj.BIND('keeper-' as ?type) . BIND('intermediate' as ?flag_intermediate) }} } GROUP BY ?subj ?flag_intermediate ?type  ?intermediate ?subj_label order by  ?flag_intermediate ?type ?intermediate " };
+			var query = "PREFIX bds: <http://www.bigdata.com/rdf/search#> PREFIX wd: <http://www.wikidata.org/entity/> PREFIX wdp: <http://www.wikidata.org/wiki/Property:> SELECT DISTINCT ?subj ?subj_label ?type ?flag_intermediate ?intermediate ?p (SAMPLE(?term) as ?o) WHERE {?term bds:search '"+queryTerm+"*' .{ GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?term . BIND('collection-' as ?type). BIND('first' as ?flag_intermediate).BIND('no_intermediate' as ?p)  }} UNION { ?collection wdp:P170 ?subj . ?subj rdfs:label ?term . BIND('historian-' as ?type). BIND('first' as ?flag_intermediate).BIND('no_intermediate' as ?p)  } UNION { ?subj a wd:Q31855 ; rdfs:label ?term . BIND('keeper-' as ?type). BIND('first' as ?flag_intermediate).BIND('no_intermediate' as ?p)  } UNION { GRAPH ?subj { ?collection wdp:P170 ?historian ; rdfs:label ?subj_label . ?intermediate rdfs:label ?term; ?p ?collection. BIND('collection-' as ?type) . BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?collection wdp:P170 ?subj . ?subj rdfs:label ?subj_label . ?intermediate rdfs:label ?term ; ?p ?subj. BIND ('historian-' as ?type) .BIND('intermediate' as ?flag_intermediate) } } UNION { GRAPH ?g {?subj a wd:Q31855 ; rdfs:label ?subj_label .?intermediate rdfs:label ?term; ?p ?subj.BIND('keeper-' as ?type) . BIND('intermediate' as ?flag_intermediate) }} } GROUP BY ?subj ?flag_intermediate ?type  ?intermediate ?subj_label ?p order by  ?flag_intermediate ?type ?intermediate " };
 
 		var encoded = encodeURIComponent(query)
 
@@ -777,28 +777,36 @@ function searchARTchivesGeneral(searchterm) {
 		      	$("#searchresult").empty();
 				for (i = 0; i < returnedJson.results.bindings.length; i++) {
 					var uri = returnedJson.results.bindings[i].subj.value ;
+					var p = returnedJson.results.bindings[i].p.value ;
 					var type = returnedJson.results.bindings[i].type.value ;
 					var intermediate = returnedJson.results.bindings[i].flag_intermediate.value ;
 					var obj = returnedJson.results.bindings[i].o.value;
 					var low = obj.toLowerCase();
 					var term = queryTerm.toLowerCase();
 					if (low.includes(term)) {var pos = low.indexOf(term);
-						var pre = low.substring(0, pos);
+						var pre = obj.substring(0, pos);
 						var lenterm = queryTerm.length;
-						var post = low.slice(pos+lenterm, pos+lenterm+70);
+						var post = obj.slice(pos+lenterm, pos+lenterm+70);
 						var postlen = post.length;
 						var lastchar = low.lastIndexOf(" ");
-						if (postlen > 10) {var post = low.slice(pos+lenterm, lastchar);}
-						}
+						if (postlen > 10) {var post = obj.slice(pos+lenterm, lastchar);};
+  						var check = p.substr(p.lastIndexOf(":")+1, p.length - p.lastIndexOf(":")+1);
+  						if (check == "P1830") { var category = "repository:"}
+  						else if (check == "P921") { var category = "bibliography:"}
+  						else if (check == "P170") { var category = "Collections:"}
+  						else if (check == "P127") { var category = "Collections:"}
+  						else {var category = "other:"}
 
+					};
 
 					if (uri.substring(uri.length-1) == "/") {
 						var qID = uri.substr(uri.slice(0,-1).lastIndexOf('/') + 1).slice(0,-1);
 					} else {
 						var qID = uri.substr(uri.lastIndexOf('/') + 1);
 					};
-					if (intermediate != "first" && postlen > 25) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> "+  pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + " [...]" + "</span>" + "</p>" + "</div>"); }
-					else if (intermediate != "first" && postlen <= 25) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + "</span>" + "</p>" + "</div>"); }
+
+					if (intermediate != "first" && postlen > 30) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> "  +"<span style='color: black; text-transform: capitalize;'>" + category + "</span>" + " " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + " [...]" + "</span>" + "</p>" + "</div>"); }
+					else if (intermediate != "first" && postlen <= 30) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1)  + "<p class= 'intermediatetext'> " +"<span style='color: black; text-transform: capitalize;'>" + category + "</span>" + " " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + "</span>" + "</p>" + "</div>"); }
 					else {
 						$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value.trim() + "</a>" +returnedJson.results.bindings[i].type.value.slice(0,-1)+"</div>"); };
 			    	

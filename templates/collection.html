@@ -71,11 +71,26 @@ $var user = user
 								$for id, label in v.items():
 									<span class="box-small" data-id="$id">$label</span>
 						<p></p>
-					<p style= "font-weight: bold; color: white;"> Other contents </p>
-					$for k, v in graphdata.items():
-						$if k.startswith('S_COLL_8-') or k.startswith('S_SUBJ_6-') or k.startswith('S_SUBJ_5-') or k.startswith('S_SUBJ_4-') or k.startswith('S_SUBJ_2-') or k.startswith('S_SUBJ_1-'):
-							$for id, label in v.items():
-								<span class="box-small" data-id="$id">$label</span>
+					$if any(key.startswith("S_SUBJ_4-" or "S_SUBJ_1-") for key in graphdata):
+						<p style= "font-weight: bold; color: white; padding-top: 20px;"> Artists, schools, periods </p>
+						$for k, v in graphdata.items():
+							$if k.startswith('S_SUBJ_4-') or k.startswith('S_SUBJ_1-') :
+								$for id, label in v.items():
+									<span class="box-small" data-id="$id">$label</span>
+
+					$if any(key.startswith("S_SUBJ_2-" or "S_SUBJ_5-") for key in graphdata):
+						<p style= "font-weight: bold; color: white; padding-top: 20px;"> Genres and themes</p>
+						$for k, v in graphdata.items():
+							$if k.startswith('S_SUBJ_2-') or k.startswith('S_SUBJ_5-') :
+								$for id, label in v.items():
+									<span class="box-small" data-id="$id">$label</span>
+					
+					$if any(key.startswith("S_SUBJ_6-" or "S_COLL_8-") for key in graphdata):
+					<p style= "font-weight: bold; color: white; padding-top: 20px;"> Other contents </p>
+						$for k, v in graphdata.items():
+							$if k.startswith('S_COLL_8-') or k.startswith('S_SUBJ_6-'):
+								$for id, label in v.items():
+									<span class="box-small" data-id="$id">$label</span>
 				</section>
 			</section>
 		$if 'S_COLL_9' in graphdata:
