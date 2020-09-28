@@ -14,7 +14,7 @@ $var user = user
 			$for k, v in graphdata.items():
 				$if k.startswith('S_CREATOR_4'):
 					$for id, label in v.items():
-						<span>$label.</span>
+						<span class="info-label">COUNTRY OF CITIZENSHIP</span> <span>$label.</span>
 		</p>
 		<p class="info-item">
 			$for k, v in graphdata.items():

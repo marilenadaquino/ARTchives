@@ -11,7 +11,7 @@ queryRecords = """
 	{ GRAPH ?g {
 		?s ?p ?o .
 		OPTIONAL {?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage. ?user rdfs:label ?userLabel .}
-		OPTIONAL {?g prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel .}
+		OPTIONAL {?g rdfs:label ?nameHistorian; prov:generatedAtTime ?date ; art:publicationStage ?stage ; prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel . }
 
 		BIND(COALESCE(?date, '-') AS ?date ).
 		BIND(COALESCE(?stage, '-') AS ?stage ).
