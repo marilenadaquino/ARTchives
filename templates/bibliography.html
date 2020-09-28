@@ -1,0 +1,24 @@
+$def with (user, data, title)
+
+$var user = user 
+
+<section class="row articleBox">
+	<section class="col-md-7">
+		<h2 class="articleTitle">Bibliography</h2>
+		<section>
+			$for k, v in data.items():
+				<div class="bibliospace">
+				<h3 class="articleSubtitle">$k</h3>
+				<div class="bibliospace">
+				$for value in v[0]:
+					<p class="info-url">$value</p>
+				$if v[1]:
+					$for value in v[1]:
+						$if value not in v[0]:
+							<p class="info-url">$value</p>
+				</div>
+				</div>
+				<hr>
+		</section>
+	</section>
+</section>

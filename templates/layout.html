@@ -11,6 +11,7 @@ $def with (content)
 		<script type="text/javascript" src="./static/js/wikidata-sdk.min.js"></script>
 		<script type="text/javascript" src="./static/js/artchives.js"></script>
 		<script type="text/javascript" src="./static/js/classie.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<link rel="icon" type="image/png" href="/static/imgs/favicon.png">
 		<link rel="stylesheet" type="text/css" href="./static/css/artchives.css">
 		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
@@ -40,6 +41,9 @@ $def with (content)
 						<p>You are logged in.</p>
 						<p><a href="logout">Logout</a></p>
 				</div>
+					<i class="fas fa-search" aria-hidden="true" style = "color: #23daa2; ; float:right; margin-top: 10px;"></i>
+					<input style = "width: 30%; float:right;  border-bottom: 2px solid #23daa2;" autocomplete="off" class="searchGeneral" placeholder= "Search" id="search" name="search" type="text">
+					<div id="searchresult"></div>
 			</nav>
 			$:content
 			<footer>

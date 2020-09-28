@@ -2,6 +2,9 @@
 import conf
 from SPARQLWrapper import SPARQLWrapper, JSON
 from collections import defaultdict
+from fuzzywuzzy import fuzz 
+from fuzzywuzzy import process 
+import operator 
 
 queryRecords = """
 	PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -62,6 +65,30 @@ queryKeepers = """
 	  }
 	}
 	"""
+
+
+
+queryBiblio = """
+	PREFIX wd: <http://www.wikidata.org/entity/>
+	PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
+	SELECT DISTINCT ?nameCollection ?otherbiblioRefLabel ?collbiblioLabel
+	WHERE {
+	 {GRAPH ?g{
+       	?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian . 
+		?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel . 
+       ?coll wdp:P170 ?artHistorian ; rdfs:label ?nameCollection .
+       BIND(COALESCE(?otherbiblioRefLabel, "") AS ?otherbiblioRefLabel).
+      	optional {
+      	?otherbiblioColl wdp:P921 ?coll ; rdfs:label ?collbiblioLabel . 
+		
+		}
+		BIND(COALESCE(?collbiblioLabel, "") AS ?collbiblioLabel).
+       	
+	  } 
+     }
+}
+	"""
+
 
 
 
@@ -721,3 +748,21 @@ def clearGraph(graph):
 	sparql.setQuery(clearGraph)
 	sparql.method = 'POST'
 	sparql.query()
+
+
+
+def getBibliography():
+	records = {}
+	sparql = SPARQLWrapper(conf.artchivesEndpoint)
+	sparql.setQuery(queryBiblio)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+	for result in results["results"]["bindings"]:
+ 		records[result["nameCollection"]["value"].lstrip().rstrip()] = [result["otherbiblioRefLabel"]["value"].split(";"), result["collbiblioLabel"]["value"].split(";")]
+	 	for k, v in records.items():
+	 		records[k] = v
+	sorted_dict = dict(sorted(records.items(), key=operator.itemgetter(0)))
+	return sorted_dict
+
+
+

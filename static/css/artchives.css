@@ -13,7 +13,7 @@ nav, footer {padding: 1em 2em; text-transform: uppercase;}
 nav a, footer a {margin-right: 1em; color: black; font-weight: bold;text-decoration: none !important;}
 nav a:hover, footer a:hover {color: #23daa2 !important; text-decoration: none;}
 h2, h3 { color: #1cae81 !important; text-align: center; text-transform: uppercase; font-weight: bold !important; margin: 1em 0px !important;}
-article {padding: 5em;}
+article {padding-bottom: 3em; padding-top: 0.5em; padding-left: 5em; padding-right: 5em;}
 article:nth-child(even), .articleBox, #yasr {background-color: #F5F6FA;}
 article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 
@@ -48,13 +48,15 @@ article p { font-size: 1.5em; line-height: 1.7em; padding: 0.5em 2em;}
 .box h2:hover {color: white !important; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
 .highlights a {color: white !important; text-decoration: none !important;}
 .highlights a h2 {color: white !important;}
-
+.homedesc {padding-top: 20px !important;}
 /* backend homepage */
 .delete {background-color: #8B0000 !important; border-color: #8B0000 !important; }
 /* records table */
 table{width: 100%;}
 tr{text-align: left;}
 form table tbody tr th label {margin: 1rem 0;}
+th {width: 200px !important;}
+
 
 /* create record */
 #recordForm table tbody tr th{ width: 30%;}
@@ -76,14 +78,18 @@ label[for='S_KEEPER_title'], label[for='S_CREATOR_title'], label[for='S_COLLECTI
 
 /* both forms */
 .tip {width: 35px;}
-.wditem{padding: 5px; border-bottom: solid 0.5px grey;}
+.wditem{padding: 8px; border-bottom: solid 0.5px grey; z-index: 2000;}
 .blue{color: #23daa2 !important; cursor: pointer;}
+.intermediatetext {padding: 8px; color: gray; font-style: italic; }
 sub {display: block; margin: 25px;}
+nav .wditem {text-transform: none !important;}
+
 /*.orange {background-color: #FF8C00 !important; cursor: pointer;}
 .orange:hover {background-color: #cc7000 !important;}
 .orangeText {color: #FF8C00 !important;}*/
 /*.tag {display: inline-block; cursor: pointer; color: white; background-color: #23daa2; border-radius: 2px; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
 */
+
 .tag {display: inline-block; cursor: pointer; color: black; background-color: white; border-radius: 3px; border: solid 1px black; padding: 0.2em; margin: 0.2em 0.2em 0.2em 35px;}
 .tag ~ .tag{clear: left !important; margin-left: 0.2em;}
 .tag::after{content:' x';}
@@ -105,7 +111,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 #searchresult {max-width: 600px;}
 
 /* about */
-.articleBox {padding: 2em;}
+.articleBox {padding-left: 2em; padding-right:2em;}
 .articleTitle {font-size: 5em; text-transform: none !important; text-align: left;}
 .articleSubtitle, .info-label {color: #1cae81; font-size: 1.3em !important; display: inline !important;}
 .columns {
@@ -117,16 +123,19 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .columns p {display: inline;}
 
 /* other pages */
+
 .searchBox form {margin-left: 2em;}
-.entryBox {}
+.entryBox {margin-bottom: 20px;}
 .entryBox a {color: black; text-decoration: none !important;}
-.entryBox a:hover {color: #23daa2; text-decoration: none;}
-.imageBox {height: 200px; width: auto; background-color: #23daa2;}
+.entryBox a:hover {color: #1cae81; text-decoration: none;}
+.imageBox {height: 200px; width: auto;}
+.imageBox:hover { filter: brightness(125%); -webkit-transition-duration: 0.4s; transition-duration: 0.4s;} 
 .withImage img {-webkit-filter: grayscale(100%); filter: grayscale(100%); max-width: 100%;}
-.noImage { color: white; text-align: center; font-size: 1.5em;}
-.noImage:hover { background-color: #1cae81; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
+.noImage { background-color: #1cae81; position: relative; z-index: 0;}
+/*.noImage:hover { background-color: yellow; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}*/
 .noImage p {padding-top: 40%;}
-.entryTitle {background-color: white; font-size: 1.2em; padding: 0.3em;}
+.noImage:hover .ImageCHI {background-color: #1cae81; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
+.entryTitle {background-color: white; font-size: 1.0em; padding: 0.3em; position: relative; z-index: 1;}
 
 /* historian/collection template */
 /*.info-item {font-style: italic;}*/
@@ -135,6 +144,12 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .biblio {background-color: gray; color: white; padding: 1em 3em 3em 3em;}
 .biblio:nth-of-type(3) {background-color:#1cae81}
 .biblio-label {color: white !important; text-align: left;}
+.bibliospace {padding-top: 25px !important; padding-bottom: 10px !important; }
+.onlineres {background-color: #23daa2; color: white !important; padding: 1em 3em 3em 3em;}
+.onlineres a {color: white !important;}
+.onlineres p {padding-top: 30px !important;}
+.info-url {word-wrap: break-word !important;}
+.white a {color: white !important;}
 .circles {margin: 2em auto;}
 .circles a {color: white !important; text-decoration: none !important;}
 .box-small { cursor: pointer; margin-top: 0.1em; display: inline-block; color: white; text-decoration: none; padding: 0.4em; border-radius: 5px; background-color: #23daa2; text-align: center; vertical-align: middle; }
@@ -179,3 +194,15 @@ i.fa-info-circle:hover{ color: #1cae81;}
   .cbp-spmenu-right { right: -190px; }
   .cbp-spmenu-push-toright { left: 190px; }
 }
+
+
+/* map */
+
+.leaflet-top {position: absolute;
+z-index: 500 !important;
+pointer-events: none;}
+
+.leaflet-bottom {position: absolute;
+z-index: 500 !important;
+pointer-events: none;}
+

@@ -3,6 +3,7 @@ import web , datetime , os, time, re, cgi, requests
 from urllib.parse import parse_qs
 import forms, mapping, conf, queries
 from web import form
+
 web.config.debug = False
 prefix = ''
 #prefixLocal = '/artchives/'
@@ -26,6 +27,7 @@ urls = (
 	prefix + '/institutions', 'Keepers',
 	prefix + '/keeper-(.+)', 'Keeper',
 	prefix + '/(sparql)','sparql',
+	prefix + '/bibliography','Bibliography',
 )
 
 
@@ -52,7 +54,7 @@ allowed = (
 def notfound():
     return web.notfound(render.notfound(user='anonymous'))
 
-def internalerror():
+def internalerror(): 
     return web.internalerror(render.internalerror(user='anonymous'))
 
 app.notfound = notfound
@@ -99,7 +101,7 @@ class Login:
 		else:
 			return render.login(user='anonymous')
 
-wikidir = os.path.realpath('./records/')
+wikidir = os.path.realpath('./records/') 
 
 class Logout:
 	def GET(self):
@@ -110,6 +112,15 @@ class Logout:
 
 	def POST(self):
 		logout(prefixLocal)
+
+
+#class Layout:
+	#def GET(self):
+		#
+		#return render.layout(user='anonymous')
+
+	#def POST(self):
+		#login('login')
 
 
 class Index:
@@ -364,6 +375,17 @@ class Keeper(object):
 
 	def POST(self):
 		logout('keeper')
+
+
+class Bibliography():
+	def GET(self):
+		records = queries.getBibliography()
+		return render_no_login.bibliography(user='anonymous', data=records, title='Bibliography')
+	def POST(self):
+		logout('bibliography')
+
+
+
 
 class sparql:
     def GET(self, active):

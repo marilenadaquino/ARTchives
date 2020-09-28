@@ -424,21 +424,29 @@ art_historian = form.Form(
 searchHistorian = form.Form(
 	form.Textbox("search", 
     	class_="searchHistorian col-md-11", 
-    	description="search", 
+    	description="Search an art historian", 
     	autocomplete="off")
 )
 
 searchCollection = form.Form(
     form.Textbox("search", 
         class_="searchCollection col-md-11", 
-        description="search", 
+        description="Search a collection", 
         autocomplete="off")
 )
 
 searchKeeper = form.Form(
     form.Textbox("search", 
         class_="searchKeeper col-md-11", 
-        description="search", 
+        description="Search a keeper", 
         autocomplete="off")
 )
+
+#searchGeneral = form.Form(
+    #form.Textbox("search", 
+        #class_="searchGeneral", 
+        #description="search", 
+        #autocomplete="off")
+#)
+
 
