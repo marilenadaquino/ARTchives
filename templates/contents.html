@@ -1,0 +1,51 @@
+$def with (form, user, data, title)
+
+$var user = user
+
+<script type="text/javascript" src="https://visjs.github.io/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link rel="stylesheet" href="https://visjs.github.io/vis-timeline/styles/vis-timeline-graph2d.min.css">
+<section class="row searchBox">
+	<!-- TODO -->
+	<section id="searchresult"></section>
+</section>
+<section class="row articleBox">
+	<div class="se-pre-con"></div>
+	<section class="col-md-12">
+		<h2 class="articleTitle">$title</h2>
+		<h3 class="articleSubtitle">Collections</h3>
+		<p class="intro_vis">Explore archival collections by historical or artistic periods addressed in their materials</p>
+		<p>Hover the timeline and scroll up or down to zoom on a time span.</p>
+		<p>Click and drag left/right to move the timeline.</p>
+		<p>Click on a bubble to see which collections address that period. Remove periods from the timeline by clicking on the x next to bubbles.</p>
+		<section id="collectionsByPeriod">
+			<script type="text/javascript">
+				var container = document.getElementById("collectionsByPeriod");
+				var items = new vis.DataSet([
+					$for period, collections in data.items():
+						{
+							$if 'start_date' in collections:
+								start: new Date($collections['start_date']),
+							$if 'end_date' in collections:
+								end: new Date($collections['end_date']),
+							content: '<div>$collections["period_label"]</div>',
+						},
+
+				]);
+				var options = {
+				  editable: true,
+				  margin: {
+				    item: 20,
+				    axis: 40,
+				  },
+				};
+				console.log(items);
+				var timeline = new vis.Timeline(container, items, options);
+
+			</script>
+		</section>
+
+		<!-- <p>Explore archival collections by artists addressed in their materials</p>
+		<p>Explore archival collections by dates of art historians' activities</p>
+		<p>Search for a topic to see in which collection it is addressed</p> -->
+	</section>
+</section>

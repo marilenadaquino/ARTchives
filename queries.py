@@ -1,10 +1,19 @@
 # -*- coding: utf-8 -*-
-import conf
+import conf , os , operator , pprint , ssl , rdflib
 from SPARQLWrapper import SPARQLWrapper, JSON
 from collections import defaultdict
-from fuzzywuzzy import fuzz 
-from fuzzywuzzy import process 
-import operator 
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
+from rdflib import URIRef , XSD, Namespace , Literal
+from rdflib.namespace import OWL, DC , DCTERMS, RDF , RDFS
+from rdflib.plugins.sparql import prepareQuery
+from pymantic import sparql
+
+ssl._create_default_https_context = ssl._create_unverified_context
+server = sparql.SPARQLServer(conf.artchivesEndpoint)
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+pp = pprint.PrettyPrinter(indent=4)
 
 queryRecords = """
 	PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -56,6 +65,23 @@ queryCollections = """
 	}
 	"""
 
+queryCollectionsByPeriod = """
+	PREFIX prov: <http://www.w3.org/ns/prov#>
+	PREFIX art: <https://w3id.org/artchives/>
+	PREFIX wdp: <http://www.wikidata.org/wiki/Property:>
+	SELECT DISTINCT *
+	WHERE
+	{ GRAPH ?g {
+		?g rdfs:label ?nameHistorian; art:publicationStage ?stage .
+		?coll wdp:P170 ?artHistorian ; rdfs:label ?nameCollection .
+		OPTIONAL {?coll art:hasSubjectPeriod ?period . ?period rdfs:label ?periodLabel . }
+	  }
+
+	  OPTIONAL {?period <http://www.wikidata.org/prop/direct/P582> ?end_date } .
+	  OPTIONAL {?period <http://www.wikidata.org/prop/direct/P580> ?start_date } .
+	}
+	"""
+
 queryKeepers = """
 	PREFIX wd: <http://www.wikidata.org/entity/>
 	SELECT DISTINCT ?keeper ?nameKeeper
@@ -74,17 +100,17 @@ queryBiblio = """
 	SELECT DISTINCT ?nameCollection ?otherbiblioRefLabel ?collbiblioLabel
 	WHERE {
 	 {GRAPH ?g{
-       	?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian . 
-		?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel . 
+       	?artHistorian a wd:Q5 ; rdfs:label ?nameHistorian .
+		?otherbiblioRef wdp:P921 ?artHistorian ; rdfs:label ?otherbiblioRefLabel .
        ?coll wdp:P170 ?artHistorian ; rdfs:label ?nameCollection .
        BIND(COALESCE(?otherbiblioRefLabel, "") AS ?otherbiblioRefLabel).
       	optional {
-      	?otherbiblioColl wdp:P921 ?coll ; rdfs:label ?collbiblioLabel . 
-		
+      	?otherbiblioColl wdp:P921 ?coll ; rdfs:label ?collbiblioLabel .
+
 		}
 		BIND(COALESCE(?collbiblioLabel, "") AS ?collbiblioLabel).
-       	
-	  } 
+
+	  }
      }
 }
 	"""
@@ -121,7 +147,6 @@ def getRecords():
 		records.add( (result["g"]["value"], result["nameHistorian"]["value"], result["userLabel"]["value"], result["modifierLabel"]["value"], result["date"]["value"], result["stage"]["value"] ))
 	return records
 
-
 def getHistorians():
 	""" get all the records on historians to populate the /historians page """
 	records = set()
@@ -135,7 +160,6 @@ def getHistorians():
 		else:
 			records.add( ( result["artHistorian"]["value"], result["nameHistorian"]["value"].lstrip().rstrip(), 'no image available' ))
 	return records
-
 
 def getCollections():
 	""" get all the records on historians to populate the /collections page """
@@ -151,6 +175,121 @@ def getCollections():
 			records.add( (result["g"]["value"], result["coll"]["value"], result["nameCollection"]["value"].lstrip().rstrip(), 'no image available', result["stage"]["value"] ))
 	return records
 
+def getCollectionsByPeriod():
+	""" get all the records on collections grouped by period to populate the /contents page """
+
+	sparql = SPARQLWrapper(conf.artchivesEndpoint)
+	sparql.setQuery(queryCollectionsByPeriod)
+	sparql.setReturnFormat(JSON)
+	results = sparql.query().convert()
+
+	records = defaultdict(dict)
+	for result in results["results"]["bindings"]:
+		collection_path = "collection-"+result["g"]["value"].split("artchives/",1)[1].replace('/','')
+		collection_name = result["nameCollection"]["value"].strip()
+		# collection w/ periods
+		if 'period' in result and 'periodLabel' in result:
+			period = result['period']['value']
+			periodLabel = result['periodLabel']['value'].strip()
+			if period not in records:
+				records[period]['period_label'] = periodLabel
+			if collection_path not in records[period]:
+				records[period][collection_path] = collection_name
+				if ('start_date' in result and result['start_date']['value'] != '') or ('end_date' in result and result['end_date']['value'] != '') :
+					if 'start_date' in result:
+						records[period]["start_date"] = str(result['start_date']['value'])[:10][::-1].replace('-',',',2)[::-1]
+					if 'end_date' in result:
+						records[period]["end_date"] = str(result['end_date']['value'])[:10][::-1].replace('-',',',2)[::-1]
+				else:
+					if 'entity' in period:
+						dates = getDatesWD(period)
+						if dates[0] != 'no date':
+							records[period]["start_date"] = str(dates[0])[:10][::-1].replace('-',',',2)[::-1]
+						else:
+							records[period]["start_date"] = '0000,01,01'
+						if dates[1] != 'no date':
+							records[period]["end_date"] = str(dates[1])[:10][::-1].replace('-',',',2)[::-1]
+						else:
+							if dates[0] == 'no date':
+								records[period]["end_date"] = '2020,01,01'
+					if 'artchives' in period:
+						records[period]["start_date"] = '0001,01,01'
+						records[period]["end_date"] = '2020,01,01'
+		else: # collection without periods
+			records['no_period']['period_label'] = 'Not specified'
+			if collection_path not in records['no_period']:
+				records['no_period'][collection_path] = collection_name
+				records['no_period']["start_date"] = '0001,01,01'
+				records['no_period']["end_date"] = '2020,01,01'
+
+	records = dict(records)
+	pp.pprint(records)
+	return records
+
+
+def getDatesWD(period):
+	""" query wikidata to get dates of periods.
+	Upload to the triplestore to store the information for fast retrieval """
+	queryWdDates = """
+		SELECT ?start_date ?end_date
+		WHERE {
+
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P580> ?start_date_1 } .
+	  	  	OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P571> ?start_date_2 } .
+	  	  	OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P361> ?broader_period.
+	  	   			?broader_period <http://www.wikidata.org/prop/direct/P571> ?start_date_3 } .
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P361> ?broader_period.
+	  	   			?broader_period <http://www.wikidata.org/prop/direct/P580> ?start_date_3_1 } .
+	  	  	OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P2596> ?culture .
+	  	  			?culture <http://www.wikidata.org/prop/direct/P571> ?start_date_4 } .
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P2348> ?culture .
+	  	  			?culture <http://www.wikidata.org/prop/direct/P580> ?start_date_5 } .
+	  	   	BIND(COALESCE(?start_date_1, ?start_date_2, ?start_date_3, ?start_date_3_1, ?start_date_4, ?start_date_5) AS ?start_date) .
+
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P582> ?end_date_1} .
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P2348> ?culture .
+	  	  			?culture <http://www.wikidata.org/prop/direct/P582> ?end_date_2 } .
+			OPTIONAL {<"""+period+"""> <http://www.wikidata.org/prop/direct/P361> ?broader_period.
+	  	   			?broader_period <http://www.wikidata.org/prop/direct/P582> ?end_date_3 } .
+			BIND(COALESCE(?end_date_1, ?end_date_2, ?end_date_3) AS ?end_date) .
+			}
+	"""
+	sparqlWD = SPARQLWrapper(conf.wikidataEndpoint)
+	sparqlWD.setQuery(queryWdDates)
+	sparqlWD.setReturnFormat(JSON)
+	resultsWD = sparqlWD.query().convert()
+
+	base = 'https://w3id.org/artchives/'
+	wd = rdflib.Graph(identifier=URIRef(base+'wd/'))
+	WDP = Namespace("http://www.wikidata.org/prop/direct/")
+
+	for resultWD in resultsWD["results"]["bindings"]:
+		if "start_date" in resultWD:
+			start_date = resultWD["start_date"]["value"]
+			wd.add(( URIRef(period), URIRef("http://www.wikidata.org/prop/direct/P580"), Literal(start_date,datatype=XSD.dateTime)  ))
+		else:
+			start_date = 'no date'
+		if "end_date" in resultWD:
+			end_date = resultWD["end_date"]["value"]
+			wd.add(( URIRef(period), URIRef("http://www.wikidata.org/prop/direct/P582"), Literal(end_date,datatype=XSD.dateTime)  ))
+		else:
+			end_date = 'no date'
+
+		print(period)
+		print("calling getDatesWD")
+		if 'entity' in period:
+			recordID = period.split("entity/",1)[1]
+		else:
+			recordID = period.split("artchives/",1)[1]
+
+		# Create a copy in folder /records
+		if len(wd) > 0:
+			wd.serialize(destination='records/'+recordID+'.trig', format='trig', encoding='utf-8')
+			print("serialised updates")
+			# Load to the triplestore
+			server.update('load <file:///'+dir_path+'/records/'+recordID+'.trig>')
+			print("loaded updates")
+	return [start_date,end_date]
 
 def getKeepers():
 	""" get all the records on historians to populate the /keepers page """
@@ -763,6 +902,3 @@ def getBibliography():
 	 		records[k] = v
 	sorted_dict = dict(sorted(records.items(), key=operator.itemgetter(0)))
 	return sorted_dict
-
-
-

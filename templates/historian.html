@@ -11,23 +11,24 @@ $var user = user
 		<p class="info-item">
 			$if 'S_CREATOR_2' in graphdata:
 					<h3 class="articleSubtitle">Dates </h3><span>$graphdata['S_CREATOR_2'].</span>
-			
-		</p>
-		<p class="info-item">
-			<h3 class="articleSubtitle">Profession</h3>
-			$for k, v in graphdata.items():
-				$if k.startswith('S_CREATOR_3'):
-					$for id, label in v.items():
-						<span class="info-label">COUNTRY OF CITIZENSHIP</span> <span>$label.</span>
-		</p>
 
-		<p class="info-item">
-			<h3 class="articleSubtitle">Country of origin</h3>
-			$for k, v in graphdata.items():
-				$if k.startswith('S_CREATOR_4'):
-					$for id, label in v.items():
-						<span>$label.</span>
 		</p>
+		$if any(key.startswith("S_CREATOR_3") for key in graphdata):
+			<p class="info-item">
+				<h3 class="articleSubtitle">Profession</h3>
+				$for k, v in graphdata.items():
+					$if k.startswith('S_CREATOR_3'):
+						$for id, label in v.items():
+							<span>$label.</span>
+			</p>
+		$if any(key.startswith("S_CREATOR_4") for key in graphdata):
+			<p class="info-item">
+				<h3 class="articleSubtitle">Country of origin</h3>
+				$for k, v in graphdata.items():
+					$if k.startswith('S_CREATOR_4'):
+						$for id, label in v.items():
+							<span>$label.</span>
+			</p>
 
 
 		$if 'S_CREATOR_5' in graphdata:
@@ -50,7 +51,7 @@ $var user = user
 				</section>
 			</section>
 	</section>
-	<section class="col-md-5">
+	<section class="col-md-5 sideBoxes">
 		<!-- TODO add image here -->
 		$if 'S_CREATOR_6' in graphdata:
 			<section class="biblio">

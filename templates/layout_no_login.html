@@ -25,16 +25,20 @@ $def with (content)
 			<nav>
 				<span class="logo"><a href="/"><img src="./static/imgs/logo.png"></a></span>
 				<a href="about">about</a>
-				<i class="fas fa-search" aria-hidden="true" style = "color: #23daa2; ; float:right; margin-top: 10px;"></i>
-					<input style = "width: 30%; float:right;  border-bottom: 2px solid #23daa2;" autocomplete="off" class="searchGeneral" placeholder= "Search" id="search" name="search" type="text">
-					<div id="searchresult"></div>		
+				<!-- <a href="contents">explore</a> -->
+				<div class="searchmenu">
+					<i class="fas fa-search" aria-hidden="true"></i>
+					<input autocomplete="off" class="searchGeneral" placeholder= "Search..." id="search" name="search" type="text">
+
+				</div>
+				<div id="searchresult"></div>
 			</nav>
 			$:content
 			<footer>
 				<a href="credits">credits</a>
 				<a href="contribute">contribute</a>
 				<a href="documentation">documentation</a>
-				<!-- <a href="sparql">query</a> -->
+				<a href="sparql">query</a>
 			</footer>
 		</section>
 	</body>

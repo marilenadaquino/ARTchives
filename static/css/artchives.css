@@ -1,5 +1,6 @@
 
 /* general */
+.se-pre-con { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url(Preloader_5.gif) center no-repeat #fff;}
 body {font-family: 'Karla', sans-serif !important;}
 .container-fluid {padding: 0px !important;}
 header {width: 100%; background-color: #23daa2; padding: 2em; margin: 0px !important; text-transform: uppercase; text-align: left;}
@@ -12,6 +13,13 @@ footer {border-top: solid 1px gainsboro;}
 nav, footer {padding: 1em 2em; text-transform: uppercase;}
 nav a, footer a {margin-right: 1em; color: black; font-weight: bold;text-decoration: none !important;}
 nav a:hover, footer a:hover {color: #23daa2 !important; text-decoration: none;}
+
+.searchmenu {width:25%; color: #23daa2; float:right; margin-top: 10px;}
+.searchmenu * { display: inline-block;}
+.searchmenu input {width: 90% !important;}
+.searched_term {font-weight: bold; color: black;}
+.scrollable {max-height: 250px; overflow-y: scroll;}
+.scrollable::after {position: fixed; top:265px; right: 10px; content:'scroll to view more results'; height: 33px; color: white; background-color: #23daa2; padding: 5px;}
 h2, h3 { color: #1cae81 !important; text-align: center; text-transform: uppercase; font-weight: bold !important; margin: 1em 0px !important;}
 article {padding-bottom: 3em; padding-top: 0.5em; padding-left: 5em; padding-right: 5em;}
 article:nth-child(even), .articleBox, #yasr {background-color: #F5F6FA;}
@@ -80,7 +88,7 @@ label[for='S_KEEPER_title'], label[for='S_CREATOR_title'], label[for='S_COLLECTI
 .tip {width: 35px;}
 .wditem{padding: 8px; border-bottom: solid 0.5px grey; z-index: 2000;}
 .blue{color: #23daa2 !important; cursor: pointer;}
-.intermediatetext {padding: 8px; color: gray; font-style: italic; }
+.intermediatetext {padding: 8px; color: gray; font-style: italic; margin-bottom: 0px !important;}
 sub {display: block; margin: 25px;}
 nav .wditem {text-transform: none !important;}
 
@@ -129,7 +137,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 .entryBox a {color: black; text-decoration: none !important;}
 .entryBox a:hover {color: #1cae81; text-decoration: none;}
 .imageBox {height: 200px; width: auto;}
-.imageBox:hover { filter: brightness(125%); -webkit-transition-duration: 0.4s; transition-duration: 0.4s;} 
+.imageBox:hover { filter: brightness(125%); -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
 .withImage img {-webkit-filter: grayscale(100%); filter: grayscale(100%); max-width: 100%;}
 .noImage { background-color: #1cae81; position: relative; z-index: 0;}
 /*.noImage:hover { background-color: yellow; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}*/
@@ -139,6 +147,7 @@ i.fa-info-circle:hover{ color: #1cae81;}
 
 /* historian/collection template */
 /*.info-item {font-style: italic;}*/
+.sideBoxes {margin-top: 3em; margin-bottom: 3em;}
 .info-bio {margin-top: 2em;}
 .biblio:first-of-type {background-color: silver; color: white;}
 .biblio {background-color: gray; color: white; padding: 1em 3em 3em 3em;}
@@ -206,3 +215,7 @@ pointer-events: none;}
 z-index: 500 !important;
 pointer-events: none;}
 
+/* contents */
+.vis-item {background-color: #23daa2 !important; border-color: #23daa2 !important; color: white !important;}
+.vis-delete::after {color: #23daa2 !important;}
+.vis-delete:hover:after , .vis-delete:hover {color: #1cae81 !important; background-color: none !important;}

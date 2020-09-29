@@ -1,4 +1,8 @@
+
  $(document).ready(function() {
+   // loader
+   $(".se-pre-con").fadeOut("slow");
+
 	// disable submit form on enter press
 	$("input[type='text'], input[type='textarea']").on('keyup keypress', function(e) {
 	  var keyCode = e.keyCode || e.which;
@@ -773,7 +777,9 @@ function searchARTchivesGeneral(searchterm) {
 			    	'max-width':'580px',
 				    'border-radius': '4px'
 				});
-			
+
+        $('#searchresult').addClass('scrollable');
+
 		      	$("#searchresult").empty();
 				for (i = 0; i < returnedJson.results.bindings.length; i++) {
 					var uri = returnedJson.results.bindings[i].subj.value ;
@@ -781,6 +787,7 @@ function searchARTchivesGeneral(searchterm) {
 					var type = returnedJson.results.bindings[i].type.value ;
 					var intermediate = returnedJson.results.bindings[i].flag_intermediate.value ;
 					var obj = returnedJson.results.bindings[i].o.value;
+          var type_label = returnedJson.results.bindings[i].type.value.slice(0,-1);
 					var low = obj.toLowerCase();
 					var term = queryTerm.toLowerCase();
 					if (low.includes(term)) {var pos = low.indexOf(term);
@@ -791,10 +798,10 @@ function searchARTchivesGeneral(searchterm) {
 						var lastchar = low.lastIndexOf(" ");
 						if (postlen > 10) {var post = obj.slice(pos+lenterm, lastchar);};
   						var check = p.substr(p.lastIndexOf(":")+1, p.length - p.lastIndexOf(":")+1);
-  						if (check == "P1830") { var category = "repository:"}
-  						else if (check == "P921") { var category = "bibliography:"}
-  						else if (check == "P170") { var category = "Collections:"}
-  						else if (check == "P127") { var category = "Collections:"}
+  						if (check == "P1830") { var category = "appears in repository:"}
+  						else if (check == "P921") { var category = "appears in bibliography:"}
+  						else if (check == "P170" || check == "P127") { var category = "appears in related collections:"}
+              else if (p == 'no_intermediate') {var category = 'appears in label:'}
   						else {var category = "other:"}
 
 					};
@@ -805,11 +812,16 @@ function searchARTchivesGeneral(searchterm) {
 						var qID = uri.substr(uri.lastIndexOf('/') + 1);
 					};
 
-					if (intermediate != "first" && postlen > 30) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1) + " <p class= 'intermediatetext'> "  +"<span style='color: black; text-transform: capitalize;'>" + category + "</span>" + " " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + " [...]" + "</span>" + "</p>" + "</div>"); }
-					else if (intermediate != "first" && postlen <= 30) {$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].subj_label.value.trim() + "</a>" + returnedJson.results.bindings[i].type.value.slice(0,-1)  + "<p class= 'intermediatetext'> " +"<span style='color: black; text-transform: capitalize;'>" + category + "</span>" + " " + pre + "<span style='font-weight:bold; color: black;'>" + term + "</span>" + post + "<span style='font-style:normal;'>" + "</span>" + "</p>" + "</div>"); }
-					else {
-						$("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + returnedJson.results.bindings[i].o.value.trim() + "</a>" +returnedJson.results.bindings[i].type.value.slice(0,-1)+"</div>"); };
-			    	
+					if (intermediate != "first" && postlen > 30)
+            {
+              var subj_label = returnedJson.results.bindings[i].subj_label.value.trim();
+              $("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + subj_label + "</a>" + type_label + " <p class='intermediatetext'><span>" + category + "</span> " + pre + "<span class='searched_term'>" + term + "</span>" + post + "<span>[...]</span></p></div>"); }
+					else if (intermediate != "first" && postlen <= 30)
+            {
+              var subj_label = returnedJson.results.bindings[i].subj_label.value.trim();
+              $("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + subj_label + "</a>" + type_label + "<p class='intermediatetext'><span>" + category + "</span> " + pre + "<span class='searched_term'>" + term + "</span>" + post + "</p></div>"); }
+					else if (intermediate == "first") {
+            $("#searchresult").append("<div class='wditem'><a class='blue' href='"+type+qID+"' data-id='"+qID+"'>" + obj + "</a>" +type_label + "<p class='intermediatetext'><span>" + category + "</span> " + pre + "<span class='searched_term'>" + term + "</span>" + post + "</p></div>"); };
 			    };
 
 		        },
@@ -1074,5 +1086,3 @@ function checkPriorRecords(term, prefix) {
   ///var modifiedHtml = replaceURLWithHTMLLinks(elm.innerHTML);
   ///elm.innerHTML = modifiedHtml ;
 ///}
-
-

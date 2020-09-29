@@ -26,6 +26,7 @@ urls = (
 	prefix + '/collection-(.+)', 'Collection',
 	prefix + '/institutions', 'Keepers',
 	prefix + '/keeper-(.+)', 'Keeper',
+	prefix + '/contents', 'Contents',
 	prefix + '/(sparql)','sparql',
 	prefix + '/bibliography','Bibliography',
 )
@@ -54,7 +55,7 @@ allowed = (
 def notfound():
     return web.notfound(render.notfound(user='anonymous'))
 
-def internalerror(): 
+def internalerror():
     return web.internalerror(render.internalerror(user='anonymous'))
 
 app.notfound = notfound
@@ -101,7 +102,7 @@ class Login:
 		else:
 			return render.login(user='anonymous')
 
-wikidir = os.path.realpath('./records/') 
+wikidir = os.path.realpath('./records/')
 
 class Logout:
 	def GET(self):
@@ -112,15 +113,6 @@ class Logout:
 
 	def POST(self):
 		logout(prefixLocal)
-
-
-#class Layout:
-	#def GET(self):
-		#
-		#return render.layout(user='anonymous')
-
-	#def POST(self):
-		#login('login')
 
 
 class Index:
@@ -354,6 +346,16 @@ class Collection(object):
 
 	def POST(self):
 		logout('collection')
+
+class Contents:
+	def GET(self):
+		records = queries.getCollectionsByPeriod()
+		#fk = forms.searchContents()
+		fk = ""
+		return render_no_login.contents(form=fk, user='anonymous', data=records, title='Explore ARTchives')
+
+	def POST(self):
+		logout('contents')
 
 class Keepers:
 	def GET(self):
