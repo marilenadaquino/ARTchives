@@ -13,10 +13,10 @@ $var user = user
 	<section class="col-md-12">
 		<h2 class="articleTitle">$title</h2>
 		<h3 class="articleSubtitle">Collections</h3>
-		<p class="intro_vis">Explore archival collections by historical or artistic periods addressed in their materials</p>
+		<p class="intro_vis">Explore archival collections through the lenses of historical or artistic periods they address.</p>
 		<p>Hover the timeline and scroll up or down to zoom on a time span.</p>
-		<p>Click and drag left/right to move the timeline.</p>
-		<p>Click on a bubble to see which collections address that period. Remove periods from the timeline by clicking on the x next to bubbles.</p>
+		<p>Drag left/right to move the timeline.</p>
+		<p>Double-click on a bubble to see which collections address that period.</p>
 		<section id="collectionsByPeriod">
 			<script type="text/javascript">
 				var container = document.getElementById("collectionsByPeriod");
@@ -27,12 +27,21 @@ $var user = user
 								start: new Date($collections['start_date']),
 							$if 'end_date' in collections:
 								end: new Date($collections['end_date']),
-							content: '<div>$collections["period_label"]</div>',
+							content: '<div class="timeline_popover"'
+											+' tabindex="0"'
+											+' data-toggle="popover"'
+											+' data-html="true"'
+											+' title="$collections["period_label"]"'
+											+' data-content="'
+											$for collection_uri, collection_name in collections.items():
+												$if collection_uri.startswith('collection'):
+													+'<p><a target=\'_blank\' href=\'$collection_uri\'>$collection_name</a></p>'
+											+'">$collections["period_label"]</div>',
 						},
 
 				]);
 				var options = {
-				  editable: true,
+				  editable: false,
 				  margin: {
 				    item: 20,
 				    axis: 40,
@@ -40,7 +49,14 @@ $var user = user
 				};
 				console.log(items);
 				var timeline = new vis.Timeline(container, items, options);
+				\$(".vis-item").click(function(){
+					\$(this).find('.timeline_popover').popover();
+				});
 
+				\$('.popover-header').click(function(e){
+					e.preventDefault();
+					\$(".timeline_popover").popover('hide');
+				});
 			</script>
 		</section>
 

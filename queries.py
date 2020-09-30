@@ -2,8 +2,6 @@
 import conf , os , operator , pprint , ssl , rdflib
 from SPARQLWrapper import SPARQLWrapper, JSON
 from collections import defaultdict
-from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
 from rdflib import URIRef , XSD, Namespace , Literal
 from rdflib.namespace import OWL, DC , DCTERMS, RDF , RDFS
 from rdflib.plugins.sparql import prepareQuery
@@ -79,6 +77,7 @@ queryCollectionsByPeriod = """
 
 	  OPTIONAL {?period <http://www.wikidata.org/prop/direct/P582> ?end_date } .
 	  OPTIONAL {?period <http://www.wikidata.org/prop/direct/P580> ?start_date } .
+	  OPTIONAL {?period art:wikidataReconciliation ?wd_stage } .
 	}
 	"""
 
@@ -202,7 +201,10 @@ def getCollectionsByPeriod():
 						records[period]["end_date"] = str(result['end_date']['value'])[:10][::-1].replace('-',',',2)[::-1]
 				else:
 					if 'entity' in period:
-						dates = getDatesWD(period)
+						dates = ['no date','no date']
+						if 'wd_stage' not in result:
+							print("calling wikidata for:" + period)
+							dates = getDatesWD(period)
 						if dates[0] != 'no date':
 							records[period]["start_date"] = str(dates[0])[:10][::-1].replace('-',',',2)[::-1]
 						else:
@@ -269,26 +271,20 @@ def getDatesWD(period):
 			wd.add(( URIRef(period), URIRef("http://www.wikidata.org/prop/direct/P580"), Literal(start_date,datatype=XSD.dateTime)  ))
 		else:
 			start_date = 'no date'
+
 		if "end_date" in resultWD:
 			end_date = resultWD["end_date"]["value"]
 			wd.add(( URIRef(period), URIRef("http://www.wikidata.org/prop/direct/P582"), Literal(end_date,datatype=XSD.dateTime)  ))
 		else:
 			end_date = 'no date'
 
-		print(period)
-		print("calling getDatesWD")
-		if 'entity' in period:
-			recordID = period.split("entity/",1)[1]
-		else:
-			recordID = period.split("artchives/",1)[1]
+		recordID = period.split("entity/",1)[1] if 'entity' in period else period.split("artchives/",1)[1]
 
-		# Create a copy in folder /records
-		if len(wd) > 0:
-			wd.serialize(destination='records/'+recordID+'.trig', format='trig', encoding='utf-8')
-			print("serialised updates")
-			# Load to the triplestore
-			server.update('load <file:///'+dir_path+'/records/'+recordID+'.trig>')
-			print("loaded updates")
+		if len(wd) == 0:
+			wd.add(( URIRef(period), URIRef("https://w3id.org/artchives/wikidataReconciliation"), Literal("no data added")  ))
+		# Create a copy in folder /records and load on the triplestore
+		wd.serialize(destination='records/'+recordID+'.trig', format='trig', encoding='utf-8')
+		server.update('load <file:///'+dir_path+'/records/'+recordID+'.trig>')
 	return [start_date,end_date]
 
 def getKeepers():
