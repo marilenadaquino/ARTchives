@@ -12,12 +12,25 @@ $var user = user
 	<div class="se-pre-con"></div>
 	<section class="col-md-12">
 		<h2 class="articleTitle">$title</h2>
-		<h3 class="articleSubtitle">Collections</h3>
-		<p class="intro_vis">Explore archival collections through the lenses of historical or artistic periods they address.</p>
-		<p>Hover the timeline and scroll up or down to zoom on a time span.</p>
-		<p>Drag left/right to move the timeline.</p>
-		<p>Double-click on a bubble to see which collections address that period.</p>
-		<section id="collectionsByPeriod">
+		<section class="row page_intro">
+			<p>Explore art historians' archival collections through the lenses of data.
+				Discover archival collections that are related to artistic movements, historical periods,
+				artists, art historians correspondants', or organisations.</p>
+		</section>
+		<section class="row collectionsVizContainer">
+			<section class="col-md-3">
+				<h3 class="articleSubtitle">Artistic periods</h3>
+				<p class="intro_vis">Explore archival collections through the lenses of historical or artistic periods.</p>
+				<p>In this visualisation, artistic and historical periods addressed in materials preserved
+					in art historians' archival collections are shown in a timeline.</p>
+				<p class="smaller">Hover the timeline and scroll up or down to zoom on a time span.</p>
+				<p class="smaller">Drag left/right to move the timeline.</p>
+				<p class="smaller">Double-click on the title of a bubble to see which collections address that period.</p>
+			</section>
+			<section class="col-md-9" id="collectionsByPeriod">
+
+				<p class="smaller">* Temporal data are collected from <a href="https://www.wikidata.org/">Wikidata</a></p>
+			</section>
 			<script type="text/javascript">
 				var container = document.getElementById("collectionsByPeriod");
 				var items = new vis.DataSet([
@@ -35,7 +48,10 @@ $var user = user
 											+' data-content="'
 											$for collection_uri, collection_name in collections.items():
 												$if collection_uri.startswith('collection'):
-													+'<p><a target=\'_blank\' href=\'$collection_uri\'>$collection_name</a></p>'
+													+'<p class=\'pop_item_title\'>$collection_name[0]</p>'
+													$if collection_name[1] != '':
+														+'<p>$collection_name[1]...'
+													+'<a class=\'read_more\' target=\'_blank\' href=\'$collection_uri\'>read more</a></p>'
 											+'">$collections["period_label"]</div>',
 						},
 
@@ -43,7 +59,7 @@ $var user = user
 				var options = {
 				  editable: false,
 				  margin: {
-				    item: 20,
+				    item: 10,
 				    axis: 40,
 				  },
 				};

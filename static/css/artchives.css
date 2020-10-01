@@ -216,6 +216,21 @@ z-index: 500 !important;
 pointer-events: none;}
 
 /* contents */
+.page_intro {color:#1cae81; padding:2em 3em; font-size: 1.8em; text-align: center;}
+.collectionsVizContainer {background-color:#1cae81; padding:2em;}
+.collectionsVizContainer section h3, .collectionsVizContainer section p {color: white !important;}
+.collectionsVizContainer section h3 {font-size: 2em !important; padding-bottom: 1em !important;}
+.intro_vis {font-size: 1.5em; padding-top: 1em;}
+.smaller {font-size: 0.8rem; font-style: italic; padding: 0.2rem 0px; margin: 0px;}
+/* timeline visualisation */
+.vis-panel.vis-bottom, .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top { border: 1px white}
+.vis-timeline {border: none !important; }
 .vis-item {background-color: #23daa2 !important; border-color: #23daa2 !important; color: white !important;}
 .vis-delete::after {color: #23daa2 !important;}
 .vis-delete:hover:after , .vis-delete:hover {color: #1cae81 !important; background-color: none !important;}
+/* popovers */
+.popover {max-height: 200px; overflow-y: scroll; font-family: 'Karla', sans-serif; padding: 0 10px;}
+.popover-header {padding: 0rem .75rem !important; background-color: white !important; text-align: left; border-bottom: none !important; color: grey !important; font-weight: normal !important;}
+.pop_item_title {font-weight: bold; font-size: 1.2rem;}
+.read_more {background-color:#1cae81; color:white !important; text-decoration: none !important; display: inline-block; padding: 3px 5px;margin-left: 5px;border-radius: 3px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}
+.read_more:hover {background-color:#23daa2; }

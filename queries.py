@@ -73,6 +73,7 @@ queryCollectionsByPeriod = """
 		?g rdfs:label ?nameHistorian; art:publicationStage ?stage .
 		?coll wdp:P170 ?artHistorian ; rdfs:label ?nameCollection .
 		OPTIONAL {?coll art:hasSubjectPeriod ?period . ?period rdfs:label ?periodLabel . }
+		OPTIONAL {?coll art:hasNotesOnScopeAndContent ?scope. BIND( SUBSTR(?scope, 1, 150) AS ?abstract ) .}
 	  }
 
 	  OPTIONAL {?period <http://www.wikidata.org/prop/direct/P582> ?end_date } .
@@ -193,7 +194,11 @@ def getCollectionsByPeriod():
 			if period not in records:
 				records[period]['period_label'] = periodLabel
 			if collection_path not in records[period]:
-				records[period][collection_path] = collection_name
+
+				if 'abstract' in result:
+					records[period][collection_path] = [collection_name, result["abstract"]["value"].strip().replace('\n', ' ').replace('\r', '')]
+				else:
+					records[period][collection_path] = [collection_name, '']
 				if ('start_date' in result and result['start_date']['value'] != '') or ('end_date' in result and result['end_date']['value'] != '') :
 					if 'start_date' in result:
 						records[period]["start_date"] = str(result['start_date']['value'])[:10][::-1].replace('-',',',2)[::-1]
@@ -223,6 +228,10 @@ def getCollectionsByPeriod():
 				records['no_period'][collection_path] = collection_name
 				records['no_period']["start_date"] = '0001,01,01'
 				records['no_period']["end_date"] = '2020,01,01'
+			if 'abstract' in result:
+				records['no_period'][collection_path] = [collection_name, result["abstract"]["value"].strip().replace('\n', ' ').replace('\r', '')]
+			else:
+				records['no_period'][collection_path] = [collection_name, '']
 
 	records = dict(records)
 	pp.pprint(records)
