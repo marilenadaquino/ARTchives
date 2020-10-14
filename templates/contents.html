@@ -75,6 +75,202 @@ $var user = user
 				});
 			</script>
 		</section>
+		<section class="row mapDatesHistorians collectionsVizContainer">
+			<section class="col-md-9">
+				<div id="mapid"></div>
+				<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+			   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+			   crossorigin=""/>
+			   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+			   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+			   crossorigin=""></script>
+				<script type="text/javascript">
+
+           // ajax call to nominatim
+
+
+
+           var map = L.map('mapid').setView([41.080684, -30.683374], 2.5);
+
+
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+
+           }).addTo(map);
+
+
+
+           L.marker([44.22, 12.04]).addTo(map)
+
+               .bindPopup('<b>' + 'Forlì' + '</b><br>' +'<a href="/historian-Q55453618">'+ 'Stefano Tumidei')
+
+               .openPopup();
+
+
+
+           L.marker([48.08, 11.52]).addTo(map)
+
+               .bindPopup('<b>' + 'Munchen' + '</b><br>' +'<a href="/historian-Q88907">'+ 'Ernst Kitzinger')
+
+               .openPopup();
+
+
+
+           L.marker([51.20, 0.16]).addTo(map)
+
+               .bindPopup('<b>' + 'Epson' + '</b><br>' +'<a href="/historian-Q3051533">'+'Ellis Waterhouse')
+
+               .openPopup();
+
+
+
+           L.marker([39.95, -75.16]).addTo(map)
+
+               .bindPopup('<b>' + 'New York' + '</b><br>' +'<a href="/historian-Q19997512">'+'Everett Fahy')
+
+               .openPopup();
+
+
+
+           L.marker([51.16, 10.45]).addTo(map)
+
+               .bindPopup('<b>' + 'Munich' + '</b><br>'+'<a href="/historian-Q1271052">'+'Fritz Heinemann')
+
+               .openPopup();
+
+
+
+           L.marker([51.30, 0.7]).addTo(map)
+
+               .bindPopup('<b>' + 'London' + '</b><br>'+'<a href="/historian-Q537874">'+'John Pope-Hennessy')
+
+               .openPopup();
+
+
+
+           L.marker([49.21, 9.7]).addTo(map)
+
+               .bindPopup('<b>' + 'Mosbach' + '</b><br>'+'<a href="/historian-Q1712683">'+'Julius S. Held')
+
+               .openPopup();
+
+
+
+           L.marker([41.89, 12.49]).addTo(map)
+
+               .bindPopup('<b>' + 'Rome' + '</b><br>' +'<a href="/historian-Q1089074">'+'Federico Zeri'+ '</b><br>'+'<a href="/historian-Q6700132">'+'Luigi Salerno')
+
+               .openPopup();
+
+
+
+           L.marker([51.52, 11.34]).addTo(map)
+
+               .bindPopup('<b>' + 'Staßfurt ' + '</b><br>' +'<a href="/historian-Q1715096">' +'Ulrich Middeldorf')
+
+               .openPopup();
+
+
+
+           L.marker([45.11, 7.66]).addTo(map)
+
+               .bindPopup('<b>' + 'Turin' + '</b><br>' +'<a href="/historian-Q1373290">'+'Eugenio Battisti')
+
+               .openPopup();
+
+
+
+           L.marker([47.16, 19.50]).addTo(map)
+
+               .bindPopup('<b>' + 'Hungary' + '</b><br>'+'<a href="/historian-Q995470">'+'Kornél Fabriczy')
+
+               .openPopup();
+
+
+
+           L.marker([44.38, 10.55 ]).addTo(map)
+
+               .bindPopup('<b>' + 'Modena' + '</b><br>'+'<a href="/historian-Q2824734">'+'Adolfo Venturi')
+
+               .openPopup();
+
+
+
+           L.marker([50.20, 8.8]).addTo(map)
+
+               .bindPopup('<b>' + 'Nauheim' + '</b><br>'+'<a href="/historian-Q41616785">'+'Gustav Ludwig')
+
+               .openPopup();
+
+
+
+           L.marker([53.52, 12.37]).addTo(map)
+
+               .bindPopup('<b>' + 'Jördenstorf' + '</b><br>'+'<a href="/historian-Q3057287">'+'Ernst Steinmann')
+
+               .openPopup();
+
+
+
+           L.marker([49.8, 9.13]).addTo(map)
+
+               .bindPopup('<b>' + 'Heilbronn' + '</b><br>'+'<a href="/historian-Q1296486">'+'Wolfgang Lotz')
+
+               .openPopup();
+
+
+
+           L.marker([55.45, 37.37]).addTo(map)
+
+               .bindPopup('<b>' + 'Moscow' + '</b><br>'+  '<a href="/historian-Q457739">'+'Leo Steinberg')
+
+               .openPopup();
+
+
+
+           L.marker([49.28, 10.59]).addTo(map)
+
+               .bindPopup('<b>' + 'Fürth' + '</b><br>'+'<a href="/historian-Q90407">'+'Richard Krautheimer')
+
+               .openPopup();
+
+
+
+           L.marker([52.31, 13.23]).addTo(map)
+
+               .bindPopup('<b>' + 'Berlin' + '</b><br>'+'<a href="/historian-Q1629748">'+'Kurt Badt'+'</b><br>'+'<a href="/historian-Q85761254">'+'Julian Kliemann')
+
+               .openPopup();
+
+
+
+           L.marker([42.30, 12.30]).addTo(map)
+
+               .bindPopup('<b>' + 'Italy' + '</b><br>'+'<a href="/historian-Q61913691">'+'Luisa Vertova')
+
+               .openPopup();
+
+
+
+           L.marker([53.33, 10.0]).addTo(map)
+
+               .bindPopup('<b>' + 'Hamburg' + '</b><br>'+'<a href="/historian-Q60185">'+'Aby Warburg')
+
+               .openPopup();
+
+
+
+     </script>
+			</section>
+			<section class="col-md-3">
+				<h3 class="articleSubtitle">Birth places</h3>
+				<p class="intro_vis">Explore art historians' by their birth places.</p>
+				<p>In this visualisation, art historians' described in ARTchives are put in a map grouped by their birth place.</p>
+			</section>
+		</section>
+
 
 		<!-- <p>Explore archival collections by artists addressed in their materials</p>
 		<p>Explore archival collections by dates of art historians' activities</p>
