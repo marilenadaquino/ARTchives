@@ -21,11 +21,11 @@ $var user = user
 			$for k, v in graphdata.items():
 				$if k.startswith('S_COLL_12'):
 					$for id, label in v.items():
-						<h3 class="articleSubtitle">Repository</h3> <span>$label</span>
+						<h3 class="articleSubtitle">Repository</h3> <span>$label.replace('%u2013','-')</span>
 			$for k, v in graphdata.items():
 				$if k.startswith('S_KEEPER_1'):
 					$for id, label in v.items():
-						<span>(<a href="keeper-$id">$label.lstrip()</a>).</span>
+						<span>(<a href="keeper-$id">$label.lstrip().replace('%u2013','-')</a>).</span>
 		</p>
 		<p class="info-item">
 			$if 'S_COLL_3' in graphdata:
