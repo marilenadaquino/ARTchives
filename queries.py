@@ -11,7 +11,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 server = sparql.SPARQLServer(conf.artchivesEndpoint)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-pp = pprint.PrettyPrinter(indent=4)
+pp = pprint.PrettyPrinter(indent=1)
 
 queryRecords = """
 	PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -19,10 +19,11 @@ queryRecords = """
 	SELECT DISTINCT ?g ?nameHistorian ?userLabel ?modifierLabel ?date ?stage
 	WHERE
 	{ GRAPH ?g {
-		?s ?p ?o .
-		OPTIONAL {?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage. ?user rdfs:label ?userLabel .}
-		OPTIONAL {?g rdfs:label ?nameHistorian; prov:generatedAtTime ?date ; art:publicationStage ?stage ; prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel . }
-
+	    ?s ?p ?o .
+		OPTIONAL {?g rdfs:label ?nameHistorian; prov:wasGeneratedBy ?user; prov:generatedAtTime ?date ; art:publicationStage ?stage. ?user rdfs:label ?userLabel .
+			OPTIONAL {?g prov:wasInfluencedBy ?modifier. ?modifier rdfs:label ?modifierLabel .} }
+		OPTIONAL {?g rdfs:label ?nameHistorian; prov:generatedAtTime ?date ; art:publicationStage ?stage . }
+		FILTER( str(?g) != "https://w3id.org/artchives/wd/")
 		BIND(COALESCE(?date, '-') AS ?date ).
 		BIND(COALESCE(?stage, '-') AS ?stage ).
 		BIND(COALESCE(?userLabel, '-') AS ?userLabel ).
@@ -31,6 +32,7 @@ queryRecords = """
 		filter not exists {
 	      ?g prov:generatedAtTime ?date2
 	      filter (?date2 > ?date)
+
 	    }
 	  }
 	}
@@ -127,7 +129,7 @@ def getRecordCreator(graph_name):
 		SELECT DISTINCT ?creatorIRI ?creatorLabel
 		WHERE { <"""+graph_name+"""> prov:wasGeneratedBy ?creatorIRI .
 		?creatorIRI rdfs:label ?creatorLabel . }"""
-	print(queryRecordCreator)
+	#print(queryRecordCreator)
 	sparql = SPARQLWrapper(conf.artchivesEndpoint)
 	sparql.setQuery(queryRecordCreator)
 	sparql.setReturnFormat(JSON)
@@ -143,6 +145,7 @@ def getRecords():
 	sparql.setQuery(queryRecords)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
+
 	for result in results["results"]["bindings"]:
 		records.add( (result["g"]["value"], result["nameHistorian"]["value"], result["userLabel"]["value"], result["modifierLabel"]["value"], result["date"]["value"], result["stage"]["value"] ))
 	return records
@@ -213,7 +216,7 @@ def getCollectionsByPeriod():
 						if dates[0] != 'no date':
 							records[period]["start_date"] = str(dates[0])[:10][::-1].replace('-',',',2)[::-1]
 						else:
-							records[period]["start_date"] = '0000,01,01'
+							records[period]["start_date"] = '0001,01,01'
 						if dates[1] != 'no date':
 							records[period]["end_date"] = str(dates[1])[:10][::-1].replace('-',',',2)[::-1]
 						else:
@@ -226,8 +229,8 @@ def getCollectionsByPeriod():
 			records['no_period']['period_label'] = 'Not specified'
 			if collection_path not in records['no_period']:
 				records['no_period'][collection_path] = collection_name
-				records['no_period']["start_date"] = '0001,01,01'
-				records['no_period']["end_date"] = '2020,01,01'
+				records['no_period']["start_date"] = '2020,01,01'
+				#records['no_period']["end_date"] = '2020,01,01'
 			if 'abstract' in result:
 				records['no_period'][collection_path] = [collection_name, result["abstract"]["value"].strip().replace('\n', ' ').replace('\r', '')]
 			else:
@@ -292,8 +295,8 @@ def getDatesWD(period):
 		if len(wd) == 0:
 			wd.add(( URIRef(period), URIRef("https://w3id.org/artchives/wikidataReconciliation"), Literal("no data added")  ))
 		# Create a copy in folder /records and load on the triplestore
-		wd.serialize(destination='records/'+recordID+'.trig', format='trig', encoding='utf-8')
-		server.update('load <file:///'+dir_path+'/records/'+recordID+'.trig>')
+		wd.serialize(destination='records/'+recordID+'.ttl', format='ttl', encoding='utf-8')
+		server.update('load <file:///'+dir_path+'/records/'+recordID+'.ttl> into graph <'+base+'wd/>')
 	return [start_date,end_date]
 
 def getKeepers():
@@ -339,7 +342,7 @@ def getHistorian(artHistorianURI):
 	sparql.setQuery(queryHistorian)
 	sparql.setReturnFormat(JSON)
 	results = sparql.query().convert()
-	print(queryHistorian)
+	#print(queryHistorian)
 	data = {}
 	for result in results["results"]["bindings"]:
 		# S_CREATOR_1

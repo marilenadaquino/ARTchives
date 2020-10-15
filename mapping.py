@@ -166,6 +166,7 @@ def artchivesToWD(recordData, userID, stage, graphToClear=None):
 
 	# S_CREATOR_1
 	creators = getValuesFromFields("S_CREATOR_1-", recordData)
+	print("creators:",creators)
 	if len(creators) == 0:
 		creators.add( ( 'creator'+str(time.time()).replace('.','-'), 'none') )
 	else:
@@ -173,6 +174,7 @@ def artchivesToWD(recordData, userID, stage, graphToClear=None):
 	for creator in creators:
 		creatorURI = getRightURIbase(creator[0])+creator[0]
 		wd.add(( URIRef( creatorURI ), RDF.type, URIRef(WD.Q5) ))
+		print("CREATOR:",creator[1])
 		wd.add(( URIRef( creatorURI ), RDFS.label, Literal(creator[1].lstrip().rstrip(), datatype="http://www.w3.org/2001/XMLSchema#string") ))
 		wd.add(( URIRef(base+graph_name+'/'), RDFS.label, Literal(creator[1].lstrip()) ))
 		# label for wikidata
@@ -529,6 +531,6 @@ def artchivesToWD(recordData, userID, stage, graphToClear=None):
 					wd.add(( URIRef( personURI ), RDFS.comment, Literal('person or organization', datatype="http://www.w3.org/2001/XMLSchema#string" ) ))
 
 	# Create a copy in folder /records
-	wd.serialize(destination='records/'+recordID+'.trig', format='trig', encoding='utf-8')
+	wd.serialize(destination='records/'+recordID+'.ttl', format='ttl', encoding='utf-8')
 	# Load to the triplestore
-	server.update('load <file:///'+dir_path+'/records/'+recordID+'.trig>')
+	server.update('load <file:///'+dir_path+'/records/'+recordID+'.ttl> into graph <'+base+graph_name+'/>')

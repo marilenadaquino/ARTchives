@@ -255,7 +255,7 @@ function searchWD(searchterm) {
 					        	e.preventDefault();
 					        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 					        	var oldLabel = $(this).text();
-					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
+					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+encodeURIComponent(oldLabel)+"'/>");
 					        	$("#searchresult").hide();
 					        	$('#'+searchterm).val('');
 					        	// check prior records and avoid the section to be filled
@@ -281,7 +281,7 @@ function searchWD(searchterm) {
 	      	$('a[data-id="'+ item.title+'"]').each( function() {
 		        $(this).bind('click', function(e) {
 		        	e.preventDefault();
-		        	$('#'+searchterm).after("<span class='tag "+item.title+"' data-input='"+searchterm+"' data-id='"+item.title+"'>"+item.label+"</span><input type='hidden' class='hiddenInput "+item.title+"' name='"+searchterm+"-"+item.title+"' value='"+item.title+","+escape(item.label)+"'/>");
+		        	$('#'+searchterm).after("<span class='tag "+item.title+"' data-input='"+searchterm+"' data-id='"+item.title+"'>"+item.label+"</span><input type='hidden' class='hiddenInput "+item.title+"' name='"+searchterm+"-"+item.title+"' value='"+item.title+","+encodeURIComponent(item.label)+"'/>");
 		        	$("#searchresult").hide();
 		        	$('#'+searchterm).val('');
 		        	// check prior records
@@ -309,7 +309,7 @@ function searchWD(searchterm) {
 	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+encodeURIComponent($('#'+searchterm).val())+"'/>");
 			};
 			$("#searchresult").hide();
 	    	$('#'+searchterm).val('');
@@ -381,7 +381,7 @@ function searchOL(searchterm) {
 					        	e.preventDefault();
 					        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 					        	var oldLabel = $(this).text();
-					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
+					        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+encodeURIComponent(oldLabel)+"'/>");
 					        	$("#searchresult").hide();
 					        	$('#'+searchterm).val('');
 					        });
@@ -401,7 +401,7 @@ function searchOL(searchterm) {
 		      	// add tag if the user chooses an item from wd
 		        $('a[data-id="'+ key+'"]').on('click', function(e) {
 		        	e.preventDefault();
-		        	$('#'+searchterm).after("<span class='tag "+key+"' data-input='"+searchterm+"' data-id='"+key+"'>"+ item['author_name'] + '. ' +item.title_suggest+ '. ' + item['publish_date'][0] + "</span><input type='hidden' class='hiddenInput "+key+"' data-id='"+key+"' name='"+searchterm+"-"+key+"' value='"+key+","+escape(item['author_name'] + '. '+item.title_suggest+ '. ' + item['publish_date'][0])+"'/>" );
+		        	$('#'+searchterm).after("<span class='tag "+key+"' data-input='"+searchterm+"' data-id='"+key+"'>"+ item['author_name'] + '. ' +item.title_suggest+ '. ' + item['publish_date'][0] + "</span><input type='hidden' class='hiddenInput "+key+"' data-id='"+key+"' name='"+searchterm+"-"+key+"' value='"+key+","+encodeURIComponent(item['author_name'] + '. '+item.title_suggest+ '. ' + item['publish_date'][0])+"'/>" );
 		        	$('#'+searchterm).after("");
 		        	$("#searchresult").hide();
 		        	$('#'+searchterm).val('');
@@ -423,7 +423,7 @@ function searchOL(searchterm) {
 	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+encodeURIComponent($('#'+searchterm).val())+"'/>");
 
 			};
 			$("#searchresult").hide();
@@ -476,7 +476,7 @@ function searchAAT(searchterm) {
                         // add tag if the user chooses an item from wd
 				        $('a[data-id="'+ idAAT+'"]').on('click', function(e) {
 				        	e.preventDefault();
-				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");
+				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+encodeURIComponent(nameAAT)+"'/>");
 				        	$("#searchresult").hide();
 				        	$('#'+searchterm).val('');
 				        });
@@ -517,7 +517,7 @@ function searchAAT(searchterm) {
 						        	e.preventDefault();
 						        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 						        	var oldLabel = $(this).text();
-						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
+						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+encodeURIComponent(oldLabel)+"'/>");
 						        	$("#searchresult").hide();
 						        	$('#'+searchterm).val('');
 						        });
@@ -541,7 +541,7 @@ function searchAAT(searchterm) {
 	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+encodeURIComponent($('#'+searchterm).val())+"'/>");
 
 			};
 			$("#searchresult").hide();
@@ -618,7 +618,7 @@ function searchULAN(searchterm) {
 						        	e.preventDefault();
 						        	var oldID = this.getAttribute('data-id').substr(this.getAttribute('data-id').lastIndexOf('/') + 1);
 						        	var oldLabel = $(this).text();
-						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+escape(oldLabel)+"'/>");
+						        	$('#'+searchterm).after("<span class='tag "+oldID+"' data-input='"+searchterm+"' data-id='"+oldID+"'>"+oldLabel+"</span><input type='hidden' class='hiddenInput "+oldID+"' name='"+searchterm+"-"+oldID+"' value='"+oldID+","+encodeURIComponent(oldLabel)+"'/>");
 						        	$("#searchresult").hide();
 						        	$('#'+searchterm).val('');
 						        });
@@ -641,7 +641,7 @@ function searchULAN(searchterm) {
                         // add tag if the user chooses an item from wd
 				        $('a[data-id="'+ idAAT+'"]').on('click', function(e) {
 				        	e.preventDefault();
-				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+escape(nameAAT)+"'/>");
+				        	$('#'+searchterm).after("<span class='tag "+idAAT+"' data-input='"+searchterm+"' data-id='"+idAAT+"'>"+nameAAT+"</span><input type='hidden' class='hiddenInput "+idAAT+"' data-id='"+idAAT+"' name='"+searchterm+"-"+idAAT+"' value='"+idAAT+","+encodeURIComponent(nameAAT)+"'/>");
 				        	$("#searchresult").hide();
 				        	$('#'+searchterm).val('');
 				        });
@@ -661,7 +661,7 @@ function searchULAN(searchterm) {
 	    	var now = new Date().valueOf();
 			var newID = 'MD'+now;
 			if (!$('#'+searchterm).val() == '') {
-				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+escape($('#'+searchterm).val())+"'/>");
+				$('#'+searchterm).after("<span class='tag "+newID+"' data-input='"+searchterm+"' data-id='"+newID+"'>"+$('#'+searchterm).val()+"</span><input type='hidden' class='hiddenInput "+newID+"' name='"+searchterm+"-"+newID+"' value='"+newID+","+encodeURIComponent($('#'+searchterm).val())+"'/>");
 			};
 			$("#searchresult").hide();
 	    	$('#'+searchterm).val('');
@@ -864,7 +864,7 @@ function nlpText(searchterm) {
 			    },
 			    function(data) {
 			    	$.each(data.search, function(i, item) {
-				        $('textarea#'+searchterm).next('.tags-nlp').append('<span class="tag nlp '+item.title+'" data-input="'+searchterm+'" data-id="'+item.title+'">'+item.label+'</span><input type="hidden" class="hiddenInput '+item.title+'" name="'+searchterm+'-'+item.title+'" value="'+item.title+','+escape(item.label)+'"/>');
+				        $('textarea#'+searchterm).next('.tags-nlp').append('<span class="tag nlp '+item.title+'" data-input="'+searchterm+'" data-id="'+item.title+'">'+item.label+'</span><input type="hidden" class="hiddenInput '+item.title+'" name="'+searchterm+'-'+item.title+'" value="'+item.title+','+encodeURIComponent(item.label)+'"/>');
 			    	});
 			    });
 			};
@@ -899,7 +899,7 @@ function nlpText(searchterm) {
 										$.ajax({
 											url: "https://cors-anywhere.herokuapp.com/https://www.wikidata.org/w/api.php?action=wbgetentities&ids="+res+'&props=labels&languages=en&languagefallback=en&sitefilter=&formatversion=2&format=json',
 											success: function(data) {
-												$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+res+'" data-input="'+searchterm+'" data-id="'+res+'">'+data.entities[res].labels.en.value+'</span><input type="hidden" class="hiddenInput '+res+'" name="'+searchterm+'-'+res+'" value="'+res+','+escape(data.entities[res].labels.en.value)+'"/>');
+												$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+res+'" data-input="'+searchterm+'" data-id="'+res+'">'+data.entities[res].labels.en.value+'</span><input type="hidden" class="hiddenInput '+res+'" name="'+searchterm+'-'+res+'" value="'+res+','+encodeURIComponent(data.entities[res].labels.en.value)+'"/>');
 
 
 											}
@@ -929,7 +929,7 @@ function nlpText(searchterm) {
 													    	var myRegexpLabel = /"(.*)"@en/;
 													    	var matchLabel = myRegexpLabel.exec(dataLabel);
 													    	var label = matchLabel[1];
-													    	$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+match[1]+'" data-input="'+searchterm+'" data-id="'+match[1]+'">'+label+'</span><input type="hidden" class="hiddenInput '+match[1]+'" name="'+searchterm+'-'+match[1]+'" value="'+match[1]+','+escape(label)+'"/>');
+													    	$('textarea#'+searchterm).parent().next('.tags-nlp').append('<span class="tag nlp '+match[1]+'" data-input="'+searchterm+'" data-id="'+match[1]+'">'+label+'</span><input type="hidden" class="hiddenInput '+match[1]+'" name="'+searchterm+'-'+match[1]+'" value="'+match[1]+','+encodeURIComponent(label)+'"/>');
 													    }
 													});
 												};
