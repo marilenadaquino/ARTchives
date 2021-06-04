@@ -40,19 +40,9 @@ $var user = user
 								start: new Date($collections['start_date']),
 							$if 'end_date' in collections:
 								end: new Date($collections['end_date']),
-							content: '<div class="timeline_popover"'
-											+' tabindex="0"'
-											+' data-toggle="popover"'
-											+' data-html="true"'
-											+' title="$collections["period_label"]"'
-											+' data-content="'
-											$for collection_uri, collection_name in collections.items():
-												$if collection_uri.startswith('collection'):
-													+'<p class=\'pop_item_title\'>$collection_name[0]</p>'
-													$if collection_name[1] != '':
-														+'<p>$collection_name[1]...'
-													+'<a class=\'read_more\' target=\'_blank\' href=\'$collection_uri\'>read more</a></p>'
-											+'">$collections["period_label"]</div>',
+
+							content: '<div>$collections["period_label"]</div>'
+
 						},
 
 				]);
@@ -63,18 +53,38 @@ $var user = user
 				    axis: 40,
 				  },
 				};
-				console.log(items);
+				// console.log(items);
 				var timeline = new vis.Timeline(container, items, options);
-				\$(".vis-item").click(function(){
-					\$(this).find('.timeline_popover').popover();
-				});
 
-				\$('.popover-header').click(function(e){
-					e.preventDefault();
-					\$(".timeline_popover").popover('hide');
-				});
+
 			</script>
+
+			$for period, collections in data.items():
+				<div class="period_popup" data-collection="$collections['period_label']">
+				$for collection_uri, collection_name in collections.items():
+					$if collection_uri.startswith('collection'):
+						<p class="pop_item_title">$collection_name[0]</p>
+						$if collection_name[1] != '':
+							<p>$collection_name[1]...<a class="read_more" target="_blank" href=$collection_uri>read more</a></p>
+				</div>
+
 		</section>
+		<script type="text/javascript">
+
+			\$(".period_popup").hide();
+			\$(".vis-group").on("click", '.vis-item-content', function() {
+			    var pop_class = \$(this).text();
+					\$(this).attr("data-toggle","popover");
+					\$(this).popover({
+						html: true,
+						content: function() {
+							return \$("div[data-collection='"+pop_class+"']").html();
+						}
+					});
+			});
+
+
+		</script>
 		<section class="row mapDatesHistorians collectionsVizContainer">
 			<section class="col-md-9">
 				<div id="mapid"></div>
