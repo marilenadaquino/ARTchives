@@ -1,0 +1,386 @@
+[
+    {
+        "historian": "http://www.wikidata.org/entity/Q1296486",
+        "label": "Wolfgang Lotz",
+        "places": [
+            "Nezu Museum (inst)",
+            "Kunsthistorisches Institut in Florenz (inst)",
+            "Germany (loc)",
+            "Heilbronn (loc)",
+            "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History (inst)",
+            "Freiburg im Breisgau (loc)",
+            "Vassar College (inst)",
+            "Hamburg (loc)",
+            "Florence (loc)",
+            "New York University (inst)",
+            "Rome (loc)",
+            "Freiburg im Breisgau (inst)",
+            "Vicenza (loc)",
+            "Munich (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1712683",
+        "label": "Julius S. Held",
+        "places": [
+            "New York City (loc)",
+            "Columbia University (inst)",
+            "Clark Art Institute (inst)",
+            "Vermont (loc)",
+            "Williams College (inst)",
+            "New York University (inst)",
+            "Bennington (loc)",
+            "Barnard College (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q88907",
+        "label": "Ernst Kitzinger",
+        "places": [
+            "Harvard University (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q3051533",
+        "label": "Ellis Waterhouse",
+        "places": [
+            "Egypt (loc)",
+            "Magdalen College (inst)",
+            "New College (inst)",
+            "National Gallery of Canada (inst)",
+            "Waddesdon Manor (loc)",
+            "Marlborough School (inst)",
+            "National Gallery of Art (inst)",
+            "Ottawa (loc)",
+            "Scottish National Gallery (inst)",
+            "University of Birmingham (inst)",
+            "Great Britain (inst)",
+            "Surrey (loc)",
+            "Massachusetts (loc)",
+            "Epsom (inst)",
+            "Rome (loc)",
+            "University of Oxford New College (inst)",
+            "J. Paul Getty Museum (inst)",
+            "Barber Institute of Fine Arts (inst)",
+            "Germany (loc)",
+            "Netherlands (loc)",
+            "London (loc)",
+            "University of Manchester (inst)",
+            "Greece (loc)",
+            "National Gallery (inst)",
+            "Williams College (inst)",
+            "Washington, D.C. (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1629748",
+        "label": "Kurt Badt",
+        "places": [
+            "Freiburg im Breisgau (loc)",
+            "Germany (loc)",
+            "London (loc)",
+            "Berlin (loc)",
+            "Vienna (loc)",
+            "Freiburg im Breisgau (inst)",
+            "Munich (loc)",
+            "Kunsthalle Bremen (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q6700132",
+        "label": "Luigi Salerno",
+        "places": [
+            "via del Corso (inst)",
+            "Piazza di Spagna (inst)",
+            "London (loc)",
+            "Pennsylvania State University (inst)",
+            "via Giulia (inst)",
+            "Sapienza University of Rome (inst)",
+            "Italy (loc)",
+            "Burlington (loc)",
+            "Rome (loc)",
+            "United States (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q18935222",
+        "label": "Werner Cohn",
+        "places": [
+            "Germany (loc)",
+            "Freiburg im Breisgau (loc)",
+            "Berlin (loc)",
+            "Florence (loc)",
+            "New York University (inst)",
+            "Strasbourg (loc)",
+            "United States (loc)",
+            "Uffizi (inst)",
+            "Assisi (loc)",
+            "Freiburg im Breisgau (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1089074",
+        "label": "Federico Zeri",
+        "places": [
+            "Harvard University (inst)",
+            "Los Angeles (loc)",
+            "New York City (loc)",
+            "University of Bologna (inst)",
+            "Galleria Spada (inst)",
+            "New York (loc)",
+            "Baltimore (loc)",
+            "Sapienza University of Rome (inst)",
+            "Massachusetts (loc)",
+            "Rome (loc)",
+            "Paris (loc)",
+            "J. Paul Getty Museum (inst)",
+            "Columbia University (inst)",
+            "Walters Art Museum (inst)",
+            "Metropolitan Museum of Art (inst)",
+            "Mentana (loc)",
+            "London (loc)",
+            "Acad\u00e9mie des beaux-arts (inst)",
+            "United States (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1715096",
+        "label": "Ulrich Middeldorf",
+        "places": [
+            "Kunsthistorisches Institut in Florenz (inst)",
+            "University of Chicago (inst)",
+            "Florence (loc)",
+            "Italy (loc)",
+            "United States (loc)",
+            "Berlin (loc)",
+            "Art Institute of Chicago (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1271052",
+        "label": "Fritz Heinemann",
+        "places": [
+            "Munich (loc)",
+            "Lucerne (loc)",
+            "Switzerland (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q90407",
+        "label": "Richard Krautheimer",
+        "places": [
+            "Palazzo Zuccari (inst)",
+            "Louisville (loc)",
+            "Halle (Saale) (loc)",
+            "University of Louisville (inst)",
+            "Humboldt University of Berlin (inst)",
+            "University of Kentucky (inst)",
+            "Munich (loc)",
+            "United State Schools for Fine and Applied Arts (inst)",
+            "Jura (inst)",
+            "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History (inst)",
+            "University of Marburg (inst)",
+            "Vassar College (inst)",
+            "Rome (loc)",
+            "Berlin (loc)",
+            "Vassar Swiss Underwear Company Building (inst)",
+            "Marburg (inst)",
+            "Germany (loc)",
+            "New York University (inst)",
+            "University of Halle-Wittenberg (inst)",
+            "Kentucky (loc)",
+            "United States (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q41616785",
+        "label": "Gustav Ludwig",
+        "places": [
+            "Venice (loc)",
+            "Vienna (loc)",
+            "London (loc)",
+            "State Archives of the city of Ishimbai (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q19997512",
+        "label": "Everett Fahy",
+        "places": [
+            "Metropolitan Museum of Art (inst)",
+            "Harvard University (inst)",
+            "National Gallery of Art Sculpture Garden (inst)",
+            "The Frick Collection (inst)",
+            "Florence (loc)",
+            "Italy (loc)",
+            "Philadelphia (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q2527217",
+        "label": "Lionello Venturi",
+        "places": [
+            "University of Turin (inst)",
+            "Sapienza University of Rome (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1641821",
+        "label": "Otto Lehmann-Brockhaus",
+        "places": [
+            "G\u00f6ttingen (loc)",
+            "University of Marburg (inst)",
+            "Unna (loc)",
+            "Ludwig Maximilian University of Munich (inst)",
+            "Rome (loc)",
+            "Max Planck Society (inst)",
+            "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History (inst)",
+            "Munich (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q55453618",
+        "label": "Stefano Tumidei",
+        "places": [
+            "University of Bologna (inst)",
+            "Florence (loc)",
+            "Romagna (inst)",
+            "Forl\u00ec (loc)",
+            "Rome (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1361667",
+        "label": "Roberto Longhi",
+        "places": [
+            "University of Turin (inst)",
+            "University of Bologna (inst)",
+            "Milan (loc)",
+            "Lombardy (loc)",
+            "Rome (loc)",
+            "University of Florence (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q995470",
+        "label": "Korn\u00e9l Fabriczy",
+        "places": [
+            "Stuttgart (inst)",
+            "Italy (loc)",
+            "London (loc)",
+            "Paris (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q3057287",
+        "label": "Ernst Steinmann",
+        "places": [
+            "Germany (loc)",
+            "Mecklenburg-Vorpommern (loc)",
+            "Schwerin (loc)",
+            "Florence (loc)",
+            "Italy (loc)",
+            "Max Planck Society (inst)",
+            "Basel (loc)",
+            "Rome (loc)",
+            "J\u00f6rdenstorf (loc)",
+            "Leipzig (loc)",
+            "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q537874",
+        "label": "John Pope-Hennessy",
+        "places": [
+            "Metropolitan Museum of Art (inst)",
+            "Balliol College (inst)",
+            "Victoria (loc)",
+            "British Museum (inst)",
+            "Downside School (inst)",
+            "Victoria and Albert Museum (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q61913691",
+        "label": "Luisa Vertova",
+        "places": [
+            "London (loc)",
+            "Milan (loc)",
+            "Florence (loc)",
+            "Rome (loc)",
+            "Harvard University Center for Italian Renaissance Studies (inst)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q2824734",
+        "label": "Adolfo Venturi",
+        "places": [
+            "Sapienza University of Rome (inst)",
+            "Modena (loc)",
+            "Rome (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q1373290",
+        "label": "Eugenio Battisti",
+        "places": [
+            "Pennsylvania State University (inst)",
+            "Milan (loc)",
+            "Reggio Calabria (loc)",
+            "Rome (loc)",
+            "Turin (loc)",
+            "Genoa (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q457739",
+        "label": "Leo Steinberg",
+        "places": [
+            "Nezu Museum (inst)",
+            "Hunter College (inst)",
+            "Columbia University (inst)",
+            "Russia (loc)",
+            "Graduate Center, CUNY (inst)",
+            "Metropolitan Museum of Art (inst)",
+            "London (loc)",
+            "University of Pennsylvania (inst)",
+            "New York City (loc)",
+            "Harvard University (inst)",
+            "New York University (inst)",
+            "Rome (loc)",
+            "Slade School of Fine Art (inst)",
+            "United States (loc)",
+            "Berlin (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q60185",
+        "label": "Aby Warburg",
+        "places": [
+            "Basilica of Our Lady (inst)",
+            "Kunsthistorisches Institut in Florenz (inst)",
+            "Hamburg (loc)",
+            "University of Bonn (inst)",
+            "Florence (loc)",
+            "Strasbourg (loc)",
+            "University of Halle-Wittenberg (inst)",
+            "Basilica of Santa Maria Novella (inst)",
+            "Bonn (loc)",
+            "Munich (loc)"
+        ]
+    },
+    {
+        "historian": "http://www.wikidata.org/entity/Q85761254",
+        "label": "Julian Kliemann",
+        "places": [
+            "Caiano (inst)",
+            "Berlin (loc)",
+            "California (loc)",
+            "Poggio Reale (inst)",
+            "Rome (loc)",
+            "Harvard University Center for Italian Renaissance Studies (inst)",
+            "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History (inst)",
+            "Getty Research Institute (inst)",
+            "Heidelberg (inst)"
+        ]
+    }
+]
