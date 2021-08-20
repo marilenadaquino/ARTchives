@@ -1,0 +1,348 @@
+art_hist_1,art_hist_2,artist_or_period,"Does any relation 
+exist between 
+the two historians?","Is the relation recorded 
+in at least one 
+historian biography 
+available on ARTchives?","Did they collaborate / interact 
+on the period/artist at hand?","Is historian 2 relevant 
+to historian 1's archive?","Is historian 2 mentioned 
+as subject of historian 1's 
+archive on ARTchives? ","Is historian 1 relevant 
+to historian 2's archive?","Is historian 1 mentioned
+ as subject of historian 2's 
+archive on ARTchives? ","Is the relation recorded 
+in both the 
+historians' biographies 
+available on ARTchives?"
+Aby Warburg,Everett Fahy,renaissance,0,0,0,0,0,0,0,0
+Ellis Waterhouse,Fritz Heinemann,baroque,0,0,0,0,0,0,0,0
+Ellis Waterhouse,Richard Krautheimer,baroque,1,0,0,0,0,0,0,0
+Ellis Waterhouse,Fritz Heinemann,mannerism,0,0,0,0,0,0,0,0
+Ernst Steinmann,Everett Fahy,renaissance,0,0,0,,0,,0,0
+Ernst Steinmann,Aby Warburg,renaissance,1,0,1,,0,1,0,0
+Ernst Steinmann,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+Ernst Steinmann,Richard Krautheimer,renaissance,1,1,,1,1,1,1,0
+Ernst Steinmann,John Pope-Hennessy,renaissance,0,0,0,0,0,0,0,0
+Ernst Steinmann,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Ernst Steinmann,Luisa Vertova,renaissance,0,0,0,0,0,0,0,0
+Ernst Steinmann,Federico Zeri,renaissance,1,0,0,0,0,0,0,0
+Ernst Steinmann,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Ernst Steinmann,Everett Fahy,Sandro Botticelli,0,0,0,,0,,0,0
+Ernst Steinmann,John Pope-Hennessy,Sandro Botticelli,0,0,0,0,0,0,0,0
+Ernst Steinmann,John Pope-Hennessy,Michelangelo,0,0,0,0,0,0,0,0
+Federico Zeri,Ernst Kitzinger,middle ages,1,0,,0,0,0,0,0
+Federico Zeri,Otto Lehmann-Brockhaus,middle ages,0,0,0,,0,,0,0
+Federico Zeri,Everett Fahy,renaissance,1,1,1,1,1,1,1,0
+Federico Zeri,Aby Warburg,renaissance,1,0,0,,0,1,1,0
+Federico Zeri,Fritz Heinemann,renaissance,1,0,1,1,0,,0,0
+Federico Zeri,Richard Krautheimer,renaissance,1,0,0,0,0,0,0,0
+Federico Zeri,John Pope-Hennessy,renaissance,1,1,1,1,0,0,0,0
+Federico Zeri,Julian Kliemann,renaissance,1,0,0,0,0,0,0,0
+Federico Zeri,Luisa Vertova,renaissance,1,1,1,,0,1,1,0
+Federico Zeri,Everett Fahy,15th century,1,1,1,1,1,1,1,0
+Federico Zeri,Fritz Heinemann,15th century,1,0,1,1,0,,0,0
+Federico Zeri,John Pope-Hennessy,15th century,1,1,1,1,0,0,0,0
+Federico Zeri,Julian Kliemann,15th century,1,0,0,0,0,0,0,0
+Federico Zeri,Luisa Vertova,15th century,1,1,1,,0,1,1,0
+Federico Zeri,Gustav Ludwig,15th century,0,0,0,,0,0,0,0
+Federico Zeri,Everett Fahy,16th century,1,1,1,1,1,1,1,0
+Federico Zeri,Fritz Heinemann,16th century,1,0,1,1,0,,0,0
+Federico Zeri,Julian Kliemann,16th century,1,0,0,0,0,0,0,0
+Federico Zeri,Luisa Vertova,16th century,1,1,1,,0,1,1,0
+Federico Zeri,Gustav Ludwig,16th century,0,0,0,,0,,0,0
+Federico Zeri,Fritz Heinemann,baroque,1,0,,1,0,,0,0
+Federico Zeri,Richard Krautheimer,baroque,1,0,0,0,0,0,0,0
+Federico Zeri,Julian Kliemann,baroque,1,0,0,0,0,0,0,0
+Federico Zeri,Ellis Waterhouse,baroque,1,0,0,1,0,0,0,0
+Federico Zeri,Fritz Heinemann,17th century,1,0,,1,0,,0,0
+Federico Zeri,Julian Kliemann,17th century,1,0,0,0,0,0,0,0
+Federico Zeri,Luisa Vertova,17th century,1,1,,,0,1,1,0
+Federico Zeri,Fritz Heinemann,mannerism,1,0,0,1,0,,0,0
+Federico Zeri,Julian Kliemann,mannerism,1,0,0,0,0,0,0,0
+Federico Zeri,Ellis Waterhouse,mannerism,1,0,0,0,0,0,0,0
+Federico Zeri,Richard Krautheimer,Gian Lorenzo Bernini,1,0,0,0,0,0,0,0
+Federico Zeri,John Pope-Hennessy,Donatello,1,1,1,1,0,0,0,0
+Fritz Heinemann,Everett Fahy,renaissance,0,0,0,0,0,0,0,0
+Fritz Heinemann,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Fritz Heinemann,Everett Fahy,15th century,0,0,0,0,0,0,0,0
+Fritz Heinemann,Everett Fahy,16th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Everett Fahy,15th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Fritz Heinemann,15th century,1,0,0,0,0,0,0,0
+Gustav Ludwig,John Pope-Hennessy,15th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Julian Kliemann,15th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Luisa Vertova,15th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Everett Fahy,16th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Fritz Heinemann,16th century,1,0,0,0,0,0,0,0
+Gustav Ludwig,Julian Kliemann,16th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Luisa Vertova,16th century,0,0,0,0,0,0,0,0
+Gustav Ludwig,Fritz Heinemann,Vittore Carpaccio,1,0,0,0,0,0,0,0
+Gustav Ludwig,Fritz Heinemann,Titian,1,0,0,0,0,0,0,0
+Gustav Ludwig,Luisa Vertova,Titian,0,0,0,0,0,0,0,0
+Gustav Ludwig,Fritz Heinemann,Giovanni Bellini,1,0,0,0,0,0,0,0
+John Pope-Hennessy,Everett Fahy,renaissance,1,1,1,1,0,1,1,0
+John Pope-Hennessy,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+John Pope-Hennessy,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+John Pope-Hennessy,Richard Krautheimer,renaissance,1,0,1,0,0,0,0,0
+John Pope-Hennessy,Everett Fahy,15th century,1,1,1,1,0,1,1,0
+John Pope-Hennessy,Fritz Heinemann,15th century,0,0,0,0,0,0,0,0
+John Pope-Hennessy,Everett Fahy,Sandro Botticelli,1,1,1,1,0,1,1,0
+Julian Kliemann,Everett Fahy,renaissance,0,0,0,0,0,0,0,0
+Julian Kliemann,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+Julian Kliemann,Richard Krautheimer,renaissance,1,0,,0,0,,0,0
+Julian Kliemann,John Pope-Hennessy,renaissance,1,0,,0,0,0,0,0
+Julian Kliemann,Everett Fahy,15th century,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,15th century,0,0,0,0,0,0,0,0
+Julian Kliemann,John Pope-Hennessy,15th century,1,0,,0,0,0,0,0
+Julian Kliemann,Everett Fahy,16th century,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,16th century,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,baroque,0,0,0,0,0,0,0,0
+Julian Kliemann,Richard Krautheimer,baroque,1,0,,0,0,,0,0
+Julian Kliemann,Ellis Waterhouse,baroque,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,17th century,0,0,0,0,0,0,0,0
+Julian Kliemann,Fritz Heinemann,mannerism,0,0,0,0,0,0,0,0
+Julian Kliemann,Ellis Waterhouse,mannerism,0,0,0,0,0,0,0,0
+Julius S. Held,Everett Fahy,16th century,1,0,1,1,0,0,0,0
+Julius S. Held,Fritz Heinemann,16th century,1,0,,1,0,,0,0
+Julius S. Held,Julian Kliemann,16th century,0,0,0,0,0,0,0,0
+Julius S. Held,Luisa Vertova,16th century,0,0,0,0,0,0,0,0
+Julius S. Held,Gustav Ludwig,16th century,0,0,0,0,0,0,0,0
+Julius S. Held,Federico Zeri,16th century,1,0,,1,0,1,0,0
+Julius S. Held,Stefano Tumidei,16th century,0,0,0,0,0,0,0,0
+Julius S. Held,Kurt Badt,16th century,0,0,0,0,0,,0,0
+Julius S. Held,Fritz Heinemann,17th century,1,0,,1,0,,0,0
+Julius S. Held,Julian Kliemann,17th century,0,0,0,0,0,0,0,0
+Julius S. Held,Luisa Vertova,17th century,0,0,0,0,0,0,0,0
+Julius S. Held,Federico Zeri,17th century,1,0,,1,0,1,0,0
+Julius S. Held,Stefano Tumidei,17th century,0,0,0,0,0,0,0,0
+Julius S. Held,Luigi Salerno,17th century,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Everett Fahy,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Aby Warburg,renaissance,1,0,1,,0,,0,0
+Kornél Fabriczy,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Richard Krautheimer,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,John Pope-Hennessy,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Luisa Vertova,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Federico Zeri,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Ernst Steinmann,renaissance,1,0,,1,1,,0,0
+Kornél Fabriczy,Leo Steinberg,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Werner Cohn,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Ulrich Middeldorf,renaissance,0,0,0,0,0,0,0,0
+Kornél Fabriczy,John Pope-Hennessy,Michelangelo,0,0,0,0,0,0,0,0
+Kornél Fabriczy,Ernst Steinmann,Michelangelo,1,0,,1,1,,0,0
+Kurt Badt,Ernst Kitzinger,middle ages,1,0,,,0,0,0,0
+Kurt Badt,Otto Lehmann-Brockhaus,middle ages,0,0,0,,0,,0,0
+Kurt Badt,Federico Zeri,middle ages,1,0,,,0,1,0,0
+Kurt Badt,Federico Zeri,16th century,1,0,1,,0,1,0,0
+Kurt Badt,Everett Fahy,16th century,0,0,0,0,0,0,0,0
+Kurt Badt,Fritz Heinemann,16th century,0,0,0,0,0,0,0,0
+Kurt Badt,Julian Kliemann,16th century,0,0,0,0,0,0,0,0
+Kurt Badt,Luisa Vertova,16th century,0,0,0,0,0,0,0,0
+Kurt Badt,Gustav Ludwig,16th century,0,0,0,0,0,,0,0
+Kurt Badt,Stefano Tumidei,16th century,0,0,0,0,0,0,0,0
+Kurt Badt,Federico Zeri,baroque,1,0,,,0,0,0,0
+Kurt Badt,Fritz Heinemann,baroque,0,0,0,0,0,,0,0
+Kurt Badt,Julian Kliemann,baroque,0,0,0,0,0,0,0,0
+Kurt Badt,Stefano Tumidei,baroque,0,0,0,0,0,0,0,0
+Kurt Badt,Richard Krautheimer,baroque,0,0,0,,0,,0,0
+Kurt Badt,Ellis Waterhouse,baroque,0,0,0,0,0,0,0,0
+Kurt Badt,Luigi Salerno,baroque,0,0,0,0,0,0,0,0
+Kurt Badt,Federico Zeri,mannerism,1,0,1,,0,1,0,0
+Kurt Badt,Fritz Heinemann,mannerism,0,0,0,0,0,0,0,0
+Kurt Badt,Julian Kliemann,mannerism,0,0,0,0,0,0,0,0
+Kurt Badt,Ellis Waterhouse,mannerism,0,0,0,0,0,0,0,0
+Leo Steinberg,Everett Fahy,renaissance,0,0,,0,0,1,0,0
+Leo Steinberg,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Leo Steinberg,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+Leo Steinberg,Richard Krautheimer,renaissance,1,1,1,1,0,,0,0
+Leo Steinberg,John Pope-Hennessy,renaissance,1,0,1,0,0,0,0,0
+Leo Steinberg,Julian Kliemann,renaissance,0,0,,0,0,0,0,0
+Leo Steinberg,Luisa Vertova,renaissance,1,0,1,0,0,0,0,0
+Leo Steinberg,Federico Zeri,renaissance,0,0,,0,0,0,0,0
+Leo Steinberg,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Leo Steinberg,Ernst Steinmann,renaissance,1,0,0,0,0,,0,0
+Leo Steinberg,Fritz Heinemann,Titian,0,0,0,0,0,0,0,0
+Leo Steinberg,Luisa Vertova,Titian,1,0,0,0,0,0,0,0
+Leo Steinberg,Gustav Ludwig,Titian,0,0,0,0,0,0,0,0
+Leo Steinberg,Richard Krautheimer,Francesco Borromini,1,1,1,1,0,,0,0
+Luigi Salerno,Fritz Heinemann,baroque,0,0,0,0,0,0,0,0
+Luigi Salerno,Richard Krautheimer,baroque,1,0,,1,0,,0,0
+Luigi Salerno,Ellis Waterhouse,baroque,1,0,1,1,0,0,0,0
+Luigi Salerno,Julian Kliemann,baroque,0,0,,0,0,0,0,0
+Luigi Salerno,Federico Zeri,baroque,1,0,,1,0,1,0,0
+Luigi Salerno,Stefano Tumidei,baroque,0,0,0,0,0,0,0,0
+Luigi Salerno,Fritz Heinemann,17th century,0,0,0,0,0,0,0,0
+Luigi Salerno,Julian Kliemann,17th century,0,0,,0,0,0,0,0
+Luigi Salerno,Federico Zeri,17th century,1,0,,1,0,1,0,0
+Luigi Salerno,Stefano Tumidei,17th century,0,0,0,0,0,0,0,0
+Luigi Salerno,Luisa Vertova,17th century,1,0,,1,0,0,0,0
+Luigi Salerno,Stefano Tumidei,18th century,0,0,0,0,0,0,0,0
+Luigi Salerno,Luisa Vertova,18th century,1,0,,1,0,0,0,0
+Luigi Salerno,Federico Zeri,Caravaggio,1,0,,1,0,1,0,0
+Luisa Vertova,Everett Fahy,renaissance,1,0,,0,0,0,0,0
+Luisa Vertova,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Luisa Vertova,Fritz Heinemann,renaissance,1,0,,0,0,0,0,0
+Luisa Vertova,Richard Krautheimer,renaissance,0,0,,0,0,,0,0
+Luisa Vertova,John Pope-Hennessy,renaissance,1,0,1,,0,0,0,0
+Luisa Vertova,Julian Kliemann,renaissance,0,0,,0,0,0,0,0
+Luisa Vertova,Everett Fahy,15th century,1,0,,0,0,0,0,0
+Luisa Vertova,Fritz Heinemann,15th century,1,0,,0,0,,0,0
+Luisa Vertova,John Pope-Hennessy,15th century,1,0,1,,0,0,0,0
+Luisa Vertova,Julian Kliemann,15th century,0,0,,0,0,0,0,0
+Luisa Vertova,Everett Fahy,16th century,1,0,,0,0,0,0,0
+Luisa Vertova,Fritz Heinemann,16th century,1,0,,0,0,,0,0
+Luisa Vertova,Julian Kliemann,16th century,0,0,,0,0,0,0,0
+Luisa Vertova,Fritz Heinemann,Titian,1,0,,0,0,,0,0
+Luisa Vertova,Fritz Heinemann,17th century,1,0,,0,0,,0,0
+Luisa Vertova,Julian Kliemann,17th century,0,0,,0,0,0,0,0
+Otto Lehmann-Brockhaus,Ernst Kitzinger,middle ages,0,0,,,0,0,0,0
+Richard Krautheimer,Ernst Kitzinger,byzantine art,1,1,,1,1,0,0,0
+Richard Krautheimer,Ernst Kitzinger,early christian art and architecture,1,1,,1,1,0,0,0
+Richard Krautheimer,Everett Fahy,renaissance,0,0,,,0,0,0,0
+Richard Krautheimer,Aby Warburg,renaissance,1,0,,,0,,0,0
+Richard Krautheimer,Fritz Heinemann,renaissance,0,0,,,0,0,0,0
+Richard Krautheimer,Fritz Heinemann,baroque,0,0,,,0,0,0,0
+Roberto Longhi,Everett Fahy,16th century,1,0,,,0,1,0,0
+Roberto Longhi,Julian Kliemann,16th century,0,0,0,0,0,0,0,0
+Roberto Longhi,Luisa Vertova,16th century,1,0,,,0,0,1,0
+Roberto Longhi,Fritz Heinemann,16th century,1,0,,,0,,0,0
+Roberto Longhi,Stefano Tumidei,16th century,1,1,,0,0,,0,0
+Roberto Longhi,Gustav Ludwig,16th century,0,0,0,0,0,0,0,0
+Roberto Longhi,Federico Zeri,16th century,1,1,1,1,1,1,1,0
+Roberto Longhi,Kurt Badt,16th century,0,0,,,0,,0,0
+Roberto Longhi,Fritz Heinemann,17th century,1,0,,,0,,0,0
+Roberto Longhi,Julian Kliemann,17th century,0,0,0,0,0,0,0,0
+Roberto Longhi,Luisa Vertova,17th century,1,0,,,0,0,1,0
+Roberto Longhi,Federico Zeri,17th century,1,1,1,1,1,1,1,0
+Roberto Longhi,Stefano Tumidei,17th century,1,1,,0,0,,0,0
+Roberto Longhi,Luigi Salerno,17th century,1,0,1,,0,1,0,0
+Roberto Longhi,Julius S. Held,17th century,1,0,,,0,1,0,0
+Roberto Longhi,Everett Fahy,14th century,1,0,1,,0,1,0,0
+Roberto Longhi,Federico Zeri,15th century,1,1,1,1,1,1,1,0
+Roberto Longhi,Fritz Heinemann,15th century,1,0,1,,0,,0,0
+Roberto Longhi,Julian Kliemann,15th century,0,0,0,0,0,0,0,0
+Roberto Longhi,Luisa Vertova,15th century,1,0,1,,0,0,1,0
+Roberto Longhi,Stefano Tumidei,15th century,1,1,,0,0,,0,0
+Roberto Longhi,Everett Fahy,15th century,1,0,1,,0,1,0,0
+Roberto Longhi,John Pope-Hennessy,15th century,1,0,,,0,,0,0
+Roberto Longhi,Gustav Ludwig,15th century,0,0,0,0,0,0,0,0
+Roberto Longhi,Everett Fahy,renaissance,1,0,1,0,0,,0,0
+Roberto Longhi,Aby Warburg,renaissance,1,0,0,,0,,0,0
+Roberto Longhi,Fritz Heinemann,renaissance,1,0,1,,0,,0,0
+Roberto Longhi,Richard Krautheimer,renaissance,1,0,,,0,,0,0
+Roberto Longhi,John Pope-Hennessy,renaissance,1,0,,,0,,0,0
+Roberto Longhi,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Roberto Longhi,Luisa Vertova,renaissance,1,0,1,,0,0,1,0
+Roberto Longhi,Federico Zeri,renaissance,1,1,1,1,1,1,1,0
+Roberto Longhi,Stefano Tumidei,renaissance,1,1,,,0,,0,0
+Roberto Longhi,Ernst Steinmann,renaissance,0,0,0,,0,,0,0
+Roberto Longhi,Federico Zeri,Caravaggio,1,1,,1,1,1,1,0
+Roberto Longhi,Luigi Salerno,Caravaggio,1,0,1,,0,1,0,0
+Roberto Longhi,Fritz Heinemann,Vittore Carpaccio,1,0,,,0,,0,0
+Roberto Longhi,Gustav Ludwig,Vittore Carpaccio,0,0,0,0,0,0,0,0
+Roberto Longhi,Werner Cohn,Carlo Carrà,0,0,0,,0,,0,0
+Stefano Tumidei,Everett Fahy,renaissance,1,0,,0,0,0,0,0
+Stefano Tumidei,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Stefano Tumidei,Fritz Heinemann,renaissance,0,0,0,0,0,0,0,0
+Stefano Tumidei,Richard Krautheimer,renaissance,0,0,0,0,0,0,0,0
+Stefano Tumidei,John Pope-Hennessy,renaissance,0,0,0,0,0,0,0,0
+Stefano Tumidei,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Stefano Tumidei,Luisa Vertova,renaissance,1,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,renaissance,1,1,0,1,1,0,0,0
+Stefano Tumidei,Everett Fahy,15th century,1,0,,0,0,0,0,0
+Stefano Tumidei,Fritz Heinemann,15th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,John Pope-Hennessy,15th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Julian Kliemann,15th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Luisa Vertova,15th century,1,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,15th century,1,1,0,1,0,0,0,0
+Stefano Tumidei,Gustav Ludwig,15th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Everett Fahy,16th century,1,0,,0,0,0,0,0
+Stefano Tumidei,Fritz Heinemann,16th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Julian Kliemann,16th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Luisa Vertova,16th century,1,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,16th century,1,1,,1,1,0,0,0
+Stefano Tumidei,Gustav Ludwig,16th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Fritz Heinemann,baroque,0,0,0,0,0,0,0,0
+Stefano Tumidei,Richard Krautheimer,baroque,0,0,0,0,0,0,0,0
+Stefano Tumidei,Julian Kliemann,baroque,0,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,baroque,1,1,0,1,1,0,0,0
+Stefano Tumidei,Ellis Waterhouse,baroque,0,0,0,0,0,0,0,0
+Stefano Tumidei,Fritz Heinemann,17th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Julian Kliemann,17th century,0,0,0,0,0,0,0,0
+Stefano Tumidei,Luisa Vertova,17th century,1,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,17th century,1,1,,1,0,0,0,0
+Stefano Tumidei,Richard Krautheimer,Gian Lorenzo Bernini,0,0,0,0,0,0,0,0
+Stefano Tumidei,Federico Zeri,Gian Lorenzo Bernini,1,1,0,1,1,0,0,0
+Stefano Tumidei,Luisa Vertova,18th century,1,0,0,0,0,0,0,0
+Stefano Tumidei,Luisa Vertova,neoclassicism,1,0,0,0,0,0,0,0
+Ulrich Middeldorf,Everett Fahy,renaissance,1,0,,,1,0,0,0
+Ulrich Middeldorf,Aby Warburg,renaissance,1,0,,,0,,0,0
+Ulrich Middeldorf,Fritz Heinemann,renaissance,0,0,0,0,,,0,0
+Ulrich Middeldorf,Richard Krautheimer,renaissance,1,0,1,0,0,,0,0
+Ulrich Middeldorf,John Pope-Hennessy,renaissance,1,0,1,,0,0,0,0
+Ulrich Middeldorf,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Ulrich Middeldorf,Luisa Vertova,renaissance,1,0,1,0,0,0,0,0
+Ulrich Middeldorf,Federico Zeri,renaissance,1,0,,,0,1,0,0
+Ulrich Middeldorf,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Ulrich Middeldorf,Ernst Steinmann,renaissance,0,0,0,,0,,0,0
+Ulrich Middeldorf,Leo Steinberg,renaissance,0,0,0,,0,0,0,0
+Ulrich Middeldorf,Werner Cohn,renaissance,1,1,1,,0,1,0,0
+Ulrich Middeldorf,John Pope-Hennessy,Italian Renaissance,1,0,1,,0,0,0,0
+Werner Cohn,Ernst Kitzinger,middle ages,0,0,0,,0,0,0,0
+Werner Cohn,Otto Lehmann-Brockhaus,middle ages,0,0,0,,0,,0,0
+Werner Cohn,Federico Zeri,middle ages,1,0,,,0,0,0,0
+Werner Cohn,Kurt Badt,middle ages,0,0,0,0,0,0,0,0
+Werner Cohn,Federico Zeri,renaissance,1,0,,,0,0,0,0
+Werner Cohn,Everett Fahy,renaissance,0,0,0,0,0,0,0,0
+Werner Cohn,Aby Warburg,renaissance,1,0,,,0,,0,0
+Werner Cohn,Fritz Heinemann,renaissance,0,0,0,,0,,0,0
+Werner Cohn,Richard Krautheimer,renaissance,0,0,0,,0,,0,0
+Werner Cohn,John Pope-Hennessy,renaissance,1,0,,,0,0,0,0
+Werner Cohn,Julian Kliemann,renaissance,0,0,0,0,0,0,0,0
+Werner Cohn,Luisa Vertova,renaissance,0,0,0,,0,0,0,0
+Werner Cohn,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Werner Cohn,Ernst Steinmann,renaissance,0,0,0,0,0,,0,0
+Werner Cohn,Leo Steinberg,renaissance,0,0,0,0,0,0,0,0
+Werner Cohn,Richard Krautheimer,Lorenzo Ghiberti,0,0,0,0,0,,0,0
+Wolfgang Lotz,Everett Fahy,renaissance,0,0,0,,0,0,0,0
+Wolfgang Lotz,Aby Warburg,renaissance,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Fritz Heinemann,renaissance,0,0,0,0,0,,0,0
+Wolfgang Lotz,Richard Krautheimer,renaissance,1,1,1,1,1,1,1,1
+Wolfgang Lotz,John Pope-Hennessy,renaissance,1,0,1,,0,0,0,0
+Wolfgang Lotz,Julian Kliemann,renaissance,1,0,,,0,0,0,0
+Wolfgang Lotz,Luisa Vertova,renaissance,0,0,0,,0,0,0,0
+Wolfgang Lotz,Federico Zeri,renaissance,1,0,,,0,0,0,0
+Wolfgang Lotz,Stefano Tumidei,renaissance,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Ernst Steinmann,renaissance,1,0,,,0,,0,0
+Wolfgang Lotz,Leo Steinberg,renaissance,1,1,1,,0,1,0,0
+Wolfgang Lotz,Werner Cohn,renaissance,0,0,0,0,0,,0,0
+Wolfgang Lotz,Ulrich Middeldorf,renaissance,1,0,,,0,0,0,0
+Wolfgang Lotz,Kornél Fabriczy,renaissance,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Everett Fahy,16th century,"0,5",0,,,0,0,0,0
+Wolfgang Lotz,Fritz Heinemann,16th century,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Julian Kliemann,16th century,1,0,,,0,0,0,0
+Wolfgang Lotz,Luisa Vertova,16th century,"0,5",0,,,0,0,0,0
+Wolfgang Lotz,Federico Zeri,16th century,1,0,,,0,0,0,0
+Wolfgang Lotz,Stefano Tumidei,16th century,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Gustav Ludwig,16th century,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Kurt Badt,16th century,0,0,0,0,0,,0,0
+Wolfgang Lotz,Julius S. Held,16th century,1,0,1,,0,0,0,0
+Wolfgang Lotz,Fritz Heinemann,baroque,0,0,0,0,0,,0,0
+Wolfgang Lotz,Richard Krautheimer,baroque,1,1,1,1,1,1,1,1
+Wolfgang Lotz,Julian Kliemann,baroque,1,0,,,0,0,0,0
+Wolfgang Lotz,Federico Zeri,baroque,1,0,,,0,0,0,0
+Wolfgang Lotz,Stefano Tumidei,baroque,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Kurt Badt,baroque,0,0,0,,0,,0,0
+Wolfgang Lotz,Ellis Waterhouse,baroque,1,0,,,0,0,0,0
+Wolfgang Lotz,Luigi Salerno,baroque,1,0,,,0,1,0,0
+Wolfgang Lotz,Fritz Heinemann,17th century,0,0,0,0,0,,0,0
+Wolfgang Lotz,Julian Kliemann,17th century,1,0,,,0,0,0,0
+Wolfgang Lotz,Luisa Vertova,17th century,0,0,,,0,0,0,0
+Wolfgang Lotz,Federico Zeri,17th century,1,0,,,0,0,0,0
+Wolfgang Lotz,Stefano Tumidei,17th century,0,0,0,0,0,0,0,0
+Wolfgang Lotz,Julius S. Held,17th century,1,0,1,,0,0,0,0
+Wolfgang Lotz,Luigi Salerno,17th century,1,0,,,0,1,0,0
+Wolfgang Lotz,Richard Krautheimer,Gian Lorenzo Bernini,1,1,,1,1,1,1,1
+Wolfgang Lotz,Federico Zeri,Gian Lorenzo Bernini,1,0,,,0,0,0,0
+Wolfgang Lotz,Stefano Tumidei,Gian Lorenzo Bernini,0,0,0,0,0,0,0,0
