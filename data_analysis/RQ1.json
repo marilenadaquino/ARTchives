@@ -1,25 +1,73 @@
 [
     {
-        "QID": "http://www.wikidata.org/entity/Q244482",
-        "label": "Romagna",
-        "coords": "['12.12479', '44.1774']",
+        "QID": "http://www.wikidata.org/entity/Q167733",
+        "label": "Barnard College",
+        "coords": "['-73.963333333', '40.809444444']",
         "type": "institution",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q55453618",
-                "Stefano Tumidei"
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
             ]
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q3757699",
-        "label": "Galleria Spada",
-        "coords": "['12.471944444', '41.894194444']",
+        "QID": "http://www.wikidata.org/entity/Q78",
+        "label": "Basel",
+        "coords": "['7.590555555', '47.560555555']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1446181",
+        "label": "Hunter College",
+        "coords": "['-73.964741', '40.768538']",
         "type": "institution",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q131252",
+        "label": "University of Chicago",
+        "coords": "['-87.599722222', '41.789722222']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q2966",
+        "label": "Heidelberg",
+        "coords": "['8.71', '49.412222222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q771",
+        "label": "Massachusetts",
+        "coords": "['-71.8', '42.3']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
             ],
             [
                 "http://www.wikidata.org/entity/Q1089074",
@@ -28,9 +76,9 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q230899",
-        "label": "University of Manchester",
-        "coords": "['-2.233611111', '53.465555555']",
+        "QID": "http://www.wikidata.org/entity/Q180788",
+        "label": "National Gallery",
+        "coords": "['-0.128435', '51.508704']",
         "type": "institution",
         "historians": [
             [
@@ -40,10 +88,54 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q1196",
-        "label": "Mecklenburg-Vorpommern",
-        "coords": "['12.7', '53.616666666']",
-        "type": "geoloc",
+        "QID": "http://www.wikidata.org/entity/Q64",
+        "label": "Berlin",
+        "coords": "['13.383333333', '52.516666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1022",
+        "label": "Stuttgart",
+        "coords": "['9.1775', '48.776111111']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q995470",
+                "Korn\u00e9l Fabriczy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1709",
+        "label": "Schwerin",
+        "coords": "['11.416666666', '53.633333333']",
+        "type": "geolocation",
         "historians": [
             [
                 "http://www.wikidata.org/entity/Q3057287",
@@ -52,38 +144,30 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q36687",
-        "label": "Victoria",
-        "coords": "['144.0', '-37.0']",
-        "type": "geoloc",
+        "QID": "http://www.wikidata.org/entity/Q4859590",
+        "label": "Barber Institute of Fine Arts",
+        "coords": "['-1.927727777', '52.450419444']",
+        "type": "institution",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
             ]
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q715",
-        "label": "Heilbronn",
-        "coords": "['9.217953', '49.140428']",
-        "type": "geoloc",
+        "QID": "http://www.wikidata.org/entity/Q3806",
+        "label": "T\u00fcbingen",
+        "coords": "['9.055555555', '48.52']",
+        "type": "institution",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q495",
-        "label": "Turin",
-        "coords": "['7.7', '45.066666666']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
             ]
         ]
     },
@@ -100,6 +184,34 @@
         ]
     },
     {
+        "QID": "http://www.wikidata.org/entity/Q11203476",
+        "label": "Getty Research Institute",
+        "coords": "['-118.476', '34.076888888']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q51175",
+        "label": "Basilica of Our Lady",
+        "coords": "['11.249367', '43.7743']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ]
+        ]
+    },
+    {
         "QID": "http://www.wikidata.org/entity/Q6972835",
         "label": "National Gallery of Art Sculpture Garden",
         "coords": "['-77.023', '38.8913']",
@@ -112,10 +224,862 @@
         ]
     },
     {
+        "QID": "http://www.wikidata.org/entity/Q1603",
+        "label": "Kentucky",
+        "coords": "['-85.0', '37.5']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q99",
+        "label": "California",
+        "coords": "['-120.0', '37.0']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q739627",
+        "label": "Pennsylvania State University",
+        "coords": "['-77.862777777', '40.796111111']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1373290",
+                "Eugenio Battisti"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q958299",
+        "label": "via del Corso",
+        "coords": "['12.478272222', '41.906027777']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q214867",
+        "label": "National Gallery of Art",
+        "coords": "['-77.02001', '38.89147']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1024543",
+        "label": "Graduate Center, CUNY",
+        "coords": "['-73.983333333', '40.748333333']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1068063",
+        "label": "National Gallery of Canada",
+        "coords": "['-75.698386', '45.429434']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q20103",
+        "label": "Assisi",
+        "coords": "['12.6175', '43.07']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q4012761",
+        "label": "Poggio Reale",
+        "coords": "['14.285605', '40.865804']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1726",
+        "label": "Munich",
+        "coords": "['11.5755', '48.137194444']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1271052",
+                "Fritz Heinemann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q155354",
+        "label": "University of Marburg",
+        "coords": "['8.773611111', '50.810833333']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1055",
+        "label": "Hamburg",
+        "coords": "['10.0', '53.55']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q59452059",
+        "label": "Berenson Library",
+        "coords": "['11.309769', '43.782196']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q158085",
+        "label": "Max Planck Society",
+        "coords": "['11.5820779', '48.1411551']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q55",
+        "label": "Netherlands",
+        "coords": "['5.55', '52.316666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3033",
+        "label": "G\u00f6ttingen",
+        "coords": "['9.935555555', '51.533888888']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1317143",
+        "label": "University of Louisville",
+        "coords": "['-85.760222222', '38.215019444']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1345",
+        "label": "Philadelphia",
+        "coords": "['-75.163611111', '39.952777777']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q152171",
+        "label": "University of Bonn",
+        "coords": "['7.102222222', '50.733888888']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q671011",
+        "label": "J\u00f6rdenstorf",
+        "coords": "['12.616666666', '53.883055555']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q242942",
+        "label": "Mentana",
+        "coords": "['12.6444485', '42.033728']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q60",
+        "label": "New York City",
+        "coords": "['-74.006015', '40.712728']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q872398",
+        "label": "Kunsthistorisches Institut in Florenz",
+        "coords": "['11.264', '43.7772']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q154804",
+        "label": "Leipzig University",
+        "coords": "['12.378727777', '51.3387']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q279",
+        "label": "Modena",
+        "coords": "['10.92572', '44.64582']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q2824734",
+                "Adolfo Venturi"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1376987",
+        "label": "New College",
+        "coords": "['-1.25166667', '51.75416667']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q13367",
+        "label": "Forl\u00ec",
+        "coords": "['12.040833333', '44.2225']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q55453618",
+                "Stefano Tumidei"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q942605",
+        "label": "Settignano",
+        "coords": "['11.322027777', '43.782888888']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q693591",
+        "label": "Kunsthalle Bremen",
+        "coords": "['8.813611', '53.072778']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q84",
+        "label": "London",
+        "coords": "['-0.1275', '51.507222222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q995470",
+                "Korn\u00e9l Fabriczy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q41616785",
+                "Gustav Ludwig"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q131262",
+        "label": "University of Bologna",
+        "coords": "['11.342777777', '44.493888888']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q55453618",
+                "Stefano Tumidei"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q490",
+        "label": "Milan",
+        "coords": "['9.19', '45.466944444']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1360303",
+        "label": "University of Kentucky",
+        "coords": "['-84.5', '38.033333333']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1047097",
+        "label": "Nezu Museum",
+        "coords": "['139.717603', '35.66216']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q586",
+        "label": "Bonn",
+        "coords": "['7.099722222', '50.733888888']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q49117",
+        "label": "University of Pennsylvania",
+        "coords": "['-75.193048', '39.953885']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q715",
+        "label": "Heilbronn",
+        "coords": "['9.217953', '49.140428']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q6602",
+        "label": "Strasbourg",
+        "coords": "['7.752222222', '48.573333333']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q160236",
+        "label": "Metropolitan Museum of Art",
+        "coords": "['-73.9631', '40.7794']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1201549",
+        "label": "Detroit Institute of Arts",
+        "coords": "['-83.064722222', '42.359444444']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q39",
+        "label": "Switzerland",
+        "coords": "['8.231973', '46.798562']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1271052",
+                "Fritz Heinemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1399299",
+        "label": "Slade School of Fine Art",
+        "coords": "['-0.1344', '51.525']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1196",
+        "label": "Mecklenburg-Vorpommern",
+        "coords": "['12.7', '53.616666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q210081",
+        "label": "Walters Art Museum",
+        "coords": "['-76.616111111', '39.296666666']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3757699",
+        "label": "Galleria Spada",
+        "coords": "['12.471891', '41.894234']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q43668",
+        "label": "Louisville",
+        "coords": "['-85.751388888', '38.256111111']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q6373",
+        "label": "British Museum",
+        "coords": "['-0.127022', '51.519489']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q145",
+        "label": "United Kingdom",
+        "coords": "['-2.0', '54.6']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3949",
+        "label": "Unna",
+        "coords": "['7.688888888', '51.534722222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q2044",
+        "label": "Florence",
+        "coords": "['11.254166666', '43.771388888']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q60185",
+                "Aby Warburg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q55453618",
+                "Stefano Tumidei"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q36687",
+        "label": "Victoria",
+        "coords": "['144.0', '-37.0']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q2833",
+        "label": "Freiburg im Breisgau",
+        "coords": "['7.849722222', '47.994722222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q183",
+        "label": "Germany",
+        "coords": "['10.0', '51.0']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q38",
+        "label": "Italy",
+        "coords": "['12.5', '42.5']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q995470",
+                "Korn\u00e9l Fabriczy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q41",
+        "label": "Greece",
+        "coords": "['23.0', '38.5']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
         "QID": "http://www.wikidata.org/entity/Q90",
         "label": "Paris",
         "coords": "['2.351388888', '48.856944444']",
-        "type": "geoloc",
+        "type": "geolocation",
         "historians": [
             [
                 "http://www.wikidata.org/entity/Q1089074",
@@ -128,22 +1092,22 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q805285",
-        "label": "Balliol College",
-        "coords": "['-1.2578', '51.7547']",
-        "type": "institution",
+        "QID": "http://www.wikidata.org/entity/Q5092",
+        "label": "Baltimore",
+        "coords": "['-76.615', '39.286388888']",
+        "type": "geolocation",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
             ]
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q61",
-        "label": "Washington, D.C.",
-        "coords": "['-77.036666666', '38.895']",
-        "type": "geoloc",
+        "QID": "http://www.wikidata.org/entity/Q79",
+        "label": "Egypt",
+        "coords": "['29.0', '27.0']",
+        "type": "geolocation",
         "historians": [
             [
                 "http://www.wikidata.org/entity/Q3051533",
@@ -152,9 +1116,189 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q4012761",
-        "label": "Poggio Reale",
-        "coords": "['14.29238', '40.870042']",
+        "QID": "http://www.wikidata.org/entity/Q2093794",
+        "label": "Vassar College",
+        "coords": "['-73.895188888', '41.686866666']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q2324618",
+        "label": "Staatliches Museum Schwerin",
+        "coords": "['11.4183', '53.6264']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q820887",
+        "label": "University of Florence",
+        "coords": "['11.258611111', '43.777777777']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3558578",
+        "label": "Harvard University Center for Italian Renaissance Studies",
+        "coords": "['11.3151', '43.7943']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q85761254",
+                "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1642645",
+        "label": "Dogana",
+        "coords": "['12.5', '43.95']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1210",
+        "label": "Lombardy",
+        "coords": "['9.95', '45.65']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q495",
+        "label": "Turin",
+        "coords": "['7.7', '45.066666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1373290",
+                "Eugenio Battisti"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q731126",
+        "label": "J. Paul Getty Museum",
+        "coords": "['-118.475', '34.0775']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q49210",
+        "label": "New York University",
+        "coords": "['-73.995', '40.73']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q34433",
+        "label": "University of Oxford",
+        "coords": "['-1.255', '51.755']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q239303",
+        "label": "Art Institute of Chicago",
+        "coords": "['-87.623889', '41.879444']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q414052",
+        "label": "Academy of Fine Arts, Munich",
+        "coords": "['11.580278', '48.153056']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q2824734",
+                "Adolfo Venturi"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q339759",
+        "label": "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History",
+        "coords": "['12.48414', '41.90534']",
         "type": "institution",
         "historians": [
             [
@@ -162,8 +1306,468 @@
                 "Julian Kliemann"
             ],
             [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1930",
+        "label": "Ottawa",
+        "coords": "['-75.695', '45.424722222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q30",
+        "label": "United States of America",
+        "coords": "['-98.5795', '39.828175']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1715096",
+                "Ulrich Middeldorf"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q18935222",
+                "Werner Cohn"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q49166",
+        "label": "Williams College",
+        "coords": "['-73.205', '42.7125']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q641",
+        "label": "Venice",
+        "coords": "['12.331944444', '45.439722222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q41616785",
+                "Gustav Ludwig"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q152087",
+        "label": "Humboldt University of Berlin",
+        "coords": "['13.393333333', '52.518055555']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q942713",
+        "label": "Scottish National Gallery",
+        "coords": "['-3.195660636', '55.950899738']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q230899",
+        "label": "University of Manchester",
+        "coords": "['-2.233611111', '53.465555555']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3869",
+        "label": "Marburg",
+        "coords": "['8.766666666', '50.816666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q3100195",
+        "label": "New York University School of Medicine",
+        "coords": "['-73.9744', '40.7421']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q537874",
+                "John Pope-Hennessy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q223429",
+        "label": "University of Birmingham",
+        "coords": "['-1.930555555', '52.450555555']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q817921",
+        "label": "Bennington",
+        "coords": "['-73.2131916', '42.8852043']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q61",
+        "label": "Washington, D.C.",
+        "coords": "['-77.036666666', '38.895']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q6771680",
+        "label": "Marlborough School",
+        "coords": "['-118.32685', '34.0699']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q13371",
+        "label": "Harvard University",
+        "coords": "['-71.116943888', '42.374443888']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q19997512",
+                "Everett Fahy"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q88907",
+                "Ernst Kitzinger"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q4191",
+        "label": "Lucerne",
+        "coords": "['8.3059', '47.0523']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1271052",
+                "Fritz Heinemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q499911",
+        "label": "University of Turin",
+        "coords": "['7.688888888', '45.069444444']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q2527217",
+                "Lionello Venturi"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1465805",
+        "label": "Clark Art Institute",
+        "coords": "['-73.2136', '42.7078']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1384",
+        "label": "New York",
+        "coords": "['-75.0', '43.0']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q674998",
+        "label": "Federal Office of Meteorology and Climatology MeteoSwiss",
+        "coords": "['8.564762', '47.45394']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q944225",
+        "label": "Waddesdon Manor",
+        "coords": "['-0.937777777', '51.842222222']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q2814",
+        "label": "Halle (Saale)",
+        "coords": "['11.969722222', '51.482777777']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q49088",
+        "label": "Columbia University",
+        "coords": "['-73.961944444', '40.8075']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1712683",
+                "Julius S. Held"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q220",
+        "label": "Rome",
+        "coords": "['12.482777777', '41.893055555']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1296486",
+                "Wolfgang Lotz"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q61913691",
+                "Luisa Vertova"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3057287",
+                "Ernst Steinmann"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q2824734",
+                "Adolfo Venturi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1373290",
+                "Eugenio Battisti"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1641821",
+                "Otto Lehmann-Brockhaus"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q6700132",
+                "Luigi Salerno"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q1361667",
+                "Roberto Longhi"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q55453618",
+                "Stefano Tumidei"
+            ],
+            [
                 "http://www.wikidata.org/entity/Q85761254",
                 "Julian Kliemann"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q159",
+        "label": "Russia",
+        "coords": "['94.25', '66.416666666']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q457739",
+                "Leo Steinberg"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q1741",
+        "label": "Vienna",
+        "coords": "['16.373064', '48.20833']",
+        "type": "geolocation",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q1629748",
+                "Kurt Badt"
+            ],
+            [
+                "http://www.wikidata.org/entity/Q41616785",
+                "Gustav Ludwig"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q21578",
+        "label": "Princeton University",
+        "coords": "['-74.656111111', '40.345277777']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q3051533",
+                "Ellis Waterhouse"
             ]
         ]
     },
@@ -192,870 +1796,6 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q1022",
-        "label": "Stuttgart",
-        "coords": "['9.1775', '48.776111111']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q995470",
-                "Korn\u00e9l Fabriczy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3891139",
-        "label": "Palazzo Zuccari",
-        "coords": "['11.26313333', '43.77753611']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q8471",
-        "label": "Reggio Calabria",
-        "coords": "['15.65', '38.114438888']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q993164",
-        "label": "Epsom",
-        "coords": "['-0.2675', '51.336111111']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q131262",
-        "label": "University of Bologna",
-        "coords": "['11.342777777', '44.493888888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q55453618",
-                "Stefano Tumidei"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q31058",
-        "label": "Burlington",
-        "coords": "['-73.2314828', '44.4876246']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q38",
-        "label": "Italy",
-        "coords": "['12.5', '42.5']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q995470",
-                "Korn\u00e9l Fabriczy"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q782187",
-        "label": "via Giulia",
-        "coords": "['12.47007', '41.89417']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1384",
-        "label": "New York",
-        "coords": "['-75.0', '43.0']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q586",
-        "label": "Bonn",
-        "coords": "['7.099722222', '50.733888888']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q13371",
-        "label": "Harvard University",
-        "coords": "['-71.116943888', '42.374443888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q88907",
-                "Ernst Kitzinger"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q160236",
-        "label": "Metropolitan Museum of Art",
-        "coords": "['-73.9631', '40.7794']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2966",
-        "label": "Heidelberg",
-        "coords": "['8.71', '49.412222222']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q60",
-        "label": "New York City",
-        "coords": "['-73.94', '40.67']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1603",
-        "label": "Kentucky",
-        "coords": "['-85.0', '37.5']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1465805",
-        "label": "Clark Art Institute",
-        "coords": "['-73.2136', '42.7078']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q682827",
-        "label": "The Frick Collection",
-        "coords": "['-73.9673', '40.7712']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q944225",
-        "label": "Waddesdon Manor",
-        "coords": "['-0.937777777', '51.842222222']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3120",
-        "label": "Jura",
-        "coords": "['5.554444', '46.675278']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q65",
-        "label": "Los Angeles",
-        "coords": "['-118.24368', '34.05223']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1047097",
-        "label": "Nezu Museum",
-        "coords": "['139.717603', '35.66216']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q158085",
-        "label": "Max Planck Society",
-        "coords": "['11.5820779', '48.1411551']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1360303",
-        "label": "University of Kentucky",
-        "coords": "['-84.5', '38.033333333']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q872398",
-        "label": "Kunsthistorisches Institut in Florenz",
-        "coords": "['11.264', '43.7772']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q958299",
-        "label": "via del Corso",
-        "coords": "['12.478272222', '41.906027777']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q6771680",
-        "label": "Marlborough School",
-        "coords": "['-118.32685', '34.0699']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3869",
-        "label": "Marburg",
-        "coords": "['8.766666666', '50.816666666']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q78",
-        "label": "Basel",
-        "coords": "['7.590555555', '47.560555555']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1449",
-        "label": "Genoa",
-        "coords": "['8.933983333', '44.407186111']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q51252",
-        "label": "Uffizi",
-        "coords": "['11.2559', '43.768438888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1068063",
-        "label": "National Gallery of Canada",
-        "coords": "['-75.698386', '45.429434']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q820887",
-        "label": "University of Florence",
-        "coords": "['11.258611111', '43.777777777']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q131252",
-        "label": "University of Chicago",
-        "coords": "['-87.599722222', '41.789722222']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q152171",
-        "label": "University of Bonn",
-        "coords": "['7.102222222', '50.733888888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q213322",
-        "label": "Victoria and Albert Museum",
-        "coords": "['-0.172078', '51.496302']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1399299",
-        "label": "Slade School of Fine Art",
-        "coords": "['-0.1344', '51.525']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1055",
-        "label": "Hamburg",
-        "coords": "['10.0', '53.55']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q239303",
-        "label": "Art Institute of Chicago",
-        "coords": "['-87.623889', '41.879444']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q11203476",
-        "label": "Getty Research Institute",
-        "coords": "['-118.476', '34.076888888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q13367",
-        "label": "Forl\u00ec",
-        "coords": "['12.040833333', '44.2225']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q55453618",
-                "Stefano Tumidei"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q671011",
-        "label": "J\u00f6rdenstorf",
-        "coords": "['12.616666666', '53.883055555']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q5303281",
-        "label": "Downside School",
-        "coords": "['-2.495', '51.255']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q16551",
-        "label": "Vermont",
-        "coords": "['-72.7', '44.0']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1024543",
-        "label": "Graduate Center, CUNY",
-        "coords": "['-73.983333333', '40.748333333']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q43668",
-        "label": "Louisville",
-        "coords": "['-85.751388888', '38.256111111']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q49166",
-        "label": "Williams College",
-        "coords": "['-73.2031', '42.71275']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q4146780",
-        "label": "State Archives of the city of Ishimbai",
-        "coords": "['56.0472679', '53.4556697']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q41616785",
-                "Gustav Ludwig"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q51175",
-        "label": "Basilica of Our Lady",
-        "coords": "['11.249367', '43.7743']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1709",
-        "label": "Schwerin",
-        "coords": "['11.416666666', '53.633333333']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q6537",
-        "label": "Vicenza",
-        "coords": "['11.55', '45.55']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q641",
-        "label": "Venice",
-        "coords": "['12.331944444', '45.439722222']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q41616785",
-                "Gustav Ludwig"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q99",
-        "label": "California",
-        "coords": "['-120.0', '37.0']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q731126",
-        "label": "J. Paul Getty Museum",
-        "coords": "['-118.475', '34.0775']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q79",
-        "label": "Egypt",
-        "coords": "['29.0', '27.0']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q167733",
-        "label": "Barnard College",
-        "coords": "['-73.963333333', '40.809444444']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q739627",
-        "label": "Pennsylvania State University",
-        "coords": "['-77.862777777', '40.796111111']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q6373",
-        "label": "British Museum",
-        "coords": "['-0.127022', '51.519489']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q537874",
-                "John Pope-Hennessy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1741",
-        "label": "Vienna",
-        "coords": "['16.373064', '48.20833']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q41616785",
-                "Gustav Ludwig"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q81162",
-        "label": "Magdalen College",
-        "coords": "['-1.246388888', '51.751938888']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q4191",
-        "label": "Lucerne",
-        "coords": "['8.3059', '47.0523']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1271052",
-                "Fritz Heinemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q490",
-        "label": "Milan",
-        "coords": "['9.19', '45.466944444']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q61913691",
-                "Luisa Vertova"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q214867",
-        "label": "National Gallery of Art",
-        "coords": "['-77.02001', '38.89147']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q693591",
-        "label": "Kunsthalle Bremen",
-        "coords": "['8.813611', '53.072778']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ]
-        ]
-    },
-    {
         "QID": "http://www.wikidata.org/entity/Q32120",
         "label": "University of Halle-Wittenberg",
         "coords": "['11.96888889', '51.48638889']",
@@ -1072,21 +1812,33 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q55044",
-        "label": "Ludwig Maximilian University of Munich",
-        "coords": "['11.580277777', '48.150833333']",
-        "type": "institution",
+        "QID": "http://www.wikidata.org/entity/Q65",
+        "label": "Los Angeles",
+        "coords": "['-118.24368', '34.05223']",
+        "type": "geolocation",
         "historians": [
             [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
+                "http://www.wikidata.org/entity/Q1089074",
+                "Federico Zeri"
             ]
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q210081",
-        "label": "Walters Art Museum",
-        "coords": "['-76.616111111', '39.296666666']",
+        "QID": "http://www.wikidata.org/entity/Q3075",
+        "label": "F\u00fcrth",
+        "coords": "['10.990277777', '49.478333333']",
+        "type": "institution",
+        "historians": [
+            [
+                "http://www.wikidata.org/entity/Q90407",
+                "Richard Krautheimer"
+            ]
+        ]
+    },
+    {
+        "QID": "http://www.wikidata.org/entity/Q273593",
+        "label": "Beaux-Arts de Paris",
+        "coords": "['2.333277777', '48.856805555']",
         "type": "institution",
         "historians": [
             [
@@ -1096,886 +1848,14 @@
         ]
     },
     {
-        "QID": "http://www.wikidata.org/entity/Q49210",
-        "label": "New York University",
-        "coords": "['-73.995', '40.73']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q152087",
-        "label": "Humboldt University of Berlin",
-        "coords": "['13.393333333', '52.518055555']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q242942",
-        "label": "Mentana",
-        "coords": "['12.6444485', '42.033728']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q18484321",
-        "label": "Caiano",
-        "coords": "['11.6534', '43.768']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q41",
-        "label": "Greece",
-        "coords": "['23.0', '38.5']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q23276",
-        "label": "Surrey",
-        "coords": "['-0.416666666', '51.25']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q39",
-        "label": "Switzerland",
-        "coords": "['8.231973', '46.798562']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1271052",
-                "Fritz Heinemann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1930",
-        "label": "Ottawa",
-        "coords": "['-75.695', '45.424722222']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q84",
-        "label": "London",
-        "coords": "['-0.1275', '51.507222222']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q41616785",
-                "Gustav Ludwig"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q61913691",
-                "Luisa Vertova"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q995470",
-                "Korn\u00e9l Fabriczy"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q337531",
-        "label": "Acad\u00e9mie des beaux-arts",
-        "coords": "['2.336889', '48.857222']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q159",
-        "label": "Russia",
-        "coords": "['94.25', '66.416666666']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q771",
-        "label": "Massachusetts",
-        "coords": "['-71.8', '42.3']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q64",
-        "label": "Berlin",
-        "coords": "['13.383333333', '52.516666666']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q279",
-        "label": "Modena",
-        "coords": "['10.92572', '44.64582']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q2824734",
-                "Adolfo Venturi"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1210",
-        "label": "Lombardy",
-        "coords": "['9.95', '45.65']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1376987",
-        "label": "New College",
-        "coords": "['-1.25166667', '51.75416667']",
+        "QID": "http://www.wikidata.org/entity/Q81162",
+        "label": "Magdalen College",
+        "coords": "['-1.246388888', '51.751938888']",
         "type": "institution",
         "historians": [
             [
                 "http://www.wikidata.org/entity/Q3051533",
                 "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2093794",
-        "label": "Vassar College",
-        "coords": "['-73.895188888', '41.686866666']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3949",
-        "label": "Unna",
-        "coords": "['7.688888888', '51.534722222']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q183",
-        "label": "Germany",
-        "coords": "['10.0', '51.0']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q15124814",
-        "label": "Piazza di Spagna",
-        "coords": "['12.48205833', '41.90595']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q49088",
-        "label": "Columbia University",
-        "coords": "['-73.961944444', '40.8075']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q7916914",
-        "label": "Vassar Swiss Underwear Company Building",
-        "coords": "['-87.693056', '41.932222']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1726",
-        "label": "Munich",
-        "coords": "['11.5755', '48.137194444']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1271052",
-                "Fritz Heinemann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q30",
-        "label": "United States of America",
-        "coords": "['-98.5795', '39.828175']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q23666",
-        "label": "Great Britain",
-        "coords": "['-2.416666666', '53.833333333']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q4859590",
-        "label": "Barber Institute of Fine Arts",
-        "coords": "['-1.927727777', '52.450419444']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q223429",
-        "label": "University of Birmingham",
-        "coords": "['-1.930555555', '52.450555555']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2833",
-        "label": "Freiburg im Breisgau",
-        "coords": "['7.849722222', '47.994722222']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1629748",
-                "Kurt Badt"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3558578",
-        "label": "Harvard University Center for Italian Renaissance Studies",
-        "coords": "['11.3151', '43.7943']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q61913691",
-                "Luisa Vertova"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q155354",
-        "label": "University of Marburg",
-        "coords": "['8.773611111', '50.810833333']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q499911",
-        "label": "University of Turin",
-        "coords": "['7.688888888', '45.069444444']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q2527217",
-                "Lionello Venturi"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2044",
-        "label": "Florence",
-        "coords": "['11.254166666', '43.771388888']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q55453618",
-                "Stefano Tumidei"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q61913691",
-                "Luisa Vertova"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1715096",
-                "Ulrich Middeldorf"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q3033",
-        "label": "G\u00f6ttingen",
-        "coords": "['9.935555555', '51.533888888']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q55",
-        "label": "Netherlands",
-        "coords": "['5.55', '52.316666666']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1345",
-        "label": "Philadelphia",
-        "coords": "['-75.163611111', '39.952777777']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q19997512",
-                "Everett Fahy"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q180788",
-        "label": "National Gallery",
-        "coords": "['-0.128435', '51.508704']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1317143",
-        "label": "University of Louisville",
-        "coords": "['-85.760222222', '38.215019444']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q817921",
-        "label": "Bennington",
-        "coords": "['-73.19677', '42.87813']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1712683",
-                "Julius S. Held"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2079",
-        "label": "Leipzig",
-        "coords": "['12.383333333', '51.333333333']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q20103",
-        "label": "Assisi",
-        "coords": "['12.6175', '43.07']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q49117",
-        "label": "University of Pennsylvania",
-        "coords": "['-75.193048', '39.953885']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q1446181",
-        "label": "Hunter College",
-        "coords": "['-73.964741', '40.768538']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q942713",
-        "label": "Scottish National Gallery",
-        "coords": "['-3.195660636', '55.950899738']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q220",
-        "label": "Rome",
-        "coords": "['12.482777777', '41.893055555']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q457739",
-                "Leo Steinberg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q61913691",
-                "Luisa Vertova"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1361667",
-                "Roberto Longhi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q6700132",
-                "Luigi Salerno"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3051533",
-                "Ellis Waterhouse"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q2824734",
-                "Adolfo Venturi"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1373290",
-                "Eugenio Battisti"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q55453618",
-                "Stefano Tumidei"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q6602",
-        "label": "Strasbourg",
-        "coords": "['7.752222222', '48.573333333']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q60185",
-                "Aby Warburg"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q18935222",
-                "Werner Cohn"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q5092",
-        "label": "Baltimore",
-        "coords": "['-76.615', '39.286388888']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q1089074",
-                "Federico Zeri"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q2814",
-        "label": "Halle (Saale)",
-        "coords": "['11.969722222', '51.482777777']",
-        "type": "geoloc",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ]
-        ]
-    },
-    {
-        "QID": "http://www.wikidata.org/entity/Q339759",
-        "label": "Bibliotheca Hertziana \u2013 Max Planck Institute of Art History",
-        "coords": "['12.48414', '41.90534']",
-        "type": "institution",
-        "historians": [
-            [
-                "http://www.wikidata.org/entity/Q85761254",
-                "Julian Kliemann"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1296486",
-                "Wolfgang Lotz"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q90407",
-                "Richard Krautheimer"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q1641821",
-                "Otto Lehmann-Brockhaus"
-            ],
-            [
-                "http://www.wikidata.org/entity/Q3057287",
-                "Ernst Steinmann"
             ]
         ]
     }

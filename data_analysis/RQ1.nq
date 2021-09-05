@@ -1,665 +1,635 @@
-<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q1376987> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q39> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1345> <http://www.wikidata.org/prop/direct/P625> "['-75.163611111', '39.952777777']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q739627> <http://www.wikidata.org/prop/direct/P625> "['-77.862777777', '40.796111111']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1068063> <http://www.wikidata.org/prop/direct/P625> "['-75.698386', '45.429434']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q220> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1047097> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q160236> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q279> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6602> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q209344> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3558578> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard University Center for Italian Renaissance Studies" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q167733> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49166> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6972835> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23276> <http://www.w3.org/2000/01/rdf-schema#label> "Surrey" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q7916914> <http://www.wikidata.org/prop/direct/P625> "['-87.693056', '41.932222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q209344> <http://www.wikidata.org/prop/direct/P625> "['12.515833333', '41.903333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q180788> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q242942> <http://www.w3.org/2000/01/rdf-schema#label> "Mentana" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51175> <http://www.wikidata.org/prop/direct/P625> "['11.249367', '43.7743']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49117> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q38> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q499911> <http://www.wikidata.org/prop/direct/P625> "['7.688888888', '45.069444444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4191> <http://www.w3.org/2000/01/rdf-schema#label> "Lucerne" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q131252> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1210> <http://www.w3.org/2000/01/rdf-schema#label> "Lombardy" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1399299> <http://www.wikidata.org/prop/direct/P625> "['-0.1344', '51.525']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6373> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q239303> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1360303> <http://www.w3.org/2000/01/rdf-schema#label> "University of Kentucky" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1709> <http://www.w3.org/2000/01/rdf-schema#label> "Schwerin" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q872398> <http://www.wikidata.org/prop/direct/P625> "['11.264', '43.7772']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q715> <http://www.w3.org/2000/01/rdf-schema#label> "Heilbronn" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1930> <http://www.w3.org/2000/01/rdf-schema#label> "Ottawa" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1384> <http://www.w3.org/2000/01/rdf-schema#label> "New York" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4859590> <http://www.wikidata.org/prop/direct/P625> "['-1.927727777', '52.450419444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q81162> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.w3.org/2000/01/rdf-schema#label> "Richard Krautheimer" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q1446181> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4012761> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> "Netherlands" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1446181> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q731126> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q78> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q820887> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6373> <http://www.w3.org/2000/01/rdf-schema#label> "British Museum" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q214867> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q55044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55044> <http://www.wikidata.org/prop/direct/P625> "['11.580277777', '48.150833333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6602> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q39> <http://www.wikidata.org/prop/direct/P625> "['8.231973', '46.798562']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q820887> <http://www.wikidata.org/prop/direct/P625> "['11.25951', '43.77777']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1384> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q244482> <http://www.w3.org/2000/01/rdf-schema#label> "Romagna" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q32120> <http://www.wikidata.org/prop/direct/P625> "['11.96888889', '51.48638889']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q230899> <http://www.w3.org/2000/01/rdf-schema#label> "University of Manchester" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.w3.org/2000/01/rdf-schema#label> "Luisa Vertova" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q995470> <http://www.w3.org/2000/01/rdf-schema#label> "Kornél Fabriczy" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49088> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3949> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q64> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1709> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q641> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q51252> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61> <http://www.wikidata.org/prop/direct/P625> "['-77.036666666', '38.895']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152171> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q23276> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q242942> <http://www.wikidata.org/prop/direct/P625> "['12.6444485', '42.033728']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2093794> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q88907> <http://www.w3.org/2000/01/rdf-schema#label> "Ernst Kitzinger" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5092> <http://www.wikidata.org/prop/direct/P625> "['-76.615', '39.286388888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.w3.org/2000/01/rdf-schema#label> "Kurt Badt" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4012761> <http://www.wikidata.org/prop/direct/P625> "['14.29238', '40.870042']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23666> <http://www.w3.org/2000/01/rdf-schema#label> "Great Britain" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q20103> <http://www.w3.org/2000/01/rdf-schema#label> "Assisi" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q214867> <http://www.wikidata.org/prop/direct/P625> "['-77.02001', '38.89147']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1741> <http://www.w3.org/2000/01/rdf-schema#label> "Vienna" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1024543> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90> <http://www.wikidata.org/prop/direct/P625> "['2.351388888', '48.856944444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4859590> <http://www.w3.org/2000/01/rdf-schema#label> "Barber Institute of Fine Arts" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152171> <http://www.wikidata.org/prop/direct/P625> "['7.102222222', '50.733888888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2833> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q958299> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1465805> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q805285> <http://www.w3.org/2000/01/rdf-schema#label> "Balliol College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q180788> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1317143> <http://www.wikidata.org/prop/direct/P625> "['-85.760222222', '38.215019444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1022> <http://www.wikidata.org/prop/direct/P625> "['9.1775', '48.776111111']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q158085> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6771680> <http://www.w3.org/2000/01/rdf-schema#label> "Marlborough School" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q78> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131252> <http://www.wikidata.org/prop/direct/P625> "['-87.599722222', '41.789722222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90> <http://www.w3.org/2000/01/rdf-schema#label> "Paris" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q81162> <http://www.w3.org/2000/01/rdf-schema#label> "Magdalen College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.w3.org/2000/01/rdf-schema#label> "Julius S. Held" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q671011> <http://www.w3.org/2000/01/rdf-schema#label> "Jördenstorf" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q586> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4012761> <http://www.w3.org/2000/01/rdf-schema#label> "Poggio Reale" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q158085> <http://www.w3.org/2000/01/rdf-schema#label> "Max Planck Society" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3891139> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.w3.org/2000/01/rdf-schema#label> "Wolfgang Lotz" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1384> <http://www.wikidata.org/prop/direct/P625> "['-75.0', '43.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23276> <http://www.wikidata.org/prop/direct/P625> "['-0.416666666', '51.25']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q817921> <http://www.wikidata.org/prop/direct/P625> "['-73.19677', '42.87813']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q782187> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1376987> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.w3.org/2000/01/rdf-schema#label> "Ernst Steinmann" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1345> <http://www.w3.org/2000/01/rdf-schema#label> "Philadelphia" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3120> <http://www.w3.org/2000/01/rdf-schema#label> "Jura" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q490> <http://www.w3.org/2000/01/rdf-schema#label> "Milan" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.w3.org/2000/01/rdf-schema#label> "Julian Kliemann" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q31058> <http://www.wikidata.org/prop/direct/P625> "['-73.2314828', '44.4876246']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1055> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q499911> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q805285> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6373> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q586> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6972835> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q183> <http://www.wikidata.org/prop/direct/P625> "['10.0', '51.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49117> <http://www.w3.org/2000/01/rdf-schema#label> "University of Pennsylvania" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1614068> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49210> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q39> <http://www.w3.org/2000/01/rdf-schema#label> "Switzerland" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6771680> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.w3.org/2000/01/rdf-schema#label> "Leo Steinberg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6537> <http://www.w3.org/2000/01/rdf-schema#label> "Vicenza" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q32120> <http://www.w3.org/2000/01/rdf-schema#label> "University of Halle-Wittenberg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q671011> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49117> <http://www.wikidata.org/prop/direct/P625> "['-75.193048', '39.953885']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3869> <http://www.w3.org/2000/01/rdf-schema#label> "Marburg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q55> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q41> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55> <http://www.wikidata.org/prop/direct/P625> "['5.55', '52.316666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152087> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2527217> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q99> <http://www.w3.org/2000/01/rdf-schema#label> "California" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q230899> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1603> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q782187> <http://www.wikidata.org/prop/direct/P625> "['12.47007', '41.89417']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q51175> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q16551> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1196> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q11203476> <http://www.w3.org/2000/01/rdf-schema#label> "Getty Research Institute" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3033> <http://www.w3.org/2000/01/rdf-schema#label> "Göttingen" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41616785> <http://www.w3.org/2000/01/rdf-schema#label> "Gustav Ludwig" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1741> <http://www.wikidata.org/prop/direct/P625> "['16.373064', '48.20833']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1446181> <http://www.wikidata.org/prop/direct/P625> "['-73.964741', '40.768538']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q159> <http://www.w3.org/2000/01/rdf-schema#label> "Russia" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q84> <http://www.w3.org/2000/01/rdf-schema#label> "London" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q223429> <http://www.w3.org/2000/01/rdf-schema#label> "University of Birmingham" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1614068> <http://www.wikidata.org/prop/direct/P625> "['13.3267886', '52.5090564']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q671011> <http://www.wikidata.org/prop/direct/P625> "['12.616666666', '53.883055555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2079> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18484321> <http://www.w3.org/2000/01/rdf-schema#label> "Caiano" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q817921> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q223429> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4012761> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49210> <http://www.wikidata.org/prop/direct/P625> "['-73.995', '40.73']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q223429> <http://www.wikidata.org/prop/direct/P625> "['-1.930555555', '52.450555555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q79> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.w3.org/2000/01/rdf-schema#label> "Luigi Salerno" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4859590> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1210> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q942713> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q993164> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q214867> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Art" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q36687> <http://www.wikidata.org/prop/direct/P625> "['144.0', '-37.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q155354> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q213322> <http://www.wikidata.org/prop/direct/P625> "['-0.172078', '51.496302']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q958299> <http://www.w3.org/2000/01/rdf-schema#label> "via del Corso" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q339759> <http://www.wikidata.org/prop/direct/P625> "['12.48414', '41.90534']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q11203476> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q64> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q11203476> <http://www.wikidata.org/prop/direct/P625> "['-118.476', '34.076888888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q167733> <http://www.w3.org/2000/01/rdf-schema#label> "Barnard College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1726> <http://www.w3.org/2000/01/rdf-schema#label> "Munich" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23276> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18484321> <http://www.wikidata.org/prop/direct/P625> "['11.6534', '43.768']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2824734> <http://www.w3.org/2000/01/rdf-schema#label> "Adolfo Venturi" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q337531> <http://www.w3.org/2000/01/rdf-schema#label> "Académie des beaux-arts" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q244482> <http://www.wikidata.org/prop/direct/P625> "['12.12479', '44.1774']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q715> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6602> <http://www.wikidata.org/prop/direct/P625> "['7.752222222', '48.573333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q242942> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q223429> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23666> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q244482> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1930> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q210081> <http://www.wikidata.org/prop/direct/P625> "['-76.616111111', '39.296666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3757699> <http://www.wikidata.org/prop/direct/P625> "['12.471891', '41.894234']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q499911> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1055> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q43668> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49117> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1360303> <http://www.wikidata.org/prop/direct/P625> "['-84.5', '38.033333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q693591> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q61> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1047097> <http://www.w3.org/2000/01/rdf-schema#label> "Nezu Museum" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q16551> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q7916914> <http://www.w3.org/2000/01/rdf-schema#label> "Vassar Swiss Underwear Company Building" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3757699> <http://www.w3.org/2000/01/rdf-schema#label> "Galleria Spada" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6537> <http://www.wikidata.org/prop/direct/P625> "['11.55', '45.55']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q65> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6771680> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q167733> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4012761> <http://www.wikidata.org/prop/direct/P625> "['14.285605', '40.865804']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1399299> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q214867> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q158085> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q944225> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1384> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1741> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152087> <http://www.wikidata.org/prop/direct/P625> "['13.393333333', '52.518055555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5092> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2527217> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q499911> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60> <http://www.wikidata.org/prop/direct/P625> "['-73.94', '40.67']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1055> <http://www.w3.org/2000/01/rdf-schema#label> "Hamburg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3033> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1726> <http://www.wikidata.org/prop/direct/P625> "['11.5755', '48.137194444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1271052> <http://www.w3.org/2000/01/rdf-schema#label> "Fritz Heinemann" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6972835> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Art Sculpture Garden" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q158085> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q31058> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1930> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q39> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49166> <http://www.wikidata.org/prop/direct/P625> "['-73.2031', '42.71275']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1614068> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4191> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131262> <http://www.w3.org/2000/01/rdf-schema#label> "University of Bologna" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q32120> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q820887> <http://www.w3.org/2000/01/rdf-schema#label> "University of Florence" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q682827> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.w3.org/2000/01/rdf-schema#label> "Federico Zeri" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2833> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2833> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2833> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3949> <http://www.w3.org/2000/01/rdf-schema#label> "Unna" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q7916914> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q81162> <http://www.wikidata.org/prop/direct/P625> "['-1.246388888', '51.751938888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q490> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18484321> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q210081> <http://www.w3.org/2000/01/rdf-schema#label> "Walters Art Museum" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1726> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1055> <http://www.wikidata.org/prop/direct/P625> "['10.0', '53.55']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q81162> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2966> <http://www.w3.org/2000/01/rdf-schema#label> "Heidelberg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2966> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q958299> <http://www.wikidata.org/prop/direct/P625> "['12.478272222', '41.906027777']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3869> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q499911> <http://www.w3.org/2000/01/rdf-schema#label> "University of Turin" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q84> <http://www.wikidata.org/prop/direct/P625> "['-0.1275', '51.507222222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3891139> <http://www.w3.org/2000/01/rdf-schema#label> "Palazzo Zuccari" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3949> <http://www.wikidata.org/prop/direct/P625> "['7.688888888', '51.534722222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q160236> <http://www.w3.org/2000/01/rdf-schema#label> "Metropolitan Museum of Art" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.w3.org/2000/01/rdf-schema#label> "Eugenio Battisti" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1709> <http://www.wikidata.org/prop/direct/P625> "['11.416666666', '53.633333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q43668> <http://www.w3.org/2000/01/rdf-schema#label> "Louisville" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q8471> <http://www.wikidata.org/prop/direct/P625> "['15.65', '38.114438888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2079> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q958299> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q11203476> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q1360303> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13367> <http://www.w3.org/2000/01/rdf-schema#label> "Forlì" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1196> <http://www.wikidata.org/prop/direct/P625> "['12.7', '53.616666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2044> <http://www.wikidata.org/prop/direct/P625> "['11.254166666', '43.771388888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4191> <http://www.wikidata.org/prop/direct/P625> "['8.3059', '47.0523']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q693591> <http://www.wikidata.org/prop/direct/P625> "['8.813611', '53.072778']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152087> <http://www.w3.org/2000/01/rdf-schema#label> "Humboldt University of Berlin" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1449> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3757699> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131262> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q65> <http://www.wikidata.org/prop/direct/P625> "['-118.24368', '34.05223']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> "Germany" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q159> <http://www.wikidata.org/prop/direct/P625> "['94.25', '66.416666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2966> <http://www.wikidata.org/prop/direct/P625> "['8.71', '49.412222222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q15124814> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q213322> <http://www.w3.org/2000/01/rdf-schema#label> "Victoria and Albert Museum" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q32120> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q90> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q15124814> <http://www.w3.org/2000/01/rdf-schema#label> "Piazza di Spagna" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q99> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1465805> <http://www.wikidata.org/prop/direct/P625> "['-73.2136', '42.7078']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1317143> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2093794> <http://www.w3.org/2000/01/rdf-schema#label> "Vassar College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q490> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q155354> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q38> <http://www.wikidata.org/prop/direct/P625> "['12.5', '42.5']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3757699> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1376987> <http://www.wikidata.org/prop/direct/P625> "['-1.25166667', '51.75416667']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6972835> <http://www.wikidata.org/prop/direct/P625> "['-77.023', '38.8913']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q820887> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q682827> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2814> <http://www.wikidata.org/prop/direct/P625> "['11.969722222', '51.482777777']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1603> <http://www.wikidata.org/prop/direct/P625> "['-85.0', '37.5']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q805285> <http://www.wikidata.org/prop/direct/P625> "['-1.2578', '51.7547']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q820887> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q739627> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q641> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q79> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131262> <http://www.wikidata.org/prop/direct/P625> "['11.342777777', '44.493888888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q739627> <http://www.w3.org/2000/01/rdf-schema#label> "Pennsylvania State University" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q8471> <http://www.w3.org/2000/01/rdf-schema#label> "Reggio Calabria" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q586> <http://www.w3.org/2000/01/rdf-schema#label> "Bonn" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q2093794> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q586> <http://www.wikidata.org/prop/direct/P625> "['7.099722222', '50.733888888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51252> <http://www.w3.org/2000/01/rdf-schema#label> "Uffizi" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q279> <http://www.wikidata.org/prop/direct/P625> "['10.92572', '44.64582']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13371> <http://www.wikidata.org/prop/direct/P625> "['-71.116943888', '42.374443888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q693591> <http://www.w3.org/2000/01/rdf-schema#label> "Kunsthalle Bremen" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q490> <http://www.wikidata.org/prop/direct/P625> "['9.19', '45.466944444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q239303> <http://www.wikidata.org/prop/direct/P625> "['-87.623889', '41.879444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q771> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q31058> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49166> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3891139> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q155354> <http://www.w3.org/2000/01/rdf-schema#label> "University of Marburg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q167733> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q244482> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q337531> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1614068> <http://www.w3.org/2000/01/rdf-schema#label> "United State Schools for Fine and Applied Arts" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q159> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q18484321> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q99> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q43668> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q872398> <http://www.w3.org/2000/01/rdf-schema#label> "Kunsthistorisches Institut in Florenz" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1741> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q79> <http://www.wikidata.org/prop/direct/P625> "['29.0', '27.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q739627> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q167733> <http://www.wikidata.org/prop/direct/P625> "['-73.963333333', '40.809444444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131252> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49166> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q817921> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3120> <http://www.wikidata.org/prop/direct/P625> "['5.554444', '46.675278']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1068063> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Canada" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P625> "['-98.5795', '39.828175']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q15124814> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49166> <http://www.w3.org/2000/01/rdf-schema#label> "Williams College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5092> <http://www.w3.org/2000/01/rdf-schema#label> "Baltimore" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3869> <http://www.wikidata.org/prop/direct/P625> "['8.766666666', '50.816666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q20103> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1047097> <http://www.wikidata.org/prop/direct/P625> "['139.717603', '35.66216']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1055> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3558578> <http://www.wikidata.org/prop/direct/P625> "['11.3151', '43.7943']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q641> <http://www.w3.org/2000/01/rdf-schema#label> "Venice" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51252> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q32120> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q993164> <http://www.wikidata.org/prop/direct/P625> "['-0.2675', '51.336111111']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3120> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131252> <http://www.w3.org/2000/01/rdf-schema#label> "University of Chicago" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13367> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1345> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13367> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55044> <http://www.w3.org/2000/01/rdf-schema#label> "Ludwig Maximilian University of Munich" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.w3.org/2000/01/rdf-schema#label> "Ulrich Middeldorf" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q13371> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q693591> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1446181> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2079> <http://www.wikidata.org/prop/direct/P625> "['12.383333333', '51.333333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2814> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q239303> <http://www.w3.org/2000/01/rdf-schema#label> "Art Institute of Chicago" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4146780> <http://www.wikidata.org/prop/direct/P625> "['56.0472679', '53.4556697']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1317143> <http://www.w3.org/2000/01/rdf-schema#label> "University of Louisville" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4859590> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1603> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q84> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60> <http://www.w3.org/2000/01/rdf-schema#label> "New York City" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q155354> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q213322> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q38> <http://www.w3.org/2000/01/rdf-schema#label> "Italy" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q5092> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5303281> <http://www.w3.org/2000/01/rdf-schema#label> "Downside School" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q993164> <http://www.w3.org/2000/01/rdf-schema#label> "Epsom" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q782187> <http://www.w3.org/2000/01/rdf-schema#label> "via Giulia" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q731126> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6373> <http://www.wikidata.org/prop/direct/P625> "['-0.127022', '51.519489']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1399299> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q8471> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1196> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#label> "Basilica of Our Lady" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.w3.org/2000/01/rdf-schema#label> "Ellis Waterhouse" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1089074> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1022> <http://www.w3.org/2000/01/rdf-schema#label> "Stuttgart" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q88907> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q13371> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q180788> <http://www.wikidata.org/prop/direct/P625> "['-0.128435', '51.508704']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49088> <http://www.w3.org/2000/01/rdf-schema#label> "Columbia University" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1210> <http://www.wikidata.org/prop/direct/P625> "['9.95', '45.65']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q715> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6602> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q36687> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q8471> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q2093794> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.w3.org/2000/01/rdf-schema#label> "Otto Lehmann-Brockhaus" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q339759> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliotheca Hertziana – Max Planck Institute of Art History" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41> <http://www.wikidata.org/prop/direct/P625> "['23.0', '38.5']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q771> <http://www.w3.org/2000/01/rdf-schema#label> "Massachusetts" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q180788> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55453618> <http://www.w3.org/2000/01/rdf-schema#label> "Stefano Tumidei" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1449> <http://www.w3.org/2000/01/rdf-schema#label> "Genoa" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3869> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61> <http://www.w3.org/2000/01/rdf-schema#label> "Washington, D.C." _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1024543> <http://www.w3.org/2000/01/rdf-schema#label> "Graduate Center, CUNY" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q152087> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#label> "New College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q771> <http://www.wikidata.org/prop/direct/P625> "['-71.8', '42.3']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q65> <http://www.w3.org/2000/01/rdf-schema#label> "Los Angeles" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49210> <http://www.w3.org/2000/01/rdf-schema#label> "New York University" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q495> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q490> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q782187> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3558578> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2966> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4146780> <http://www.w3.org/2000/01/rdf-schema#label> "State Archives of the city of Ishimbai" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q160236> <http://www.wikidata.org/prop/direct/P625> "['-73.9631', '40.7794']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6602> <http://www.w3.org/2000/01/rdf-schema#label> "Strasbourg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q99> <http://www.wikidata.org/prop/direct/P625> "['-120.0', '37.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q242942> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4146780> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3033> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1022> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q3558578> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.w3.org/2000/01/rdf-schema#label> "Werner Cohn" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2093794> <http://www.wikidata.org/prop/direct/P625> "['-73.895188888', '41.686866666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3757699> <http://www.wikidata.org/prop/direct/P625> "['12.471944444', '41.894194444']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1068063> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1024543> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q223429> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q715> <http://www.wikidata.org/prop/direct/P625> "['9.217953', '49.140428']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1068063> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1449> <http://www.wikidata.org/prop/direct/P625> "['8.933983333', '44.407186111']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2814> <http://www.w3.org/2000/01/rdf-schema#label> "Halle (Saale)" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2833> <http://www.wikidata.org/prop/direct/P625> "['7.849722222', '47.994722222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q13371> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13371> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q65> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1465805> <http://www.w3.org/2000/01/rdf-schema#label> "Clark Art Institute" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q20103> <http://www.wikidata.org/prop/direct/P625> "['12.6175', '43.07']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q81162> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q671011> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4859590> <http://www.wikidata.org/prop/direct/P625> "['-1.927827', '52.450331']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q239303> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2527217> <http://www.w3.org/2000/01/rdf-schema#label> "Lionello Venturi" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q339759> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13371> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6537> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q279> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q731126> <http://www.w3.org/2000/01/rdf-schema#label> "J. Paul Getty Museum" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q820887> <http://www.wikidata.org/prop/direct/P625> "['11.258611111', '43.777777777']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q64> <http://www.wikidata.org/prop/direct/P625> "['13.383333333', '52.516666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2833> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q872398> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q131262> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q805285> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49088> <http://www.wikidata.org/prop/direct/P625> "['-73.961944444', '40.8075']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.w3.org/2000/01/rdf-schema#label> "Aby Warburg" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1360303> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q152171> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1399299> <http://www.w3.org/2000/01/rdf-schema#label> "Slade School of Fine Art" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q495> <http://www.wikidata.org/prop/direct/P625> "['7.7', '45.066666666']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q993164> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q23666> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q771> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q682827> <http://www.w3.org/2000/01/rdf-schema#label> "The Frick Collection" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q5303281> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q942713> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q495> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3949> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1089074> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1603> <http://www.w3.org/2000/01/rdf-schema#label> "Kentucky" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1709> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#label> "University of Oxford New College" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#label> "United States" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q43668> <http://www.wikidata.org/prop/direct/P625> "['-85.751388888', '38.256111111']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13367> <http://www.wikidata.org/prop/direct/P625> "['12.040833333', '44.2225']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5303281> <http://www.wikidata.org/prop/direct/P625> "['-2.495', '51.255']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q682827> <http://www.wikidata.org/prop/direct/P625> "['-73.9673', '40.7712']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q78> <http://www.wikidata.org/prop/direct/P625> "['7.590555555', '47.560555555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q739627> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q337531> <http://www.wikidata.org/prop/direct/P625> "['2.336889', '48.857222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q49088> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q36687> <http://www.w3.org/2000/01/rdf-schema#label> "Victoria" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2093794> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1196> <http://www.w3.org/2000/01/rdf-schema#label> "Mecklenburg-Vorpommern" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3558578> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q210081> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2833> <http://www.w3.org/2000/01/rdf-schema#label> "Freiburg im Breisgau" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q16551> <http://www.wikidata.org/prop/direct/P625> "['-72.7', '44.0']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2044> <http://www.w3.org/2000/01/rdf-schema#label> "Florence" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3033> <http://www.wikidata.org/prop/direct/P625> "['9.935555555', '51.533888888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4146780> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q499911> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q36687> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#label> "United States of America" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q230899> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q16551> <http://www.w3.org/2000/01/rdf-schema#label> "Vermont" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q13371> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard University" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q20103> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q944225> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q771> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q23666> <http://www.wikidata.org/prop/direct/P625> "['-2.416666666', '53.833333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1024543> <http://www.wikidata.org/prop/direct/P625> "['-73.983333333', '40.748333333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1345> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q79> <http://www.w3.org/2000/01/rdf-schema#label> "Egypt" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q152171> <http://www.w3.org/2000/01/rdf-schema#label> "University of Bonn" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q55044> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2814> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q490> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6537> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1317143> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2079> <http://www.w3.org/2000/01/rdf-schema#label> "Leipzig" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1930> <http://www.wikidata.org/prop/direct/P625> "['-75.695', '45.424722222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q731126> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q7916914> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q2093794> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q155354> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q817921> <http://www.w3.org/2000/01/rdf-schema#label> "Bennington" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6771680> <http://www.wikidata.org/prop/direct/P625> "['-118.32685', '34.0699']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q209344> <http://www.w3.org/2000/01/rdf-schema#label> "Sapienza University of Rome" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q2044> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q220> <http://www.w3.org/2000/01/rdf-schema#label> "Rome" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1022> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1446181> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q213322> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q158085> <http://www.wikidata.org/prop/direct/P625> "['11.5820779', '48.1411551']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q279> <http://www.w3.org/2000/01/rdf-schema#label> "Modena" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1741> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q131252> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q15124814> <http://www.wikidata.org/prop/direct/P625> "['12.48205833', '41.90595']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q230899> <http://www.wikidata.org/prop/direct/P625> "['-2.233611111', '53.465555555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q817921> <http://www.wikidata.org/prop/direct/P625> "['-73.2131916', '42.8852043']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51252> <http://www.wikidata.org/prop/direct/P625> "['11.2559', '43.768438888']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q31058> <http://www.w3.org/2000/01/rdf-schema#label> "Burlington" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.w3.org/2000/01/rdf-schema#label> "Everett Fahy" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q537874> <http://www.w3.org/2000/01/rdf-schema#label> "John Pope-Hennessy" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1361667> <http://www.w3.org/2000/01/rdf-schema#label> "Roberto Longhi" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3891139> <http://www.wikidata.org/prop/direct/P625> "['11.26313333', '43.77753611']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q942713> <http://www.w3.org/2000/01/rdf-schema#label> "Scottish National Gallery" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q90> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q495> <http://www.w3.org/2000/01/rdf-schema#label> "Turin" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q155354> <http://www.wikidata.org/prop/direct/P625> "['8.773611111', '50.810833333']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#label> "Basilica of Santa Maria Novella" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q944225> <http://www.wikidata.org/prop/direct/P625> "['-0.937777777', '51.842222222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q220> <http://www.wikidata.org/prop/direct/P625> "['12.482777777', '41.893055555']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q159> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q731126> <http://www.wikidata.org/prop/direct/P625> "['-118.475', '34.0775']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13371> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49117> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q4191> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49210> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q41> <http://www.w3.org/2000/01/rdf-schema#label> "Greece" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q337531> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q210081> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q942713> <http://www.wikidata.org/prop/direct/P625> "['-3.195660636', '55.950899738']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q944225> <http://www.w3.org/2000/01/rdf-schema#label> "Waddesdon Manor" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q5303281> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q641> <http://www.wikidata.org/prop/direct/P625> "['12.331944444', '45.439722222']" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q78> <http://www.w3.org/2000/01/rdf-schema#label> "Basel" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q3120> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1449> <http://www.w3.org/2000/01/rdf-schema#comment> "geoloc" _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
-<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1465805> _:N91ac018e8f5d4b50ac1aa4e5b85073c9 .
+<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#label> "United States of America" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6602> <http://www.w3.org/2000/01/rdf-schema#label> "Strasbourg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q78> <http://www.wikidata.org/prop/direct/P625> "['7.590555555', '47.560555555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q715> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1709> <http://www.wikidata.org/prop/direct/P625> "['11.416666666', '53.633333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q693591> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q230899> <http://www.w3.org/2000/01/rdf-schema#label> "University of Manchester" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1055> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3806> <http://www.w3.org/2000/01/rdf-schema#label> "Tübingen" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.w3.org/2000/01/rdf-schema#label> "Roberto Longhi" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1446181> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3558578> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q495> <http://www.wikidata.org/prop/direct/P625> "['7.7', '45.066666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q159> <http://www.wikidata.org/prop/direct/P625> "['94.25', '66.416666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q820887> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q5092> <http://www.w3.org/2000/01/rdf-schema#label> "Baltimore" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q78> <http://www.w3.org/2000/01/rdf-schema#label> "Basel" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1376987> <http://www.wikidata.org/prop/direct/P625> "['-1.25166667', '51.75416667']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1068063> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2324618> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q21578> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q490> <http://www.wikidata.org/prop/direct/P625> "['9.19', '45.466944444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q771> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1465805> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3869> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#label> "Basilica of Santa Maria Novella" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q641> <http://www.wikidata.org/prop/direct/P625> "['12.331944444', '45.439722222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q942605> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3869> <http://www.w3.org/2000/01/rdf-schema#label> "Marburg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1345> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q154804> <http://www.wikidata.org/prop/direct/P625> "['12.378727777', '51.3387']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49117> <http://www.w3.org/2000/01/rdf-schema#label> "University of Pennsylvania" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3757699> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q239303> <http://www.wikidata.org/prop/direct/P625> "['-87.623889', '41.879444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6771680> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q32120> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1201549> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q731126> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1024543> <http://www.w3.org/2000/01/rdf-schema#label> "Graduate Center, CUNY" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q11203476> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.w3.org/2000/01/rdf-schema#label> "Ulrich Middeldorf" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1614068> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2814> <http://www.w3.org/2000/01/rdf-schema#label> "Halle (Saale)" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942713> <http://www.wikidata.org/prop/direct/P625> "['-3.195660636', '55.950899738']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#label> "United States" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q214867> <http://www.wikidata.org/prop/direct/P625> "['-77.02001', '38.89147']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q30> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q279> <http://www.w3.org/2000/01/rdf-schema#label> "Modena" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2093794> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q154804> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q739627> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q242942> <http://www.w3.org/2000/01/rdf-schema#label> "Mentana" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q414052> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q32120> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1047097> <http://www.wikidata.org/prop/direct/P625> "['139.717603', '35.66216']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q273593> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q59452059> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q239303> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q158085> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q273593> <http://www.wikidata.org/prop/direct/P625> "['2.333277777', '48.856805555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3806> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q820887> <http://www.wikidata.org/prop/direct/P625> "['11.25951', '43.77777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q220> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q36687> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q242942> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1384> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13371> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q59452059> <http://www.wikidata.org/prop/direct/P625> "['11.309769', '43.782196']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1271052> <http://www.w3.org/2000/01/rdf-schema#label> "Fritz Heinemann" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49088> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131262> <http://www.wikidata.org/prop/direct/P625> "['11.342777777', '44.493888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#label> "Germany" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1360303> <http://www.w3.org/2000/01/rdf-schema#label> "University of Kentucky" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131252> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1465805> <http://www.wikidata.org/prop/direct/P625> "['-73.2136', '42.7078']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1376987> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q78> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.w3.org/2000/01/rdf-schema#label> "Leo Steinberg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q273593> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q61> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6602> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13367> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q3558578> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q32120> <http://www.wikidata.org/prop/direct/P625> "['11.96888889', '51.48638889']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q11203476> <http://www.wikidata.org/prop/direct/P625> "['-118.476', '34.076888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q90> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q81162> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q820887> <http://www.w3.org/2000/01/rdf-schema#label> "University of Florence" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1726> <http://www.w3.org/2000/01/rdf-schema#label> "Munich" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q339759> <http://www.wikidata.org/prop/direct/P625> "['12.48414', '41.90534']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942605> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1196> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1196> <http://www.w3.org/2000/01/rdf-schema#label> "Mecklenburg-Vorpommern" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q20103> <http://www.w3.org/2000/01/rdf-schema#label> "Assisi" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131252> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q43668> <http://www.wikidata.org/prop/direct/P625> "['-85.751388888', '38.256111111']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q820887> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q210081> <http://www.w3.org/2000/01/rdf-schema#label> "Walters Art Museum" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1709> <http://www.w3.org/2000/01/rdf-schema#label> "Schwerin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1642645> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q11203476> <http://www.w3.org/2000/01/rdf-schema#label> "Getty Research Institute" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q731126> <http://www.wikidata.org/prop/direct/P625> "['-118.475', '34.0775']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q154804> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2527217> <http://www.w3.org/2000/01/rdf-schema#label> "Lionello Venturi" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3757699> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q79> <http://www.w3.org/2000/01/rdf-schema#label> "Egypt" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q820887> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q36687> <http://www.w3.org/2000/01/rdf-schema#label> "Victoria" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3075> <http://www.wikidata.org/prop/direct/P625> "['10.990277777', '49.478333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q872398> <http://www.wikidata.org/prop/direct/P625> "['11.264', '43.7772']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3949> <http://www.w3.org/2000/01/rdf-schema#label> "Unna" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q30> <http://www.wikidata.org/prop/direct/P625> "['-98.5795', '39.828175']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3100195> <http://www.w3.org/2000/01/rdf-schema#label> "New York University School of Medicine" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1715096> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1360303> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1024543> <http://www.wikidata.org/prop/direct/P625> "['-73.983333333', '40.748333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49117> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q159> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1741> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2324618> <http://www.wikidata.org/prop/direct/P625> "['11.4183', '53.6264']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1446181> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q499911> <http://www.w3.org/2000/01/rdf-schema#label> "University of Turin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6771680> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1399299> <http://www.w3.org/2000/01/rdf-schema#label> "Slade School of Fine Art" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q586> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2966> <http://www.wikidata.org/prop/direct/P625> "['8.71', '49.412222222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6972835> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q145> <http://www.wikidata.org/prop/direct/P625> "['-2.0', '54.6']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q490> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q43668> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13371> <http://www.wikidata.org/prop/direct/P625> "['-71.116943888', '42.374443888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3558578> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q51175> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q641> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.w3.org/2000/01/rdf-schema#label> "Julius S. Held" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6972835> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6373> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1024543> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q59452059> <http://www.w3.org/2000/01/rdf-schema#label> "Berenson Library" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q81162> <http://www.w3.org/2000/01/rdf-schema#label> "Magdalen College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3757699> <http://www.wikidata.org/prop/direct/P625> "['12.471944444', '41.894194444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q158085> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6602> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q817921> <http://www.wikidata.org/prop/direct/P625> "['-73.2131916', '42.8852043']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q2324618> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.w3.org/2000/01/rdf-schema#label> "Aby Warburg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q158085> <http://www.wikidata.org/prop/direct/P625> "['11.5820779', '48.1411551']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q209344> <http://www.wikidata.org/prop/direct/P625> "['12.515833333', '41.903333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q41> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3100195> <http://www.wikidata.org/prop/direct/P625> "['-73.9744', '40.7421']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q771> <http://www.wikidata.org/prop/direct/P625> "['-71.8', '42.3']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q6602> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q64> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q958299> <http://www.w3.org/2000/01/rdf-schema#label> "via del Corso" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90> <http://www.wikidata.org/prop/direct/P625> "['2.351388888', '48.856944444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3806> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q414052> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q739627> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3075> <http://www.w3.org/2000/01/rdf-schema#label> "Fürth" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942713> <http://www.w3.org/2000/01/rdf-schema#label> "Scottish National Gallery" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3558578> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13367> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152087> <http://www.wikidata.org/prop/direct/P625> "['13.393333333', '52.518055555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#label> "University of Oxford New College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q817921> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q944225> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q671011> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q230899> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1642645> <http://www.w3.org/2000/01/rdf-schema#label> "Dogana" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q180788> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1055> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3075> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1603> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q586> <http://www.wikidata.org/prop/direct/P625> "['7.099722222', '50.733888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q180788> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q490> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q586> <http://www.w3.org/2000/01/rdf-schema#label> "Bonn" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q65> <http://www.wikidata.org/prop/direct/P625> "['-118.24368', '34.05223']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q167733> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q414052> <http://www.w3.org/2000/01/rdf-schema#label> "Academy of Fine Arts, Munich" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49117> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q167733> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1317143> <http://www.wikidata.org/prop/direct/P625> "['-85.760222222', '38.215019444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q154804> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q145> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3033> <http://www.wikidata.org/prop/direct/P625> "['9.935555555', '51.533888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q32120> <http://www.w3.org/2000/01/rdf-schema#label> "University of Halle-Wittenberg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q273593> <http://www.w3.org/2000/01/rdf-schema#label> "Beaux-Arts de Paris" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1345> <http://www.wikidata.org/prop/direct/P625> "['-75.163611111', '39.952777777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q34433> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q223429> <http://www.wikidata.org/prop/direct/P625> "['-1.930555555', '52.450555555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55> <http://www.wikidata.org/prop/direct/P625> "['5.55', '52.316666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2093794> <http://www.w3.org/2000/01/rdf-schema#label> "Vassar College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q32120> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q154804> <http://www.w3.org/2000/01/rdf-schema#label> "Leipzig University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1201549> <http://www.w3.org/2000/01/rdf-schema#label> "Detroit Institute of Arts" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1741> <http://www.w3.org/2000/01/rdf-schema#label> "Vienna" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q21578> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q771> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6972835> <http://www.wikidata.org/prop/direct/P625> "['-77.023', '38.8913']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1741> <http://www.wikidata.org/prop/direct/P625> "['16.373064', '48.20833']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q641> <http://www.w3.org/2000/01/rdf-schema#label> "Venice" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q958299> <http://www.wikidata.org/prop/direct/P625> "['12.478272222', '41.906027777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q944225> <http://www.w3.org/2000/01/rdf-schema#label> "Waddesdon Manor" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q5092> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4012761> <http://www.w3.org/2000/01/rdf-schema#label> "Poggio Reale" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1022> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q942713> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2324618> <http://www.w3.org/2000/01/rdf-schema#label> "Staatliches Museum Schwerin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q739627> <http://www.w3.org/2000/01/rdf-schema#label> "Pennsylvania State University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1603> <http://www.w3.org/2000/01/rdf-schema#label> "Kentucky" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q499911> <http://www.wikidata.org/prop/direct/P625> "['7.688888888', '45.069444444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q995470> <http://www.w3.org/2000/01/rdf-schema#label> "Kornél Fabriczy" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3100195> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1089074> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#label> "New College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4859590> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49088> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q214867> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Art" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q214867> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2527217> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q499911> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q671011> <http://www.wikidata.org/prop/direct/P625> "['12.616666666', '53.883055555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q499911> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3757699> <http://www.w3.org/2000/01/rdf-schema#label> "Galleria Spada" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1614068> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q2093794> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q34433> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q715> <http://www.w3.org/2000/01/rdf-schema#label> "Heilbronn" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q495> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4191> <http://www.wikidata.org/prop/direct/P625> "['8.3059', '47.0523']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1465805> <http://www.w3.org/2000/01/rdf-schema#label> "Clark Art Institute" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q817921> <http://www.wikidata.org/prop/direct/P625> "['-73.19677', '42.87813']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q84> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q81162> <http://www.wikidata.org/prop/direct/P625> "['-1.246388888', '51.751938888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49210> <http://www.wikidata.org/prop/direct/P625> "['-73.995', '40.73']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942605> <http://www.w3.org/2000/01/rdf-schema#label> "Settignano" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q39> <http://www.wikidata.org/prop/direct/P625> "['8.231973', '46.798562']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13367> <http://www.w3.org/2000/01/rdf-schema#label> "Forlì" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1196> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4012761> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q872398> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152087> <http://www.w3.org/2000/01/rdf-schema#label> "Humboldt University of Berlin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q220> <http://www.w3.org/2000/01/rdf-schema#label> "Rome" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1210> <http://www.wikidata.org/prop/direct/P625> "['9.95', '45.65']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.w3.org/2000/01/rdf-schema#label> "Stefano Tumidei" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q230899> <http://www.wikidata.org/prop/direct/P625> "['-2.233611111', '53.465555555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q641> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49166> <http://www.w3.org/2000/01/rdf-schema#label> "Williams College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3558578> <http://www.wikidata.org/prop/direct/P625> "['11.3151', '43.7943']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q499911> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1614068> <http://www.wikidata.org/prop/direct/P625> "['13.3267886', '52.5090564']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.w3.org/2000/01/rdf-schema#label> "Ernst Steinmann" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152087> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.w3.org/2000/01/rdf-schema#label> "Werner Cohn" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49166> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q715> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1930> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.w3.org/2000/01/rdf-schema#label> "Adolfo Venturi" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4012761> <http://www.wikidata.org/prop/direct/P625> "['14.29238', '40.870042']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61> <http://www.wikidata.org/prop/direct/P625> "['-77.036666666', '38.895']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3806> <http://www.wikidata.org/prop/direct/P625> "['9.055555555', '48.52']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.w3.org/2000/01/rdf-schema#label> "Richard Krautheimer" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q1360303> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q817921> <http://www.w3.org/2000/01/rdf-schema#label> "Bennington" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3949> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q21578> <http://www.wikidata.org/prop/direct/P625> "['-74.656111111', '40.345277777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q34433> <http://www.w3.org/2000/01/rdf-schema#label> "University of Oxford" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q79> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q693591> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2966> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q65> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q55> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q99> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49088> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2833> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1360303> <http://www.wikidata.org/prop/direct/P625> "['-84.5', '38.033333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q159> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1201549> <http://www.wikidata.org/prop/direct/P625> "['-83.064722222', '42.359444444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2093794> <http://www.wikidata.org/prop/direct/P625> "['-73.895188888', '41.686866666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q99> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49166> <http://www.wikidata.org/prop/direct/P625> "['-73.205', '42.7125']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60> <http://www.w3.org/2000/01/rdf-schema#label> "New York City" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1022> <http://www.wikidata.org/prop/direct/P625> "['9.1775', '48.776111111']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1741> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1614068> <http://www.w3.org/2000/01/rdf-schema#label> "United State Schools for Fine and Applied Arts" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q209344> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6972835> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Art Sculpture Garden" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6771680> <http://www.wikidata.org/prop/direct/P625> "['-118.32685', '34.0699']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q34433> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49166> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1446181> <http://www.w3.org/2000/01/rdf-schema#label> "Hunter College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2044> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q21578> <http://www.w3.org/2000/01/rdf-schema#label> "Princeton University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6373> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1399299> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q20103> <http://www.wikidata.org/prop/direct/P625> "['12.6175', '43.07']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q220> <http://www.wikidata.org/prop/direct/P625> "['12.482777777', '41.893055555']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3869> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131252> <http://www.w3.org/2000/01/rdf-schema#label> "University of Chicago" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152171> <http://www.wikidata.org/prop/direct/P625> "['7.102222222', '50.733888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q167733> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2044> <http://www.w3.org/2000/01/rdf-schema#label> "Florence" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3100195> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q693591> <http://www.wikidata.org/prop/direct/P625> "['8.813611', '53.072778']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q13371> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2824734> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q279> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3757699> <http://www.wikidata.org/prop/direct/P625> "['12.471891', '41.894234']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4012761> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q230899> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q152171> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3949> <http://www.wikidata.org/prop/direct/P625> "['7.688888888', '51.534722222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2814> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q59452059> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1317143> <http://www.w3.org/2000/01/rdf-schema#label> "University of Louisville" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1642645> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4859590> <http://www.wikidata.org/prop/direct/P625> "['-1.927827', '52.450331']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q131252> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3051533> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4859590> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q51175> <http://www.wikidata.org/prop/direct/P625> "['11.249367', '43.7743']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q4191> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q160236> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2833> <http://www.wikidata.org/prop/direct/P625> "['7.849722222', '47.994722222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q223429> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4859590> <http://www.wikidata.org/prop/direct/P625> "['-1.927727777', '52.450419444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.w3.org/2000/01/rdf-schema#label> "Julian Kliemann" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q160236> <http://www.w3.org/2000/01/rdf-schema#label> "Metropolitan Museum of Art" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1384> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1373290> <http://www.w3.org/2000/01/rdf-schema#label> "Eugenio Battisti" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q739627> <http://www.wikidata.org/prop/direct/P625> "['-77.862777777', '40.796111111']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.w3.org/2000/01/rdf-schema#label> "Ellis Waterhouse" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q209344> <http://www.w3.org/2000/01/rdf-schema#label> "Sapienza University of Rome" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q771> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1345> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49166> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942605> <http://www.wikidata.org/prop/direct/P625> "['11.322027777', '43.782888888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152171> <http://www.w3.org/2000/01/rdf-schema#label> "University of Bonn" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1726> <http://www.wikidata.org/prop/direct/P625> "['11.5755', '48.137194444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q944225> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3075> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q20103> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q13371> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61> <http://www.w3.org/2000/01/rdf-schema#label> "Washington, D.C." _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q81162> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q731126> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1047097> <http://www.w3.org/2000/01/rdf-schema#label> "Nezu Museum" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q155354> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3100195> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q65> <http://www.w3.org/2000/01/rdf-schema#label> "Los Angeles" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q5092> <http://www.wikidata.org/prop/direct/P625> "['-76.615', '39.286388888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1399299> <http://www.wikidata.org/prop/direct/P625> "['-0.1344', '51.525']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q36687> <http://www.wikidata.org/prop/direct/P625> "['144.0', '-37.0']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1465805> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2044> <http://www.wikidata.org/prop/direct/P625> "['11.254166666', '43.771388888']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q180788> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#label> "Basilica of Our Lady" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q214867> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41> <http://www.w3.org/2000/01/rdf-schema#label> "Greece" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1022> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1196> <http://www.w3.org/2000/01/rdf-schema#label> "Mecklenburg-Western Pomerania" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6373> <http://www.w3.org/2000/01/rdf-schema#label> "British Museum" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1068063> <http://www.wikidata.org/prop/direct/P625> "['-75.698386', '45.429434']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q210081> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q223429> <http://www.w3.org/2000/01/rdf-schema#label> "University of Birmingham" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q38> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1210> <http://www.w3.org/2000/01/rdf-schema#label> "Lombardy" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q279> <http://www.wikidata.org/prop/direct/P625> "['10.92572', '44.64582']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6602> <http://www.wikidata.org/prop/direct/P625> "['7.752222222', '48.573333333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13371> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1055> <http://www.wikidata.org/prop/direct/P625> "['10.0', '53.55']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1271052> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q39> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131262> <http://www.w3.org/2000/01/rdf-schema#label> "University of Bologna" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q958299> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q2093794> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q674998> <http://www.wikidata.org/prop/direct/P625> "['8.564762', '47.45394']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4191> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49117> <http://www.wikidata.org/prop/direct/P625> "['-75.193048', '39.953885']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q99> <http://www.wikidata.org/prop/direct/P625> "['-120.0', '37.0']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1930> <http://www.w3.org/2000/01/rdf-schema#label> "Ottawa" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q64> <http://www.w3.org/2000/01/rdf-schema#label> "Berlin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q414052> <http://www.wikidata.org/prop/direct/P625> "['11.580278', '48.153056']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q210081> <http://www.wikidata.org/prop/direct/P625> "['-76.616111111', '39.296666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q671011> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q160236> <http://www.wikidata.org/prop/direct/P625> "['-73.9631', '40.7794']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q944225> <http://www.wikidata.org/prop/direct/P625> "['-0.937777777', '51.842222222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.w3.org/2000/01/rdf-schema#label> "Federico Zeri" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q155354> <http://www.wikidata.org/prop/direct/P625> "['8.773611111', '50.810833333']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1345> <http://www.w3.org/2000/01/rdf-schema#label> "Philadelphia" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13367> <http://www.wikidata.org/prop/direct/P625> "['12.040833333', '44.2225']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6373> <http://www.wikidata.org/prop/direct/P625> "['-0.127022', '51.519489']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1642645> <http://www.wikidata.org/prop/direct/P625> "['12.5', '43.95']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1210> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q339759> <http://www.w3.org/2000/01/rdf-schema#label> "Bibliotheca Hertziana – Max Planck Institute of Art History" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6771680> <http://www.w3.org/2000/01/rdf-schema#label> "Marlborough School" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1726> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3033> <http://www.w3.org/2000/01/rdf-schema#label> "Göttingen" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q51175> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1709> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q167733> <http://www.w3.org/2000/01/rdf-schema#label> "Barnard College" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q230899> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2814> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1373290> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90> <http://www.w3.org/2000/01/rdf-schema#label> "Paris" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q674998> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q131262> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#label> "Netherlands" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1930> <http://www.wikidata.org/prop/direct/P625> "['-75.695', '45.424722222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q88907> <http://www.w3.org/2000/01/rdf-schema#label> "Ernst Kitzinger" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1047097> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41616785> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1741> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q155354> <http://www.w3.org/2000/01/rdf-schema#label> "University of Marburg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q239303> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q872398> <http://www.w3.org/2000/01/rdf-schema#label> "Kunsthistorisches Institut in Florenz" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q160236> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q671011> <http://www.w3.org/2000/01/rdf-schema#label> "Jördenstorf" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q223429> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.w3.org/2000/01/rdf-schema#label> "Kurt Badt" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q490> <http://www.w3.org/2000/01/rdf-schema#label> "Milan" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1603> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q81162> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q43668> <http://www.w3.org/2000/01/rdf-schema#label> "Louisville" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q499911> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1715096> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q64> <http://www.wikidata.org/prop/direct/P625> "['13.383333333', '52.516666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1726> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q38> <http://www.wikidata.org/prop/direct/P625> "['12.5', '42.5']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q64> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q39> <http://www.w3.org/2000/01/rdf-schema#label> "Switzerland" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q495> <http://www.w3.org/2000/01/rdf-schema#label> "Turin" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q942713> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q242942> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q79> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q1376987> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q820887> <http://www.wikidata.org/prop/direct/P625> "['11.258611111', '43.777777777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q5092> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1317143> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1201549> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1384> <http://www.w3.org/2000/01/rdf-schema#label> "New York" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q159> <http://www.w3.org/2000/01/rdf-schema#label> "Russia" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49210> <http://www.w3.org/2000/01/rdf-schema#label> "New York University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q152171> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1047097> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131252> <http://www.wikidata.org/prop/direct/P625> "['-87.599722222', '41.789722222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1196> <http://www.wikidata.org/prop/direct/P625> "['12.7', '53.616666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2966> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4859590> <http://www.w3.org/2000/01/rdf-schema#label> "Barber Institute of Fine Arts" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q88907> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q13371> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q210081> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1068063> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q145> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q65> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4012761> <http://www.wikidata.org/prop/direct/P625> "['14.285605', '40.865804']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q152087> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q731126> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1384> <http://www.wikidata.org/prop/direct/P625> "['-75.0', '43.0']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2814> <http://www.wikidata.org/prop/direct/P625> "['11.969722222', '51.482777777']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q84> <http://www.w3.org/2000/01/rdf-schema#label> "London" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49117> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q78> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1930> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2527217> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q739627> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q36687> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q18935222> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q30> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q1446181> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3869> <http://www.wikidata.org/prop/direct/P625> "['8.766666666', '50.816666666']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q183> <http://www.wikidata.org/prop/direct/P625> "['10.0', '51.0']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q158085> <http://www.w3.org/2000/01/rdf-schema#label> "Max Planck Society" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q3033> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q537874> <http://www.w3.org/2000/01/rdf-schema#label> "John Pope-Hennessy" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q183> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41> <http://www.wikidata.org/prop/direct/P625> "['23.0', '38.5']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q817921> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3558578> <http://www.w3.org/2000/01/rdf-schema#label> "Harvard University Center for Italian Renaissance Studies" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q4191> <http://www.w3.org/2000/01/rdf-schema#label> "Lucerne" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q674998> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q180788> <http://www.wikidata.org/prop/direct/P625> "['-0.128435', '51.508704']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q155354> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2093794> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q223429> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1603> <http://www.wikidata.org/prop/direct/P625> "['-85.0', '37.5']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q60> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49210> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q38> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.w3.org/2000/01/rdf-schema#label> "Wolfgang Lotz" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1024543> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1709> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q715> <http://www.wikidata.org/prop/direct/P625> "['9.217953', '49.140428']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q490> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q457739> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1399299> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1446181> <http://www.wikidata.org/prop/direct/P625> "['-73.964741', '40.768538']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q958299> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49088> <http://www.wikidata.org/prop/direct/P625> "['-73.961944444', '40.8075']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3057287> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q158085> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q339759> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3033> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q155354> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60> <http://www.wikidata.org/prop/direct/P625> "['-74.006015', '40.712728']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1641821> <http://www.w3.org/2000/01/rdf-schema#label> "Otto Lehmann-Brockhaus" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q34433> <http://www.wikidata.org/prop/direct/P625> "['-1.255', '51.755']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1361667> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q131262> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q55453618> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1089074> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q38> <http://www.w3.org/2000/01/rdf-schema#label> "Italy" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q279> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q2833> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q239303> <http://www.w3.org/2000/01/rdf-schema#label> "Art Institute of Chicago" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1055> <http://www.w3.org/2000/01/rdf-schema#label> "Hamburg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1022> <http://www.w3.org/2000/01/rdf-schema#label> "Stuttgart" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q145> <http://www.w3.org/2000/01/rdf-schema#label> "United Kingdom" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q20103> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q495> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.w3.org/2000/01/rdf-schema#label> "Luigi Salerno" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1089074> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q60185> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q586> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2044> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1712683> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q49210> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1376987> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q49088> <http://www.w3.org/2000/01/rdf-schema#label> "Columbia University" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1089074> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q209344> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3051533> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q84> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q84> <http://www.wikidata.org/prop/direct/P625> "['-0.1275', '51.507222222']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q693591> <http://www.w3.org/2000/01/rdf-schema#label> "Kunsthalle Bremen" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P108> <http://www.wikidata.org/entity/Q2093794> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q99> <http://www.w3.org/2000/01/rdf-schema#label> "California" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1068063> <http://www.w3.org/2000/01/rdf-schema#label> "National Gallery of Canada" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q731126> <http://www.w3.org/2000/01/rdf-schema#label> "J. Paul Getty Museum" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q39> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q79> <http://www.wikidata.org/prop/direct/P625> "['29.0', '27.0']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2966> <http://www.w3.org/2000/01/rdf-schema#label> "Heidelberg" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q131262> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q13371> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q6700132> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q220> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q2833> <http://www.w3.org/2000/01/rdf-schema#label> "Freiburg im Breisgau" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1629748> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q183> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q771> <http://www.w3.org/2000/01/rdf-schema#label> "Massachusetts" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q995470> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q90> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q13371> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q85761254> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q11203476> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41616785> <http://www.w3.org/2000/01/rdf-schema#label> "Gustav Ludwig" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q872398> <http://www.w3.org/2000/01/rdf-schema#comment> "institution" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q41> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q43668> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q339759> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q3949> <http://www.w3.org/2000/01/rdf-schema#comment> "geolocation" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1317143> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q61913691> <http://www.w3.org/2000/01/rdf-schema#label> "Luisa Vertova" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q19997512> <http://www.w3.org/2000/01/rdf-schema#label> "Everett Fahy" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q167733> <http://www.wikidata.org/prop/direct/P625> "['-73.963333333', '40.809444444']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q242942> <http://www.wikidata.org/prop/direct/P625> "['12.6444485', '42.033728']" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q90407> <http://www.wikidata.org/prop/direct/P69> <http://www.wikidata.org/entity/Q155354> _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q674998> <http://www.w3.org/2000/01/rdf-schema#label> "Federal Office of Meteorology and Climatology MeteoSwiss" _:Nfe6a74994a9844ed94fd83341cf93b8b .
+<http://www.wikidata.org/entity/Q1296486> <http://www.wikidata.org/prop/direct/P7153> <http://www.wikidata.org/entity/Q1055> _:Nfe6a74994a9844ed94fd83341cf93b8b .
 
