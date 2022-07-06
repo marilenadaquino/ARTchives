@@ -3,7 +3,7 @@ chardet==3.0.4
 idna==2.8
 isodate==0.6.0
 lark-parser==0.6.5
-lxml==4.3.0
+lxml==4.9.1
 PyLD==1.0.4
 pymantic==0.2.2
 pymodels==0.18.3
